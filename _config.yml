@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Daniel N. Bullock"
 title_separator          : "-"
 name                     : &name "Daniel N. Bullock"
-description              : &description "Neuroinformatics researcher & open source enthusiast/coder"
+description              : &description "Open science/data/infrastructure facilitator, off-hours neuroinformatics researcher"
 url                      : https://DanNBullock/DanNBullock.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "DanNBullock/DanNBullock.github.io"
@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Daniel N. Bullock"
   avatar           : "profile.jpg"
-  bio              : "Neuroinformatics researcher & open source enthusiast/coder"
-  location         : "Minneapolis, MN"
-  employer         : "UMN, Department of Neuroscience"
+  bio              : "Open science/data/infrastructure facilitator, off-hours neuroinformatics researcher"
+  location         : "Alexandria, VA"
+  employer         : "American Association for the Advancement of Science, Science and Technology Policy"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=PhaFy78AAAAJ"
-  email            : "dnbullo092@umn.edu"
+  email            : "iisdanbul@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -175,16 +175,10 @@ kramdown:
 
 # Collections
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
   portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
     output: true
     permalink: /:collection/:path/
 
@@ -209,15 +203,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
   # _publications
   - scope:
       path: ""
@@ -236,14 +221,6 @@ defaults:
       author_profile: true
       share: true
       comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
 
 # Sass/SCSS
 sass:
