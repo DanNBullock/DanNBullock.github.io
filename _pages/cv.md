@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-**EDUCATION**||
+|**EDUCATION**||
 | :- | :- |
 |**Indiana University Bloomington, IN**					        
 *Department of Psychological and Brain Sciences, Program in Neuroscience*               
@@ -35,13 +35,13 @@ Minor: Cognitive Science
 
 |**RESEARCH EXPERIENCE**||
 | :- | :- |
-|**Computational Neuroanatomy; PI: Sarah Heilbronner** (UMN)	                  
+|**Computational Neuroanatomy; PI: Sarah Heilbronner** (UMN)**	                  
 Project: *Anatomically informed segmentation of white matter*
 Production of automated segmentation methods for major white matter tracts in tractography using cross-species and literature-based information.  Visualization of tractography & segmentation results. Quantification of tract properties.  Development and maintenance of several code repositories.  
 |Summer 2021-
 present
 |
-|**Computational Neuroanatomy; PI: Franco Pestilli** (IU-B)	                  
+|**Computational Neuroanatomy; PI: Franco Pestilli** (IU-B)**	                  
 Project: *Associative white matter tracts in the human brain*
 Production of automated segmentation methods for major white matter tracts in tractography.  Visualization of tractography & segmentation results. Quantification of tract properties.  Web application development for brainlife.io.  Development of tractography quality assurance methods.  Development and maintenance of several code repositories.  Development of data type specifications.
 |Fall 2015- Summer 2021|
@@ -68,7 +68,7 @@ Ran subject behavioral trials, obtained subject IRB documentation, preparation f
 |Fall 2007-
 Spring 2009
 |
-|**Center for Integrated Fungal Research; PI: Tarek Joobeur** (NCSU) Project: Investigating the genetic basis of Fusarium wilt resistance in melons*
+|**Center for Integrated Fungal Research; PI: Tarek Joobeur** (NCSU) Project*: Investigating the genetic basis of Fusarium wilt resistance in melons*
 Managed and prepared samples, conducted PCR and gel electrophoresis, participation in article manuscript development, journal club.
 |Fall 2004-
 Spring 2005
@@ -120,7 +120,7 @@ Summer 2008
 *Member: Technology Policy Committee* (BFC)				         Represented GPSG on campus issues related to technology implementation. Regular meeting topics included virtual conferencing (e.g. Zoom), email & data platforms, and research data storage and ownership.
 *Member: Research Affairs Committee* (BFC)				         Represented graduate student researchers on campus issues related to research affairs. Regular meeting topics included COVID impacts, conflict of interest management, research disclosures, campus open access policies, NTT researchers, and other subjects.  Worked with campus stakeholders and administrators from the Office of Research Administration, Office of the Vice Provost for Research, and others.
 *Representative: Bloomington Faculty Council (BFC)*	
-Voting member of the campus faculty council representing graduate student researchers on all matters coming before the council.  Topics include campus level policy, resolutions, and campus development planning.
+` `Voting member of the campus faculty council representing graduate student researchers on all matters coming before the council.  Topics include campus level policy, resolutions, and campus development planning.
 *Graduate student researcher ambassador: IU GPSG*
 General representative of graduate student researchers on campus.  Often met or interacted with campus/university administrators on specific issues and persistent ad hoc committees.  
 *Neuroscience Representative: IU GPSG*
@@ -137,16 +137,16 @@ Spring 2021
 Fall 2020- 
 Spring 2021
 
+` `Fall 2017- Spring 2021
+
+
+
+` `Fall 2017- Spring 2021
+
+
 Fall 2017- Spring 2021
 
-
-
-Fall 2017- Spring 2021
-
-
-Fall 2017- Spring 2021
-
-Fall 2017- Spring 2020
+*  Fall 2017- Spring 2020
 
 
 March 2, 
