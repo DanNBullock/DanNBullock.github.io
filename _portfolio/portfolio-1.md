@@ -1,6 +1,6 @@
 ---
 title: "White Matter Anatomy Segmentation (wmaSeg"
-excerpt: "Brainlife.io application for classifying streamlines into known anatomical tracts<br/><img src='https://raw.githubusercontent.com/brainlife/app-wmaSeg/blob/master/wmaSeg.png'>"
+excerpt: "Brainlife.io application for classifying streamlines into known anatomical tracts<br/><img src='https://raw.githubusercontent.com/brainlife/app-wmaSeg/master/wmaSeg.png'>"
 collection: portfolio
 ---
 

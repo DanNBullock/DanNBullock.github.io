@@ -1,6 +1,6 @@
 ---
 title: "White Matter Anatomy Tools (wmaTools)"
-excerpt: "Matlab-based toolkit for the segmentation and analysis of streamline tractography.<br/><img src='https://raw.githubusercontent.com/brainlife/app-wmaSeg/blob/master/wmaSeg.png'>"
+excerpt: "Matlab-based toolkit for the segmentation and analysis of streamline tractography.<br/><img src='https://raw.githubusercontent.com/brainlife/app-wmaSeg/master/wmaSeg.png'>"
 collection: portfolio
 ---
 
