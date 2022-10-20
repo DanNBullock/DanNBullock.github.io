@@ -1,5 +1,5 @@
 ---
-title: Shape analysis of white matter tracts via the Laplace-Beltrami spectrum"
+title: "Shape analysis of white matter tracts via the Laplace-Beltrami spectrum"
 collection: publications
 permalink: /publication/2018-09-20-LaplaceBeltramiWM
 excerpt: 'In this paper, we propose to use the Laplace-Beltrami (LB) spectrum as a descriptor of the shape of white matter tracts.'
