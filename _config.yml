@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Daniel N. Bullock"
 title_separator          : "-"
 name                     : &name "Daniel N. Bullock"
-description              : &description "Open science/data/infrastructure facilitator, off-hours neuroinformatics researcher"
+description              : &description "Open science / data / infrastructure facilitator, off-hours neuroinformatics researcher"
 url                      : https://DanNBullock.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "DanNBullock/DanNBullock.github.io"
@@ -84,7 +84,7 @@ author:
   avatar           : "profile.jpg"
   bio              : "Open science/data/infrastructure facilitator, off-hours neuroinformatics researcher"
   location         : "Alexandria, VA"
-  employer         : "American Association for the Advancement of Science, Science and Technology Policy"
+  employer         : "AAAS STPF, NSF OAC"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=PhaFy78AAAAJ"
   email            : "iisdanbul@gmail.com"
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/daniel-bullock-05a37054/"
+  linkedin         : "daniel-bullock-05a37054"
   orcid            : "https://orcid.org/0000-0002-4321-2180"
   pinterest        :
   soundcloud       :
