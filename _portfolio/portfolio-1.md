@@ -1,7 +1,7 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "White Matter Anatomy Segmentation (wmaSeg"
+excerpt: "Brainlife.io application for classifying streamlines into known anatomical tracts<br/><img src='https://github.com/brainlife/app-wmaSeg/blob/master/wmaSeg.png'>"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+[![brainlife/app-wmaSeg - GitHub](https://gh-card.dev/repos/brainlife/app-wmaSeg.svg)](https://github.com/brainlife/app-wmaSeg) 
