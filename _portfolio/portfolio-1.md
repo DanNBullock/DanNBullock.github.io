@@ -4,6 +4,6 @@ excerpt: "Brainlife.io application for classifying streamlines into known anatom
 collection: portfolio
 ---
 
-This repository contains a number of matlab code tools which can be used to perform anatomically informed segmentations and analyze the outputs. Additionally, it includes several examples of actually implemented segmentations for established white matter tracts.  It is used in a number of brainlife.io applications.
+This dockerized brainlife.io application performs automated tractogram segmentation on user-provided tractography to identify streamlines corresponding to established white matter structures in the brain.  It acheives this by using a identified locations in a volumetric brain parcellation to generate landmarks that are then used as tract-specific criteria.  In this way it provides anatomically guided segmentations that are _specific_ to the the individuals's unique brain anatomy.
 
 [![brainlife/app-wmaSeg - GitHub](https://gh-card.dev/repos/brainlife/app-wmaSeg.svg)](https://github.com/brainlife/app-wmaSeg) 
