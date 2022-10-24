@@ -1,26 +1,15 @@
 ---
-title: "White Matter Anatomy Database (WMAD)"
-excerpt: "An interactive database and framework for cataloging accounts of white matter tracts and their anatomy throughout the literature.<br/><img src='/images/WMADgif2.gif'>"
+title: "Track the Anterior Limb of the Internal Capsule"
+excerpt: "A dockerized, brainlife.io application to track the anterior limb of the internal capsule using ensemble tractography.<br/><img src='/images/superior_aLIC_leftstreams.png'>"
 collection: portfolio
 ---
 
-# WMAD
-White Matter Anatomy Database
+This application produces a streamline-based model of the anterior limb of the internal capsule. It further divides its output into a superior (canonical) and inferior (non-canonical) components.
 
-Cataloging accounts of white matter tracts and their anatomy throughout the literature.
+There are three primary steps in this methodlology:
 
-[![Neruomatch 4.0 WMAD + Interactive Segmentation presentation](https://img.youtube.com/vi/FAV5HdVQ91c/0.jpg)](https://www.youtube.com/watch?v=FAV5HdVQ91c)
+1.  Identification of the anterior limb white matter volume. This is acheived by identifying anatomical landmarks withing the subject's brain (using the [freesurfer](https://surfer.nmr.mgh.harvard.edu/) [Desikan-Killiany](10.1016/j.neuroimage.2006.01.021) parcellation).  This is performed by the _app-track-between-multiple-regions/produce\_aLIC\_ROIs.py_ script.
+2.  Performance of targeted, [ensemble tractography](https://doi.org/10.1371/journal.pcbi.1004692).  This algorithm iterates across parameter settings to create a broadly sampled tractogram.  The current implementation is essentialy a copy of [an existing app/resource (currently entitled "RACE-Track")](https://doi.org/10.25663/bl.app.101) developed and maintaned by [Brent McPherson](https://github.com/bcmcpher).  This is performed by the _app-track-between-multiple-regions/mrtrix3\_tracking.sh_ script.
+3.  Segmentation of the resultant tractogram, to produce a curated model of the anterior limb of the internal capsule.  Although [MRtrix3](https://www.mrtrix.org/) and [RACE-Track](https://doi.org/10.25663/bl.app.101) produce quality tractography models, further curation is needed to ensure adherence to constraints of biological plausibility and contemporary understanding of the structure's morphology.  This is acheived via a [White Matter Query Language (WMQL)](https://doi.org/10.1007/s00429-015-1179-4)-like method that has been [used in previous publications](https://doi.org/10.1007/s00429-019-01907-8) and has been comprehensively described in the [White Matter Segentation Education (WIMSE) resource](https://github.com/DanNBullock/WiMSE) (website [here](https://dannbullock.github.io/WiMSE/landingPage.html)).  It is performed by the _segViaDocker/seg\_aLIC\_connections.py_ script.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/DanNBullock/WMAD/main?filepath=Notebooks%2FInteract_With_WMAD.ipynb)
-
-### The target problem
-In the field of white matter anatomy there are a range of conflicting accounts of anatomical characteristics and associated terminology for white matter tracts (bundles of axons that connect parts of the brain).  This problem has been highlighted in several recent publications including [Bullock et al. 2021](https://psyarxiv.com/fvk5r/) and [Schilling et al 2021](https://doi.org/10.1016/j.neuroimage.2021.118502).  Currently, individual researchers must expend great effort to locate and examine even a fraction of the accounts which are pertinent to their structure(s) of interest.  Furthermore, due to the aforementioned terminological and descriptive challenges even the most dedicated investigators will only encounter a portion of the work that could speak to their research.
-
-### The proposed solution
-In order to provide researchers with the ability to explore and consider pertinent accounts of specific white matter structures of interest we present the White Matter Anatomy Database (WMAD) resource.  Instead of having to manually search each candidate research article that may be relevant to a researchers interest, here we have curated a database which localizes the _precise_ text sections (via [regex](https://en.wikipedia.org/wiki/Regular_expression) bounds) describing any given white matter structure, along with links to images depicting those white matter structures.  Using our [jupyter notebook interface](https://github.com/DanNBullock/WMAD/blob/main/Notebooks/Interact_With_WMAD.ipynb) on [platform] users can view the text excerpts and images associated with structures specified by the user from multiple publications all alongside one another in order to facilitate efficient comparison and consideration.
-
-[![Neruomatch 4.0 WMAD + Interactive Segmentation presentation](https://img.youtube.com/vi/FAV5HdVQ91c/0.jpg)](https://www.youtube.com/watch?v=FAV5HdVQ91c)
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/DanNBullock/WMAD/main?filepath=Notebooks%2FInteract_With_WMAD.ipynb)
-
-[![DanNBullock/WMAD - GitHub](https://gh-card.dev/repos/DanNBullock/WMAD.svg)](https://github.com/DanNBullock/WMAD)
+[![DanNBullock/app-track_aLIC - GitHub](https://gh-card.dev/repos/DanNBullock/app-track_aLIC.svg)](https://github.com/DanNBullock/app-track_aLIC)

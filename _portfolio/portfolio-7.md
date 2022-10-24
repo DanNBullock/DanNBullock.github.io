@@ -1,19 +1,36 @@
 ---
-title: "Interactive White Matter Segmentation"
-excerpt: "A user-friendly, binder-enabled jupyter notebook for performing anatomy-based segmentations.<br/><img src='/images/interactiveSegGif2.gif'>"
+title: "White Matter Anatomy Python Tools (wma_pyTools)"
+excerpt: "Pythonic refactoring of wma_Tools toolkit for the segmentation and analysis of streamline tractography.<br/><img src='/images/tractfigure.png'>"
 collection: portfolio
 ---
 
-A user-friendly jupyter notebook for performing anatomy-based segmentations.
+This repository is a pythonic refactoring of capabilties afforded by the original, matlab-based [wmaTools](https://github.com/DanNBullock/wma_tools) toolset.  Like it's predacessor it features well-documented code for segmentation, ROI usage,  visualization, and other processes.
 
-[![Neruomatch 4.0 Interactive Segmentation + WMAD presentation](https://img.youtube.com/vi/FAV5HdVQ91c/0.jpg)](https://www.youtube.com/watch?v=FAV5HdVQ91c)
+[![DanNBullock/wma_pyTools - GitHub](https://gh-card.dev/repos/DanNBullock/wma_pyTools.svg)](https://github.com/DanNBullock/wma_pyTools)
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/DanNBullock/interactiveWMSegmentation/master?filepath=InteractiveWhiteMatterSegmentation.ipynb)
+## Package/Module overview
 
-### The target problem
-The performance of expert-guided, anatomically-informed digital white matter segmentations is essential for both the investigation of particular tracts of interest and for the replicability of white matter segmentations more broadly.  However, in many cases the tools for implementing or performing these are not difficult to make use of or require specialized installation procedures.  This serves as a barrier to the accessibility of such techniques and the expansion of findings they could potentially facilitate.
+The wma_PyTools code collection is predominantly housed within the wmaPyTools directory of this repository (**failedCode** contains code implementations that may or may not be functional, but which were somehow determined to be ineffectual relative to their intended uses/applications, while **testsOrDemos** contains code that benchmarks or sanity-checks code compositions from wmaPyTools).
 
-### The proposed solution
-The jupyter notebook presented here is intended to provide lightweight, portable, and potentially even _in-browser_ (with the use of [binder](https://mybinder.org)) anatomically guided, white matter segmentation.  Users are prompted to upload a subject's tractogram, brain atlas/parcellation, and a corresponding lookup table and, having done so, are then able to interactively select and visualize the anatomically demarcated connections found within the tractome.  In this way, when making use of binder or other such resources, users are able to easily and straightforwardly explore their tractographic brain data without any specialized local setup.
+Currently, there are five primary subdivisions into which functions have been organized:
 
-[![DanNBullock/interactiveWMSegmentation - GitHub](https://gh-card.dev/repos/DanNBullock/interactiveWMSegmentation.svg)](https://github.com/DanNBullock/interactiveWMSegmentation)
+- roiTools
+- visTools
+- segmentationTools
+- streamlineTools
+- analysisTools
+
+### roiTools
+These functions typically relate to the creation, modification, utilization of NiFTI based ROIs and masks. For example, these functions can be used to extract ROIs from a volumetric atlas/parcellation, inflate or modify such ROIs, or generate new planar ROIs based on the borders of other ROIs.
+
+### visTools
+These functions typically relate to the creation of plots or visualizations of streamline tractography objects (e.g. a plot of a "tract"), NiFTI-based entity (e.g. a gif visualization of volumetric streamline density), or quantative analyses (facilitated by analyisTools) thereof.
+
+### analysisTools
+These functions typically relate to the performance of quantative analyses of streamline or NiFTI based data objects. Such functions typically faciltate the performance of more complex operations (e.g. the computation of streamline distance traversal) or are used to generate data for visualizations/plots (e.g. those found in visTools)
+
+### streamlineTools
+These functions typically relate to operations performed on or with streamlines.
+
+### segmentationTools
+These functions typically invovle the assesment or imposition of quantative criteria relative to an input collection of streamlines.  Such criteria are typically posed or instantiated in relation to ROIs derived from roiTools operations.

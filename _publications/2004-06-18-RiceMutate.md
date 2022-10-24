@@ -11,4 +11,4 @@ citation: 'N/A'
 Location: NIH NCBI GenBank; AY660000.1
  
 A mutated sequence from oryza sativa, from the 2004 NCSU SCIBLS program
-
+---
