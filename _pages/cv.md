@@ -43,23 +43,23 @@ redirect_from:
 |**IU Bloomington**<br /> 1. *Chair, Benefits committee* (IU GPSG):<br />Chaired committee representing and advocating on behalf of graduate and professional student government (GPSG) on issues related to compensation, benefits, and professional issues. Regularly met/communicated with university administrators (e.g. Dean of University Graduate School) about policy development, mutual endeavors, and specific concerns.  Member of GPSG executive committee.  Managed team of graduate student representatives.<br /> 2. *Member, Technology Policy Committee* (BFC):<br />Represented GPSG on campus issues related to technology implementation. Regular meeting topics included virtual conferencing (e.g. Zoom), email & data platforms, and research data storage and ownership.<br /> 3. *Member: Research Affairs Committee* (BFC):<br />Represented graduate student researchers on campus issues related to research affairs. Regular meeting topics included COVID impacts, conflict of interest management, research disclosures, campus open access policies, NTT researchers, and other subjects.  Worked with campus stakeholders and administrators from the Office of Research Administration, Office of the Vice Provost for Research, and others.<br /> 4. *Representative, Bloomington Faculty Council (BFC)*:	<br />Voting member of the campus faculty council representing graduate student researchers on all matters coming before the council.  Topics include campus level policy, resolutions, and campus development planning.<br /> 5. *Graduate student researcher ambassador, IU GPSG*:<br />General representative of graduate student researchers on campus.  Often met or interacted with campus/university administrators on specific issues and persistent ad hoc committees.<br /> 6. *Neuroscience Representative, IU GPSG*:<br />Represented graduate students from the Program in Neuroscience to the Graduate and Professional Student Government.  Helped to shape and develop resolutions.  Active member.<br /> 7. *Indiana University Representative, Indiana Science Communication Day*:<br />Participated in multi-university advocacy day at Indiana State House. Engaged policy makers and staff members to emphasize importance of science and continued support of science.|<br /> 1. Fall 2020 - Spring 2021<br /><br /> 2. Fall 2020 - Spring 2021<br /><br /> 3. Fall 2017 - Spring 2021<br /><br /> 4. Fall 2017 - Spring 2021 <br /><br /> 5. Fall 2017 - Spring 2021<br /><br /> 6. Fall 2017 - Spring 2020 <br /><br /> 7. March 2, 2020|
 |**NCSU**<br />*Vice President, NCSU Future Society Club*	<br />Led meetings, scheduled and organized talks, managed membership.  Meeting topics included technology, science, society, and the interplay between these.<br />*Chief Editor: NCSU Undergraduate Research Journal*	<br />Served as the chief editor of the undergraduate research journal. Evaluated submissions and provided feedback to authors. Collaborated with faculty in support of organization. <br />|<br />2013 - 2015<br /><br /><br />2013 - 2015<br />|
 
+<table>
+  <tr>
+    <th><b><a href="#publications"><strong>PUBLICATIONS</strong></a></b></th>
+  </tr>
+  <tr>{% for post in site.publications %}
+     <td>{% include archive-single-cv.html %}</td>
+  {% endfor %}</tr>
+</table>
 
-|[**Publications**](#publications)|
-| :- |
-  <ul>{% for post in site.publications %}
-    | {% include archive-single-cv.html %} |
-  {% endfor %}</ul>
-
-
-
-|[**Products**](#products)|
-| :- |
-
-  <ul>{% for post in site.portfolio %}
-   | {% include archive-single-cv.html %} |
-  {% endfor %}</ul>
-
-
+<table>
+  <tr>
+    <th><b><a href="#products"><strong>PRODUCTS</strong></a></b></th>
+  </tr>
+  <tr>{% for post in site.portfolio %}
+     <td>{% include archive-single-cv.html %}</td>
+  {% endfor %}</tr>
+</table>
 
 |[**SOFTWARE AND CODE DEVELOPMENT**](#software-and-code-development)|
 | :- |
