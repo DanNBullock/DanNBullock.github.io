@@ -47,18 +47,18 @@ redirect_from:
   <tr>
     <th><b><a href="#publications"><strong>PUBLICATIONS</strong></a></b></th>
   </tr>
-  <tr>{% for post in site.publications %}
-     <td>{% include archive-single-cv.html %}</td>
-  {% endfor %}</tr>
+  {% for post in site.publications %}
+     <tr><td>{% include archive-single-cv.html %}</td></tr>
+  {% endfor %}
 </table>
 
 <table>
   <tr>
     <th><b><a href="#products"><strong>PRODUCTS</strong></a></b></th>
   </tr>
-  <tr>{% for post in site.portfolio %}
-     <td>{% include archive-single-cv.html %}</td>
-  {% endfor %}</tr>
+  {% for post in site.portfolio %}
+     <tr><td>{% include archive-single-cv.html %}</td></tr>
+  {% endfor %}
 </table>
 
 |[**SOFTWARE AND CODE DEVELOPMENT**](#software-and-code-development)|
