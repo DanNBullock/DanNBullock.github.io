@@ -58,7 +58,7 @@ redirect_from:
 
 <table>
   <thread>
-  <tr><th><b><a href="#products"><strong>PRODUCTS</strong></a></b>
+    <tr><th><b><a href="#products"><strong>PRODUCTS</strong></a></b>
   </thread>
   <tbody>
     {% for post in site.portfolio %}
