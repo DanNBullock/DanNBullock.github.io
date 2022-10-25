@@ -44,21 +44,27 @@ redirect_from:
 |**NCSU**<br />*Vice President, NCSU Future Society Club*	<br />Led meetings, scheduled and organized talks, managed membership.  Meeting topics included technology, science, society, and the interplay between these.<br />*Chief Editor: NCSU Undergraduate Research Journal*	<br />Served as the chief editor of the undergraduate research journal. Evaluated submissions and provided feedback to authors. Collaborated with faculty in support of organization. <br />|<br />2013 - 2015<br /><br /><br />2013 - 2015<br />|
 
 <table>
-  <tr>
-    <th><b><a href="#publications"><strong>PUBLICATIONS</strong></a></b></th>
-  </tr>
+  <thread>
+    <tr>
+      <th><b><a href="#publications"><strong>PUBLICATIONS</strong></a></b></th>
+    </tr>
+  </thread>
+  <tbody>
   {% for post in site.publications %}
      <tr><td>{% include archive-single-cv.html %}</td></tr>
   {% endfor %}
+  </tbody>
 </table>
 
 <table>
-  <tr>
-    <th><b><a href="#products"><strong>PRODUCTS</strong></a></b></th>
-  </tr>
+  <thread>
+  <tr><th><b><a href="#products"><strong>PRODUCTS</strong></a></b>
+  </thread>
+  <tbody>
   {% for post in site.portfolio %}
      <tr><td>{% include archive-single-cv.html %}</td></tr>
   {% endfor %}
+  </tbody>
 </table>
 
 |[**SOFTWARE AND CODE DEVELOPMENT**](#software-and-code-development)|
