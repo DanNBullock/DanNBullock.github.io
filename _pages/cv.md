@@ -50,9 +50,9 @@ redirect_from:
     </tr>
   </thread>
   <tbody>
-  {% for post in site.publications %}
-     <tr><td>{% include archive-single-cv.html %}</td></tr>
-  {% endfor %}
+    {% for post in site.publications %}
+      <tr><td>{% include archive-single-cv.html %}</td></tr>
+    {% endfor %}
   </tbody>
 </table>
 
@@ -61,9 +61,9 @@ redirect_from:
   <tr><th><b><a href="#products"><strong>PRODUCTS</strong></a></b>
   </thread>
   <tbody>
-  {% for post in site.portfolio %}
-     <tr><td>{% include archive-single-cv.html %}</td></tr>
-  {% endfor %}
+    {% for post in site.portfolio %}
+      <tr><td>{% include archive-single-cv.html %}</td></tr>
+    {% endfor %}
   </tbody>
 </table>
 
