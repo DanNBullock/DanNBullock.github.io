@@ -60,7 +60,7 @@ redirect_from:
   <thead>
     <tr>
       <th><b><a href="#products"><strong>PRODUCTS</strong></a></b></th>
-    <tr>
+    </tr>
   </thead>
   <tbody>
     {% for post in site.portfolio %}
