@@ -2,7 +2,7 @@
 title: "Development of white matter tracts between and within the dorsal and ventral streams"
 collection: publications
 permalink: /publication/2021-01-01-DorsoVentralWMDev
-excerpt: 'In this work, we propose a novel, supervised streamline-based segmentation method, called Classifyber, which combines information from atlases, connectivity patterns, and the geometry of fiber paths into a simple linear model.'
+excerpt: 'We used reproducible, cloud-computing methods and diffusion imaging from adults and children (ages 5-8 years) to compare PVP development to that of tracts within the ventral and dorsal pathways. Overall, results suggest a potential role for the PVP in the development of the dorsal visual stream that may be related to its ability to facilitate interactions between ventral and dorsal streams during learning.'
 date: 2022-03-10
 venue: 'Brain Structure and Function'
 paperurl: 'https://www.biorxiv.org/content/10.1101/2021.01.27.428423.full.pdf'
