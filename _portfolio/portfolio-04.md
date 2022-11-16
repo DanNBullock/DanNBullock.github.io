@@ -4,7 +4,7 @@ excerpt: "A collection of code and scripts for processing, analyzing and visuali
 collection: portfolio
 ---
 
-# WMAD
+# OCT & MAIA Scripts
 OCT & MAIA Scripts
 
 These code resources are designed for the processing, analyzing and visualizing data from Optical Coherence Tomography (OCT) (in particular data generated using Orion® software (Voxeleron, LLC, Pleasanton, CA, USA)) and Macular Integrity Assessment (MAIA), at both the individual and group levels.  This resource was developed in collaboration with [Jasleen Jolly](https://www.neuroscience.ox.ac.uk/research-directory/jasleen-jolly).
@@ -16,5 +16,6 @@ The code and script repository includes documentation of input and intermediary 
 [![brainlife/app-maiaRings - GitHub](https://gh-card.dev/repos/brainlife/app-maiaRings.svg)](https://github.com/brainlife/app-maiaRings)
 [![DanNBullock/app-voxeleronOCT - GitHub](https://gh-card.dev/repos/DanNBullock/app-voxeleronOCT.svg)](https://github.com/DanNBullock/app-voxeleronOCTs)
 
-Additionally, these code tools are also available in the form of applications ([MAIA](https://brainlife.io/app/605b9143edebf0f4fdd2a7cc) and [OCT](https://brainlife.io/app/5ec4646f41ba118064f44d41) on [brainlife.io](https://brainlife.io/)
+Additionally, these code tools are also available in the form of applications on [brainlife.io](https://brainlife.io/)
+([MAIA](https://brainlife.io/app/605b9143edebf0f4fdd2a7cc) and [OCT](https://brainlife.io/app/5ec4646f41ba118064f44d41)) 
 
