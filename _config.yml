@@ -187,9 +187,6 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
-  blApps:
-    output: true
-    permalink: /:collection/:path/
 
 
 # Defaults
@@ -230,15 +227,6 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _blApps
-  - scope:
-      path: ""
-      type: app
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
   # _portfolio
   - scope:
       path: ""
