@@ -1,0 +1,48 @@
+---
+layout: archive
+title: "brainlife apps"
+permalink: /blApps/
+author_profile: true
+---
+
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% endif %}
+
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <div id="grid" class="row flex-grid">
+    {% for app in site.blApps %}
+        <article class="box-item app-{{app.main-class}}" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+            <span class="ribbon">
+                <a href="{{site.url}}{{site.baseurl}}/category/{{app.main-class}}"><span>{{app.main-class}}</span></a>
+            </span>
+            <div class="box-body">
+                <meta itemprop="datePublished" content="{{app.date | date_to_xmlschema }}">
+                <time itemprop="datePublished" datetime="{{ app.date }}" class="date">{{ app.date | date_to_string }}</time>
+                <a class="app-link" href="{{ app.url | prepend: site.baseurl }}">
+                    <h2 class="app-title" itemprop="name">
+                        {{ app.title }}
+                    </h2>
+                </a>
+                <a class="app-link" href="{{ app.url | prepend: site.baseurl }}">
+                    <p class="description">{{ app.introduction }}</p>
+                </a>
+                <div class="tags">
+                    {% for tag in app.tags %}
+                        <a href="{{site.baseurl}}/tags/#{{tag | slugify }}">{{ tag }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+        </article>
+    {% endfor %}
+    </div>
+</div>
