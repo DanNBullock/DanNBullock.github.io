@@ -2,7 +2,7 @@
 title: "Associative white matter connecting the dorsal and ventral posterior human cortex"
 collection: publications
 permalink: /publication/2019-07-24-DorsoVentralWM
-excerpt: 'The addition of these dorso-ventral connective tracts to our standard picture of white matter architecture results in a more complicated pattern of white matter connectivity than previously considered. <br/><img src='/images/bullock2021_WordCloud.svg'>'
+excerpt: 'The addition of these dorso-ventral connective tracts to our standard picture of white matter architecture results in a more complicated pattern of white matter connectivity than previously considered. <br/><img src="/images/bullock2021_WordCloud.svg">'
 date: 2019-07-24
 venue: 'Brain Structure and Function'
 paperurl: 'https://par.nsf.gov/servlets/purl/10111131'
