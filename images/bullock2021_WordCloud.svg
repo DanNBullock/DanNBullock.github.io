@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="800">
+<style>text{font-family:'Droid Sans Mono';font-weight:bold; text-shadow: 0.000001em 0 1px black,0 0.000001em 1px black,-0.000001em 0 1px black, 0 -0.000001em 1px black, -0.000001em -0.000001em 1px black, -0.000001em 0.000001em 1px black, 0.000001em -0.000001em 1px black, 0.000001em 0.000001em 1px black;;font-style:normal;}</style>
+<rect width="100%" height="100%" style="fill:none"></rect>
+<text transform="translate(457,303)" font-size="313" style="fill:rgb(0, 190, 160)">fiber</text>
+<text transform="translate(2,739)" font-size="222" style="fill:rgb(0, 204, 153)">white matter</text>
+<text transform="translate(248,497)" font-size="212" style="fill:rgb(0, 59, 226)">bundle</text>
+<text transform="translate(889,83)" font-size="99" style="fill:rgb(0, 148, 181)">tractography</text>
+<text transform="translate(1229,556)" font-size="92" style="fill:rgb(0, 129, 190)">brain</text>
+<text transform="translate(43,215)" font-size="92" style="fill:rgb(0, 106, 202)">tract</text>
+<text transform="translate(1035,406)" font-size="86" style="fill:rgb(0, 227, 142)">connection</text>
+<text transform="translate(28,88)" font-size="84" style="fill:rgb(0, 111, 200)">human</text>
+<text transform="translate(552,583)" font-size="76" style="fill:rgb(0, 195, 158)">connectivity</text>
+<text transform="translate(1,276)" font-size="67" style="fill:rgb(0, 181, 164)">tract tracing</text>
+<text transform="translate(168,555)" font-size="65" style="fill:rgb(0, 125, 192)">dorsal</text>
+<text transform="translate(10,372)" font-size="63" style="fill:rgb(0, 227, 142)">monkey</text>
+<text transform="translate(1024,457)" font-size="63" style="fill:rgb(0, 219, 146)">corpus callosum</text>
+<text transform="translate(392,41)" font-size="51" style="fill:rgb(0, 208, 151)">internal capsule</text>
+<text transform="translate(1307,272)" font-size="50" style="fill:rgb(0, 228, 141)">structure</text>
+<text transform="translate(415,345)" font-size="47" style="fill:rgb(0, 226, 142)">cortex</text>
+<text transform="translate(1307,604)" font-size="47" style="fill:rgb(0, 45, 232)">ventral</text>
+<text transform="translate(325,205)" font-size="45" style="fill:rgb(0, 255, 128)">axon</text>
+<text transform="translate(375,775)" font-size="45" style="fill:rgb(0, 132, 189)">cingulum bundle</text>
+<text transform="translate(10,455)" font-size="44" style="fill:rgb(0, 114, 198)">example</text>
+<text transform="translate(298,129)" font-size="44" style="fill:rgb(0, 108, 201)">SLF</text>
+<text transform="translate(112,780)" font-size="43" style="fill:rgb(0, 128, 191)">posterior</text>
+<text transform="translate(1420,316)" font-size="43" style="fill:rgb(0, 207, 152)">method</text>
+<text transform="translate(1102,515)" font-size="43" style="fill:rgb(0, 76, 217)">dMRI</text>
+<text transform="translate(984,775)" font-size="41" style="fill:rgb(0, 231, 140)">prefrontal cortex</text>
+<text transform="translate(928,338)" font-size="41" style="fill:rgb(0, 4, 253)">parietal lobule</text>
+<text transform="translate(1379,157)" font-size="40" style="fill:rgb(0, 146, 182)">component</text>
+<text transform="translate(37,132)" font-size="40" style="fill:rgb(0, 205, 152)">region</text>
+<text transform="translate(398,530)" font-size="40" style="fill:rgb(0, 35, 238)">arcuate fasciculus</text>
+<text transform="translate(1339,224)" font-size="39" style="fill:rgb(0, 32, 239)">dissection</text>
+<text transform="translate(43,31)" font-size="39" style="fill:rgb(0, 56, 227)">volume</text>
+<text transform="translate(94,309)" font-size="38" style="fill:rgb(0, 172, 169)">diffusion</text>
+<text transform="translate(1011,119)" font-size="38" style="fill:rgb(0, 20, 245)">anatomical</text>
+<text transform="translate(760,205)" font-size="38" style="fill:rgb(0, 105, 203)">area</text>
+<text transform="translate(274,78)" font-size="29" style="fill:rgb(0, 55, 227)">extreme capsule</text>
+<text transform="translate(1308,187)" font-size="28" style="fill:rgb(0, 75, 218)">lateral</text>
+<text transform="translate(590,196)" font-size="28" style="fill:rgb(0, 233, 139)">model</text>
+<text transform="translate(304,369)" font-size="28" style="fill:rgb(0, 238, 136)">uncinate fasciculus</text>
+<text transform="translate(685,324)" font-size="27" style="fill:rgb(0, 147, 182)">cortical</text>
+<text transform="translate(42,536)" font-size="27" style="fill:rgb(0, 1, 254)">account</text>
+<text transform="translate(1071,738) rotate(-90)" font-size="27" style="fill:rgb(0, 181, 164)">function</text>
+<text transform="translate(1443,337)" font-size="27" style="fill:rgb(0, 55, 227)">distinct</text>
+<text transform="translate(1505,185)" font-size="27" style="fill:rgb(0, 18, 246)">based</text>
+<text transform="translate(422,115)" font-size="27" style="fill:rgb(0, 180, 165)">well</text>
+<text transform="translate(681,607)" font-size="27" style="fill:rgb(0, 237, 136)">anterior commissure</text>
+<text transform="translate(1265,21)" font-size="26" style="fill:rgb(0, 166, 172)">definition</text>
+<text transform="translate(833,368)" font-size="26" style="fill:rgb(0, 200, 155)">connect</text>
+<text transform="translate(689,676)" font-size="26" style="fill:rgb(0, 228, 141)">fornix</text>
+<text transform="translate(479,613)" font-size="25" style="fill:rgb(0, 168, 171)">tissue</text>
+<text transform="translate(384,694) rotate(-90)" font-size="25" style="fill:rgb(0, 66, 222)">study</text>
+<text transform="translate(766,260)" font-size="25" style="fill:rgb(0, 92, 209)">major</text>
+<text transform="translate(1492,483)" font-size="25" style="fill:rgb(0, 89, 210)">species</text>
+<text transform="translate(592,231)" font-size="25" style="fill:rgb(0, 216, 147)">studies</text>
+<text transform="translate(18,559)" font-size="25" style="fill:rgb(0, 27, 242)">target</text>
+<text transform="translate(43,410)" font-size="25" style="fill:rgb(0, 255, 128)">frontal</text>
+<text transform="translate(130,594) rotate(-90)" font-size="25" style="fill:rgb(0, 248, 131)">ILF</text>
+<text transform="translate(574,304)" font-size="25" style="fill:rgb(0, 213, 148)">IFOF</text>
+<text transform="translate(1426,776)" font-size="24" style="fill:rgb(0, 59, 226)">volumetric</text>
+<text transform="translate(455,559)" font-size="24" style="fill:rgb(0, 217, 146)">pathway</text>
+<text transform="translate(949,20)" font-size="24" style="fill:rgb(0, 11, 250)">disorder</text>
+<text transform="translate(6,510)" font-size="24" style="fill:rgb(0, 97, 206)">associated</text>
+<text transform="translate(566,120)" font-size="24" style="fill:rgb(0, 132, 189)">occipital fasciculus</text>
+<text transform="translate(1317,107)" font-size="23" style="fill:rgb(0, 53, 228)">early</text>
+<text transform="translate(613,703)" font-size="23" style="fill:rgb(0, 109, 200)">approaches</text>
+<text transform="translate(141,157)" font-size="23" style="fill:rgb(0, 16, 247)">medial</text>
+<text transform="translate(661,649)" font-size="23" style="fill:rgb(0, 171, 170)">evidence</text>
+<text transform="translate(848,519)" font-size="23" style="fill:rgb(0, 76, 217)">location</text>
+<text transform="translate(183,131)" font-size="23" style="fill:rgb(0, 50, 230)">MdLF</text>
+<text transform="translate(787,761)" font-size="23" style="fill:rgb(0, 16, 247)">subcomponent</text>
+<text transform="translate(1208,473)" font-size="20" style="fill:rgb(0, 203, 154)">longitudinal fasciculus</text>
+<text transform="translate(350,573)" font-size="19" style="fill:rgb(0, 182, 164)">disease</text>
+<text transform="translate(314,230)" font-size="19" style="fill:rgb(0, 134, 188)">anterior</text>
+<text transform="translate(34,607)" font-size="19" style="fill:rgb(0, 108, 201)">Figure</text>
+<text transform="translate(195,16)" font-size="19" style="fill:rgb(0, 200, 155)">investigation</text>
+<text transform="translate(797,463) rotate(-90)" font-size="19" style="fill:rgb(0, 3, 254)">language</text>
+<text transform="translate(881,340)" font-size="19" style="fill:rgb(0, 196, 157)">pArc</text>
+<text transform="translate(188,323)" font-size="19" style="fill:rgb(0, 105, 203)">matter structure</text>
+<text transform="translate(1085,531)" font-size="19" style="fill:rgb(0, 147, 182)">temporal lobe</text>
+<text transform="translate(661,623)" font-size="19" style="fill:rgb(0, 217, 146)">anterior limb</text>
+<text transform="translate(581,257)" font-size="18" style="fill:rgb(0, 164, 173)">understanding</text>
+<text transform="translate(224,147)" font-size="18" style="fill:rgb(0, 5, 252)">brainstem</text>
+<text transform="translate(935,461)" font-size="18" style="fill:rgb(0, 38, 236)">case</text>
+<text transform="translate(1529,592)" font-size="18" style="fill:rgb(0, 153, 178)">field</text>
+<text transform="translate(1453,123)" font-size="18" style="fill:rgb(0, 167, 172)">challenge</text>
+<text transform="translate(1193,746) rotate(-90)" font-size="18" style="fill:rgb(0, 14, 248)">streamline</text>
+<text transform="translate(274,686) rotate(-90)" font-size="18" style="fill:rgb(0, 101, 204)">stimulation</text>
+<text transform="translate(787,780)" font-size="18" style="fill:rgb(0, 50, 230)">caudal</text>
+<text transform="translate(1512,539)" font-size="18" style="fill:rgb(0, 75, 218)">travel</text>
+<text transform="translate(15,222) rotate(-90)" font-size="18" style="fill:rgb(0, 246, 132)">superior</text>
+<text transform="translate(189,718)" font-size="18" style="fill:rgb(0, 31, 240)">VOF</text>
+<text transform="translate(655,729)" font-size="18" style="fill:rgb(0, 243, 134)">sagittal view</text>
+<text transform="translate(1112,578)" font-size="18" style="fill:rgb(0, 215, 147)">superior parietal</text>
+<text transform="translate(178,696)" font-size="17" style="fill:rgb(0, 211, 150)">will</text>
+<text transform="translate(132,106)" font-size="17" style="fill:rgb(0, 120, 195)">considered</text>
+<text transform="translate(886,108)" font-size="17" style="fill:rgb(0, 140, 185)">specific</text>
+<text transform="translate(405,651) rotate(-90)" font-size="17" style="fill:rgb(0, 46, 232)">result</text>
+<text transform="translate(404,346) rotate(-90)" font-size="17" style="fill:rgb(0, 119, 195)">appear</text>
+<text transform="translate(1264,675)" font-size="17" style="fill:rgb(0, 72, 219)">complex</text>
+<text transform="translate(1017,792)" font-size="17" style="fill:rgb(0, 192, 159)">literature</text>
+<text transform="translate(467,576)" font-size="17" style="fill:rgb(0, 216, 147)">data</text>
+<text transform="translate(1340,304)" font-size="17" style="fill:rgb(0, 110, 200)">patient</text>
+<text transform="translate(1323,789)" font-size="17" style="fill:rgb(0, 219, 146)">tractography model</text>
+<text transform="translate(625,792)" font-size="17" style="fill:rgb(0, 186, 162)">medial forebrain</text>
+<text transform="translate(292,161)" font-size="17" style="fill:rgb(0, 3, 254)">forebrain bundle</text>
+<text transform="translate(1262,492)" font-size="17" style="fill:rgb(0, 165, 172)">optic radiation</text>
+<text transform="translate(52,785)" font-size="16" style="fill:rgb(0, 98, 206)">long</text>
+<text transform="translate(8,106)" font-size="16" style="fill:rgb(0, 176, 167)">feature</text>
+<text transform="translate(1514,683)" font-size="16" style="fill:rgb(0, 63, 224)">thalamus</text>
+<text transform="translate(610,171)" font-size="16" style="fill:rgb(0, 176, 167)">form</text>
+<text transform="translate(176,416)" font-size="16" style="fill:rgb(0, 93, 208)">multiple</text>
+<text transform="translate(1087,260)" font-size="16" style="fill:rgb(0, 107, 202)">connecting</text>
+<text transform="translate(142,480)" font-size="16" style="fill:rgb(0, 240, 135)">subgenual</text>
+<text transform="translate(657,75)" font-size="16" style="fill:rgb(0, 253, 128)">term</text>
+<text transform="translate(614,55)" font-size="16" style="fill:rgb(0, 14, 248)">technique</text>
+<text transform="translate(9,752)" font-size="16" style="fill:rgb(0, 244, 133)">including</text>
+<text transform="translate(1147,545)" font-size="16" style="fill:rgb(0, 238, 136)">rostral</text>
+<text transform="translate(306,302)" font-size="16" style="fill:rgb(0, 22, 244)">portion</text>
+<text transform="translate(1000,510)" font-size="16" style="fill:rgb(0, 12, 249)">striatum</text>
+<text transform="translate(378,134)" font-size="16" style="fill:rgb(0, 230, 140)">topography</text>
+<text transform="translate(859,786)" font-size="16" style="fill:rgb(0, 144, 183)">inferior</text>
+<text transform="translate(466,686)" font-size="16" style="fill:rgb(0, 129, 190)">Depict</text>
+<text transform="translate(2,476)" font-size="16" style="fill:rgb(0, 77, 216)">Muratoff</text>
+<text transform="translate(10,387)" font-size="16" style="fill:rgb(0, 253, 128)">human brain</text>
+<text transform="translate(1063,351)" font-size="16" style="fill:rgb(0, 55, 227)">species difference</text>
+<text transform="translate(353,176)" font-size="16" style="fill:rgb(0, 33, 238)">frontal lobe</text>
+<text transform="translate(1438,351)" font-size="16" style="fill:rgb(0, 97, 206)">occipital lobe</text>
+<text transform="translate(1147,790)" font-size="16" style="fill:rgb(0, 49, 230)">external capsule</text>
+<text transform="translate(201,34)" font-size="16" style="fill:rgb(0, 148, 181)">inferior parietal</text>
+<text transform="translate(1379,697)" font-size="15" style="fill:rgb(0, 145, 182)">properties</text>
+<text transform="translate(1325,285)" font-size="15" style="fill:rgb(0, 214, 148)">referred</text>
+<text transform="translate(194,726)" font-size="15" style="fill:rgb(0, 27, 242)">map</text>
+<text transform="translate(6,327)" font-size="15" style="fill:rgb(0, 99, 206)">organization</text>
+<text transform="translate(790,64)" font-size="15" style="fill:rgb(0, 250, 130)">review</text>
+<text transform="translate(174,792)" font-size="15" style="fill:rgb(0, 152, 179)">combination</text>
+<text transform="translate(977,360)" font-size="15" style="fill:rgb(0, 237, 136)">include</text>
+<text transform="translate(576,604)" font-size="15" style="fill:rgb(0, 186, 162)">processes</text>
+<text transform="translate(1426,186)" font-size="15" style="fill:rgb(0, 239, 136)">approach</text>
+<text transform="translate(29,291)" font-size="15" style="fill:rgb(0, 197, 156)">process</text>
+<text transform="translate(1085,238)" font-size="15" style="fill:rgb(0, 1, 254)">generation</text>
+<text transform="translate(788,180)" font-size="15" style="fill:rgb(0, 128, 191)">exist</text>
+<text transform="translate(323,339)" font-size="15" style="fill:rgb(0, 126, 192)">visual</text>
+<text transform="translate(617,343)" font-size="15" style="fill:rgb(0, 4, 253)">temporal</text>
+<text transform="translate(386,542)" font-size="15" style="fill:rgb(0, 83, 214)">association</text>
+<text transform="translate(207,271)" font-size="15" style="fill:rgb(0, 203, 154)">clear</text>
+<text transform="translate(618,145)" font-size="15" style="fill:rgb(0, 46, 232)">macaque</text>
+<text transform="translate(1218,265) rotate(-90)" font-size="15" style="fill:rgb(0, 23, 244)">cingulate cortex</text>
+<text transform="translate(302,792)" font-size="15" style="fill:rgb(0, 125, 192)">fronto occipital</text>
+<text transform="translate(30,229)" font-size="15" style="fill:rgb(0, 238, 136)">temporal cortex</text>
+<text transform="translate(532,787)" font-size="14" style="fill:rgb(0, 47, 232)">subcortical</text>
+<text transform="translate(1463,95)" font-size="14" style="fill:rgb(0, 234, 138)">knowledge</text>
+<text transform="translate(442,195)" font-size="14" style="fill:rgb(0, 186, 162)">individual</text>
+<text transform="translate(1297,225)" font-size="14" style="fill:rgb(0, 185, 162)">refer</text>
+<text transform="translate(762,81)" font-size="14" style="fill:rgb(0, 146, 182)">termination</text>
+<text transform="translate(800,145)" font-size="14" style="fill:rgb(0, 126, 192)">number</text>
+<text transform="translate(1011,482)" font-size="14" style="fill:rgb(0, 176, 167)">additional</text>
+<text transform="translate(306,53)" font-size="14" style="fill:rgb(0, 50, 230)">demonstrated</text>
+<text transform="translate(488,587)" font-size="14" style="fill:rgb(0, 60, 225)">cortices</text>
+<text transform="translate(1153,609)" font-size="14" style="fill:rgb(0, 194, 158)">Pandya</text>
+<text transform="translate(1290,552) rotate(-90)" font-size="14" style="fill:rgb(0, 217, 146)">basal</text>
+<text transform="translate(1177,20)" font-size="14" style="fill:rgb(0, 130, 190)">ventrally</text>
+<text transform="translate(58,487)" font-size="14" style="fill:rgb(0, 100, 205)">slice</text>
+<text transform="translate(195,580)" font-size="14" style="fill:rgb(0, 14, 248)">observed</text>
+<text transform="translate(595,279)" font-size="14" style="fill:rgb(0, 58, 226)">remain</text>
+<text transform="translate(1514,496)" font-size="14" style="fill:rgb(0, 207, 152)">amygdala</text>
+<text transform="translate(274,512)" font-size="14" style="fill:rgb(0, 27, 242)">SFOF</text>
+<text transform="translate(986,139)" font-size="14" style="fill:rgb(0, 124, 193)">projection</text>
+<text transform="translate(405,303)" font-size="14" style="fill:rgb(0, 101, 204)">crossing fibers</text>
+<text transform="translate(1313,568)" font-size="14" style="fill:rgb(0, 212, 149)">orbitofrontal cortex</text>
+<text transform="translate(297,91)" font-size="14" style="fill:rgb(0, 209, 150)">rostro caudally</text>
+<text transform="translate(1437,750)" font-size="14" style="fill:rgb(0, 86, 212)">connectivity profile</text>
+<text transform="translate(1013,200) rotate(-90)" font-size="13" style="fill:rgb(0, 229, 140)">located</text>
+<text transform="translate(507,470) rotate(-90)" font-size="13" style="fill:rgb(0, 160, 175)">allow</text>
+<text transform="translate(1007,255)" font-size="13" style="fill:rgb(0, 44, 233)">set</text>
+<text transform="translate(906,237)" font-size="13" style="fill:rgb(0, 2, 254)">provide</text>
+<text transform="translate(1505,794)" font-size="13" style="fill:rgb(0, 102, 204)">formation</text>
+<text transform="translate(405,705) rotate(-90)" font-size="13" style="fill:rgb(0, 5, 252)">broadly</text>
+<text transform="translate(857,458) rotate(-90)" font-size="13" style="fill:rgb(0, 95, 208)">mapping</text>
+<text transform="translate(907,533)" font-size="13" style="fill:rgb(0, 132, 189)">Klingler</text>
+<text transform="translate(1194,290)" font-size="13" style="fill:rgb(0, 127, 192)">point</text>
+<text transform="translate(1346,124)" font-size="13" style="fill:rgb(0, 53, 228)">deterministic</text>
+<text transform="translate(770,91)" font-size="13" style="fill:rgb(0, 109, 200)">carries</text>
+<text transform="translate(443,210)" font-size="13" style="fill:rgb(0, 94, 208)">addition</text>
+<text transform="translate(36,582)" font-size="13" style="fill:rgb(0, 5, 252)">difficult</text>
+<text transform="translate(1034,417)" font-size="13" style="fill:rgb(0, 53, 228)">resolution</text>
+<text transform="translate(816,317)" font-size="13" style="fill:rgb(0, 242, 134)">configuration</text>
+<text transform="translate(194,226)" font-size="13" style="fill:rgb(0, 122, 194)">voxel</text>
+<text transform="translate(1515,549)" font-size="13" style="fill:rgb(0, 208, 151)">potential</text>
+<text transform="translate(1522,562)" font-size="13" style="fill:rgb(0, 25, 242)">claustrum</text>
+<text transform="translate(1526,732)" font-size="13" style="fill:rgb(0, 59, 226)">extensive</text>
+<text transform="translate(985,108) rotate(-90)" font-size="13" style="fill:rgb(0, 91, 210)">situated</text>
+<text transform="translate(1311,319)" font-size="13" style="fill:rgb(0, 87, 211)">segmentation</text>
+<text transform="translate(100,747)" font-size="13" style="fill:rgb(0, 241, 134)">cross</text>
+<text transform="translate(1133,556)" font-size="13" style="fill:rgb(0, 177, 166)">Schmahmann</text>
+<text transform="translate(264,692)" font-size="13" style="fill:rgb(0, 26, 242)">gyrus</text>
+<text transform="translate(1536,237)" font-size="13" style="fill:rgb(0, 41, 235)">change</text>
+<text transform="translate(1252,348)" font-size="13" style="fill:rgb(0, 123, 194)">architecture</text>
+<text transform="translate(439,53)" font-size="13" style="fill:rgb(0, 243, 134)">require</text>
+<text transform="translate(1317,616)" font-size="13" style="fill:rgb(0, 146, 182)">aspect</text>
+<text transform="translate(846,335)" font-size="13" style="fill:rgb(0, 206, 152)">loop</text>
+<text transform="translate(766,154)" font-size="13" style="fill:rgb(0, 100, 205)">gray matter</text>
+</svg>

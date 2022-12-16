@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="800">
+<style>text{font-family:'Droid Sans Mono';font-weight:bold; text-shadow: 0.000001em 0 1px black,0 0.000001em 1px black,-0.000001em 0 1px black, 0 -0.000001em 1px black, -0.000001em -0.000001em 1px black, -0.000001em 0.000001em 1px black, 0.000001em -0.000001em 1px black, 0.000001em 0.000001em 1px black;;font-style:normal;}</style>
+<rect width="100%" height="100%" style="fill:none"></rect>
+<text transform="translate(28,387)" font-size="313" style="fill:rgb(0, 177, 166)">tract</text>
+<text transform="translate(2,717)" font-size="222" style="fill:rgb(0, 22, 244)">white matter</text>
+<text transform="translate(953,189)" font-size="200" style="fill:rgb(0, 225, 142)">adult</text>
+<text transform="translate(1211,352)" font-size="196" style="fill:rgb(0, 139, 186)">PVP</text>
+<text transform="translate(119,141)" font-size="172" style="fill:rgb(0, 84, 213)">pathway</text>
+<text transform="translate(724,517)" font-size="163" style="fill:rgb(0, 5, 252)">children</text>
+<text transform="translate(11,516)" font-size="158" style="fill:rgb(0, 39, 236)">ventral</text>
+<text transform="translate(12,769)" font-size="68" style="fill:rgb(0, 41, 235)">development</text>
+<text transform="translate(561,581)" font-size="63" style="fill:rgb(0, 72, 219)">microstructure</text>
+<text transform="translate(1108,349)" font-size="62" style="fill:rgb(0, 188, 161)">FA</text>
+<text transform="translate(993,242)" font-size="61" style="fill:rgb(0, 227, 142)">model</text>
+<text transform="translate(1115,765)" font-size="58" style="fill:rgb(0, 250, 130)">dorsal</text>
+<text transform="translate(961,294)" font-size="58" style="fill:rgb(0, 194, 158)">VHP</text>
+<text transform="translate(608,775)" font-size="54" style="fill:rgb(0, 251, 130)">relationship</text>
+<text transform="translate(1564,211) rotate(-90)" font-size="54" style="fill:rgb(0, 228, 141)">year</text>
+<text transform="translate(235,199)" font-size="53" style="fill:rgb(0, 121, 194)">difference</text>
+<text transform="translate(665,700)" font-size="50" style="fill:rgb(0, 148, 181)">pArc</text>
+<text transform="translate(4,89)" font-size="49" style="fill:rgb(0, 117, 196)">data</text>
+<text transform="translate(1208,397)" font-size="40" style="fill:rgb(0, 179, 166)">ventral temporal</text>
+<text transform="translate(219,404) rotate(-90)" font-size="39" style="fill:rgb(0, 203, 154)">participant</text>
+<text transform="translate(775,31)" font-size="39" style="fill:rgb(0, 171, 170)">temporal cortex</text>
+<text transform="translate(326,292)" font-size="38" style="fill:rgb(0, 183, 163)">DHP</text>
+<text transform="translate(591,166)" font-size="38" style="fill:rgb(0, 46, 232)">age</text>
+<text transform="translate(1300,563)" font-size="38" style="fill:rgb(0, 55, 227)">matter tract</text>
+<text transform="translate(898,195) rotate(-90)" font-size="37" style="fill:rgb(0, 149, 180)">connect</text>
+<text transform="translate(5,31)" font-size="32" style="fill:rgb(0, 37, 236)">matter development</text>
+<text transform="translate(911,58)" font-size="31" style="fill:rgb(0, 186, 162)">child sample</text>
+<text transform="translate(1404,785)" font-size="30" style="fill:rgb(0, 172, 169)">predicted</text>
+<text transform="translate(1029,375)" font-size="29" style="fill:rgb(0, 234, 138)">posterior</text>
+<text transform="translate(665,307)" font-size="29" style="fill:rgb(0, 205, 152)">performed</text>
+<text transform="translate(480,25)" font-size="28" style="fill:rgb(0, 31, 240)">input driven</text>
+<text transform="translate(1106,546)" font-size="27" style="fill:rgb(0, 247, 132)">brain</text>
+<text transform="translate(14,414)" font-size="27" style="fill:rgb(0, 45, 232)">anterior</text>
+<text transform="translate(637,192)" font-size="27" style="fill:rgb(0, 220, 145)">cortex</text>
+<text transform="translate(919,325)" font-size="27" style="fill:rgb(0, 80, 215)">portion</text>
+<text transform="translate(1429,162) rotate(-90)" font-size="27" style="fill:rgb(0, 19, 246)">FAT</text>
+<text transform="translate(671,629)" font-size="27" style="fill:rgb(0, 92, 209)">literacy</text>
+<text transform="translate(347,412)" font-size="27" style="fill:rgb(0, 93, 208)">sensory input</text>
+<text transform="translate(1259,790)" font-size="26" style="fill:rgb(0, 225, 142)">diffusion</text>
+<text transform="translate(1154,566)" font-size="26" style="fill:rgb(0, 164, 173)">VOF</text>
+<text transform="translate(1355,747)" font-size="26" style="fill:rgb(0, 35, 238)">analysis</text>
+<text transform="translate(996,787)" font-size="26" style="fill:rgb(0, 147, 182)">driven model</text>
+<text transform="translate(1256,30)" font-size="26" style="fill:rgb(0, 56, 227)">PVP microstructure</text>
+<text transform="translate(1327,583)" font-size="26" style="fill:rgb(0, 145, 182)">parietal cortex</text>
+<text transform="translate(352,537)" font-size="26" style="fill:rgb(0, 72, 219)">age range</text>
+<text transform="translate(581,426) rotate(-90)" font-size="26" style="fill:rgb(0, 10, 250)">visual motor</text>
+<text transform="translate(22,352) rotate(-90)" font-size="26" style="fill:rgb(0, 142, 184)">composite score</text>
+<text transform="translate(534,776) rotate(-90)" font-size="26" style="fill:rgb(0, 142, 184)">matter pathway</text>
+<text transform="translate(1,539)" font-size="26" style="fill:rgb(0, 122, 194)">horizontal tract</text>
+<text transform="translate(1214,415)" font-size="24" style="fill:rgb(0, 7, 252)">cortical region</text>
+<text transform="translate(1149,682)" font-size="23" style="fill:rgb(0, 76, 217)">based</text>
+<text transform="translate(1097,294)" font-size="23" style="fill:rgb(0, 156, 177)">dimension</text>
+<text transform="translate(312,422) rotate(-90)" font-size="23" style="fill:rgb(0, 94, 208)">motor skill</text>
+<text transform="translate(700,411)" font-size="22" style="fill:rgb(0, 20, 245)">occipital</text>
+<text transform="translate(760,380)" font-size="22" style="fill:rgb(0, 210, 150)">second</text>
+<text transform="translate(769,794)" font-size="22" style="fill:rgb(0, 200, 155)">ventral stream</text>
+<text transform="translate(440,791)" font-size="21" style="fill:rgb(0, 219, 146)">microstructural</text>
+<text transform="translate(1183,72)" font-size="21" style="fill:rgb(0, 156, 177)">included</text>
+<text transform="translate(13,381)" font-size="21" style="fill:rgb(0, 64, 223)">group</text>
+<text transform="translate(697,344)" font-size="21" style="fill:rgb(0, 124, 193)">correlation</text>
+<text transform="translate(931,343)" font-size="20" style="fill:rgb(0, 194, 158)">developmental</text>
+<text transform="translate(698,272)" font-size="20" style="fill:rgb(0, 31, 240)">imaging</text>
+<text transform="translate(1090,258)" font-size="20" style="fill:rgb(0, 221, 144)">proposed</text>
+<text transform="translate(1022,734)" font-size="20" style="fill:rgb(0, 152, 179)">develop</text>
+<text transform="translate(1181,45)" font-size="20" style="fill:rgb(0, 176, 167)">demonstrated</text>
+<text transform="translate(1258,479)" font-size="20" style="fill:rgb(0, 85, 212)">child</text>
+<text transform="translate(1575,448)" font-size="20" style="fill:rgb(0, 39, 236)">t</text>
+<text transform="translate(1504,522)" font-size="20" style="fill:rgb(0, 0, 255)">cluster</text>
+<text transform="translate(23,790)" font-size="20" style="fill:rgb(0, 237, 136)">dorsal horizontal</text>
+<text transform="translate(606,364) rotate(-90)" font-size="19" style="fill:rgb(0, 192, 159)">processing</text>
+<text transform="translate(185,422)" font-size="19" style="fill:rgb(0, 138, 186)">childhood</text>
+<text transform="translate(62,575)" font-size="19" style="fill:rgb(0, 204, 153)">interest</text>
+<text transform="translate(1464,371)" font-size="19" style="fill:rgb(0, 24, 243)">earlier</text>
+<text transform="translate(432,156)" font-size="19" style="fill:rgb(0, 177, 166)">clustering</text>
+<text transform="translate(396,590) rotate(-90)" font-size="19" style="fill:rgb(0, 30, 240)">MDS</text>
+<text transform="translate(571,206)" font-size="18" style="fill:rgb(0, 240, 135)">developmental trajectory</text>
+<text transform="translate(1386,44)" font-size="18" style="fill:rgb(0, 15, 248)">posterior vertical</text>
+<text transform="translate(942,531)" font-size="18" style="fill:rgb(0, 43, 234)">dorsal stream</text>
+<text transform="translate(1485,311)" font-size="18" style="fill:rgb(0, 49, 230)">VHP PVP</text>
+<text transform="translate(1267,203)" font-size="18" style="fill:rgb(0, 251, 130)">vertical tract</text>
+<text transform="translate(207,567)" font-size="17" style="fill:rgb(0, 175, 168)">interaction</text>
+<text transform="translate(344,328)" font-size="17" style="fill:rgb(0, 49, 230)">study</text>
+<text transform="translate(1256,351)" font-size="17" style="fill:rgb(0, 97, 206)">performance</text>
+<text transform="translate(920,210) rotate(-90)" font-size="17" style="fill:rgb(0, 85, 212)">understanding</text>
+<text transform="translate(326,787)" font-size="17" style="fill:rgb(0, 165, 172)">anatomical</text>
+<text transform="translate(840,530)" font-size="17" style="fill:rgb(0, 55, 227)">adulthood</text>
+<text transform="translate(1494,414)" font-size="17" style="fill:rgb(0, 170, 170)">expected</text>
+<text transform="translate(1487,739)" font-size="17" style="fill:rgb(0, 60, 225)">behavioral</text>
+<text transform="translate(36,359)" font-size="17" style="fill:rgb(0, 97, 206)">early</text>
+<text transform="translate(1466,649) rotate(-90)" font-size="17" style="fill:rgb(0, 248, 131)">prior</text>
+<text transform="translate(649,601)" font-size="17" style="fill:rgb(0, 61, 224)">method</text>
+<text transform="translate(1228,535)" font-size="17" style="fill:rgb(0, 248, 131)">streamline</text>
+<text transform="translate(647,725)" font-size="17" style="fill:rgb(0, 54, 228)">vertical pathway</text>
+<text transform="translate(578,38)" font-size="17" style="fill:rgb(0, 49, 230)">horizontal pathway</text>
+<text transform="translate(425,267)" font-size="17" style="fill:rgb(0, 18, 246)">PVP DHP</text>
+<text transform="translate(628,535)" font-size="17" style="fill:rgb(0, 120, 195)">brainlife io</text>
+<text transform="translate(1583,312) rotate(-90)" font-size="16" style="fill:rgb(0, 114, 198)">directly</text>
+<text transform="translate(866,411)" font-size="16" style="fill:rgb(0, 6, 252)">learning</text>
+<text transform="translate(422,277) rotate(-90)" font-size="16" style="fill:rgb(0, 137, 187)">consistent</text>
+<text transform="translate(1081,405)" font-size="16" style="fill:rgb(0, 118, 196)">suggesting</text>
+<text transform="translate(710,655)" font-size="16" style="fill:rgb(0, 207, 152)">suggests</text>
+<text transform="translate(378,672)" font-size="16" style="fill:rgb(0, 63, 224)">change</text>
+<text transform="translate(32,167)" font-size="16" style="fill:rgb(0, 251, 130)">current</text>
+<text transform="translate(341,349)" font-size="16" style="fill:rgb(0, 217, 146)">support</text>
+<text transform="translate(898,75)" font-size="16" style="fill:rgb(0, 54, 228)">communication</text>
+<text transform="translate(1488,344)" font-size="16" style="fill:rgb(0, 56, 227)">connecting</text>
+<text transform="translate(565,751)" font-size="16" style="fill:rgb(0, 199, 156)">lobe</text>
+<text transform="translate(693,498) rotate(-90)" font-size="16" style="fill:rgb(0, 246, 132)">note</text>
+<text transform="translate(379,16)" font-size="16" style="fill:rgb(0, 224, 143)">sample</text>
+<text transform="translate(1035,493) rotate(-90)" font-size="16" style="fill:rgb(0, 3, 254)">predict</text>
+<text transform="translate(1528,57)" font-size="16" style="fill:rgb(0, 247, 132)">image</text>
+<text transform="translate(798,271)" font-size="16" style="fill:rgb(0, 155, 178)">mm</text>
+<text transform="translate(826,733)" font-size="16" style="fill:rgb(0, 230, 140)">average</text>
+<text transform="translate(1276,497)" font-size="16" style="fill:rgb(0, 48, 231)">node</text>
+<text transform="translate(1498,464)" font-size="16" style="fill:rgb(0, 214, 148)">predictor</text>
+<text transform="translate(351,363)" font-size="15" style="fill:rgb(0, 141, 184)">propose</text>
+<text transform="translate(1529,754)" font-size="15" style="fill:rgb(0, 53, 228)">tested</text>
+<text transform="translate(1543,654)" font-size="15" style="fill:rgb(0, 207, 152)">aspect</text>
+<text transform="translate(1273,682)" font-size="15" style="fill:rgb(0, 157, 176)">large</text>
+<text transform="translate(1420,206)" font-size="15" style="fill:rgb(0, 56, 227)">inferior</text>
+<text transform="translate(1137,648)" font-size="15" style="fill:rgb(0, 72, 219)">individual</text>
+<text transform="translate(456,761)" font-size="15" style="fill:rgb(0, 165, 172)">mature</text>
+<text transform="translate(233,587)" font-size="15" style="fill:rgb(0, 64, 223)">measurement</text>
+<text transform="translate(23,133)" font-size="15" style="fill:rgb(0, 182, 164)">calculated</text>
+<text transform="translate(648,444)" font-size="15" style="fill:rgb(0, 27, 242)">analyses</text>
+<text transform="translate(1039,756)" font-size="15" style="fill:rgb(0, 193, 158)">profile</text>
+<text transform="translate(171,42)" font-size="15" style="fill:rgb(0, 129, 190)">PATH</text>
+<text transform="translate(703,319)" font-size="15" style="fill:rgb(0, 71, 220)">visual stream</text>
+<text transform="translate(241,354) rotate(-90)" font-size="15" style="fill:rgb(0, 105, 203)">superior parietal</text>
+<text transform="translate(1221,597) rotate(-90)" font-size="15" style="fill:rgb(0, 37, 236)">parietal cortices</text>
+<text transform="translate(1063,686) rotate(-90)" font-size="15" style="fill:rgb(0, 167, 172)">fine motor</text>
+<text transform="translate(1377,682)" font-size="15" style="fill:rgb(0, 24, 243)">Beery Visual</text>
+<text transform="translate(1270,326)" font-size="15" style="fill:rgb(0, 153, 178)">age group</text>
+<text transform="translate(8,44)" font-size="15" style="fill:rgb(0, 240, 135)">tracts clustered</text>
+<text transform="translate(41,343) rotate(-90)" font-size="15" style="fill:rgb(0, 47, 232)">clustering solution</text>
+<text transform="translate(936,203)" font-size="15" style="fill:rgb(0, 147, 182)">silhouette score</text>
+<text transform="translate(1195,30)" font-size="14" style="fill:rgb(0, 166, 172)">stream</text>
+<text transform="translate(378,394)" font-size="14" style="fill:rgb(0, 187, 162)">behavior</text>
+<text transform="translate(1251,518)" font-size="14" style="fill:rgb(0, 103, 204)">functional</text>
+<text transform="translate(647,793)" font-size="14" style="fill:rgb(0, 11, 250)">displayed</text>
+<text transform="translate(513,535)" font-size="14" style="fill:rgb(0, 196, 157)">hierarchy</text>
+<text transform="translate(30,554)" font-size="14" style="fill:rgb(0, 125, 192)">frontal</text>
+<text transform="translate(1192,724)" font-size="14" style="fill:rgb(0, 30, 240)">order</text>
+<text transform="translate(926,634)" font-size="14" style="fill:rgb(0, 247, 132)">properties</text>
+<text transform="translate(683,166)" font-size="14" style="fill:rgb(0, 250, 130)">well</text>
+<text transform="translate(121,305)" font-size="14" style="fill:rgb(0, 59, 226)">carrying</text>
+<text transform="translate(1565,781)" font-size="14" style="fill:rgb(0, 249, 130)">Word</text>
+<text transform="translate(566,227)" font-size="14" style="fill:rgb(0, 162, 174)">averaging</text>
+<text transform="translate(913,594)" font-size="14" style="fill:rgb(0, 49, 230)">location</text>
+<text transform="translate(251,684)" font-size="14" style="fill:rgb(0, 204, 153)">determine</text>
+<text transform="translate(1155,592)" font-size="14" style="fill:rgb(0, 31, 240)">test</text>
+<text transform="translate(26,154)" font-size="14" style="fill:rgb(0, 86, 212)">increase</text>
+<text transform="translate(1530,478)" font-size="14" style="fill:rgb(0, 66, 222)">finding</text>
+<text transform="translate(143,340)" font-size="14" style="fill:rgb(0, 20, 245)">area</text>
+<text transform="translate(349,625)" font-size="14" style="fill:rgb(0, 12, 249)">major white</text>
+<text transform="translate(1330,746) rotate(-90)" font-size="14" style="fill:rgb(0, 188, 161)">inferior parietal</text>
+<text transform="translate(871,314)" font-size="14" style="fill:rgb(0, 68, 221)">TP SPL</text>
+<text transform="translate(1345,363)" font-size="14" style="fill:rgb(0, 156, 177)">frontal cortex</text>
+<text transform="translate(10,586)" font-size="14" style="fill:rgb(0, 96, 207)">Visual Perception</text>
+<text transform="translate(1498,492)" font-size="13" style="fill:rgb(0, 240, 135)">provide</text>
+<text transform="translate(273,639)" font-size="13" style="fill:rgb(0, 182, 164)">major</text>
+<text transform="translate(1497,72)" font-size="13" style="fill:rgb(0, 76, 217)">significance</text>
+<text transform="translate(1298,69)" font-size="13" style="fill:rgb(0, 217, 146)">human</text>
+<text transform="translate(1476,532)" font-size="13" style="fill:rgb(0, 219, 146)">studies</text>
+<text transform="translate(1351,490)" font-size="13" style="fill:rgb(0, 116, 197)">MDLFang</text>
+<text transform="translate(1536,425)" font-size="13" style="fill:rgb(0, 111, 200)">SLF</text>
+<text transform="translate(1263,578)" font-size="13" style="fill:rgb(0, 206, 152)">tissue</text>
+<text transform="translate(960,168) rotate(-90)" font-size="13" style="fill:rgb(0, 144, 183)">association</text>
+<text transform="translate(1193,367)" font-size="13" style="fill:rgb(0, 98, 206)">positively</text>
+<text transform="translate(1393,70)" font-size="13" style="fill:rgb(0, 112, 199)">increased</text>
+<text transform="translate(886,256)" font-size="13" style="fill:rgb(0, 162, 174)">collected</text>
+<text transform="translate(140,285)" font-size="13" style="fill:rgb(0, 206, 152)">closer</text>
+<text transform="translate(14,100)" font-size="13" style="fill:rgb(0, 109, 200)">additional</text>
+<text transform="translate(732,518) rotate(-90)" font-size="13" style="fill:rgb(0, 58, 226)">MRI</text>
+<text transform="translate(604,494) rotate(-90)" font-size="13" style="fill:rgb(0, 187, 162)">assessment</text>
+<text transform="translate(1242,550)" font-size="13" style="fill:rgb(0, 125, 192)">session</text>
+<text transform="translate(1229,86)" font-size="13" style="fill:rgb(0, 16, 247)">assess</text>
+<text transform="translate(433,485)" font-size="13" style="fill:rgb(0, 68, 221)">level</text>
+<text transform="translate(210,75)" font-size="13" style="fill:rgb(0, 227, 142)">score</text>
+<text transform="translate(385,688)" font-size="13" style="fill:rgb(0, 88, 211)">aligned</text>
+<text transform="translate(1089,420)" font-size="13" style="fill:rgb(0, 224, 143)">implemented</text>
+<text transform="translate(728,607)" font-size="13" style="fill:rgb(0, 209, 150)">values</text>
+<text transform="translate(870,286)" font-size="13" style="fill:rgb(0, 117, 196)">Tractography</text>
+<text transform="translate(1327,301) rotate(-90)" font-size="13" style="fill:rgb(0, 87, 211)">fit</text>
+<text transform="translate(733,110) rotate(-90)" font-size="13" style="fill:rgb(0, 255, 128)">core</text>
+<text transform="translate(999,458) rotate(-90)" font-size="13" style="fill:rgb(0, 83, 214)">connection</text>
+<text transform="translate(100,144)" font-size="13" style="fill:rgb(0, 71, 220)">SEX</text>
+<text transform="translate(1188,202)" font-size="13" style="fill:rgb(0, 162, 174)">suggested</text>
+<text transform="translate(590,386)" font-size="13" style="fill:rgb(0, 53, 228)">subtest</text>
+<text transform="translate(1253,146)" font-size="13" style="fill:rgb(0, 78, 216)">VM</text>
+<text transform="translate(316,305)" font-size="13" style="fill:rgb(0, 33, 238)">understand</text>
+<text transform="translate(1346,529)" font-size="13" style="fill:rgb(0, 196, 157)">connect cortical</text>
+<text transform="translate(227,151)" font-size="11" style="fill:rgb(0, 169, 171)">developmental progression</text>
+<text transform="translate(990,795)" font-size="11" style="fill:rgb(0, 220, 145)">DHP correlation</text>
+<text transform="translate(1362,233)" font-size="10" style="fill:rgb(0, 16, 247)">degree</text>
+<text transform="translate(463,356)" font-size="10" style="fill:rgb(0, 255, 128)">visual</text>
+<text transform="translate(1501,438)" font-size="10" style="fill:rgb(0, 92, 209)">associated</text>
+<text transform="translate(836,539)" font-size="10" style="fill:rgb(0, 165, 172)">described</text>
+<text transform="translate(700,17)" font-size="10" style="fill:rgb(0, 195, 158)">perceptual</text>
+<text transform="translate(517,452)" font-size="10" style="fill:rgb(0, 238, 136)">role</text>
+</svg>

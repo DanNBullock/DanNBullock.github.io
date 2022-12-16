@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="800">
+<style>text{font-family:'Droid Sans Mono';font-weight:bold; text-shadow: 0.000001em 0 1px black,0 0.000001em 1px black,-0.000001em 0 1px black, 0 -0.000001em 1px black, -0.000001em -0.000001em 1px black, -0.000001em 0.000001em 1px black, 0.000001em -0.000001em 1px black, 0.000001em 0.000001em 1px black;;font-style:normal;}</style>
+<rect width="100%" height="100%" style="fill:none"></rect>
+<text transform="translate(78,350)" font-size="399" style="fill:rgb(0, 100, 205)">bundle</text>
+<text transform="translate(39,620)" font-size="328" style="fill:rgb(0, 179, 166)">al</text>
+<text transform="translate(354,538)" font-size="207" style="fill:rgb(0, 247, 132)">streamline</text>
+<text transform="translate(410,687)" font-size="180" style="fill:rgb(0, 159, 176)">Classifyber</text>
+<text transform="translate(405,105)" font-size="137" style="fill:rgb(0, 46, 232)">method</text>
+<text transform="translate(495,760)" font-size="93" style="fill:rgb(0, 206, 152)">segmentation</text>
+<text transform="translate(19,756)" font-size="93" style="fill:rgb(0, 232, 139)">subject</text>
+<text transform="translate(1174,86)" font-size="89" style="fill:rgb(0, 197, 156)">TractSeg</text>
+<text transform="translate(1233,761)" font-size="85" style="fill:rgb(0, 146, 182)">example</text>
+<text transform="translate(65,407) rotate(-90)" font-size="83" style="fill:rgb(0, 220, 145)">dataset</text>
+<text transform="translate(145,86)" font-size="62" style="fill:rgb(0, 149, 180)">quality</text>
+<text transform="translate(591,397)" font-size="60" style="fill:rgb(0, 119, 195)">Figure</text>
+<text transform="translate(36,670)" font-size="59" style="fill:rgb(0, 71, 220)">RecoBundle</text>
+<text transform="translate(1424,395)" font-size="56" style="fill:rgb(0, 132, 189)">set</text>
+<text transform="translate(808,394)" font-size="55" style="fill:rgb(0, 228, 141)">step</text>
+<text transform="translate(1573,380) rotate(-90)" font-size="54" style="fill:rgb(0, 134, 188)">training</text>
+<text transform="translate(587,569)" font-size="35" style="fill:rgb(0, 69, 220)">segmentation method</text>
+<text transform="translate(1367,571)" font-size="35" style="fill:rgb(0, 207, 152)">DSC</text>
+<text transform="translate(910,27)" font-size="34" style="fill:rgb(0, 121, 194)">experiment</text>
+<text transform="translate(1276,113)" font-size="33" style="fill:rgb(0, 235, 138)">tractogram</text>
+<text transform="translate(1023,206)" font-size="31" style="fill:rgb(0, 25, 242)">data</text>
+<text transform="translate(389,245)" font-size="31" style="fill:rgb(0, 200, 155)">time</text>
+<text transform="translate(1195,490)" font-size="30" style="fill:rgb(0, 152, 179)">ROI</text>
+<text transform="translate(135,422)" font-size="29" style="fill:rgb(0, 194, 158)">proposed</text>
+<text transform="translate(1332,787)" font-size="29" style="fill:rgb(0, 127, 192)">case</text>
+<text transform="translate(197,233)" font-size="29" style="fill:rgb(0, 169, 171)">FD</text>
+<text transform="translate(410,305)" font-size="28" style="fill:rgb(0, 122, 194)">LAP</text>
+<text transform="translate(50,693)" font-size="28" style="fill:rgb(0, 18, 246)">IFOF</text>
+<text transform="translate(723,790)" font-size="28" style="fill:rgb(0, 208, 151)">distance</text>
+<text transform="translate(1022,381)" font-size="27" style="fill:rgb(0, 12, 249)">values</text>
+<text transform="translate(1312,383)" font-size="26" style="fill:rgb(0, 18, 246)">segment</text>
+<text transform="translate(302,786)" font-size="26" style="fill:rgb(0, 66, 222)">HCP minor</text>
+<text transform="translate(947,785)" font-size="26" style="fill:rgb(0, 7, 252)">TractSeg retrained</text>
+<text transform="translate(1468,785)" font-size="25" style="fill:rgb(0, 90, 210)">number</text>
+<text transform="translate(420,709)" font-size="25" style="fill:rgb(0, 102, 204)">Table</text>
+<text transform="translate(741,125)" font-size="25" style="fill:rgb(0, 147, 182)">HCP IFOF</text>
+<text transform="translate(1352,285)" font-size="24" style="fill:rgb(0, 184, 163)">Wasserthal</text>
+<text transform="translate(938,397)" font-size="24" style="fill:rgb(0, 113, 198)">vector</text>
+<text transform="translate(1470,568)" font-size="23" style="fill:rgb(0, 57, 226)">interest</text>
+<text transform="translate(635,222)" font-size="22" style="fill:rgb(0, 94, 208)">expert</text>
+<text transform="translate(345,126)" font-size="22" style="fill:rgb(0, 152, 179)">RecoBundles atlas</text>
+<text transform="translate(185,27)" font-size="22" style="fill:rgb(0, 5, 252)">segmented bundle</text>
+<text transform="translate(568,340) rotate(-90)" font-size="21" style="fill:rgb(0, 71, 220)">anatomical</text>
+<text transform="translate(380,389)" font-size="21" style="fill:rgb(0, 46, 232)">streamline based</text>
+<text transform="translate(11,495)" font-size="21" style="fill:rgb(0, 38, 236)">HCP major</text>
+<text transform="translate(1233,708)" font-size="21" style="fill:rgb(0, 27, 242)">Clinical dataset</text>
+<text transform="translate(1378,413)" font-size="21" style="fill:rgb(0, 204, 153)">training set</text>
+<text transform="translate(1178,301)" font-size="20" style="fill:rgb(0, 27, 242)">comparison</text>
+<text transform="translate(1017,251)" font-size="20" style="fill:rgb(0, 136, 187)">specific</text>
+<text transform="translate(461,792)" font-size="20" style="fill:rgb(0, 115, 198)">described</text>
+<text transform="translate(1112,513) rotate(-90)" font-size="20" style="fill:rgb(0, 38, 236)">considered</text>
+<text transform="translate(1037,296)" font-size="20" style="fill:rgb(0, 255, 128)">trained</text>
+<text transform="translate(388,208)" font-size="19" style="fill:rgb(0, 187, 162)">Clinical</text>
+<text transform="translate(1495,22)" font-size="19" style="fill:rgb(0, 133, 188)">shape</text>
+<text transform="translate(1193,421)" font-size="19" style="fill:rgb(0, 176, 167)">fractal dimension</text>
+<text transform="translate(242,361)" font-size="18" style="fill:rgb(0, 226, 142)">white matter</text>
+<text transform="translate(1183,139)" font-size="18" style="fill:rgb(0, 225, 142)">target subject</text>
+<text transform="translate(26,785)" font-size="18" style="fill:rgb(0, 136, 187)">based method</text>
+<text transform="translate(182,101)" font-size="18" style="fill:rgb(0, 117, 196)">expert based</text>
+<text transform="translate(30,650) rotate(-90)" font-size="18" style="fill:rgb(0, 93, 208)">training phase</text>
+<text transform="translate(788,414)" font-size="18" style="fill:rgb(0, 120, 195)">test phase</text>
+<text transform="translate(149,391)" font-size="17" style="fill:rgb(0, 111, 200)">predicted</text>
+<text transform="translate(395,166)" font-size="17" style="fill:rgb(0, 94, 208)">Appendix</text>
+<text transform="translate(10,19)" font-size="17" style="fill:rgb(0, 92, 209)">bundle superset</text>
+<text transform="translate(485,643)" font-size="16" style="fill:rgb(0, 29, 240)">require</text>
+<text transform="translate(1513,505)" font-size="16" style="fill:rgb(0, 50, 230)">Olivetti</text>
+<text transform="translate(610,128)" font-size="16" style="fill:rgb(0, 137, 187)">voxel</text>
+<text transform="translate(1012,162)" font-size="16" style="fill:rgb(0, 99, 206)">algorithm</text>
+<text transform="translate(776,173)" font-size="16" style="fill:rgb(0, 85, 212)">test</text>
+<text transform="translate(501,16)" font-size="16" style="fill:rgb(0, 92, 209)">procedure</text>
+<text transform="translate(227,482)" font-size="16" style="fill:rgb(0, 102, 204)">superset</text>
+<text transform="translate(1152,14)" font-size="16" style="fill:rgb(0, 80, 215)">automatic segmentation</text>
+<text transform="translate(689,18)" font-size="16" style="fill:rgb(0, 206, 152)">based segmentation</text>
+<text transform="translate(1521,353) rotate(-90)" font-size="16" style="fill:rgb(0, 215, 147)">target bundle</text>
+<text transform="translate(1063,42)" font-size="15" style="fill:rgb(0, 91, 210)">model</text>
+<text transform="translate(1008,91)" font-size="15" style="fill:rgb(0, 63, 224)">group</text>
+<text transform="translate(1071,175)" font-size="15" style="fill:rgb(0, 75, 218)">Sharmin</text>
+<text transform="translate(1089,702)" font-size="15" style="fill:rgb(0, 165, 172)">size</text>
+<text transform="translate(564,131)" font-size="15" style="fill:rgb(0, 168, 171)">Left</text>
+<text transform="translate(859,249)" font-size="15" style="fill:rgb(0, 147, 182)">belong</text>
+<text transform="translate(1141,369)" font-size="15" style="fill:rgb(0, 136, 187)">Download figureOpen</text>
+<text transform="translate(1136,577)" font-size="15" style="fill:rgb(0, 150, 180)">tab Figure</text>
+<text transform="translate(181,118)" font-size="15" style="fill:rgb(0, 251, 130)">minor dataset</text>
+<text transform="translate(897,125)" font-size="14" style="fill:rgb(0, 153, 178)">compared</text>
+<text transform="translate(479,461)" font-size="14" style="fill:rgb(0, 33, 238)">main</text>
+<text transform="translate(1191,220)" font-size="14" style="fill:rgb(0, 92, 209)">presented</text>
+<text transform="translate(1206,264)" font-size="14" style="fill:rgb(0, 121, 194)">large</text>
+<text transform="translate(288,557) rotate(-90)" font-size="14" style="fill:rgb(0, 189, 160)">reported</text>
+<text transform="translate(1039,702)" font-size="14" style="fill:rgb(0, 224, 143)">report</text>
+<text transform="translate(775,312)" font-size="14" style="fill:rgb(0, 134, 188)">region</text>
+<text transform="translate(287,317)" font-size="14" style="fill:rgb(0, 101, 204)">higher</text>
+<text transform="translate(544,484)" font-size="14" style="fill:rgb(0, 214, 148)">setting</text>
+<text transform="translate(1195,158)" font-size="14" style="fill:rgb(0, 165, 172)">Figure Download</text>
+<text transform="translate(954,411)" font-size="14" style="fill:rgb(0, 41, 235)">Embedded Image</text>
+<text transform="translate(614,702)" font-size="14" style="fill:rgb(0, 188, 161)">feature space</text>
+<text transform="translate(936,311) rotate(-90)" font-size="14" style="fill:rgb(0, 227, 142)">Highest quality</text>
+<text transform="translate(647,317)" font-size="13" style="fill:rgb(0, 229, 140)">multiple</text>
+<text transform="translate(641,205)" font-size="13" style="fill:rgb(0, 126, 192)">linear</text>
+<text transform="translate(659,276)" font-size="13" style="fill:rgb(0, 255, 128)">state</text>
+<text transform="translate(943,427)" font-size="13" style="fill:rgb(0, 62, 224)">well</text>
+<text transform="translate(562,82)" font-size="13" style="fill:rgb(0, 26, 242)">high</text>
+<text transform="translate(546,422)" font-size="13" style="fill:rgb(0, 35, 238)">classification</text>
+<text transform="translate(1178,238)" font-size="13" style="fill:rgb(0, 55, 227)">respect</text>
+<text transform="translate(1143,493) rotate(-90)" font-size="13" style="fill:rgb(0, 109, 200)">discuss</text>
+<text transform="translate(692,584)" font-size="13" style="fill:rgb(0, 143, 184)">describe</text>
+<text transform="translate(521,363)" font-size="13" style="fill:rgb(0, 97, 206)">provided</text>
+<text transform="translate(769,135)" font-size="13" style="fill:rgb(0, 92, 209)">adopted</text>
+<text transform="translate(588,602)" font-size="13" style="fill:rgb(0, 226, 142)">score</text>
+<text transform="translate(295,173)" font-size="13" style="fill:rgb(0, 43, 234)">result</text>
+<text transform="translate(163,46)" font-size="13" style="fill:rgb(0, 51, 230)">minutes</text>
+<text transform="translate(1346,261)" font-size="13" style="fill:rgb(0, 201, 155)">matter bundle</text>
+<text transform="translate(415,17)" font-size="13" style="fill:rgb(0, 56, 227)">voxel mask</text>
+<text transform="translate(1179,197)" font-size="13" style="fill:rgb(0, 135, 188)">based segmented</text>
+<text transform="translate(1010,310)" font-size="13" style="fill:rgb(0, 168, 171)">major dataset</text>
+<text transform="translate(538,460)" font-size="13" style="fill:rgb(0, 45, 232)">dMRI data</text>
+<text transform="translate(168,693)" font-size="12" style="fill:rgb(0, 72, 219)">brain</text>
+<text transform="translate(1453,130)" font-size="12" style="fill:rgb(0, 176, 167)">automatic</text>
+<text transform="translate(1049,225)" font-size="12" style="fill:rgb(0, 23, 244)">provide</text>
+<text transform="translate(36,430)" font-size="12" style="fill:rgb(0, 210, 150)">individual</text>
+<text transform="translate(231,562)" font-size="12" style="fill:rgb(0, 51, 230)">atlas</text>
+<text transform="translate(160,275)" font-size="12" style="fill:rgb(0, 47, 232)">Garyfallidis</text>
+<text transform="translate(1177,400)" font-size="12" style="fill:rgb(0, 197, 156)">reached</text>
+<text transform="translate(165,186)" font-size="12" style="fill:rgb(0, 37, 236)">concept</text>
+<text transform="translate(1015,653)" font-size="12" style="fill:rgb(0, 157, 176)">detail</text>
+<text transform="translate(236,727)" font-size="12" style="fill:rgb(0, 52, 229)">T</text>
+<text transform="translate(1008,141)" font-size="12" style="fill:rgb(0, 204, 153)">accurately</text>
+<text transform="translate(945,359)" font-size="12" style="fill:rgb(0, 239, 136)">segmenting</text>
+<text transform="translate(822,579)" font-size="12" style="fill:rgb(0, 67, 222)">View inlineView</text>
+<text transform="translate(255,694)" font-size="12" style="fill:rgb(0, 181, 164)">inlineView popup</text>
+<text transform="translate(397,256)" font-size="12" style="fill:rgb(0, 226, 142)">popup Table</text>
+<text transform="translate(1308,580)" font-size="12" style="fill:rgb(0, 123, 194)">vectorial representation</text>
+<text transform="translate(401,549)" font-size="12" style="fill:rgb(0, 118, 196)">linear classifier</text>
+<text transform="translate(72,370)" font-size="12" style="fill:rgb(0, 243, 134)">dissimilarity representation</text>
+<text transform="translate(29,34)" font-size="12" style="fill:rgb(0, 178, 166)">test set</text>
+<text transform="translate(1202,174)" font-size="12" style="fill:rgb(0, 181, 164)">retrained LAP</text>
+<text transform="translate(648,505)" font-size="11" style="fill:rgb(0, 44, 233)">tractography</text>
+<text transform="translate(1414,789)" font-size="11" style="fill:rgb(0, 236, 137)">called</text>
+<text transform="translate(488,624)" font-size="11" style="fill:rgb(0, 151, 179)">order</text>
+<text transform="translate(1498,170)" font-size="11" style="fill:rgb(0, 11, 250)">define</text>
+<text transform="translate(415,397)" font-size="11" style="fill:rgb(0, 217, 146)">composed</text>
+<text transform="translate(161,787)" font-size="11" style="fill:rgb(0, 218, 146)">problem</text>
+<text transform="translate(160,287)" font-size="11" style="fill:rgb(0, 9, 250)">extremely</text>
+<text transform="translate(1187,794)" font-size="11" style="fill:rgb(0, 202, 154)">fast</text>
+<text transform="translate(305,293)" font-size="11" style="fill:rgb(0, 118, 196)">input</text>
+<text transform="translate(240,583)" font-size="11" style="fill:rgb(0, 26, 242)">represent</text>
+<text transform="translate(2,55)" font-size="11" style="fill:rgb(0, 137, 187)">endpoint</text>
+<text transform="translate(1203,597)" font-size="11" style="fill:rgb(0, 8, 251)">kind</text>
+<text transform="translate(645,250)" font-size="11" style="fill:rgb(0, 254, 128)">reduce</text>
+<text transform="translate(341,678)" font-size="11" style="fill:rgb(0, 15, 248)">reason</text>
+<text transform="translate(1532,393)" font-size="11" style="fill:rgb(0, 3, 254)">observed</text>
+<text transform="translate(1045,55)" font-size="11" style="fill:rgb(0, 71, 220)">refer</text>
+<text transform="translate(492,537) rotate(-90)" font-size="11" style="fill:rgb(0, 221, 144)">variant</text>
+<text transform="translate(623,340)" font-size="11" style="fill:rgb(0, 131, 190)">corresponding</text>
+<text transform="translate(463,597)" font-size="11" style="fill:rgb(0, 31, 240)">configuration</text>
+<text transform="translate(1187,118)" font-size="11" style="fill:rgb(0, 234, 138)">parameter</text>
+<text transform="translate(237,792)" font-size="11" style="fill:rgb(0, 138, 186)">required</text>
+<text transform="translate(1473,153)" font-size="11" style="fill:rgb(0, 195, 158)">landmark</text>
+<text transform="translate(368,410)" font-size="11" style="fill:rgb(0, 57, 226)">connectivity based</text>
+<text transform="translate(929,581)" font-size="11" style="fill:rgb(0, 114, 198)">tractography technique</text>
+<text transform="translate(194,449)" font-size="11" style="fill:rgb(0, 57, 226)">global landmarks</text>
+<text transform="translate(1386,11)" font-size="11" style="fill:rgb(0, 65, 222)">minimum average</text>
+<text transform="translate(1235,29)" font-size="11" style="fill:rgb(0, 151, 179)">Quantitative comparison</text>
+<text transform="translate(1418,299)" font-size="11" style="fill:rgb(0, 29, 240)">bold face</text>
+<text transform="translate(389,144)" font-size="10" style="fill:rgb(0, 251, 130)">substantial</text>
+<text transform="translate(196,678)" font-size="10" style="fill:rgb(0, 192, 159)">literature</text>
+<text transform="translate(1191,515)" font-size="10" style="fill:rgb(0, 134, 188)">novel</text>
+<text transform="translate(905,57)" font-size="10" style="fill:rgb(0, 128, 191)">atlases</text>
+<text transform="translate(1089,123)" font-size="10" style="fill:rgb(0, 166, 172)">range</text>
+<text transform="translate(1200,207)" font-size="10" style="fill:rgb(0, 171, 170)">art</text>
+<text transform="translate(584,787)" font-size="10" style="fill:rgb(0, 148, 181)">code</text>
+<text transform="translate(1220,462)" font-size="10" style="fill:rgb(0, 29, 240)">Yeh</text>
+<text transform="translate(1214,276)" font-size="10" style="fill:rgb(0, 3, 254)">entire</text>
+<text transform="translate(132,494)" font-size="10" style="fill:rgb(0, 88, 211)">Zhang</text>
+<text transform="translate(889,180)" font-size="10" style="fill:rgb(0, 8, 251)">segmented</text>
+<text transform="translate(1195,741)" font-size="10" style="fill:rgb(0, 192, 159)">small</text>
+<text transform="translate(671,491) rotate(-90)" font-size="10" style="fill:rgb(0, 120, 195)">current</text>
+<text transform="translate(590,659) rotate(-90)" font-size="10" style="fill:rgb(0, 25, 242)">second</text>
+<text transform="translate(1352,188)" font-size="10" style="fill:rgb(0, 118, 196)">extensive</text>
+<text transform="translate(446,750)" font-size="10" style="fill:rgb(0, 3, 254)">patients</text>
+<text transform="translate(1301,514)" font-size="10" style="fill:rgb(0, 91, 210)">larger</text>
+<text transform="translate(920,68)" font-size="10" style="fill:rgb(0, 78, 216)">change</text>
+<text transform="translate(866,127)" font-size="10" style="fill:rgb(0, 155, 178)">HCP</text>
+<text transform="translate(674,457)" font-size="10" style="fill:rgb(0, 156, 177)">freely</text>
+<text transform="translate(892,85)" font-size="10" style="fill:rgb(0, 13, 248)">computed</text>
+<text transform="translate(909,793)" font-size="10" style="fill:rgb(0, 198, 156)">typically</text>
+<text transform="translate(277,338)" font-size="10" style="fill:rgb(0, 27, 242)">definition</text>
+<text transform="translate(649,258)" font-size="10" style="fill:rgb(0, 78, 216)">area</text>
+<text transform="translate(720,659)" font-size="10" style="fill:rgb(0, 4, 253)">neighboring</text>
+<text transform="translate(618,8)" font-size="10" style="fill:rgb(0, 253, 128)">train</text>
+<text transform="translate(1359,205)" font-size="10" style="fill:rgb(0, 100, 205)">performance</text>
+<text transform="translate(658,358)" font-size="10" style="fill:rgb(0, 167, 172)">indicated</text>
+<text transform="translate(1018,627)" font-size="10" style="fill:rgb(0, 120, 195)">high quality</text>
+<text transform="translate(1224,310)" font-size="10" style="fill:rgb(0, 219, 146)">Step feature</text>
+<text transform="translate(505,695)" font-size="10" style="fill:rgb(0, 79, 216)">feature extraction</text>
+<text transform="translate(1027,271)" font-size="10" style="fill:rgb(0, 227, 142)">target tractogram</text>
+<text transform="translate(300,793)" font-size="10" style="fill:rgb(0, 81, 214)">qualitative comparison</text>
+<text transform="translate(680,259)" font-size="9" style="fill:rgb(0, 120, 195)">diffusion</text>
+<text transform="translate(398,766)" font-size="9" style="fill:rgb(0, 53, 228)">connectivity</text>
+<text transform="translate(439,459)" font-size="9" style="fill:rgb(0, 203, 154)">diverse</text>
+<text transform="translate(69,514)" font-size="9" style="fill:rgb(0, 53, 228)">Guevara</text>
+</svg>

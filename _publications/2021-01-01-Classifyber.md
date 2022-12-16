@@ -2,7 +2,7 @@
 title: "Classifyber, a robust streamline-based linear classifier for white matter bundle segmentation"
 collection: publications
 permalink: /publication/2021-01-01-Classifyber
-excerpt: 'In this work, we propose a novel, supervised streamline-based segmentation method, called Classifyber, which combines information from atlases, connectivity patterns, and the geometry of fiber paths into a simple linear model.'
+excerpt: 'In this work, we propose a novel, supervised streamline-based segmentation method, called Classifyber, which combines information from atlases, connectivity patterns, and the geometry of fiber paths into a simple linear model. <br/><img src='/images/berto2021_WordCloud.svg'>'
 date: 2021-01-01
 venue: 'NeuroImage'
 paperurl: 'https://www.researchgate.net/profile/Giulia-Berto/publication/339216328_Classifyber_a_robust_streamline-based_linear_classifier_for_white_matter_bundle_segmentation/links/5e47e70f458515072d9f1b79/Classifyber-a-robust-streamline-based-linear-classifier-for-white-matter-bundle-segmentation.pdf'
