@@ -1,0 +1,66 @@
+---
+permalink: /apps/
+title: "brainlife apps"
+excerpt: "brainlife applications that I developed"
+author_profile: true
+redirect_from: 
+  - /blApps/
+  - /blApps.html
+  - /apps.html
+
+---
+
+<style>
+    .grid { 
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 20px;
+      align-items: stretch;
+      }
+    .grid > article {
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    }
+    .grid > article img {
+      max-width: 100%;
+    }
+    .text {
+      padding: 0 20px 20px;
+    }
+    .text > button {
+      background: gray;
+      border: 0;
+      color: white;
+      padding: 10px;
+      width: 100%;
+      }
+    </style>
+
+<main class="grid">
+    {% for app in site.apps %}
+        <article class="app">
+            {% if app.image %}
+                <img src="{app.image}" >
+            {% else %}
+            {% endif %}
+            <div class="text">
+                <h3 class="app-title"><a href="{{app.linkname | prepend: site.baseurl}}">{{app.title}}</a></h3>
+                <p>"{app.description}"</p>
+                <div class="datatypes">
+                    Inputs: 
+                    {% for datatype in app.in_datatypes %}
+                        datatype
+                    {% endfor %}
+                    Outputs:
+                    {% for datatype in app.out_datatypes %}
+                        datatype
+                    {% endfor %}
+                </div>
+                <div class="links">
+                    <a href="{app.bl_url}">brainlife.io app</a>
+                    <a href="{app.github_url}">GitHub repository</a>
+                </div>
+            </div>
+        </article>
+    {% endfor %}
+</main>
