@@ -40,12 +40,12 @@ redirect_from:
     {% for app in site.apps %}
         <article class="app">
             {% if app.image %}
-                <img src="{app.image}" >
+                <img src="{{app.image}}" >
             {% else %}
             {% endif %}
             <div class="text">
-                <h3 class="app-title"><a href="{{app.linkname | prepend: site.baseurl}}">{{app.title}}</a></h3>
-                <p>"{app.description}"</p>
+                <h3 class="app-title"><a ]]href="{{app.linkname | prepend: site.baseurl}}">{{app.title}}</a></h3>
+                <p>{{app.description}}</p>
                 <div class="datatypes">
                     Inputs: 
                     {% for datatype in app.in_datatypes %}
@@ -57,8 +57,8 @@ redirect_from:
                     {% endfor %}
                 </div>
                 <div class="links">
-                    <a href="{app.bl_url}">brainlife.io app</a>
-                    <a href="{app.github_url}">GitHub repository</a>
+                    <a href={{app.bl_url}}>brainlife.io app</a>
+                    <a href={{app.github_url}}>GitHub repository</a>
                 </div>
             </div>
         </article>
