@@ -26,7 +26,6 @@ redirect_from:
     }
     .text {
       padding: 0 20px 20px;
-      font-size: 4vw
     }
     .text > button {
       background: gray;
@@ -45,9 +44,9 @@ redirect_from:
             {% else %}
             {% endif %}
             <div class="text">
-                <h3 class="app-title"><a ]]href="{{app.linkname | prepend: site.baseurl}}">{{app.title}}</a></h3>
+                <h3 class="app-title" font-size=8vw><a ]]href="{{app.linkname | prepend: site.baseurl}}">{{app.title}}</a></h3>
                 <p>{{app.description}}</p>
-                <div class="datatypes">
+                <div class="datatypes" font-size=8vw> {}
                     Inputs: 
                     {% for datatype in app.in_datatypes %}
                         datatype
