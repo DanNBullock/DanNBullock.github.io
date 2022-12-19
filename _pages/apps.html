@@ -44,9 +44,9 @@ redirect_from:
             {% else %}
             {% endif %}
             <div class="text">
-                <h3 class="app-title" style="font-size:8vw;"><a ]]href="{{app.linkname | prepend: site.baseurl}}">{{app.title}}</a></h3>
-                <p>{{app.description}}</p>
-                <div class="datatypes" style="font-size:4vw;">
+                <h3 class="app-title" style="font-size:1vw;"><a ]]href="{{app.linkname | prepend: site.baseurl}}">{{app.title}}</a></h3>
+                <p style="font-size:.5vw;">{{app.description}}</p>
+                <div class="datatypes" style="font-size:.5vw;">
                     Inputs: 
                     {% for datatype in app.in_datatypes %}
                         datatype
