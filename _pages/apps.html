@@ -23,6 +23,9 @@ redirect_from:
     }
     .grid > article img {
       max-width: 100%;
+      min-height: 100%;
+      overflow: hidden;
+      align-self: center;
     }
     .text {
       padding: 0 10px 10px;
@@ -40,7 +43,7 @@ redirect_from:
     {% for app in site.apps %}
         <article class="app">
             {% if app.image %}
-                <img src="{{app.image}}" >
+                <img src="{{app.image}}" style="max-height: 100%">
             {% else %}
             {% endif %}
             <div class="text">
