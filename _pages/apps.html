@@ -23,7 +23,6 @@ redirect_from:
     }
     .grid > article img {
       max-width: 100%;
-      min-height: 100%;
       object-fit: cover;
     }
     .text {
@@ -41,31 +40,33 @@ redirect_from:
 <main class="grid">
     {% for app in site.apps %}
         <article class="app">
-            <div style="height:40%;">
+            <div style="height:15vw;">
                 {% if app.image %}
                     <img src="{{app.image}}">
                 {% else %}
                 {% endif %}
             </div>
-            <div class="text" style="font-size:.75vw; align-self: top; height:100%">
-                <h3 class="app-title" style="font-size:.75vw; align-self: top;"><a ]]href="{{app.linkname | prepend: site.baseurl}}">{{app.title}}</a></h3>
+            <div class="text" style="font-size:.75vw;">
+                <h3 class="app-title" style="font-size:.75vw;"><a ]]href="{{app.linkname | prepend: site.baseurl}}">{{app.title}}</a></h3>
                 <p style="font-size:.5vw; align-self: center;">{{app.description}}</p>
-                <div class="datatypes" style="font-size:.5vw; align-self: end;">
-                    Inputs: 
-                    {% for datatype in app.in_datatypes %}
-                        {{datatype}}
-                    {% endfor %}
+                <footer>
+                    <div class="datatypes" style="font-size:.5vw; align-self: end;">
+                        Inputs: 
+                        {% for datatype in app.in_datatypes %}
+                            {{datatype}}
+                        {% endfor %}
+                        <br />
+                        Outputs:
+                        {% for datatype in app.out_datatypes %}
+                            {{datatype}}
+                        {% endfor %}
+                    </div>
                     <br />
-                    Outputs:
-                    {% for datatype in app.out_datatypes %}
-                        {{datatype}}
-                    {% endfor %}
-                </div>
-                <br />
-                <div class="links" style="font-size:.5vw; white-space: nowrap; align-self: end;" >
-                    <a href={{app.bl_url}}>BL-App</a>
-                    <a href={{app.github_url}}>GH-Repo</a>
-                </div>
+                    <div class="links" style="font-size:.5vw; white-space: nowrap; align-self: end;" >
+                        <a href={{app.bl_url}}>BL-App</a>
+                        <a href={{app.github_url}}>GH-Repo</a>
+                    </div>
+                </footer>
             </div>
         </article>
     {% endfor %}
