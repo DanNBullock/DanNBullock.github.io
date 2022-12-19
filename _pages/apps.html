@@ -26,6 +26,7 @@ redirect_from:
     }
     .grid > article img {
       max-width: 100%;
+      min-width: 100%;
       min-height: 50%;
       aspect-ratio: 1 / 1;
       object-fit: cover;
@@ -54,7 +55,7 @@ redirect_from:
             <div class="text" style="font-size:.75vw;">
                 <h1 class="app-title" style="font-size:.75vw;"><a ]]href="{{app.linkname | prepend: site.baseurl}}">{{app.title}}</a></h3>
                 <p style="font-size:.5vw;">{{app.description}}</p>
-                <footer>
+                <footer  style="grid-area: footer">
                     <div class="datatypes" style="font-size:.5vw;">
                         <b>Inputs</b>: 
                         {% for datatype in app.in_datatypes %}
