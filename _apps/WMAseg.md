@@ -5,7 +5,7 @@ title: "White matter anatomy segmentation"
 image: 'https://raw.githubusercontent.com/brainlife/app-wmaSeg/master/wmaSeg.png'
 github_url: 'https://github.com/brainlife/app-wmaSeg'
 bl_url: 'https://doi.org/10.25663/brainlife.app.188'
-initial_push: 2017-09-2017 12:00:00
+initial_push: 2017-09-18 12:00:00
 description: 'An automated segmentation application for segmenting streamline tractography into known anatomical tracts.'
 color: '#B31917'
 tags:

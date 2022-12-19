@@ -14,11 +14,11 @@ tags:
 - matlab
 - tractography
 in_datatypes:
-- anat-t1
-- tck
-- wmc
+- <a href="https://brainlife.io/datatype/58c33bcee13a50849b25879a">anat-t1</a>
+- <a href="https://brainlife.io/datatype/5907d922436ee50ffde9c549">tck</a>
+- <a href="https://brainlife.io/datatype/5cc1d64c44947d8aea6b2d8b">wmc</a>
 out_datatypes:
-- density-nifti
+- <a href="https://brainlife.io/datatype/592dded1436ee50ffd88f5d0">tck</a>
 categories: 'quantification'
 ---
 
