@@ -1,0 +1,25 @@
+---
+layout: post
+linkname: 'tractDensityMask'
+title: "Tract Density Mask"
+image: 'https://github.com/brainlife/app-tractDensityMasks/blob/master/yifof.gif?raw=true'
+github_url: 'https://github.com/brainlife/app-tractDensityMasks/tree/master'
+bl_url: 'https://doi.org/10.25663/brainlife.app.498'
+initial_push: 2021-04-2021 12:00:00
+description: 'This app creates a streamline density mask (NIfTI format) for each structure labeled in a classification structure. This provides information about the volumetric density of streamline models of tracts.'
+color: '#B31917'
+tags:
+- whiteMatter
+- density
+- matlab
+- tractography
+in_datatypes:
+- anat-t1
+- tck
+- wmc
+out_datatypes:
+- density-nifti
+categories: 'quantification'
+---
+
+This app creates a streamline density mask (NIfTI format) for each structure labled in a classification structure and saves it to disk.  You can then use this data to compare overlap between tracts, the general course taken, or even cortical intersections (e.g. endpoint mappings). 

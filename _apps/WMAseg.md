@@ -14,10 +14,10 @@ tags:
 - matlab
 - tractography
 in_datatypes:
-- freesurfer
-- tck
+- <a href="https://brainlife.io/datatype/58cb22c8e13a50849b25882e">freesurfer</a>
+- <a href="https://brainlife.io/datatype/5907d922436ee50ffde9c549">tck</a>
 out_datatypes:
-- wmc
+- <a href="https://brainlife.io/datatype/5cc1d64c44947d8aea6b2d8b">wmc</a>
 categories: 'segmentation'
 ---
 
