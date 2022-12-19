@@ -41,10 +41,12 @@ redirect_from:
 <main class="grid">
     {% for app in site.apps %}
         <article class="app">
-            {% if app.image %}
-                <img src="{{app.image}}" style="max-height: 100%">
-            {% else %}
-            {% endif %}
+            <div style="max-height:50%;">
+                {% if app.image %}
+                    <img src="{{app.image}}">
+                {% else %}
+                {% endif %}
+            </div>
             <div class="text">
                 <h3 class="app-title" style="font-size:.75vw;"><a ]]href="{{app.linkname | prepend: site.baseurl}}">{{app.title}}</a></h3>
                 <p style="font-size:.5vw;">{{app.description}}</p>
@@ -60,7 +62,7 @@ redirect_from:
                     {% endfor %}
                 </div>
                 <br />
-                <div class="links" style="font-size:.5vw; white-space: nowrap; position:absolute; bottom:0;" >
+                <div class="links" style="font-size:.5vw; white-space: nowrap; align-self: end;" >
                     <a href={{app.bl_url}}>BL-App</a>
                     <a href={{app.github_url}}>GH-Repo</a>
                 </div>
