@@ -15,7 +15,6 @@ tags:
 - tractography
 in_datatypes:
 - <a href="https://brainlife.io/datatypes/604976b3ebfe45c4633ae3d2">microperimetry</a>
-
 out_datatypes:
 - <a href="https://brainlife.io/datatype/59666a40b09297d8d8271dfc">png</a>
 - csv
