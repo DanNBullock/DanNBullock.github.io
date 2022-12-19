@@ -25,7 +25,7 @@ redirect_from:
       max-width: 100%;
     }
     .text {
-      padding: 0 20px 20px;
+      padding: 0 10px 10px;
     }
     .text > button {
       background: gray;
@@ -44,21 +44,23 @@ redirect_from:
             {% else %}
             {% endif %}
             <div class="text">
-                <h3 class="app-title" style="font-size:1vw;"><a ]]href="{{app.linkname | prepend: site.baseurl}}">{{app.title}}</a></h3>
+                <h3 class="app-title" style="font-size:.75vw;"><a ]]href="{{app.linkname | prepend: site.baseurl}}">{{app.title}}</a></h3>
                 <p style="font-size:.5vw;">{{app.description}}</p>
                 <div class="datatypes" style="font-size:.5vw;">
                     Inputs: 
                     {% for datatype in app.in_datatypes %}
                         datatype
                     {% endfor %}
+                    <br />
                     Outputs:
                     {% for datatype in app.out_datatypes %}
                         datatype
                     {% endfor %}
                 </div>
-                <div class="links">
-                    <a href={{app.bl_url}}>brainlife.io app</a>
-                    <a href={{app.github_url}}>GitHub repository</a>
+                <br />
+                <div class="links" style="font-size:.5vw; white-space: nowrap;" >
+                    <a href={{app.bl_url}}>BL-App</a>
+                    <a href={{app.github_url}}>GH-Repo</a>
                 </div>
             </div>
         </article>
