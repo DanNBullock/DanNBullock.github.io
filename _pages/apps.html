@@ -49,16 +49,16 @@ redirect_from:
                 <div class="datatypes" style="font-size:.5vw;">
                     Inputs: 
                     {% for datatype in app.in_datatypes %}
-                        datatype
+                        {{datatype}}
                     {% endfor %}
                     <br />
                     Outputs:
                     {% for datatype in app.out_datatypes %}
-                        datatype
+                        {{datatype}}
                     {% endfor %}
                 </div>
                 <br />
-                <div class="links" style="font-size:.5vw; white-space: nowrap;" >
+                <div class="links" style="font-size:.5vw; white-space: nowrap; position:absolute; bottom:0;" >
                     <a href={{app.bl_url}}>BL-App</a>
                     <a href={{app.github_url}}>GH-Repo</a>
                 </div>
