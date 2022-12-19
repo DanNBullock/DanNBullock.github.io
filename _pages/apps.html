@@ -16,7 +16,6 @@ redirect_from:
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 20px;
       align-items: stretch;
-      display:flex;
       }
     .grid > article {
       border-radius: 5px;
@@ -55,22 +54,24 @@ redirect_from:
             <div class="text" style="font-size:.75vw;">
                 <h1 class="app-title" style="font-size:.75vw;"><a ]]href="{{app.linkname | prepend: site.baseurl}}">{{app.title}}</a></h3>
                 <p style="font-size:.5vw;">{{app.description}}</p>
-                <footer  style="grid-area: footer">
-                    <div class="datatypes" style="font-size:.5vw;">
-                        <b>Inputs</b>: 
-                        {% for datatype in app.in_datatypes %}
-                            {{datatype}}
-                        {% endfor %}
+                <footer>
+                    <div style="align-self: flex-end;">
+                        <div class="datatypes" style="font-size:.5vw;">
+                            <b>Inputs</b>: 
+                            {% for datatype in app.in_datatypes %}
+                                {{datatype}}
+                            {% endfor %}
+                            <br />
+                            <b>Outputs</b>:
+                            {% for datatype in app.out_datatypes %}
+                                {{datatype}}
+                            {% endfor %}
+                        </div>
                         <br />
-                        <b>Outputs</b>:
-                        {% for datatype in app.out_datatypes %}
-                            {{datatype}}
-                        {% endfor %}
-                    </div>
-                    <br />
-                    <div class="links" style="font-size:.5vw; white-space: nowrap;" >
-                        <a href={{app.bl_url}}>BL-App</a>
-                        <a href={{app.github_url}}>GH-Repo</a>
+                        <div class="links" style="font-size:.5vw; white-space: nowrap;" >
+                            <a href={{app.bl_url}}>BL-App</a>
+                            <a href={{app.github_url}}>GH-Repo</a>
+                        </div>
                     </div>
                 </footer>
             </div>
