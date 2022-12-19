@@ -20,11 +20,12 @@ redirect_from:
       }
     .grid > article {
       border-radius: 5px;
+      overflow: hidden;
       border: 1px solid #ccc;
       box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
     }
     .grid > article img {
-      max-width: 100%;
+      height: 50%;
       object-fit: cover;
     }
     .text {
@@ -42,13 +43,13 @@ redirect_from:
 <main class="grid">
     {% for app in site.apps %}
         <article class="app">
-            <div style="height: 50%;">
+            <div >
                 {% if app.image %}
                     <img src="{{app.image}}">
                 {% else %}
                 {% endif %}
             </div>
-            <div class="text" style="font-size:.75vw; height: 50%;">
+            <div class="text" style="font-size:.75vw;">
                 <h1 class="app-title" style="font-size:.75vw;"><a ]]href="{{app.linkname | prepend: site.baseurl}}">{{app.title}}</a></h3>
                 <p style="font-size:.5vw;">{{app.description}}</p>
                 <footer>
