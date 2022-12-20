@@ -1,6 +1,6 @@
 ---
 title: "CiteAs on requirements.txt"
-excerpt: "GitHub action for using the CiteAs API to generate a software citation ACKNOWLEDGEMENTS.md document automatically from a requirements.txt file.<br/><img src='https://citeas.org/static/img/citeas-logo.png'>"
+excerpt: "GitHub action for using the CiteAs API to generate a software citation ACKNOWLEDGEMENTS.md document automatically from a requirements.txt file.<br/><img style='aspect-ratio: 1 / 1; width: 520px;' src='https://citeas.org/static/img/citeas-logo.png'>"
 collection: portfolio
 ---
 
