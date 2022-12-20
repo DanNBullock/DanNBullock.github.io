@@ -5,14 +5,13 @@ permalink: /portfolio/
 author_profile: true
 ---
 
-
-<p>Here you'll find a selection brainlife that I've worked on over the years. Click on an entry to find a short description of the product and a link to the relevant GitHub repository or interface.</p>
+<div style="max-width: min-content">Here you'll find a selection brainlife that I've worked on over the years. Click on an entry to find a short description of the product and a link to the relevant GitHub repository or interface.
 
 {% include base_path %}
 
-{% for app in site.blApps %}
+{% for post in site.portfolio %}
   {% include archive-single.html %}
 {% endfor %}
 
-
+</div>
 
