@@ -7,10 +7,9 @@ collection: portfolio
 
 Cataloging accounts of white matter tracts and their anatomy throughout the literature.
 
-[![Neruomatch 4.0 WMAD + Interactive Segmentation presentation](https://img.youtube.com/vi/FAV5HdVQ91c/0.jpg)](https://www.youtube.com/watch?v=FAV5HdVQ91c){:style="display:block; margin-left:auto; margin-right:auto"}
+[![Neruomatch 4.0 WMAD + Interactive Segmentation presentation](https://img.youtube.com/vi/FAV5HdVQ91c/0.jpg){{:style="display:block; margin-left:auto; margin-right:auto"}}](https://www.youtube.com/watch?v=FAV5HdVQ91c)
 
-[![DanNBullock/WMAD - GitHub](https://gh-card.dev/repos/DanNBullock/WMAD.svg)](https://github.com/DanNBullock/WMAD){:style="display:block; margin-left:auto; margin-right:auto"}
-
+[![DanNBullock/WMAD - GitHub](https://gh-card.dev/repos/DanNBullock/WMAD.svg){{:style="display:block; margin-left:auto; margin-right:auto"}}](https://github.com/DanNBullock/WMAD)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/DanNBullock/WMAD/main?filepath=Notebooks%2FInteract_With_WMAD.ipynb){:style="display:block; margin-left:auto; margin-right:auto"}
 
 ### The target problem
