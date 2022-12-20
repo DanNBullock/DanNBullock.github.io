@@ -4,19 +4,13 @@ title: "Portfolio"
 permalink: /portfolio/
 author_profile: true
 ---
-<html>
-<body>
-<div style="max-width: 33vw">Here you'll find a selection brainlife that I've worked on over the years. Click on an entry to find a short description of the product and a link to the relevant GitHub repository or interface.</div>
-</body>
-</html>
+{% include base_path %}
 
-
-<div style="max-width: 33vw">
-  {% include base_path %}
-
+<div style="max-width: min-content">Here you'll find a selection brainlife that I've worked on over the years. Click on an entry to find a short description of the product and a link to the relevant GitHub repository or interface.</div>
 
   {% for app in site.blApps %}
     {% include archive-single.html %}
   {% endfor %}
 
 </div>
+
