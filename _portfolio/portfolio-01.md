@@ -7,13 +7,13 @@ collection: portfolio
 
 Cataloging accounts of white matter tracts and their anatomy throughout the literature.
 
-<div style= 'text-align: center; width:max-content; height:auto'>
+<p align="center">
 [![Neruomatch 4.0 WMAD + Interactive Segmentation presentation](https://img.youtube.com/vi/FAV5HdVQ91c/0.jpg)](https://www.youtube.com/watch?v=FAV5HdVQ91c)
 
 [![DanNBullock/WMAD - GitHub](https://gh-card.dev/repos/DanNBullock/WMAD.svg)](https://github.com/DanNBullock/WMAD)
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/DanNBullock/WMAD/main?filepath=Notebooks%2FInteract_With_WMAD.ipynb)
-</div>
+</p>
 
 ### The target problem
 In the field of white matter anatomy there are a range of conflicting accounts of anatomical characteristics and associated terminology for white matter tracts (bundles of axons that connect parts of the brain).  This problem has been highlighted in several recent publications including [Bullock et al. 2021](https://psyarxiv.com/fvk5r/) and [Schilling et al 2021](https://doi.org/10.1016/j.neuroimage.2021.118502).  Currently, individual researchers must expend great effort to locate and examine even a fraction of the accounts which are pertinent to their structure(s) of interest.  Furthermore, due to the aforementioned terminological and descriptive challenges even the most dedicated investigators will only encounter a portion of the work that could speak to their research.
