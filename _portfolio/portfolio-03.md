@@ -7,11 +7,11 @@ collection: portfolio
 
 This resource is a collection of jupyer notebooks notebooks designed to build intuitions for and provide training in digital white matter segmentation. The modern-day practice of digital white matter segmentation is as much about programming as it is about neuroanatomy, which is why the medium of jupyer notebooks has been chosen. In this way, users are able to view commented code alongside text explaining the context, goals, and implications of what is being done. Furthermore it acheives interactivity via [binder](https://mybinder.org/) and can be viewed as [a web-book](https://dannbullock.github.io/WiMSE/landingPage.html) via [Jupyter Book](https://jupyterbook.org/en/stable/intro.html)
 
-<div style= 'text-align: center; width:max-content; height:auto'>
+<p style="text-align:center">
 
-[![DanNBullock/WiMSE - GitHub](https://gh-card.dev/repos/DanNBullock/WiMSE.svg)](https://github.com/DanNBullock/WiMSE)
+<a href='https://github.com/DanNBullock/WiMSE'><img src='https://gh-card.dev/repos/DanNBullock/WiMSE.svg' alt='DanNBullock/WiMSE - GitHub'></a>
 
-</div>
+</p>
 
 ## Overview
 
