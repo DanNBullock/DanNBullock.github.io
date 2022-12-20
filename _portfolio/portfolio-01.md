@@ -8,6 +8,9 @@ collection: portfolio
 Cataloging accounts of white matter tracts and their anatomy throughout the literature.
 
 <p style="text-align:center">
+
+<a href='https://www.youtube.com/watch?v=FAV5HdVQ91c'><img src='https://img.youtube.com/vi/FAV5HdVQ91c/0.jpg' alt='Neruomatch 4.0 WMAD + Interactive Segmentation presentation'></a>
+
 [![Neruomatch 4.0 WMAD + Interactive Segmentation presentation](https://img.youtube.com/vi/FAV5HdVQ91c/0.jpg)](https://www.youtube.com/watch?v=FAV5HdVQ91c)
 
 [![DanNBullock/WMAD - GitHub](https://gh-card.dev/repos/DanNBullock/WMAD.svg)](https://github.com/DanNBullock/WMAD)
