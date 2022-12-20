@@ -11,6 +11,8 @@ author_profile: true
 
 {% for post in site.portfolio %}
   {% include archive-single.html %}
+  <br/>
+  <img style='width:520px; height:auto;' src='{{post.image}}'>
 {% endfor %}
 
 </div>
