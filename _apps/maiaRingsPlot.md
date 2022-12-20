@@ -3,7 +3,7 @@ layout: post
 linkname: 'maiaRingsPlot'
 title: "MAIA Rings Plot"
 image: 'https://raw.githubusercontent.com/brainlife/app-maiaRings/master/exampleImgs/radarPlot.png'
-github_url: 'https://github.com/brainlife/app-maiaRings'
+github_url: 'brainlife/app-maiaRings'
 bl_url: 'https://doi.org/10.25663/brainlife.app.493'
 initial_push: 2021-03-24 12:00:00
 description: 'This app computes and plots the degree-based ring averages for microperimetry measurements.  It makes use of <a href="https://github.com/DanNBullock/OCT_scripts/tree/master">OCT_scripts</a>'
