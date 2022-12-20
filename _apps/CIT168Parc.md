@@ -3,7 +3,7 @@ layout: post
 linkname: 'CIT168Parc'
 title: "CIT168 Parcellation"
 image: 'https://raw.githubusercontent.com/brainlife/app-CIT168Parc/main/birdface.gif'
-github_url: 'brainlife/app-CIT168Parc/tree/main'
+github_url: 'brainlife/app-CIT168Parc'
 bl_url: 'https://doi.org/10.25663/brainlife.app.449'
 initial_push: 2020-11-16 12:00:00
 description: 'This app generates a subject-specific parcellation of <a href="https://github.com/brainlife/app-CIT168Parc/tree/main#segmented-strucures">subcortical areas</a> using the <a href="https://doi.org/10.1038/sdata.2018.63">CIT168</a> parcellation.'

@@ -3,7 +3,7 @@ layout: post
 linkname: 'tractDensityMask'
 title: "Tract Density Mask"
 image: 'https://github.com/brainlife/app-tractDensityMasks/blob/master/yifof.gif?raw=true'
-github_url: 'brainlife/app-tractDensityMasks/tree/master'
+github_url: 'brainlife/app-tractDensityMasks/'
 bl_url: 'https://doi.org/10.25663/brainlife.app.498'
 initial_push: 2021-04-2021 12:00:00
 description: 'This app creates a streamline density mask (NIfTI format) for each structure labeled in a classification structure. This provides information about the volumetric density of streamline models of tracts.'
