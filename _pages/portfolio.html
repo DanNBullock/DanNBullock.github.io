@@ -5,15 +5,17 @@ permalink: /portfolio/
 author_profile: true
 ---
 
-<div style="width: 50%;">Here you'll find a selection brainlife that I've worked on over the years. Click on an entry to find a short description of the product and a link to the relevant GitHub repository or interface.
+Here you'll find a selection brainlife that I've worked on over the years. Click on an entry to find a short description of the product and a link to the relevant GitHub repository or interface.
 
 {% include base_path %}
 
 {% for post in site.portfolio %}
   {% include archive-single.html %}
   <br/>
-  <img style='width: 100%; height:auto;' src='{{post.image}}'>
+  <p style="text-align:center">
+    <img style='max-width: 100%;width: 600; height:auto;' src='{{post.image}}'>
+  </p>
 {% endfor %}
 
-</div>
+
 
