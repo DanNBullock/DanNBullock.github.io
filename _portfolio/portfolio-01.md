@@ -10,9 +10,9 @@ Cataloging accounts of white matter tracts and their anatomy throughout the lite
 <p style="text-align:center">
 
 <a href='https://www.youtube.com/watch?v=FAV5HdVQ91c'><img src='https://img.youtube.com/vi/FAV5HdVQ91c/0.jpg' alt='Neruomatch 4.0 WMAD + Interactive Segmentation presentation'></a>
-
+<br/>
 <a href='https://github.com/DanNBullock/WMAD'><img src='https://gh-card.dev/repos/DanNBullock/WMAD.svg' alt='DanNBullock/WMAD - GitHub'></a>
-
+<br/>
 <a href='https://mybinder.org/v2/gh/DanNBullock/WMAD/main?filepath=Notebooks%2FInteract_With_WMAD.ipynb'><img src='https://mybinder.org/badge_logo.svg' alt='Binder link for WiMSE'></a>
 
 </p>

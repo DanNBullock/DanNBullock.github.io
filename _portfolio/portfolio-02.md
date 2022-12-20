@@ -10,9 +10,9 @@ A user-friendly jupyter notebook for performing anatomy-based segmentations.
 <p style="text-align:center">
 
 <a href='https://mybinder.org/v2/gh/DanNBullock/interactiveWMSegmentation/master?filepath=InteractiveWhiteMatterSegmentation.ipynb'><img src='https://mybinder.org/badge_logo.svg' alt='Binder link for interactive white matter segmentation'></a>
-
+<br/>
 <a href='https://www.youtube.com/watch?v=FAV5HdVQ91c'><img src='https://img.youtube.com/vi/FAV5HdVQ91c/0.jpg' alt='Neruomatch 4.0 Interactive Segmentation + WMAD presentation'></a>
-
+<br/>
 <a href='https://github.com/DanNBullock/interactiveWMSegmentation'><img src='https://gh-card.dev/repos/DanNBullock/interactiveWMSegmentation.svg' alt='DanNBullock/interactiveWMSegmentation - GitHub'></a>
 
 </p>
