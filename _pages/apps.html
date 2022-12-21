@@ -47,33 +47,35 @@ Here, you'll find a showcase of various applications that I developed for the <a
 <main class="grid">
     {% for app in site.apps %}
         <article class="app">
-            <div >
-                {% if app.image %}
-                    <img src="{{app.image}}">
-                {% else %}
-                {% endif %}
-            </div>
-            <div class="text" style="font-size:.75vw;">
-                <h1 class="app-title" style="font-size:.75vw;"><a href="{{app.linkname | prepend: site.baseurl}}">{{app.title}}</a></h1>
-                <p style="font-size:.5vw;">{{app.description}}</p>
-            </div>
-            <div style="align-self: flex-end;">
-                <div class="datatypes" style="font-size:.5vw;">
-                    <b>Inputs</b>: 
-                    {% for datatype in app.in_datatypes %}
-                        {{datatype}}
-                    {% endfor %}
-                    <br />
-                    <b>Outputs</b>:
-                    {% for datatype in app.out_datatypes %}
-                        {{datatype}}
-                    {% endfor %}
+            <div>
+                <div style="height: 100%;">
+                    {% if app.image %}
+                        <img src="{{app.image}}">
+                    {% else %}
+                    {% endif %}
                 </div>
-                <br />
-                <div class="links" style="font-size:.5vw; white-space: nowrap;" >
-                    <a href="{{app.github_url | prepend: 'https://github.com/'}}"><img style="width: 100%; object-fit: revert; aspect-ratio: revert;" src="{{app.github_url | append: '.svg' | prepend: 'https://gh-card.dev/repos/'}}" alt="{{app.github_url | append: ' - GitHub' }}"></a>
+                <div class="text" style="font-size:.75vw;">
+                    <h1 class="app-title" style="font-size:.75vw;"><a href="{{app.linkname | prepend: site.baseurl}}">{{app.title}}</a></h1>
+                    <p style="font-size:.5vw;">{{app.description}}</p>
+                </div>
+                <div style="align-self: flex-end; padding: 5px 10px 0px">
+                    <div class="datatypes" style="font-size:.5vw;">
+                        <b>Inputs</b>: 
+                        {% for datatype in app.in_datatypes %}
+                            {{datatype}}
+                        {% endfor %}
+                        <br />
+                        <b>Outputs</b>:
+                        {% for datatype in app.out_datatypes %}
+                            {{datatype}}
+                        {% endfor %}
+                    </div>
                     <br />
-                    <a href={{app.bl_url}}><img style="width: 100%; object-fit: revert; aspect-ratio: revert; overflow: hidden" src= "https://raw.githubusercontent.com/brainlife/docs/master/docs/img/media/brainlife.io.png"></a>
+                    <div class="links" style="font-size:.5vw; white-space: nowrap;" >
+                        <a href="{{app.github_url | prepend: 'https://github.com/'}}"><img style="width: 100%; object-fit: revert; aspect-ratio: revert;" src="{{app.github_url | append: '.svg' | prepend: 'https://gh-card.dev/repos/'}}" alt="{{app.github_url | append: ' - GitHub' }}"></a>
+                        <br />
+                        <a href={{app.bl_url}}><img style="width: 100%; object-fit: revert; aspect-ratio: revert; overflow: hidden" src= "https://raw.githubusercontent.com/brainlife/docs/master/docs/img/media/brainlife.io.png"></a>
+                    </div>
                 </div>
             </div>
         </article>
