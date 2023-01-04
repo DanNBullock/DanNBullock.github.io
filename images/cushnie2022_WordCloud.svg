@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="800">
+<style>text{font-family:'Droid Sans Mono';font-weight:bold; text-shadow: 0.000001em 0 1px black,0 0.000001em 1px black,-0.000001em 0 1px black, 0 -0.000001em 1px black, -0.000001em -0.000001em 1px black, -0.000001em 0.000001em 1px black, 0.000001em -0.000001em 1px black, 0.000001em 0.000001em 1px black;;font-style:normal;}</style>
+<rect width="100%" height="100%" style="fill:none"></rect>
+<text transform="translate(17,288)" font-size="358" style="fill:rgb(0, 196, 157)">subject</text>
+<text transform="translate(781,635)" font-size="329" style="fill:rgb(0, 77, 216)">INT</text>
+<text transform="translate(53,639)" font-size="325" style="fill:rgb(0, 45, 232)">DCZ</text>
+<text transform="translate(890,760)" font-size="173" style="fill:rgb(0, 25, 242)">rs FC</text>
+<text transform="translate(404,767)" font-size="169" style="fill:rgb(0, 20, 245)">brain</text>
+<text transform="translate(1516,625) rotate(-90)" font-size="151" style="fill:rgb(0, 234, 138)">CLZ</text>
+<text transform="translate(89,376)" font-size="118" style="fill:rgb(0, 189, 160)">DREADD</text>
+<text transform="translate(2,728)" font-size="113" style="fill:rgb(0, 80, 215)">ligand</text>
+<text transform="translate(965,360)" font-size="90" style="fill:rgb(0, 202, 154)">change</text>
+<text transform="translate(584,564)" font-size="77" style="fill:rgb(0, 47, 232)">Monkey</text>
+<text transform="translate(944,75)" font-size="75" style="fill:rgb(0, 86, 212)">session</text>
+<text transform="translate(50,67)" font-size="72" style="fill:rgb(0, 61, 224)">effects</text>
+<text transform="translate(512,54)" font-size="70" style="fill:rgb(0, 92, 209)">region</text>
+<text transform="translate(822,342)" font-size="70" style="fill:rgb(0, 140, 185)">ROI</text>
+<text transform="translate(1583,417) rotate(-90)" font-size="70" style="fill:rgb(0, 247, 132)">condition</text>
+<text transform="translate(1396,707)" font-size="66" style="fill:rgb(0, 126, 192)">study</text>
+<text transform="translate(1177,213)" font-size="62" style="fill:rgb(0, 101, 204)">dose</text>
+<text transform="translate(705,475)" font-size="62" style="fill:rgb(0, 56, 227)">time</text>
+<text transform="translate(1285,335)" font-size="54" style="fill:rgb(0, 98, 206)">analysis</text>
+<text transform="translate(1197,789) rotate(-90)" font-size="52" style="fill:rgb(0, 118, 196)">correlated</text>
+<text transform="translate(14,784)" font-size="35" style="fill:rgb(0, 245, 132)">chemogenetic ligand</text>
+<text transform="translate(1384,791)" font-size="34" style="fill:rgb(0, 43, 234)">baseline</text>
+<text transform="translate(323,528)" font-size="34" style="fill:rgb(0, 200, 155)">values</text>
+<text transform="translate(949,225)" font-size="33" style="fill:rgb(0, 102, 204)">studies</text>
+<text transform="translate(1304,485)" font-size="33" style="fill:rgb(0, 68, 221)">performed</text>
+<text transform="translate(1046,400)" font-size="32" style="fill:rgb(0, 7, 252)">drug</text>
+<text transform="translate(1402,734)" font-size="32" style="fill:rgb(0, 173, 168)">receptor</text>
+<text transform="translate(2,323)" font-size="32" style="fill:rgb(0, 231, 140)">data</text>
+<text transform="translate(464,663)" font-size="32" style="fill:rgb(0, 3, 254)">difference</text>
+<text transform="translate(1271,26)" font-size="32" style="fill:rgb(0, 48, 231)">actuator ligand</text>
+<text transform="translate(320,553)" font-size="32" style="fill:rgb(0, 224, 143)">low dose</text>
+<text transform="translate(523,597)" font-size="32" style="fill:rgb(0, 18, 246)">rs fMRI</text>
+<text transform="translate(655,288)" font-size="31" style="fill:rgb(0, 31, 240)">animal</text>
+<text transform="translate(445,793)" font-size="31" style="fill:rgb(0, 142, 184)">individual</text>
+<text transform="translate(876,382)" font-size="31" style="fill:rgb(0, 161, 174)">shift</text>
+<text transform="translate(629,622)" font-size="31" style="fill:rgb(0, 72, 219)">ROI pair</text>
+<text transform="translate(1277,160)" font-size="30" style="fill:rgb(0, 135, 188)">prior</text>
+<text transform="translate(779,792)" font-size="30" style="fill:rgb(0, 233, 139)">Download Download</text>
+<text transform="translate(1417,142)" font-size="28" style="fill:rgb(0, 238, 136)">impact</text>
+<text transform="translate(636,239)" font-size="28" style="fill:rgb(0, 2, 254)">Macaque</text>
+<text transform="translate(56,521) rotate(-90)" font-size="28" style="fill:rgb(0, 199, 156)">image</text>
+<text transform="translate(1446,211)" font-size="28" style="fill:rgb(0, 218, 146)">NHP</text>
+<text transform="translate(800,653)" font-size="24" style="fill:rgb(0, 238, 136)">functional connectivity</text>
+<text transform="translate(902,25)" font-size="23" style="fill:rgb(0, 56, 227)">administration</text>
+<text transform="translate(570,328)" font-size="23" style="fill:rgb(0, 72, 219)">affinity</text>
+<text transform="translate(812,216)" font-size="23" style="fill:rgb(0, 15, 248)">induce</text>
+<text transform="translate(643,419)" font-size="23" style="fill:rgb(0, 255, 128)">functional</text>
+<text transform="translate(456,144) rotate(-90)" font-size="23" style="fill:rgb(0, 183, 163)">alter</text>
+<text transform="translate(536,365)" font-size="23" style="fill:rgb(0, 181, 164)">regional</text>
+<text transform="translate(719,497)" font-size="23" style="fill:rgb(0, 167, 172)">level</text>
+<text transform="translate(1280,74)" font-size="23" style="fill:rgb(0, 84, 213)">saline</text>
+<text transform="translate(1237,782)" font-size="23" style="fill:rgb(0, 95, 208)">consistent</text>
+<text transform="translate(338,471)" font-size="23" style="fill:rgb(0, 122, 194)">induced changes</text>
+<text transform="translate(820,123)" font-size="22" style="fill:rgb(0, 146, 182)">neural</text>
+<text transform="translate(111,393)" font-size="22" style="fill:rgb(0, 248, 131)">specific</text>
+<text transform="translate(646,159)" font-size="22" style="fill:rgb(0, 240, 135)">including</text>
+<text transform="translate(802,80)" font-size="22" style="fill:rgb(0, 207, 152)">subsequent</text>
+<text transform="translate(585,503)" font-size="22" style="fill:rgb(0, 190, 160)">observed</text>
+<text transform="translate(1294,546)" font-size="22" style="fill:rgb(0, 111, 200)">compared</text>
+<text transform="translate(1411,643)" font-size="22" style="fill:rgb(0, 232, 139)">performance</text>
+<text transform="translate(106,151)" font-size="22" style="fill:rgb(0, 51, 230)">expression</text>
+<text transform="translate(981,607) rotate(-90)" font-size="22" style="fill:rgb(0, 250, 130)">imaging</text>
+<text transform="translate(1299,449)" font-size="22" style="fill:rgb(0, 120, 195)">temporal</text>
+<text transform="translate(667,583)" font-size="22" style="fill:rgb(0, 127, 192)">acquired</text>
+<text transform="translate(173,651)" font-size="22" style="fill:rgb(0, 1, 254)">consistency</text>
+<text transform="translate(939,537) rotate(-90)" font-size="22" style="fill:rgb(0, 108, 201)">CI</text>
+<text transform="translate(644,72)" font-size="22" style="fill:rgb(0, 91, 210)">high dose</text>
+<text transform="translate(333,496)" font-size="22" style="fill:rgb(0, 116, 197)">beta values</text>
+<text transform="translate(18,619) rotate(-90)" font-size="22" style="fill:rgb(0, 174, 168)">ligand administration</text>
+<text transform="translate(325,571)" font-size="20" style="fill:rgb(0, 190, 160)">chemogenetic</text>
+<text transform="translate(1243,242)" font-size="20" style="fill:rgb(0, 194, 158)">clozapine</text>
+<text transform="translate(199,198)" font-size="20" style="fill:rgb(0, 218, 146)">CNO</text>
+<text transform="translate(673,201)" font-size="20" style="fill:rgb(0, 40, 235)">network</text>
+<text transform="translate(1106,770)" font-size="20" style="fill:rgb(0, 53, 228)">naive</text>
+<text transform="translate(18,561)" font-size="20" style="fill:rgb(0, 112, 199)">al</text>
+<text transform="translate(614,462)" font-size="20" style="fill:rgb(0, 137, 187)">channel</text>
+<text transform="translate(1293,584)" font-size="20" style="fill:rgb(0, 195, 158)">receive</text>
+<text transform="translate(112,504)" font-size="20" style="fill:rgb(0, 16, 247)">assess</text>
+<text transform="translate(1421,759)" font-size="20" style="fill:rgb(0, 156, 177)">indicated</text>
+<text transform="translate(1286,386)" font-size="20" style="fill:rgb(0, 219, 146)">magnitude</text>
+<text transform="translate(1094,200) rotate(-90)" font-size="20" style="fill:rgb(0, 62, 224)">timescale</text>
+<text transform="translate(557,390)" font-size="20" style="fill:rgb(0, 217, 146)">endogenous receptors</text>
+<text transform="translate(321,393)" font-size="20" style="fill:rgb(0, 192, 159)">DREADD expression</text>
+<text transform="translate(242,746)" font-size="20" style="fill:rgb(0, 124, 193)">brain activity</text>
+<text transform="translate(3,242)" font-size="20" style="fill:rgb(0, 56, 227)">fMRI session</text>
+<text transform="translate(164,91)" font-size="18" style="fill:rgb(0, 47, 232)">administered</text>
+<text transform="translate(197,270)" font-size="18" style="fill:rgb(0, 201, 155)">state</text>
+<text transform="translate(60,88)" font-size="18" style="fill:rgb(0, 197, 156)">disorders</text>
+<text transform="translate(337,17)" font-size="18" style="fill:rgb(0, 60, 225)">Additionally</text>
+<text transform="translate(350,41)" font-size="18" style="fill:rgb(0, 191, 160)">properties</text>
+<text transform="translate(1429,248)" font-size="18" style="fill:rgb(0, 168, 171)">evaluate</text>
+<text transform="translate(1430,48)" font-size="18" style="fill:rgb(0, 58, 226)">Template</text>
+<text transform="translate(1,742)" font-size="18" style="fill:rgb(0, 47, 232)">acquisition</text>
+<text transform="translate(1117,739)" font-size="18" style="fill:rgb(0, 187, 162)">loop</text>
+<text transform="translate(1285,354)" font-size="18" style="fill:rgb(0, 107, 202)">calculated</text>
+<text transform="translate(711,775) rotate(-90)" font-size="18" style="fill:rgb(0, 25, 242)">regression</text>
+<text transform="translate(363,595)" font-size="18" style="fill:rgb(0, 181, 164)">evaluated</text>
+<text transform="translate(321,218)" font-size="18" style="fill:rgb(0, 22, 244)">runs</text>
+<text transform="translate(1397,531)" font-size="18" style="fill:rgb(0, 23, 244)">correlation</text>
+<text transform="translate(1450,165)" font-size="18" style="fill:rgb(0, 103, 204)">measures</text>
+<text transform="translate(831,99)" font-size="18" style="fill:rgb(0, 136, 187)">variable</text>
+<text transform="translate(648,790)" font-size="18" style="fill:rgb(0, 233, 139)">variability</text>
+<text transform="translate(1410,68)" font-size="18" style="fill:rgb(0, 47, 232)">demonstrated</text>
+<text transform="translate(486,493)" font-size="18" style="fill:rgb(0, 1, 254)">lobe</text>
+<text transform="translate(109,525)" font-size="18" style="fill:rgb(0, 185, 162)">suggests</text>
+<text transform="translate(993,240)" font-size="18" style="fill:rgb(0, 119, 195)">Importantly</text>
+<text transform="translate(1309,522)" font-size="18" style="fill:rgb(0, 36, 237)">profile</text>
+<text transform="translate(295,87)" font-size="18" style="fill:rgb(0, 173, 168)">Download high</text>
+<text transform="translate(1447,84)" font-size="18" style="fill:rgb(0, 154, 178)">high res</text>
+<text transform="translate(1534,536) rotate(-90)" font-size="18" style="fill:rgb(0, 50, 230)">res image</text>
+<text transform="translate(1080,306)" font-size="18" style="fill:rgb(0, 116, 197)">Download full</text>
+<text transform="translate(549,256) rotate(-90)" font-size="18" style="fill:rgb(0, 46, 232)">full size</text>
+<text transform="translate(1570,568) rotate(-90)" font-size="18" style="fill:rgb(0, 105, 203)">size image</text>
+<text transform="translate(1213,711) rotate(-90)" font-size="18" style="fill:rgb(0, 35, 238)">correlation coefficient</text>
+<text transform="translate(599,91)" font-size="18" style="fill:rgb(0, 219, 146)">standard deviation</text>
+<text transform="translate(20,182) rotate(-90)" font-size="18" style="fill:rgb(0, 184, 163)">working memory</text>
+<text transform="translate(812,50)" font-size="18" style="fill:rgb(0, 241, 134)">higher dose</text>
+<text transform="translate(783,667)" font-size="16" style="fill:rgb(0, 154, 178)">expressed</text>
+<text transform="translate(817,151)" font-size="16" style="fill:rgb(0, 140, 185)">circuits</text>
+<text transform="translate(185,409)" font-size="16" style="fill:rgb(0, 166, 172)">manipulation</text>
+<text transform="translate(826,181)" font-size="16" style="fill:rgb(0, 138, 186)">cell</text>
+<text transform="translate(363,205) rotate(-90)" font-size="16" style="fill:rgb(0, 185, 162)">require</text>
+<text transform="translate(7,205)" font-size="16" style="fill:rgb(0, 198, 156)">directly</text>
+<text transform="translate(843,246)" font-size="16" style="fill:rgb(0, 167, 172)">result</text>
+<text transform="translate(825,265)" font-size="16" style="fill:rgb(0, 183, 163)">improved</text>
+<text transform="translate(906,495)" font-size="16" style="fill:rgb(0, 168, 171)">lower</text>
+<text transform="translate(818,22)" font-size="16" style="fill:rgb(0, 191, 160)">response</text>
+<text transform="translate(739,511)" font-size="16" style="fill:rgb(0, 33, 238)">connectivity</text>
+<text transform="translate(1448,452)" font-size="16" style="fill:rgb(0, 118, 196)">altered</text>
+<text transform="translate(155,165)" font-size="16" style="fill:rgb(0, 205, 152)">intrinsic</text>
+<text transform="translate(1170,17)" font-size="16" style="fill:rgb(0, 182, 164)">processing</text>
+<text transform="translate(1274,94)" font-size="16" style="fill:rgb(0, 200, 155)">longer</text>
+<text transform="translate(1028,598)" font-size="16" style="fill:rgb(0, 132, 189)">allow</text>
+<text transform="translate(319,242)" font-size="16" style="fill:rgb(0, 35, 238)">step</text>
+<text transform="translate(652,178)" font-size="16" style="fill:rgb(0, 164, 173)">Experimental</text>
+<text transform="translate(909,600)" font-size="16" style="fill:rgb(0, 37, 236)">water</text>
+<text transform="translate(1157,449)" font-size="16" style="fill:rgb(0, 30, 240)">initial</text>
+<text transform="translate(1304,277)" font-size="16" style="fill:rgb(0, 228, 141)">series</text>
+<text transform="translate(637,131)" font-size="16" style="fill:rgb(0, 149, 180)">approach</text>
+<text transform="translate(201,13)" font-size="16" style="fill:rgb(0, 157, 176)">custom</text>
+<text transform="translate(420,221)" font-size="16" style="fill:rgb(0, 29, 240)">head</text>
+<text transform="translate(422,62)" font-size="16" style="fill:rgb(0, 248, 131)">ear</text>
+<text transform="translate(1309,289)" font-size="16" style="fill:rgb(0, 237, 136)">system</text>
+<text transform="translate(1,14)" font-size="16" style="fill:rgb(0, 55, 227)">separately</text>
+<text transform="translate(1439,178)" font-size="16" style="fill:rgb(0, 122, 194)">sufficient</text>
+<text transform="translate(667,659)" font-size="16" style="fill:rgb(0, 136, 187)">clear</text>
+<text transform="translate(900,454)" font-size="16" style="fill:rgb(0, 172, 169)">set</text>
+<text transform="translate(1300,795)" font-size="16" style="fill:rgb(0, 221, 144)">transmit</text>
+<text transform="translate(1217,518)" font-size="16" style="fill:rgb(0, 52, 229)">mm</text>
+<text transform="translate(1104,94)" font-size="16" style="fill:rgb(0, 155, 178)">larger</text>
+<text transform="translate(1185,145)" font-size="16" style="fill:rgb(0, 125, 192)">phase</text>
+<text transform="translate(1472,659)" font-size="16" style="fill:rgb(0, 149, 180)">field</text>
+<text transform="translate(661,480)" font-size="16" style="fill:rgb(0, 185, 162)">view</text>
+<text transform="translate(1301,606)" font-size="16" style="fill:rgb(0, 0, 255)">correction</text>
+<text transform="translate(780,600)" font-size="16" style="fill:rgb(0, 143, 184)">single</text>
+<text transform="translate(688,324)" font-size="16" style="fill:rgb(0, 55, 227)">defined</text>
+<text transform="translate(1312,625)" font-size="16" style="fill:rgb(0, 198, 156)">subcortical</text>
+<text transform="translate(1064,708)" font-size="16" style="fill:rgb(0, 155, 178)">included</text>
+<text transform="translate(798,378)" font-size="16" style="fill:rgb(0, 206, 152)">average</text>
+<text transform="translate(1257,40)" font-size="16" style="fill:rgb(0, 55, 227)">generated</text>
+<text transform="translate(651,433)" font-size="16" style="fill:rgb(0, 247, 132)">cross</text>
+<text transform="translate(1419,224)" font-size="16" style="fill:rgb(0, 178, 166)">comparison</text>
+<text transform="translate(647,301)" font-size="16" style="fill:rgb(0, 111, 200)">Subsequently</text>
+<text transform="translate(43,175) rotate(-90)" font-size="16" style="fill:rgb(0, 212, 149)">pronounced</text>
+<text transform="translate(975,158)" font-size="16" style="fill:rgb(0, 225, 142)">voxel</text>
+<text transform="translate(302,123)" font-size="16" style="fill:rgb(0, 225, 142)">function</text>
+<text transform="translate(1526,623)" font-size="16" style="fill:rgb(0, 67, 222)">asked</text>
+<text transform="translate(938,733)" font-size="16" style="fill:rgb(0, 35, 238)">patterns</text>
+<text transform="translate(821,358)" font-size="16" style="fill:rgb(0, 192, 159)">limited</text>
+<text transform="translate(460,448)" font-size="16" style="fill:rgb(0, 209, 150)">distributed</text>
+<text transform="translate(1590,550) rotate(-90)" font-size="16" style="fill:rgb(0, 140, 185)">target effects</text>
+<text transform="translate(805,396)" font-size="16" style="fill:rgb(0, 175, 168)">transformed correlation</text>
+<text transform="translate(257,607) rotate(-90)" font-size="16" style="fill:rgb(0, 105, 203)">delta analysis</text>
+<text transform="translate(70,716) rotate(-90)" font-size="16" style="fill:rgb(0, 89, 210)">autocorrelation function</text>
+<text transform="translate(1072,374)" font-size="16" style="fill:rgb(0, 134, 188)">memory task</text>
+<text transform="translate(988,506) rotate(-90)" font-size="14" style="fill:rgb(0, 182, 164)">endogenous</text>
+<text transform="translate(1060,273)" font-size="14" style="fill:rgb(0, 240, 135)">activity</text>
+<text transform="translate(1593,616) rotate(-90)" font-size="14" style="fill:rgb(0, 204, 153)">systemic</text>
+<text transform="translate(355,796)" font-size="14" style="fill:rgb(0, 138, 186)">demonstrate</text>
+<text transform="translate(1062,437)" font-size="14" style="fill:rgb(0, 108, 201)">binding</text>
+<text transform="translate(115,474)" font-size="14" style="fill:rgb(0, 2, 254)">potential</text>
+<text transform="translate(529,69)" font-size="14" style="fill:rgb(0, 52, 229)">inert</text>
+<text transform="translate(544,306)" font-size="14" style="fill:rgb(0, 22, 244)">feasible</text>
+<text transform="translate(1344,699)" font-size="14" style="fill:rgb(0, 111, 200)">low</text>
+<text transform="translate(1314,563)" font-size="14" style="fill:rgb(0, 195, 158)">behavioral</text>
+<text transform="translate(1183,796)" font-size="14" style="fill:rgb(0, 131, 190)">alterations</text>
+<text transform="translate(66,433) rotate(-90)" font-size="14" style="fill:rgb(0, 0, 255)">selectivity</text>
+<text transform="translate(1263,664)" font-size="14" style="fill:rgb(0, 225, 142)">greatly</text>
+<text transform="translate(562,213)" font-size="14" style="fill:rgb(0, 213, 148)">well</text>
+<text transform="translate(1452,353)" font-size="14" style="fill:rgb(0, 28, 241)">possibility</text>
+<text transform="translate(656,258)" font-size="14" style="fill:rgb(0, 139, 186)">additional</text>
+<text transform="translate(978,372)" font-size="14" style="fill:rgb(0, 13, 248)">fundamental</text>
+<text transform="translate(1250,732)" font-size="14" style="fill:rgb(0, 84, 213)">dynamics</text>
+<text transform="translate(1050,615)" font-size="14" style="fill:rgb(0, 210, 150)">inputs</text>
+<text transform="translate(34,221)" font-size="14" style="fill:rgb(0, 66, 222)">hierarchy</text>
+<text transform="translate(1146,394)" font-size="14" style="fill:rgb(0, 153, 178)">relative</text>
+<text transform="translate(596,482)" font-size="14" style="fill:rgb(0, 34, 238)">order</text>
+<text transform="translate(632,103)" font-size="14" style="fill:rgb(0, 32, 239)">technique</text>
+<text transform="translate(296,99)" font-size="14" style="fill:rgb(0, 88, 211)">controlled</text>
+<text transform="translate(225,388)" font-size="14" style="fill:rgb(0, 61, 224)">temperature</text>
+</svg>
