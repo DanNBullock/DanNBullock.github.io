@@ -58,24 +58,21 @@ Here, you'll find a showcase of various applications that I developed for the <a
                     <h1 class="app-title" style="font-size:.75vw;"><a href="{{app.linkname | prepend: site.baseurl}}">{{app.title}}</a></h1>
                     <p style="font-size:.5vw;">{{app.description}}</p>
                 </div>
-                <div style="align-self: flex-end; padding: 5px 10px 0px">
-                    <div class="datatypes" style="font-size:.5vw;">
-                        <b>Inputs</b>: 
-                        {% for datatype in app.in_datatypes %}
-                            {{datatype}}
-                        {% endfor %}
-                        <br />
-                        <b>Outputs</b>:
-                        {% for datatype in app.out_datatypes %}
-                            {{datatype}}
-                        {% endfor %}
-                    </div>
+                <div class="datatypes" style="font-size:.5vw; padding: 0px 10px 0px">
+                    <b>Inputs</b>: 
+                    {% for datatype in app.in_datatypes %}
+                        {{datatype}}
+                    {% endfor %}
                     <br />
-                    <div class="links" style="font-size:.5vw; white-space: nowrap; padding: 5px 0px 0px" >
-                        <a href="{{app.github_url | prepend: 'https://github.com/'}}"><img style="width: 100%; object-fit: revert; aspect-ratio: revert;" src="{{app.github_url | append: '.svg' | prepend: 'https://gh-card.dev/repos/'}}" alt="{{app.github_url | append: ' - GitHub' }}"></a>
-                        <br />
-                        <a href={{app.bl_url}}><img style="width: 100%; object-fit: revert; aspect-ratio: revert; overflow: hidden" src= "https://raw.githubusercontent.com/brainlife/docs/master/docs/img/media/brainlife.io.png"></a>
-                    </div>
+                    <b>Outputs</b>:
+                    {% for datatype in app.out_datatypes %}
+                        {{datatype}}
+                    {% endfor %}
+                </div>
+                <div class="links" style="font-size:.5vw; white-space: nowrap; padding: 5px 0px 0px; align-self: baseline" >
+                    <a href="{{app.github_url | prepend: 'https://github.com/'}}"><img style="width: 100%; object-fit: revert; aspect-ratio: revert;" src="{{app.github_url | append: '.svg' | prepend: 'https://gh-card.dev/repos/'}}" alt="{{app.github_url | append: ' - GitHub' }}"></a>
+                    <br />
+                    <a href={{app.bl_url}}><img style="width: 100%; object-fit: revert; aspect-ratio: revert; overflow: hidden" src= "https://raw.githubusercontent.com/brainlife/docs/master/docs/img/media/brainlife.io.png"></a>
                 </div>
             </div>
         </article>
