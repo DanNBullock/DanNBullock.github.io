@@ -1,0 +1,15 @@
+{
+    "category": "work",
+    "role_type": "role_type",
+    "role": "role",
+    "institution": "institution name",
+    "work_group": "work_group",
+    "research_group_link": "research_group_link",
+    "location": "location",
+    "project_title": "project_title",
+    "supervisor": "supervisor",
+    "supervisor_link": "supervisor_link",
+    "role_description": "role_description",
+    "start_date": "start date",
+    "end_date": "end date"
+ }

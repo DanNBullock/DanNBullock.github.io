@@ -1,0 +1,10 @@
+{
+    "category": "education",
+    "institution": "institution name",
+    "location": "location",
+    "major": "major",
+    "minor": "minor",
+    "degree_awarded": "degree awarded",
+    "start_date": "start date",
+    "end_date": "end date"
+ }

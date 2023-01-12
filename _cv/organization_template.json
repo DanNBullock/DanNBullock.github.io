@@ -1,0 +1,13 @@
+{
+    "category": "organization",
+    "role": "role",
+    "institution": "institution name",
+    "organization": "organization_group",
+    "organization_link": "organization_group_link",
+    "organization_group": "organization_group",
+    "organization_group_link": "organization_group_link",
+    "location": "location",
+    "role_description": "role_description",
+    "start_date": "start date",
+    "end_date": "end date"
+ }

@@ -1,0 +1,13 @@
+{
+    "category": "research",
+    "institution": "institution name",
+    "research_group": "research_group",
+    "research_group_link": "research_group_link",
+    "location": "location",
+    "project_title": "project_title",
+    "supervisor": "supervisor",
+    "supervisor_link": "supervisor_link",
+    "project_description": "project_description",
+    "start_date": "start date",
+    "end_date": "end date"
+ }
