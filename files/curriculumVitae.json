@@ -1,0 +1,103 @@
+{
+    "name": "Daniel N. Bullock",
+    "contact": {
+      "email": "iisdanbul@gmail.com",
+      "address": {
+        "city": "Alexandria",
+        "state": "VA",
+        "country": "USA"
+      }
+    },
+    "education": [
+      {
+        "degree": {
+            "type": "B.S.",
+            "majors": ["major1", "major2" ],
+            "minors": ["major1", "major2" ]
+        },
+        "institution": "University of California, Los Angeles",
+        "duration": {
+            "start": "2018",
+            "end": "2020"
+        }
+
+      },
+      {
+        "degree": "Bachelor of Science in Mathematics",
+        "institution": "University of California, Berkeley",
+        "duration": {
+            "start": "2018",
+            "end": "2020"
+        }
+      }
+    ],
+    "experience": [
+      {
+        "position": "Assistant Professor",
+        "project_name": "project_name",
+        "type": "type",
+        "institution": "University of California, San Diego",
+        "supervisor": {
+            "name": "name",
+            "link": ""
+        },
+        "year": {
+            "start": "2018",
+            "end": "2020"
+        },
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non ex a ante euismod congue sed id nisi.",
+        "tasks_skills": {
+            "technical": [],
+            "non_technical": []
+        }
+      },
+      {
+        "position": "Postdoctoral Researcher",
+        "type": "type",
+        "institution": "Stanford University",
+        "start_date": "2018",
+        "end_date": "2021",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non ex a ante euismod congue sed id nisi."
+      }
+    ],
+    "publications": [
+      {
+        "title": "Paper 1",
+        "type": "publication",
+        "authors": "John Smith, Jane Doe",
+        "venue": "Journal of Computer Science",
+        "keywords":{
+            "topics": "topics",
+            "methods": "skills"
+        },
+        "year": "2022",
+        "doi": "https://doi.org/123456789"
+      },
+      {
+        "title": "Paper 2",
+        "type": "poster",
+        "authors": "John Smith, Bob Johnson",
+        "venue": "Conference on Machine Learning",
+        "year": "2021",
+        "doi": "https://www.example.com/paper2"
+      }
+    ],
+    "Grants, Honors, and Awards": [
+        {
+          "title": "Paper 1",
+          "type": "publication",
+          "venue": "Journal of Computer Science",
+          "year": "2022",
+          "doi": "https://doi.org/123456789"
+        },
+        {
+          "title": "Paper 2",
+          "type": "poster",
+          "authors": "John Smith, Bob Johnson",
+          "venue": "Conference on Machine Learning",
+          "year": "2021",
+          "doi": "https://www.example.com/paper2"
+        }
+      ]
+  }
+  
