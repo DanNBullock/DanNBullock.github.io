@@ -1,0 +1,201 @@
+/* The following CSS is used to style the CV page. */
+
+/* first, we need to reset the default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Next we need to load the content from the json file */
+{% assign cvContent = site.files.curriculumVitae %}
+
+/* now we will do the headmast for the cv page, it's content will come from the "name" and "contact" fields in the json file. 
+Within the "contact" field, we have the "email" and "address" fields.  The "address" field has "city", "state", and "country" fields */
+.headmast {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  text-align: center;
+}
+.headmast h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.headmast h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.headmast p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+/* now we will pull the actual content from the json file into the headmast */
+.headmast h1 {
+  content: {{ cvContent.name.first }} {{ cvContent.name.last }};
+}
+.headmast h2 {
+  content: {{ cvContent.contact.email }};
+}
+.headmast p {
+  content: {{ cvContent.contact.address.city }}, {{ cvContent.contact.address.state }}, {{ cvContent.contact.address.country }};
+}
+
+
+/* Let's next develop the content block that will serve as the main building block for the page.  The subsequent "education" and "experience" areas will be composed of multiple, similarly formatted entries.
+As such, let's develop styling blocks for both the "education" and "experience" areas.  We will also develop a block for the "position" area, which will be used in both the "education" and "experience" areas.
+Keep in mind that these are not conventional header structured  */ 
+
+
+
+
+
+
+/* now we will style the education section of the cv page.  It will accomidate multiple education experiences, so we will use a for loop to pull the content from the json file.
+  The "education" field has three fields:  "degree", "institution", and "duration".
+  The "degree" field has fields for "type" (for example Ph.D. or B.S.), "majors", and "minors".  Both "majors" and "minors" are lists.
+  The "institution" field, which has the "name", "location", and "department_program" (for information about the associated department or program.  "Location" has fields for "city", "state", and "country".
+  The "duration" field has fields for both "start" and "end", both of which are lists.  In each of these, dates are provided as a month followed by a comma, followed by the year (e.g. "August, 2005")
+*/
+/* first I guess we do the styling for the education section */
+.education {
+    padding: 1rem;
+  }
+  .education h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+  .education h4 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+  .education p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+  .education .degree {
+    margin-bottom: 1rem;
+  }
+  .education .degree .type {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+  .education .degree .majors {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+  .education .degree .minors {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+  .education .institution {
+    margin-bottom: 1rem;
+  }
+  .education .institution .location {
+    margin-bottom: 0.5rem;
+  }
+  .education .institution .department-program {
+    margin-bottom: 0.5rem;
+  }
+  .education .duration {
+    margin-bottom: 1rem;
+  }
+
+/* now lets create the layout for the div that each education list element will be contained in.  It should have a light gray border, and extend the width of the content container on the page.
+The major heading for each education item should be the content of "type" followed by the text "in" followed by the content of "institution.name".
+Directly underneath that should be the majors and minors listed out *IF* they exist, prepeneded by "Majors" or "Minors", as appropritae .  If they don't exist, just skip that content.*/
+.education {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+/* now we will pull the actual content from the json file into the education section */
+.education h3 {
+  content: {{ item.degree.type }} in {{ item.institution.name }};
+}
+.education h4 {
+  content: {{ item.institution.location.city }}, {{ item.institution.location.state }}, {{ item.institution.location.country }};
+}
+.education p {
+  content: {{ item.degree.majors }};
+}
+.education p {
+  content: {{ item.degree.minors }};
+}
+
+
+
+
+
+
+
+
+/* now we will pull the actual content from the json file into the education section */
+
+{% assign education = cvContent.education %}
+
+/* now we will use a for loop to pull the content from the json file */
+{% for item in education %}
+.education h3 {
+  content: {{ item.degree.type }};
+}
+.education h4 {
+  content: {{ item.institution.name }};
+}
+.education p {
+  content: {{ item.institution.location.city }}, {{ item.institution.location.state }}, {{ item.institution.location.country }};
+}
+
+
+
+
+
+/* 
+{% for experience in experiences %}
+  <div class="experience">
+    <div class="position">
+      {% for type in experience.position.type %}
+        <span class="type">{{ type }}</span>
+      {% endfor %}
+      <h3 class="title">{{ experience.position.title }}</h3>
+    </div>
+    <div class="details">
+      <h4 class="project-name">{{ experience.project_name }}</h4>
+      <p class="domain">{{ experience.domain }}</p>
+      <p class="institution">{{ experience.institution.name }}</p>
+      <p class="location">{{ experience.institution.location.city }}, {{ experience.institution.location.state }}, {{ experience.institution.location.country }}</p>
+      {% if experience.supervisor.name %}
+        <p class="supervisor"><strong>Supervisor:</strong> {{ experience.supervisor.name }}</p>
+      {% endif %}
+      <p class="year">{{ experience.year.start[0] }} - {{ experience.year.end[0] }}</p>
+      <p class="description">{{ experience.description }}</p>
+      <div class="tasks-skills">
+        <div class="technical">
+          <h5>Technical skills:</h5>
+          <ul>
+            {% for skill in experience.tasks_skills.technical %}
+              <li>{{ skill }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="non-technical">
+          <h5>Non-technical skills:</h5>
+          <ul>
+            {% for skill in experience.tasks_skills.non_technical %}
+              <li>{{ skill }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+/*
