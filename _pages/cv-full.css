@@ -1,0 +1,40 @@
+
+{% for experience in experiences %}
+  <div class="experience">
+    <div class="position">
+      {% for type in experience.position.type %}
+        <span class="type">{{ type }}</span>
+      {% endfor %}
+      <h3 class="title">{{ experience.position.title }}</h3>
+    </div>
+    <div class="details">
+      <h4 class="project-name">{{ experience.project_name }}</h4>
+      <p class="domain">{{ experience.domain }}</p>
+      <p class="institution">{{ experience.institution.name }}</p>
+      <p class="location">{{ experience.institution.location.city }}, {{ experience.institution.location.state }}, {{ experience.institution.location.country }}</p>
+      {% if experience.supervisor.name %}
+        <p class="supervisor"><strong>Supervisor:</strong> {{ experience.supervisor.name }}</p>
+      {% endif %}
+      <p class="year">{{ experience.year.start[0] }} - {{ experience.year.end[0] }}</p>
+      <p class="description">{{ experience.description }}</p>
+      <div class="tasks-skills">
+        <div class="technical">
+          <h5>Technical skills:</h5>
+          <ul>
+            {% for skill in experience.tasks_skills.technical %}
+              <li>{{ skill }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="non-technical">
+          <h5>Non-technical skills:</h5>
+          <ul>
+            {% for skill in experience.tasks_skills.non_technical %}
+              <li>{{ skill }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}
