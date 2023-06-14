@@ -1,0 +1,163 @@
+---
+---
+/* The following is a css file for taking in curriculum vitae information stored in a json file and displaying it in a web page. */
+/* it also includes a toggle button for switching between an "academic" version, and a "non-academic version, which switches between the "technical" and "non-technical" skills associated with various entries. */
+/* The json file itself is stored in the "files" folder and is called "curriculumVitae.json". */
+/* Remember, this is part of an existing jekyll templated site, based on academicpages.github.io.  As such, we don't need to bother with the head, body, or html tags, and can instead focus on the content. */
+/* Begin with the 
+
+
+
+/* We'll tackle this in parts, dividing the cv into sections: contact information, education, experience, products, skills, and recognitions */
+/*  */
+/*  */
+/* Let's being with the contact information.  This will be a simple block, with the name, email, and address. */
+/* the following is the json schema for the contact section information: */
+/*
+{
+    "type": "object",
+    "properties": {
+      "person": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "contact": {
+            "type": "object",
+            "properties": {
+              "email": {
+                "type": "string",
+                "format": "email"
+              },
+              "address": {
+                "type": "object",
+                "properties": {
+                  "city": {
+                    "type": "string"
+                  },
+                  "state": {
+                    "type": "string"
+                  },
+                  "country": {
+                    "type": "string"
+                  }
+                },
+                "required": ["city", "state", "country"]
+              }
+            },
+            "required": ["email", "address"]
+          }
+        },
+        "required": ["name", "contact"]
+      }
+    },
+    "required": ["person"]
+  }
+*/
+{% assign cvContent = site.files.curriculumVitae %}
+
+<div class="headmast">
+  <h1>{{ cvContent.person.name }}</h1>
+    <h2>{{ cvContent.person.contact.email }}</h2>
+    <p>{{ cvContent.person.contact.address.city }}, {{ cvContent.person.contact.address.state }}, {{ cvContent.person.contact.address.country }}</p>
+</div>
+
+/* Now let's move on to the education section.  This will be a bit more complicated, as it will need to accomidate multiple entries. */
+/* The following is the json schema for the education section information: */
+/*       "education": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "degree": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "majors": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "minors": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "institution": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "location": {
+                  "type": "object",
+                  "properties": {
+                    "city": {
+                      "type": "string"
+                    },
+                    "state": {
+                      "type": "string"
+                    },
+                    "country": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "department_program": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "duration": {
+              "type": "object",
+              "properties": {
+                "start": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "format": "date"
+                  }
+                },
+                "end": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "format": "date"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+*/
+<div class="education">
+  <h2>Education</h2>
+    /* Overall, we want the style for this section to be as follows for each education entry:
+        Left aligned, the following:
+        The university name, bolded, followed by the city and state in parentheses.
+        The department/program name, italicized,
+        The degree type, followed by the major(s)
+        The minor(s), if applicable.
+        Separated from these by a soft vertical line, the following, right aligned
+        The start and end dates, in the format "start - end"
+    */
+    /* Let's start with the left aligned portion.  We'll use a table for this, with two columns. */
+    /* The first column will contain the university name, department/program name, degree type, major(s) and minor(s). */
+    /* The second column will contain the start and end dates. */
+    /* we'll initialize the table, and then loop through the entries in the education array. */
+    /* we'll also initialize a counter, which we'll use to alternate the background color of the rows. */
+    
+    <table class
+    
+

@@ -1,0 +1,231 @@
+{
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+
+      "contact": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "format": "email"
+          },
+          "address": {
+            "type": "object",
+            "properties": {
+              "city": {
+                "type": "string"
+              },
+              "state": {
+                "type": "string"
+              },
+              "country": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+
+      "education": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "degree": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "majors": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "minors": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "institution": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "location": {
+                  "type": "object",
+                  "properties": {
+                    "city": {
+                      "type": "string"
+                    },
+                    "state": {
+                      "type": "string"
+                    },
+                    "country": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "department_program": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "duration": {
+              "type": "object",
+              "properties": {
+                "start": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "format": "date"
+                  }
+                },
+                "end": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "format": "date"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "experience": {
+        "type": "array",
+        "items": {
+            "type": "object",
+            "properties": {
+            "position": {
+                "type": "object",
+                "properties": {
+                "type": {
+                    "type": "array",
+                    "items": {
+                    "type": "string"
+                    }
+                },
+                "title": {
+                    "type": "string"
+                }
+                }
+            },
+            "project_name": {
+                "type": "string"
+            },
+            "domain": {
+                "type": "string"
+            },
+            "institution": {
+                "type": "object",
+                "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "location": {
+                    "type": "object",
+                    "properties": {
+                    "city": {
+                        "type": "string"
+                    },
+                    "state": {
+                        "type": "string"
+                    },
+                    "country": {
+                        "type": "string"
+                    }
+                    }
+                },
+                "department_program": {
+                    "type": "array",
+                    "items": {
+                    "type": "string"
+                    }
+                }
+                }
+            },
+            "supervisor": {
+                "type": "object",
+                "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "links": {
+                    "type": "array",
+                    "items": {
+                    "type": "string",
+                    "format": "uri"
+                    }
+                },
+                "ORCID": {
+                    "type": "string",
+                    "format": "uri"
+                },
+                "google_scholar": {
+                    "type": "string",
+                    "format": "uri"
+                },
+                "email": {
+                    "type": "string",
+                    "format": "email"
+                }
+                }
+            },
+            "year": {
+                "type": "object",
+                "properties": {
+                "start": {
+                    "type": "array",
+                    "items": {
+                    "type": "string",
+                    "format": "date"
+                    }
+                },
+                "end": {
+                    "type": "array",
+                    "items": {
+                    "type": "string",
+                    "format": "date"
+                    }
+                }
+                }
+            },
+            "description": {
+                "type": "string"
+            },
+            "tasks_skills": {
+                "type": "object",
+                "properties": {
+                "technical": {
+                    "type": "array",
+                    "items": {
+                    "type": "string"
+                    }
+                },
+                "non_technical": {
+                    "type": "array",
+                    "items": {
+                    "type": "string"
+                    }
+                }
+                }
+            }
+            }
+        }
+      }
+    }
+  }
+  
