@@ -1,5 +1,8 @@
 ---
-layout: default
+layout: archive
+title: "CV_V2"
+permalink: /CV_V2/
+author_profile: true
 ---
 <!-- The following is a css file for taking in curriculum vitae information stored in a json file and displaying it in a web page. -->
 <!-- it also includes a toggle button for switching between an "academic" version, and a "non-academic version, which switches between the "technical" and "non-technical" skills associated with various entries. -->
@@ -458,14 +461,63 @@ Skills: <skill1> (<count1>), <skill2> (<count2>), ... <skillN> (<countN>)
 -->
 <div class="skills">
     <h2>Skills</h2>
-    <p>Technical: {% for skill in cvContent.experience.tasks_skills.technical | uniq %}
-        {{ skill }} ({{ cvContent.experience.tasks_skills.technical | where: skill | size }}),
-        {% endfor %}
-    </p>
-    <p>Non-technical: {% for skill in cvContent.experience.tasks_skills.non_technical | uniq %}
-        {{ skill }} ({{ cvContent.experience.tasks_skills.non_technical | where: skill | size }}),
-        {% endfor %}
-    </p>
+    <!-- lets be sure to break this process down into discrete steps so that we avoid 
+    getting the following error:
+    Expected end_of_string but found pipe in "skill in cvContent.experience.tasks_skills.technical | uniq"  
+    -->
+    {% assign technical_skills = "" %}
+    {% for entry in cvContent.experience %}
+        {% if entry.tasks_skills.technical != null %}
+            {% for skill in entry.tasks_skills.technical %}
+                {% assign technical_skills = technical_skills | append: skill | append: "," %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+    <!-- now we have a comma separated list of all the technical skills, however now we need to count the number of instances of each skill -->
+    <!-- we'll do this by splitting the string into an array, then counting the number of instances of each unique entry, then sorting the entries in descending order, then joining them back into a string -->
+    <!-- lets begin by sorting the array alphabetically-->
+    {% assign technical_skills = technical_skills | split: "," | sort %}
+    <!-- now we'll count the number of instances of each unique entry-->
+    {% assign technical_skills = technical_skills | uniq %}
+    <!-- now we'll sort the entries in descending order-->
+    {% assign technical_skills = technical_skills | sort | reverse %}
+    <!-- now we'll join the entries back into a string while also ensuring that each entry is abutted by its associated count-->
+    {% assign technical_skills = technical_skills | join: " ({{ technical_skills | size }}), " %}
+    <!-- now we'll add the final closing parenthesis-->
+    <!-- is this necessary?-->
+    {% assign technical_skills_print = technical_skills | append: " ({{ technical_skills | size }})" %}
+    <!-- now we'll display the string-->
+    <p>Technical skills: {{ technical_skills_print }}</p>
+    
+    <!-- now we'll do the same for non-technical skills-->
+    {% assign non_technical_skills = "" %}
+    {% for entry in cvContent.experience %}
+        {% if entry.tasks_skills.non_technical != null %}
+            {% for skill in entry.tasks_skills.non_technical %}
+                {% assign non_technical_skills = non_technical_skills | append: skill | append: "," %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+    <!-- now we have a comma separated list of all the non-technical skills, however now we need to count the number of instances of each skill -->
+    <!-- we'll do this by splitting the string into an array, then counting the number of instances of each unique entry, then sorting the entries in descending order, then joining them back into a string -->
+    <!-- lets begin by sorting the array alphabetically-->
+    {% assign non_technical_skills = non_technical_skills | split: "," | sort %}
+    <!-- now we'll count the number of instances of each unique entry-->
+    <!--not sure if this is couting or returning unique-->
+    {% assign non_technical_skills_uniq = non_technical_skills | uniq %}
+    <!-- now we'll sort the entries in descending order-->
+    <!-- I suspect this will mess things up because it is sorting by alphabetical rather than count-->
+    <!--
+    {% assign non_technical_skills = non_technical_skills | sort | reverse %}
+    -->
+    <!-- now we'll join the entries back into a string while also ensuring that each entry is abutted by its associated count-->
+    {% assign non_technical_skills_print = non_technical_skills_uniq | join: " ({{ non_technical_skills | size }}), " %}
+    <!-- now we'll add the final closing parenthesis-->
+    <!-- is this necessary?-->
+    {% assign non_technical_skills_print = non_technical_skills_print | append: " ({{ non_technical_skills | size }})" %}
+    <!-- now we'll display the string-->
+    <p>Non-technical skills: {{ non_technical_skills_print }}</p>
+    
 </div>
 
 
