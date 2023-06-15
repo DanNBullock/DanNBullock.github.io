@@ -1,9 +1,5 @@
----
-layout: archive
-title: "CV_V2"
-permalink: /CV_V2/
-author_profile: true
----
+
+{% include base_path %}
 <!-- The following is a css file for taking in curriculum vitae information stored in a json file and displaying it in a web page. -->
 <!-- it also includes a toggle button for switching between an "academic" version, and a "non-academic version, which switches between the "technical" and "non-technical" skills associated with various entries. -->
 <!-- The json file itself is stored in the "files" folder and is called "curriculumVitae.json". -->
@@ -55,13 +51,14 @@ author_profile: true
     "required": ["person"]
   }
 -->
-{% assign cvContent = site.files.curriculumVitae %}
 
-<div class="headmast">
-  <h1>{{ cvContent.person.name }}</h1>
-    <h2>{{ cvContent.person.contact.email }}</h2>
-    <p>{{ cvContent.person.contact.address.city }}, {{ cvContent.person.contact.address.state }}, {{ cvContent.person.contact.address.country }}</p>
-</div>
+<!-- Should only be me in there-->
+{ % for me in site.data.curriculumVitae.person %}
+    <div class="headmast">
+    <h1>{{ me.name }}</h1>
+        <h2>{{ me.contact.email }}</h2>
+        <p>{{ me.contact.address.city }}, {{ me.contact.address.state }}, {{ me.person.contact.address.country }}</p>
+    </div>
 
 <!-- Now let's move on to the education section.  This will be a bit more complicated, as it will need to accomidate multiple entries. -->
 <!-- The following is the json schema for the education section information: -->
@@ -160,13 +157,15 @@ author_profile: true
     {% assign counter = 0 %}
     <table>
       <tr>
+        <!-- I don't think we need these
         <th>Institution</th>
         <th>Dates</th>
+        -->
       </tr>
-      {% for entry in cvContent.education %}
+      {% for entry in site.data.curriculumVitae.education %}
         <!-- we'll use the counter to determine the background color of the row. -->
         {% if counter == 0 %}
-          <tr class="light">
+          <tr style="light">
         {% else %}
           <tr class="dark">
         {% endif %}
@@ -328,10 +327,12 @@ author_profile: true
       {% assign counter = 0 %}
       <table>
         <tr>
+            <!-- I don't think we need these
           <th>Institution</th>
           <th>Dates</th>
+            -->
         </tr>
-        {% for entry in cvContent.experience %}
+        {% for entry in site.data.curriculumVitae.experience %}
             {% if counter == 0 %}
                 <tr class="light">
             {% else %}
@@ -339,14 +340,18 @@ author_profile: true
             {% endif %}
                 <td>
                 <!-- start with the role title and institution name, bolded, followed by the city and state in parentheses.-->
-                <p>{{ entry.position.title }} at <strong>{{ entry.institution.name }}</strong> ({{ entry.institution.location.city }}, {{ entry.institution.location.state }})</p>
+                <strong>{{ entry.position.title }}</strong> at {{ entry.institution.name }} ({{ entry.institution.location.city }}, {{ entry.institution.location.state }})
+                <br style="margin-bottom: 0em;">
+
                 <!-- next, the department/program name, italicized, followed by the supervisor, with fontawesome icons for the following:
                 "links" : browser icon for each link
                 "ORCID" : ORCID icon
                 "google_scholar" : google scholar icon
                 "email" : email icon
                 -->
-                <p>At (the) <em>{{ entry.institution.department_program }}</em>, supervised by {{entry.supervisor.name}} (
+                <!-- now for content-->
+   
+                <em>{{ entry.institution.department_program | join: ", "}}</em>; supervised by {{entry.supervisor.name}} (
                     {% if entry.supervisor.links != null %}
                         {% for link in entry.supervisor.links %}
                             <a href="{{ link }}"><i class="fas fa-globe"></i></a>
@@ -361,11 +366,14 @@ author_profile: true
                     {% if entry.supervisor.email != null %}
                         <a href="mailto:{{ entry.supervisor.email }}"><i class="fas fa-envelope"></i></a>
                     {% endif %}
-                )</p>
+                )
+                <br>
                 <!-- next the domain and type-->
-                <p>{{ entry.domain }}: {{ entry.position.type | join: ", " }}</p>
+                Domain(s): {{ entry.domain }}; Role type(s) {{ entry.position.type | join: ", " }}
+                <br style="line-height:0.5;">
                 <!-- next the description -->
-                <p>{{ entry.description }}</p>
+                {{ entry.description }}
+                <br>
                 <!-- finally, the tasks and skills, with the following format:
                 "tasks_skills": {
                     "type": "object",
@@ -385,23 +393,24 @@ author_profile: true
                     }
                 }
                 -->
-                <p>Tasks and skills:
-                    {% if entry.tasks_skills.technical != null %}
-                        {% for task in entry.tasks_skills.technical %}
-                            <span class="technical">{{ task }}</span>
-                        {% endfor %}
-                    {% endif %}
-                    {% if entry.tasks_skills.non_technical != null %}
-                        {% for task in entry.tasks_skills.non_technical %}
-                            <span class="non-technical">{{ task }}</span>
-                        {% endfor %}
-                    {% endif %}
-                </p>
+                Tasks and skills:
+                <br>
+                {% if entry.tasks_skills.technical != null %}
+                    Technical:
+                    {{ entry.tasks_skills.technical | join: ", " }}
+                    <br>
+                {% endif %}
+                {% if entry.tasks_skills.non_technical != null %}
+                    Non-technical:
+                    {{ entry.tasks_skills.non_technical | join: ", " }}
+                    <br>
+                {% endif %}
                 </td>
                 <td>
                 <!-- start with the start date, followed by the end date, if applicable-->
                 <p>{{ entry.year.start | join: " - " }}</p>
                 {% if entry.year.end != null %}
+                    <p>to</p>
                     <p>{{ entry.year.end | join: " - " }}</p>
                 {% endif %}
                 </td>
@@ -424,29 +433,30 @@ citation: the appropriately formatted citation for the paper
 <div class="publications">
     <h2>Publications</h2>
     <table>
-        <tr>
+        <tr >
             <!-- we'll divide up the table width as follows: 1/3 for the title (with wrap around, 1/9 for each of: date, venue and download link (with download link represented by a fontawesome browsere icon, and 1/3 for citation) -->
-            <th style="width:33%">Title</th>
-            <th style="width:11%">Date</th>
-            <th style="width:11%">Venue</th>
-            <th style="width:11%">Download</th>
-            <th style="width:33%">Citation</th>
+            <th style="width:25%; background-color: darkcyan; text-align: center;"><u>Title</u></th>
+            <th style="width:4%; background-color: darkcyan; text-align: center;"><u>Date</u></th>
+            <th style="width:14%; background-color: darkcyan; text-align: center;"><u>Venue</u></th>
+            <th style="width:auto; background-color: darkcyan; text-align: center;"><u>Link</u></th>
+            <th style="width:50%; background-color: darkcyan; text-align: center;"><u>Citation</u></th>
         </tr>
         {% for paper in site.publications %}
             {% if paper.collection == "publications" %}
                 <tr>
-                    <td>
+                    <td style="padding-top: 10px; padding-bottom: 10px;">
                         <p><a href="{{ paper.permalink }}">{{ paper.title }}</a></p>
-                        <p>{{ paper.excerpt }}</p>
+
                     </td>
-                    <td>{{ paper.date }}</td>
-                    <td>{{ paper.venue }}</td>
-                    <td>
+                    <!-- for the date, we only want the date string, and not the timestring-->
+                    <td style="text-align: center; padding-top: 10px; padding-bottom: 10px;">{{ paper.date | date: "%m-%d<br>%Y" }}</td>
+                    <td style="text-align: center; padding-top: 10px; padding-bottom: 10px;">{{ paper.venue }}</td>
+                    <td style="text-align: center">
                         {% if paper.paperurl != null %}
                             <a href="{{ paper.paperurl }}"><i class="fas fa-globe"></i></a>
                         {% endif %}
                     </td>
-                    <td>{{ paper.citation }}</td>
+                    <td style="padding-top: 10px; padding-bottom: 10px;">{{ paper.citation }}</td>
                 </tr>
             {% endif %}
         {% endfor %}
@@ -454,7 +464,7 @@ citation: the appropriately formatted citation for the paper
 </div>
 
 <!-- Not sure if this is going to work in html, but lets see what Copilot can do-->
-<!-- For a skills section, we'll iterate over the entries in cvContent.experience, and count the unique instances of each skill listed under tasks_skills for both "technical" and "non_technical"-->
+<!-- For a skills section, we'll iterate over the entries in site.data.curriculumVitae.experience, and count the unique instances of each skill listed under tasks_skills for both "technical" and "non_technical"-->
 <!-- We'll then display the unique entries, alongside the associated count, in descending order-->
 <!-- However, we'll do this not as a table, but in the following way:
 Skills: <skill1> (<count1>), <skill2> (<count2>), ... <skillN> (<countN>)
@@ -463,10 +473,10 @@ Skills: <skill1> (<count1>), <skill2> (<count2>), ... <skillN> (<countN>)
     <h2>Skills</h2>
     <!-- lets be sure to break this process down into discrete steps so that we avoid 
     getting the following error:
-    Expected end_of_string but found pipe in "skill in cvContent.experience.tasks_skills.technical | uniq"  
+    Expected end_of_string but found pipe in "skill in site.data.curriculumVitae.experience.tasks_skills.technical | uniq"  
     -->
     {% assign technical_skills = "" %}
-    {% for entry in cvContent.experience %}
+    {% for entry in site.data.curriculumVitae.experience %}
         {% if entry.tasks_skills.technical != null %}
             {% for skill in entry.tasks_skills.technical %}
                 {% assign technical_skills = technical_skills | append: skill | append: "," %}
@@ -491,7 +501,7 @@ Skills: <skill1> (<count1>), <skill2> (<count2>), ... <skillN> (<countN>)
     
     <!-- now we'll do the same for non-technical skills-->
     {% assign non_technical_skills = "" %}
-    {% for entry in cvContent.experience %}
+    {% for entry in site.data.curriculumVitae.experience %}
         {% if entry.tasks_skills.non_technical != null %}
             {% for skill in entry.tasks_skills.non_technical %}
                 {% assign non_technical_skills = non_technical_skills | append: skill | append: "," %}
