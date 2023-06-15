@@ -1,0 +1,411 @@
+---
+layout: archive
+title: "CV_V3"
+permalink: /CV_V3/
+author_profile: true
+---
+{% include base_path %}
+<!-- The following is a css file for taking in curriculum vitae information stored in a json file and displaying it in a web page. -->
+<!-- it also includes a toggle button for switching between an "academic" version, and a "non-academic version, which switches between the "technical" and "non-technical" skills associated with various entries. -->
+<!-- The json file itself is stored in the "files" folder and is called "curriculumVitae.json". -->
+<!-- Remember, this is part of an existing jekyll templated site, based on academicpages.github.io.  As such, we don't need to bother with the head, body, or html tags, and can instead focus on the content. -->
+<!-- We'll tackle this in parts, dividing the cv into sections: contact information, education, experience, products, skills, and recognitions -->
+<!--  -->
+<!--  -->
+<!-- Let's being with the contact information.  This will be a simple block, with the name, email, and address. -->
+<!-- the following is the json schema for the contact section information: -->
+<!--
+{
+    "type": "object",
+    "properties": {
+      "person": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "contact": {
+            "type": "object",
+            "properties": {
+              "email": {
+                "type": "string",
+                "format": "email"
+              },
+              "address": {
+                "type": "object",
+                "properties": {
+                  "city": {
+                    "type": "string"
+                  },
+                  "state": {
+                    "type": "string"
+                  },
+                  "country": {
+                    "type": "string"
+                  }
+                },
+                "required": ["city", "state", "country"]
+              }
+            },
+            "required": ["email", "address"]
+          }
+        },
+        "required": ["name", "contact"]
+      }
+    },
+    "required": ["person"]
+  }
+-->
+
+<!-- Should only be me in there-->
+{ % for me in site.data.curriculumVitae.person %}
+    <div class="headmast">
+    <h1>{{ me.name }}</h1>
+        <h2>{{ me.contact.email }}</h2>
+        <p>{{ me.contact.address.city }}, {{ me.contact.address.state }}, {{ me.person.contact.address.country }}</p>
+    </div>
+
+<!-- Now let's move on to the education section.  This will be a bit more complicated, as it will need to accomidate multiple entries. -->
+<!-- The following is the json schema for the education section information: -->
+<!--       "education": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "degree": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "majors": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "minors": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "institution": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "location": {
+                  "type": "object",
+                  "properties": {
+                    "city": {
+                      "type": "string"
+                    },
+                    "state": {
+                      "type": "string"
+                    },
+                    "country": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "department_program": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "duration": {
+              "type": "object",
+              "properties": {
+                "start": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "format": "date"
+                  }
+                },
+                "end": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "format": "date"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+-->
+<div class="education">
+  <h2>Education</h2>
+    <!-- Overall, we want the style for this section to be as follows for each education entry:
+        Left aligned, the following:
+        The university name, bolded, followed by the city and state in parentheses.
+        The department/program name, italicized,
+        The degree type, followed by the major(s)
+        The minor(s), if applicable.
+        Separated from these by a soft vertical line, the following, right aligned
+        The start and end dates, in the format "start - end"
+    -->
+    <!-- Let's start with the left aligned portion.  We'll use a table for this, with two columns. -->
+    <!-- The first column will contain the university name, department/program name, degree type, major(s) and minor(s). -->
+    <!-- The second column will contain the start and end dates. -->
+    <!-- we'll initialize the table, and then loop through the entries in the education array. -->
+    <!-- we'll also initialize a counter, which we'll use to alternate the background color of the rows. -->
+    {% assign counter = 0 %}
+    <table>
+      <tr>
+        <!-- I don't think we need these
+        <th>Institution</th>
+        <th>Dates</th>
+        -->
+      </tr>
+      {% for entry in site.data.curriculumVitae.education %}
+        <!-- we'll use the counter to determine the background color of the row. -->
+          <!-- now we'll fill in the first column. -->
+          <td>
+            <!-- we'll start with the university name, bolded, followed by the city and state in parentheses. -->
+            <p><strong>{{ entry.institution.name }}</strong> ({{ entry.institution.location.city }}, {{ entry.institution.location.state }})</p>
+            <!-- next, the department/program name, italicized, -->
+            <p><em>{{ entry.institution.department_program }}</em></p>
+            <!-- next, the degree type, followed by the major(s) -->
+            <p>{{ entry.degree.type }}, {{ entry.degree.majors | join: ", " }}</p>
+            <!-- finally, the minor(s), if applicable. -->
+            {% if entry.degree.minors != null %}
+              <p>Minor(s): {{ entry.degree.minors | join: ", " }}</p>
+            {% endif %}
+          </td>
+          <!-- now we'll fill in the second column. -->
+          <td>
+            <!-- we'll start with the start date, followed by a dash, followed by the end date. -->
+            <p>{{ entry.duration.start | join: " - " }}</p>
+            <!-- we'll also add a line break, to make the dates easier to read. -->
+            <br>
+            <p>{{ entry.duration.end | join: " - " }}</p>
+          </td>
+        </tr>
+        <!-- we'll increment the counter, and then close the loop. -->
+        {% assign counter = counter | plus: 1 %}
+      {% endfor %}
+    </table>
+</div>
+
+<!-- We'll again use a table in a similar fashion as the education section-->
+<div class="experience" style="display:flex; flex-wrap:wrap; flex-basis: 100%">
+    <h2>Experience</h2>
+        <!--We'll iterate across the experience array and create a separate stacked div for each entry.-->
+        {% for entry in site.data.curriculumVitae.experience %}
+
+            <!-- instead of using a table, let's create a card-like div that nicely lays out the relevant information:
+            the left 90% of the div will contain the all of the relevant information except for the dates, which will be in the right 10% of the div.
+            Within the left portion of the div, there will be essentially two smaller sub divs divided horizontally, one for the various role affiliations, and the other for the relevant skills and tasks.
+            In the top of these sub-divs, we'll have the role title bolded, followed by the institution name, italicized, followed by the city and state in parentheses.
+            below this, separated by a quarter line break and in gray and slightly smaller but thickened font, we will have the department_program name, followed by the supervisor name, with fontawesome icons for the following:
+                    "links" : browser icon for each link
+                    "ORCID" : ORCID icon
+                    "google_scholar" : google scholar icon
+                    "email" : email icon
+            In the upper right hand corner of this sub-div (and directly abutting the rightmost 10% div containing the dates), we'll have the domain and role type, separated by a quarter line break.
+            in the other sub div, below the affiliation information, we'll have the description, followed by the technical and non-technical skills and tasks, separated by a quarter line break.
+            
+            -->
+            <!-- in accordance with the above description, lets begin by creating the primary div unit-->
+            <div class="experience-entry" style="border:3px solid gray;border-style:double; height:auto; overflow: hidden">
+                <!-- now we divide this parimary div into the left 90% portion and right 10% portions-->
+                <div class="experience-info-pane" style="position:relative; float:left; width:90%;">
+                    <!-- now we divide the left 90% portion into the two sub-divs-->
+                    <div class="experience-position-info" style="position:relative; width: 100%; overflow: hidden; border-bottom:1px solid rgb(150, 150, 150)">
+                        <div class="experience-info-affiliations" style="position:relative;  width:75%; float:left;">
+                            <!-- start with the role title and institution name, bolded, followed by the city and state in parentheses.-->
+                            <strong>{{ entry.position.title }}</strong> 
+                            <br style="line-height:0.5em">
+                            at <i>{{ entry.institution.name }} ({{ entry.institution.location.city }}</i>, {{ entry.institution.location.state }})
+                            <br style="margin-bottom: 0em;">
+                            <!-- next, the department/program name, italicized, in slightly smaller but thicker font followed by the supervisor name, with fontawesome icons for the following:
+                                    "links" : browser icon for each link
+                                    "ORCID" : ORCID icon
+                                    "google_scholar" : google scholar icon
+                                    "email" : email icon
+                            -->
+                            <i style="font-size: 0.7em; font-weight: 600;">{{ entry.institution.department_program | join: ", "  }}; supervised by {{ entry.supervisor.name }}(
+                                {% if entry.supervisor.links != null %}
+                                    {% for link in entry.supervisor.links %}
+                                        <a href="{{ link }}"><i class="fas fa-globe"></i></a>
+                                    {% endfor %}
+                                {% endif %}
+                                {% if entry.supervisor.ORCID != null %}
+                                    <a href="{{ entry.supervisor.ORCID }}"><i class="fab fa-orcid"></i></a>
+                                {% endif %}
+                                {% if entry.supervisor.google_scholar != null %}
+                                    <a href="{{ entry.supervisor.google_scholar }}"><i class="fas fa-graduation-cap"></i></a>
+                                {% endif %}
+                                {% if entry.supervisor.email != null %}
+                                    <a href="mailto:{{ entry.supervisor.email }}"><i class="fas fa-envelope"></i></a>
+                                {% endif %}
+                            )
+                            </i>
+                        </div>
+                        <!-- while we're still in this sub-div, lets go ahead and take care of the domain and type in the upper right hand corner of this div-->
+                        <div class="experience-domain-type" style="position:relative; width:25%; float:right; font-size: 0.9em; font-weight: 600; border-left: 1px outset rgba(161, 161, 161, 0.856)">
+                            Domain: {{ entry.domain  | join: ", " }}<br>Type: {{ entry.position.type  | join: ", "  }}
+                        </div>
+                    </div>
+
+                    <!-- now we move to the other sub-div, which will contain the description, followed by the technical and non-technical skills and tasks, separated by a quarter line break.-->
+                    <div class="experience-info-skills-tasks" style="position:relative;">
+                        <!-- start with the description-->
+                        <div class="experience-description" style="position:relative;">
+                            {{ entry.description }}
+                        </div>
+                        <!-- half line break-->
+
+                        <br style="line-height:0.3em">
+                        <div class="experience-skills-tasks" style="position:relative; font-size:0.7em">
+                            {% if entry.tasks_skills.technical != null %}
+                                <u>Technical skills</u>:
+                                {{ entry.tasks_skills.technical | join: ", " }}
+                                <br style="line-height:0.3em">
+                            {% endif %}
+                            {% if entry.tasks_skills.non_technical != null %}
+                                <u>Non-technical skills</u>:
+                                {{ entry.tasks_skills.non_technical | join: ", " }}
+                                <br style="line-height:0.3m">
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                    
+                    <!-- this is the end of the left 90% pane-->
+                <!-- now we move to the right 10% pane, which will contain the dates-->
+                <div class="experience-date-info" style="position: relative; float:right; width: 10%; height:100%; padding-left:5px; border-left: 1px outset rgba(161, 161, 161, 0.856);">
+                    <p>{{ entry.year.start | join: " - " }}</p>
+                    {% if entry.year.end != null %}
+                        <p>to</p>
+                        <p>{{ entry.year.end | join: " - " }}</p>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+</div>
+
+<!-- Next we do publications, however we don't have a specific json format for these.
+Instead, we have a collection of markdown documents in the _publications folder.  At the top of each document is a yaml header with the following format:
+title: the paper's title
+collection: the collection it belongs to (currently all are "publications")
+permalink: the link to the paper blurb within this website
+excerpt: an exerpt which serves as a short description of the paper
+date: the date of publication
+venue: the venue of publication
+paperurl: a link to an openly accessible version of the paper (hopefully)
+citation: the appropriately formatted citation for the paper
+-->
+<div class="publications">
+    <h2>Publications</h2>
+    <table>
+        <tr >
+            <!-- we'll divide up the table width as follows: 1/3 for the title (with wrap around, 1/9 for each of: date, venue and download link (with download link represented by a fontawesome browsere icon, and 1/3 for citation) -->
+            <th style="width:25%; background-color: darkcyan; text-align: center;"><u>Title</u></th>
+            <th style="width:4%; background-color: darkcyan; text-align: center;"><u>Date</u></th>
+            <th style="width:14%; background-color: darkcyan; text-align: center;"><u>Venue</u></th>
+            <th style="width:auto; background-color: darkcyan; text-align: center;"><u>Link</u></th>
+            <th style="width:50%; background-color: darkcyan; text-align: center;"><u>Citation</u></th>
+        </tr>
+        {% for paper in site.publications %}
+            {% if paper.collection == "publications" %}
+                <tr>
+                    <td style="padding-top: 10px; padding-bottom: 10px;">
+                        <p><a href="{{ paper.permalink }}">{{ paper.title }}</a></p>
+
+                    </td>
+                    <!-- for the date, we only want the date string, and not the timestring-->
+                    <td style="text-align: center; padding-top: 10px; padding-bottom: 10px;">{{ paper.date | date: "%m-%d<br>%Y" }}</td>
+                    <td style="text-align: center; padding-top: 10px; padding-bottom: 10px;">{{ paper.venue }}</td>
+                    <td style="text-align: center">
+                        {% if paper.paperurl != null %}
+                            <a href="{{ paper.paperurl }}"><i class="fas fa-globe"></i></a>
+                        {% endif %}
+                    </td>
+                    <td style="padding-top: 10px; padding-bottom: 10px;">{{ paper.citation }}</td>
+                </tr>
+            {% endif %}
+        {% endfor %}
+    </table>
+</div>
+
+<!-- Not sure if this is going to work in html, but lets see what Copilot can do-->
+<!-- For a skills section, we'll iterate over the entries in site.data.curriculumVitae.experience, and count the unique instances of each skill listed under tasks_skills for both "technical" and "non_technical"-->
+<!-- We'll then display the unique entries, alongside the associated count, in descending order-->
+<!-- However, we'll do this not as a table, but in the following way:
+Skills: <skill1> (<count1>), <skill2> (<count2>), ... <skillN> (<countN>)
+-->
+<div class="skills">
+    <h2>Skills</h2>
+    <!-- lets be sure to break this process down into discrete steps so that we avoid 
+    getting the following error:
+    Expected end_of_string but found pipe in "skill in site.data.curriculumVitae.experience.tasks_skills.technical | uniq"  
+    -->
+    {% assign technical_skills = "" %}
+    {% for entry in site.data.curriculumVitae.experience %}
+        {% if entry.tasks_skills.technical != null %}
+            {% for skill in entry.tasks_skills.technical %}
+                {% assign technical_skills = technical_skills | append: skill | append: "," %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+    <!-- now we have a comma separated list of all the technical skills, however now we need to count the number of instances of each skill -->
+    <!-- we'll do this by splitting the string into an array, then counting the number of instances of each unique entry, then sorting the entries in descending order, then joining them back into a string -->
+    <!-- lets begin by sorting the array alphabetically-->
+    {% assign technical_skills = technical_skills | split: "," | sort %}
+    <!-- now we'll count the number of instances of each unique entry-->
+    {% assign technical_skills = technical_skills | uniq %}
+    <!-- now we'll sort the entries in descending order-->
+    {% assign technical_skills = technical_skills | sort | reverse %}
+    <!-- now we'll join the entries back into a string while also ensuring that each entry is abutted by its associated count-->
+    {% assign technical_skills = technical_skills | join: " ({{ technical_skills | size }}), " %}
+    <!-- now we'll add the final closing parenthesis-->
+    <!-- is this necessary?-->
+    {% assign technical_skills_print = technical_skills | append: " ({{ technical_skills | size }})" %}
+    <!-- now we'll display the string-->
+    <p>Technical skills: {{ technical_skills_print }}</p>
+    
+    <!-- now we'll do the same for non-technical skills-->
+    {% assign non_technical_skills = "" %}
+    {% for entry in site.data.curriculumVitae.experience %}
+        {% if entry.tasks_skills.non_technical != null %}
+            {% for skill in entry.tasks_skills.non_technical %}
+                {% assign non_technical_skills = non_technical_skills | append: skill | append: "," %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+    <!-- now we have a comma separated list of all the non-technical skills, however now we need to count the number of instances of each skill -->
+    <!-- we'll do this by splitting the string into an array, then counting the number of instances of each unique entry, then sorting the entries in descending order, then joining them back into a string -->
+    <!-- lets begin by sorting the array alphabetically-->
+    {% assign non_technical_skills = non_technical_skills | split: "," | sort %}
+    <!-- now we'll count the number of instances of each unique entry-->
+    <!--not sure if this is couting or returning unique-->
+    {% assign non_technical_skills_uniq = non_technical_skills | uniq %}
+    <!-- now we'll sort the entries in descending order-->
+    <!-- I suspect this will mess things up because it is sorting by alphabetical rather than count-->
+    <!--
+    {% assign non_technical_skills = non_technical_skills | sort | reverse %}
+    -->
+    <!-- now we'll join the entries back into a string while also ensuring that each entry is abutted by its associated count-->
+    {% assign non_technical_skills_print = non_technical_skills_uniq | join: " ({{ non_technical_skills | size }}), " %}
+    <!-- now we'll add the final closing parenthesis-->
+    <!-- is this necessary?-->
+    {% assign non_technical_skills_print = non_technical_skills_print | append: " ({{ non_technical_skills | size }})" %}
+    <!-- now we'll display the string-->
+    <p>Non-technical skills: {{ non_technical_skills_print }}</p>
+    
+</div>
+
+
+
+
