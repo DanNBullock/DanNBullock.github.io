@@ -23,16 +23,34 @@
           "name": "North Carolina State University",
           "location": {
             "city": "Raleigh",
-            "state": "North Carolina",
+            "state": "NC",
             "country": "USA"
           },
           "department_program": ["Department of Biological Sciences"]
           },
-        "duration": {
-            "start": ["August, 2005","August, 2012"],
-            "end": ["May, 2005","May, 2015"]
-        }
-
+        "duration": 
+        [
+          { 
+          "start": {
+            "month": 8,
+            "year": 2005
+            },
+          "end": {
+            "month": 5,
+            "year": 2006
+            }
+          },
+          { 
+            "start": {
+              "month": 8,
+              "year": 2012
+              },
+            "end": {
+              "month": 5,
+              "year": 2015
+              }
+            }
+          ]
       },
       {
         "degree": {
@@ -49,11 +67,19 @@
           },
           "department_program": ["Department of Psychology and Neuroscience"]
         },
-        "duration": {
-            "start": ["August, 2012"],
-            "end": ["May, 2015"]
-        }
-
+        "duration": 
+        [
+          { 
+            "start": {
+              "month": 8,
+              "year": 2006
+              },
+            "end": {
+              "month": 5,
+              "year": 2009
+              }
+          }
+        ]
       },
       {
         "degree": {
@@ -70,11 +96,19 @@
           },
           "department_program":"Department of Philosophy"
         },
-        "duration": {
-            "start": ["August, 2009"],
-            "end": ["May, 2011"]
-        }
-
+        "duration": 
+        [
+          { 
+            "start": {
+              "month": 8,
+              "year": 2009
+              },
+            "end": {
+              "month": 5,
+              "year": 2011
+              }
+          }
+        ]
       },
       {
         "degree": {
@@ -86,16 +120,24 @@
           "name": "Indiana University Bloomington",
           "location": {
             "city": "Bloomington",
-            "state": "Indiana",
+            "state": "IN",
             "country": "USA"
           },
           "department_program": ["Department of Psychological and Brain Sciences","Program in Neuroscience"]
         },
-        "duration": {
-            "start": ["Agust, 2015"],
-            "end": ["May, 2021"]
-        }
-
+        "duration": 
+        [
+          { 
+            "start": {
+              "month": 6,
+              "year": 2015
+              },
+            "end": {
+              "month": 6,
+              "year": 2021
+              }
+          }
+        ]
       }
     ],
     "experience": [
@@ -130,15 +172,25 @@
           "google_scholar": "https://scholar.google.com/citations?user=zQ5H1aYAAAAJ&hl=en",
           "email": "rbeverly@nsf.gov"
         }],
-        "year": {
-          "start": ["August, 2022"],
-          "end": ["Ongoing"]
-        },
+        "duration": 
+          [
+            { 
+              "start": {
+                "month": 8,
+                "year": 2022
+                },
+              "end": {
+                "month": null,
+                "year": null
+                }
+            }
+          ],
         "description": "As a AAAS STPF Fellow placed in the Office of Advanced Cyberinfrastructure (OAC) ",
         "tasks_skills": {
           "technical": ["Python","Linux","Git","XML","JSON","Big Data","Data Scraping", "Dataset Quality Assesment", "Data Science", "Data Visualization", "Figure Generation", "Jupyter Notebooks", "Open-Source Development", "Open-Source Software"],
           "non_technical": ["Self-guided Problem Solving", "Problem Scoping", "Project Management", "Documentation", "Science Communication", "Grant Management", "Program Management", "Grant Review", "Literature Review", "Policy", "Federal Science Policy","Open Science Policy","Public Access Policy","Policy Drafting","Policy Documentation Development","Report Development","Interagency Working Groups","Virtual Presentations"]
         },
+        "hours": "40",
         "aesthetics" :{
           "icon": "fa-solid fa-handshake",
           "sequence": 1
@@ -176,15 +228,25 @@
           "google_scholar": "https://scholar.google.co.uk/citations?user=hxLc4YAAAAAJ&hl=en",
           "email": "janz@umn.edu"
         }],
-        "year": {
-          "start": ["July, 2021"],
-          "end": ["July, 2022"]
-        },
+        "duration": 
+          [
+            { 
+              "start": {
+                "month": 7,
+                "year": 2021
+                },
+              "end": {
+                "month": 7,
+                "year": 2022
+                }
+            }
+          ],
         "description": "As a postdoctoral researcher I produced automated segmentation methods for major white matter tracts in tractography using cross-species and literature-based information. This also entailed the visualization of tractography & segmentation results, as well as the quantification of tract properties. To ensure the repicability and stability of these products I developed, documented, and maintained several code repositories.",
         "tasks_skills": {
           "technical": ["Python","Linux","Git","Docker","Neuroimaging Software Packages","Neuroimaging","Neuroanatomy","Neuroscience","Brain Imaging Data Structure (BIDS)","Neuroimaging Data Structures","Neuroimaging Data Processing","3-D Image Processing","Medical Image Processing","Bash & Shell Scripting", "Big Data" , "Dataset Quality Assesment", "Data Science", "Jupyter Notebooks", "Containerization", "Open-Source Development", "Open-Source Software", "High Performance Computing (HPC)","Data Visualization","Testing and Debugging", "Coordinated/Collaborative Testing and Debugging"],
           "non_technical": ["Self-guided Problem Solving", "Problem Scoping", "Project Management", "Collaboration", "Documentation", "Science Communication", "Manuscript Production", "Manuscript Editing", "Mentorship", "Virtual Presentations"]
         },
+        "hours": "40+",
         "aesthetics" :{
           "icon": "fa-solid fa-brain",
           "sequence": 2
@@ -201,7 +263,7 @@
           "name": "Indiana University Bloomington",
           "location": {
             "city": "Bloomington",
-            "state": "Indiana",
+            "state": "IN",
             "country": "USA"
           },
           "department_program": ["Department of Psychological and Brain Sciences","Program in Neuroscience"]
@@ -213,15 +275,25 @@
           "google_scholar": "https://scholar.google.com/citations?user=gh_KorwAAAAJ&hl=en",
           "email": "pestilli@utexas.edu"
         }],
-        "year": {
-          "start": ["June, 2015"],
-          "end": ["July, 2021"]
-        },
+        "duration": 
+        [
+          { 
+            "start": {
+              "month": 6,
+              "year": 2015
+              },
+            "end": {
+              "month": 6,
+              "year": 2021
+              }
+          }
+        ],
         "description": "As a graduate student I developed and implemented automated segmentation methods for major white matter tracts in tractography. This also entailed the visualization of tractography & segmentation results, as well as the quantification of tract properties and development of tractography quality assurance methods. This work required a deep review of contemporary and historical neuroanatomy literature.",
         "tasks_skills": {
           "technical": ["Python", "Matlab", "Linux", "Git", "Neuroimaging Software Packages","Neuroimaging","Neuroanatomy","Neuroscience","Brain Imaging Data Structure (BIDS)","Neuroimaging Data Structures","Neuroimaging Data Processing","3-D Image Processing","Medical Image Processing","Bash & Shell Scripting", "Big Data", "Dataset Quality Assesment", "Data Science", "Jupyter Notebooks", "High Performance Computing (HPC)","Data Visualization", "Statistical Analysis", "Advanced Statistical Analysis"],
           "non_technical": ["Self-guided problem solving", "Problem Scoping", "Project Management", "Collaboration", "Multi-endeavor Balancing & Prioritization", "Project Schedule Development & Coordination", "Documentation", "Science Communication", "Manuscript Production", "Manuscript Editing", "Public Speaking", "Presentation Development & Delivery", "Research methods", "Research Design", "Mentorship"]
         },
+        "hours" : "40+",
         "aesthetics" :{
           "icon": "fa-solid fa-brain",
           "sequence": 4
@@ -238,7 +310,7 @@
           "name": "Indiana University Bloomington",
           "location": {
             "city": "Bloomington",
-            "state": "Indiana",
+            "state": "IN",
             "country": "USA"
           },
           "department_program": ["Department of Psychological and Brain Sciences","Program in Neuroscience"]
@@ -259,15 +331,25 @@
           "email": ""
         }      
       ],
-        "year": {
-          "start": ["July, 2017"],
-          "end": ["July, 2023"]
-        },
+        "duration": 
+        [
+          { 
+            "start": {
+              "month": 7,
+              "year": 2017
+              },
+            "end": {
+              "month": 7,
+              "year": 2023
+              }
+          }
+        ],
         "description": "In this role I was responsible for the production and maintanence of containerized data processing applications for the brainlife.io platform. This entailed the creation of novel data processing and visualization code, as well as adaptation of exisiting resources.  I also engaged in testing, monitoring, and feedback on service deployment and coordination.  I also led the scoping, creation, coordinaton, and maintanence of specific data formats/standards.",
         "tasks_skills": {
           "technical": ["Python", "Matlab", "JSON", "Markdown", "Linux", "Git", "Neuroimaging Software Packages","BIDS","Neuroimaging","Neuroimaging Data Structures","Neuroimaging Data Processing","Bash & Shell Scripting", "Big Data", "Dataset Quality Assesment", "Data Science", "Docker", "Containerization", "High Performance Computing (HPC)", "Continuous Integration and Continuous Delivery/Deployment (CI/CD)","Testing and Debugging", "Coordinated/Collaborative Testing and Debugging", "Data Visualization", "Statistical analysis", "Advanced Statistical Analysis"],
           "non_technical": ["Problem Scoping", "Project Management", "Collaboration", "Teamwork", "Task Specialization", "Multi-endeavor Balancing & Prioritization", "Documentation", "Client/Stakeholder Engagement","Rapid Iteration Production", "Rapid Adaptation", "Long-Term Product/Project Maintanence", "Documentation Life-cycle Management", "Soliciting & Incorporating Client Feedback", "Progress Updating and Reports", "Continuous Integration and Continuous Delivery/Deployment (CI/CD) Methods"]
         },
+        "hours": "~ 5 - 10",
         "aesthetics" :{
           "icon": "fa-solid fa-code",
           "sequence": 3
@@ -312,15 +394,25 @@
           "email": "jt9sz@virginia.edu"
         }
       ],
-        "year": {
-          "start": ["June, 2020"],
-          "end": ["August, 2020"]
-        },
+        "duration": 
+        [
+          { 
+            "start": {
+              "month": 6,
+              "year": 2020
+              },
+            "end": {
+              "month": 8,
+              "year": 2020
+              }
+          }
+        ],
         "description": "As a Research Fellow, I served as participant lead for two projects.  Also in this capacity, I developed/produced code, analyses (qualitative and quantitative), and web content. Additionally, I performed performed data curation/cleaning, linked datasets, created visualizations, presented insights, and managed interns.",
         "tasks_skills": {
           "technical": ["Software Development", "Web Development", "Data Analysis", "Data Curation", "Data Cleaning", "Dataset Quality Assesment", "Data Visualization", "Python", "Git", "SQL"],
           "non_technical": ["Presentation Skills", "Project Management", "Team Management", "Mentorship", "Report Production", "Stakeholder Engagement", "Problem Scoping", "Collaboration", "Rapid Production Frameworks", "Multi-audience Presentation Production and Delivery"]
         },
+        "hours": "40",
         "aesthetics" :{
           "icon": "fa-solid fa-code",
           "sequence": 11
@@ -337,7 +429,7 @@
         "name": "North Carolina State University",
         "location": {
           "city": "Raleigh",
-          "state": "North Carolina",
+          "state": "NC",
           "country": "USA"
         },
         "department_program": ["Department of Biological Sciences"]
@@ -358,15 +450,25 @@
           "email": "john_godwin@ncsu.edu"
         }
       ],
-        "year": {
-          "start": ["August 2012"],
-          "end": ["May, 2015"]
-        },
+        "duration":
+        [
+          { 
+            "start": {
+              "month": 8,
+              "year": 2012
+              },
+            "end": {
+              "month": 5,
+              "year": 2015
+              }
+          }
+        ],
         "description": "As an undergraduate research assistant I ran experiments, collected and analyzed data, prepared and processed biological samples, maintained subject stocks, developed grants, and presented research results.",
         "tasks_skills": {
           "technical": ["Behavioral Testing", "Movement Tracking Analysis", "Cryosectioning", "Microscopy", "In-situ Hybridization (ISH)", "DNA/RNA Extraction", "Slide Preparation", "Protocol Optimization", "Movement Tracking Data Processing", "Subject Monitoring & Maintainence"],
           "non_technical": ["Grant Writing", "Science Communication", "Poster Presentation", "Research Review", "Article Summary & Discussion", "Resource Monitoring & Management"]
         },
+        "hours": "10",
         "aesthetics" :{
           "icon": "fa-solid fa-microscope",
           "sequence": 12
@@ -403,16 +505,26 @@
           "google_scholar": "",
           "email": ""
         }
-      ],
-        "year": {
-          "start": ["June, 2013"],
-          "end": ["August, 2013"]
-        },
+        ],
+        "duration": 
+        [
+          { 
+            "start": {
+              "month": 6,
+              "year": 2013
+              },
+            "end": {
+              "month": 8,
+              "year": 2013
+              }
+          }
+        ],
         "description": "As a summer research scholar I engaged in a focused an intensive research project.  This project was centered arount characterizing and calibrating the process for producing functional thymic organoids.  I assisted with sample production, processing, and analysis, in addition to also presenting on project status and findings.  This work was supported by a SENS Research Foundation Summer research fellowship.",
         "tasks_skills": {
           "technical": ["Tissue Extraction", "Tissue Culture", "Cell Culturing", "Cryosectioning", "Advanced Microscopy", "Immunofluorescence", "PCR", "Gel Electrophoresis"],
           "non_technical": ["Multi-audience Presentation Production and Delivery", "Team Research", "Team Science", "Biomedical Industry Research and Development", "Rapid Production Frameworks", "Poster Presentation", "Research Review", "Report Production", "Multi-stakeholder Reporting & Communication", "Collaboration", "Resource Monitoring & Management"]
         },
+        "hours": "40",
         "aesthetics" :{
           "icon": "fa-solid fa-microscope",
           "sequence": 16
@@ -449,15 +561,25 @@
           "google_scholar": "",
           "email": ""
         }],
-        "year": {
-          "start": "August, 2007",
-          "end": "May, 2009"
-        },
-        "description": "As an undergraduate research assistant I aided with research and data collection for projects involving EEG and tracking.",
+        "duration": 
+        [
+          { 
+            "start": {
+              "month": 8,
+              "year": 2007
+              },
+            "end": {
+              "month": 5,
+              "year": 2009
+              }
+          }
+        ],
+        "description": "As an undergraduate research assistant I aided with research and data collection for projects involving EEG and tracking using the attentional blink paradigm.",
         "tasks_skills": {
           "technical": ["Experimental Design", "Subject Recruitment", "Behavioral Testing", "EEG", "Eye-tracking", "Data Management", "Data Analysis", "Data Curation"],
           "non_technical": ["Research Ethics", "Project Management", "Collaboration", "Science Communication", "IRB Protocols"]
         },
+        "hours": "~ 3 - 5",
         "aesthetics" :{
           "icon": "fa-solid fa-brain",
           "sequence": 19
@@ -486,15 +608,25 @@
             "google_scholar": "",
             "email": ""
         }],
-        "year": {
-            "start": "November, 2004",
-            "end": "May, 2005"
-        },
+        "duration": 
+        [
+          { 
+            "start": {
+              "month": 11,
+              "year": 2004
+              },
+            "end": {
+              "month": 5,
+              "year": 2005
+              }
+          }
+        ],
         "description": "As pre-accalaureate research assistant, I was trained to assist with a number of research production processes, including both work in the field and at the lab-bench.",
         "tasks_skills": {
             "technical": ["PCR", "Gel Electrophoresis", "Sample Preperation and Processing", "Sample Management"],
             "non_technical": ["Manuscript Development", "Research Article Review"]
         },
+        "hours": "~ 5 - 10",
         "aesthetics" :{
           "icon": "fa-solid fa-dna",
           "sequence": 22
@@ -523,15 +655,35 @@
             "google_scholar": null,
             "email": null
         },
-        "year": {
-            "start": "Fall, 2017",
-            "end": "May, 2021"
-        },
+        "duration": 
+        [
+          { 
+            "start": {
+              "month": 8,
+              "year": 2017
+              },
+            "end": {
+              "month": 5,
+              "year": 2018
+              }
+          },
+          { 
+            "start": {
+              "month": 8,
+              "year": 2020
+              },
+            "end": {
+              "month": 5,
+              "year": 2021
+              }
+          }
+        ],
         "description": "Across four semesters as a graduate teaching assistant, I provided assistance with grading and classroom management, led discussion sections, and held office hours for various courses in research methods and statistics, cognitive neuroscience, and social neuroscience.",
         "tasks_skills": {
             "technical": null,
             "non_technical": ["Performance Assessment", "Classroom Management", "Discussion Section Coordination", "Individualized Instruction", "Feedback Provision"]
         },
+        "hours": "~ 15 - 20",
         "aesthetics" :{
           "icon": "fa-solid fa-person-chalkboard",
           "sequence": 8
@@ -560,15 +712,25 @@
           "google_scholar": null,
           "email": "emigh@ncsu.edu"
         },
-        "year": {
-          "start": "August 2014",
-          "end": "December 2015"
-        },
-        "description": "As a graduate teaching assistant for GN 311 - Principles of Genetics, I led discussion sections, held office hours, and graded course assignments and tests.",
+        "duration": 
+        [
+          {
+            "start": {
+              "month": 8,
+              "year": 2014
+              },
+            "end": {
+              "month": 12,
+              "year": 2014
+              }
+          }
+        ],
+        "description": "As a graduate teaching assistant for GN 311 - Principles of Genetics, I led discussion sections, lectured and reviewed, held office hours, and graded course assignments and tests.",
         "tasks_skills": {
           "technical": null,
           "non_technical": ["Grading", "Classroom Management", "Discussion Section Coordination", "Individualized Instruction"]
         },
+        "hours": "~ 3 - 5",
         "aesthetics" :{
           "icon": "fa-solid fa-person-chalkboard",
           "sequence": 14
@@ -597,15 +759,25 @@
           "google_scholar":null,
           "email":null
         },
-        "year":{
-          "start":"August 2009",
-          "end":"May 2011"
-        },
+        "duration":
+        [
+          { 
+            "start": {
+              "month": 8,
+              "year": 2009
+              },
+            "end": {
+              "month": 5,
+              "year": 2011
+              }
+          }
+        ],
         "description": "As a graduate teaching assistant, I provided assistance for a number of philosophy courses with grading and classroom management, led discussion sections, and held office hours for various courses in ethics, introduction to philosophy, political philosophy, and classical philosophy.",
         "tasks_skills":{
         "technical":null,
         "non_technical":["Performance Assessment","Classroom management", "Discussion Section Coordination", "Individualized Instruction", "Feedback Provision"]
         },
+        "hours": "~ 10 - 20",
         "aesthetics" :{
           "icon": "fa-solid fa-person-chalkboard",
           "sequence": 17
@@ -634,15 +806,35 @@
           "google_scholar": null,
           "email": null
         },
-        "year": {
-          "start": ["June, 2010", "June, 2011"],
-          "end": ["August, 2010", "August, 2011"]
-        },
+        "duration": 
+        [
+          { 
+            "start": {
+              "month": 6,
+              "year": 2010
+              },
+            "end": {
+              "month": 8,
+              "year": 2010
+              }
+          },
+          { 
+            "start": {
+              "month": 6,
+              "year": 2011
+              },
+            "end": {
+              "month": 8,
+              "year": 2011
+              }
+          }
+        ],
         "description": "As a psychology instructor at Duke TIP, I led an intensive and comprehensive introduction to psychology for academically gifted high school students.  This course was taught at a 101 level and covered the standard range of topics that would be expected in a first-year college course.",
         "tasks_skills": {
           "technical": null,
           "non_technical": ["Course Design", "Syllabus Formation", "Instruction", "Performance Assessment", "Progress Reporting", "Classroom Management"]
         },
+        "hours": "40+",
         "aesthetics" :{
           "icon": "fa-solid fa-person-chalkboard",
           "sequence": 18
@@ -671,15 +863,25 @@
           "google_scholar": null,
           "email": null
         },
-        "year": {
-          "start": ["June, 2009"],
-          "end": ["August, 2009"]
-        },
+        "duration": 
+        [
+          { 
+            "start": {
+              "month": 6,
+              "year": 2009
+              },
+            "end": {
+              "month": 8,
+              "year": 2009
+              }
+          }
+        ],
         "description": "As a psychology teaching assistant at Duke TIP, I provided assistance with grading and classroom management, and led daily review sessions.",
         "tasks_skills": {
           "technical": null,
           "non_technical": ["Grading", "Classroom management", "Review session leadership"]
         },
+        "hours": "40+",
         "aesthetics" :{
           "icon": "fa-solid fa-person-chalkboard",
           "sequence": 20
@@ -708,15 +910,25 @@
           "google_scholar": null,
           "email": null
         },
-        "year": {
-          "start": ["June, 2008"],
-          "end": ["August, 2008"]
-        },
+        "duration": 
+        [
+          { 
+            "start": {
+              "month": 6,
+              "year": 2008
+              },
+            "end": {
+              "month": 8,
+              "year": 2008
+              }
+          }
+        ],
         "description": "As a nanotechnology teaching assistant at Duke TIP, I provided assistance with grading and classroom management, and led daily review sessions.",
         "tasks_skills": {
           "technical": null,
           "non_technical": ["Grading", "Classroom management", "Review session leadership"]
         },
+        "hours": "40+",
         "aesthetics" :{
           "icon": "fa-solid fa-person-chalkboard",
           "sequence": 21
@@ -745,15 +957,25 @@
           "google_scholar": null,
           "email": null
         },
-        "year": {
-        "start": ["August 2020"],
-        "end": ["May 2021"]
-        },
+        "duration":
+        [
+          { 
+            "start": {
+              "month": 8,
+              "year": 2020
+              },
+            "end": {
+              "month": 5,
+              "year": 2021
+              }
+          }
+        ],
         "description": "As chair of the Benefits committee in the Indiana University Graduate and Professional Student Government (GPSG), I represented and advocated on behalf of graduate and professional students on issues related to compensation, benefits, and professional issues. I regularly met and communicated with university administrators, including the Dean of University Graduate School, about policy development, mutual endeavors, and specific concerns. I was also a member of the GPSG executive committee and managed a team of graduate student representatives.",
         "tasks_skills": {
         "technical": null,
         "non_technical": ["Leadership", "Committee Management", "Advocacy", "Communication", "Team Management", "Constituency Engagement", "Human Resources & Benefits Policy", "Stakeholder Engagement", "Institutional Engagement"]
         },
+        "hours": "~ 1 - 2",
         "aesthetics" :{
           "icon": "fa-solid fa-handshake",
           "sequence": 9
@@ -782,15 +1004,25 @@
           "google_scholar": null,
           "email": null
         },
-        "year": {
-          "start": ["August, 2020"],
-          "end": ["Spring, 2021"]
-        },
+        "duration": 
+        [
+          { 
+            "start": {
+              "month": 8,
+              "year": 2020
+              },
+            "end": {
+              "month": 5,
+              "year": 2021
+              }
+          }
+        ],
         "description": "As a member of the technology poicy commitee, I represented Indiana University graduate student researchers on campus issues related to technology implementation. Regular meeting topics of this group included virtual conferencing (e.g. Zoom), email & data platforms, and research data storage and ownership.",
         "tasks_skills": {
           "technical": null,
           "non_technical": ["Committee Representation", "Meeting Participation", "Advocacy", "Technology Policy Development", "Research Data Policy", "Institutional Engagement"]
         },
+        "hours":"~ 1",
         "aesthetics" :{
           "icon": "fa-solid fa-handshake",
           "sequence": 7
@@ -819,15 +1051,25 @@
           "google_scholar": null,
           "email": null
         },
-        "year": {
-        "start": "August, 2017",
-        "end": "May, 2021"
-        },
+        "duration":
+        [
+          { 
+            "start": {
+              "month": 8,
+              "year": 2017
+              },
+            "end": {
+              "month": 5,
+              "year": 2021
+              }
+          }
+        ],
         "description": "As a member of the Research Affairs Commitee I represented graduate student researchers on campus issues related to research affairs. Regular meeting topics included COVID impacts, conflict of interest management, research disclosures, campus open access policies, NTT researchers, and other subjects. Worked with campus stakeholders and administrators from the Office of Research Administration, Office of the Vice Provost for Research, and others.",
         "tasks_skills": {
           "technical": null,
           "non_technical": ["Constituency Representation", "Rapport Building", "Institutional Advocacy", "Instutional Collaboration", "Instutional Engagement", "Research Policy", "Research Ethics", "Research Staffing", "Conflict of Interest Management", "Instutional Research Policy", "Open Access Policy"]
           },
+        "hours" :"~ 1",
         "aesthetics" :{
           "icon": "fa-solid fa-handshake",
           "sequence": 6
@@ -856,15 +1098,25 @@
           "google_scholar": null,
           "email": null
         },
-        "year": {
-          "start": "August, 2017",
-          "end": "May, 2021"
-        },
+        "duration": 
+        [
+          { 
+            "start": {
+              "month": 8,
+              "year": 2017
+              },
+            "end": {
+              "month": 5,
+              "year": 2021
+              }
+          }
+        ],
         "description": "As a voting member of the Bloomington Faculty Council (BFC), I represented graduate student researchers on all matters coming before the council, including campus-level policy, resolutions, and campus development planning.  I often met or interacted with campus/university administrators on specific issues and persistent ad hoc committees.",
         "tasks_skills": {
           "technical": null,
           "non_technical": ["Advocacy", "Constituency Engagement", "Constituency Representation", "Rapport Building", "Institutional Advocacy", "Instutional Collaboration", "Instutional Engagement", "Policy Representation", "Collaboration", "Communication", "Public Speaking", "University Policy", "University Developement Strategy", "Public Speaking","Robert's Rules of Order"]
           },
+        "hours": "~ 1",
         "aesthetics" :{
           "icon": "fa-solid fa-handshake",
           "sequence": 5
@@ -893,15 +1145,25 @@
         "google_scholar": null,
         "email": null
         },
-        "year": {
-        "start": "Fall 2017",
-        "end": "Spring 2020"
-        },
+        "duration":
+        [
+          { 
+            "start": {
+              "month": 8,
+              "year": 2017
+              },
+            "end": {
+              "month": 5,
+              "year": 2020
+              }
+          }
+        ],
         "description": "In this role I represented graduate students from the Program in Neuroscience to the Graduate and Professional Student Government. As a representative I helped to shape and develop resolutions, and was overall an active member.",
         "tasks_skills": {
         "technical": null,
         "non_technical": ["Representation", "Resolutions Development", "Active Participation", "Public Speaking", "Robert's Rules of Order"]
         },
+        "hours": "~ 2 - 3",
         "aesthetics" :{
           "icon": "fa-solid fa-handshake",
           "sequence": 11
@@ -918,7 +1180,7 @@
           "name": "North Carolina State University",
           "location": {
             "city": "Raleigh",
-            "state": "North Carolina",
+            "state": "NC",
             "country": "USA"
           },
           "department_program": "Future Society Club"
@@ -930,15 +1192,25 @@
           "google_scholar": null,
           "email": null
         },
-        "year": {
-          "start": ["August, 2013"],
-          "end": ["May, 2015"]
-        },
+        "duration": 
+        [
+          { 
+            "start": {
+              "month": 8,
+              "year": 2013
+              },
+            "end": {
+              "month": 5,
+              "year": 2015
+              }
+          }
+        ],
         "description": "As Vice President of the NCSU Future Society Club, I led meetings, scheduled and organized talks, and managed membership. Meeting topics included technology, science, society, and the interplay between these.",
         "tasks_skills": {
           "technical": null,
           "non_technical": ["Leadership", "Event Coordination", "Membership Management", "Discussion Facilitation", "Organizational Continuity & Preservation"]
         },
+        "hours": "~ 1",
         "aesthetics" :{
           "icon": "fa-solid fa-microchip",
           "sequence": 15
@@ -955,7 +1227,7 @@
           "name": "North Carolina State University",
           "location": {
             "city": "Raleigh",
-            "state": "North Carolina",
+            "state": "NC",
             "country": "USA"
           },
           "department_program": "Office of Undergraduate Research"
@@ -967,15 +1239,25 @@
           "google_scholar": null,
           "email": "christopher.ashwell@mail.wvu.edu"
         },
-        "year": {
-          "start": "August, 2013",
-          "end": "May, 2015"
-        },
+        "year":
+        [
+          { 
+            "start": {
+              "month": 8,
+              "year": 2013
+              },
+            "end": {
+              "month": 5,
+              "year": 2015
+              }
+          }
+        ],
         "description": "As the chief editor of the undergraduate research journal I evaluated submissions and provided feedback to authors. I also collaborated with faculty in support of organization.",
         "tasks_skills": {
           "technical": null,
           "non_technical": ["Research Article Review", "Feedback Provision", "Manuscript Revision", "Collaboration"]
         }, 
+        "hours": "~ 1 - 2",
         "aesthetics" :{
           "icon": "fa-solid fa-book",
           "sequence": 13
@@ -1125,7 +1407,19 @@
             "name": "National Science Foundation (NSF)",
             "link": "https://new.nsf.gov/od/oia/ia/aaas-fellows"
           },
-        "year": "Aug 2022 - Aug 2024",
+          "duration":
+          [
+            { 
+              "start": {
+                "month": 8,
+                "year": 2022
+                },
+              "end": {
+                "month": 8,
+                "year": 2024
+                }
+            }
+          ],
         "link": "https://new.nsf.gov/oia/ia/aaas-fellows/bullock"
       },
       {
@@ -1139,7 +1433,19 @@
             "name": "University of Minnesota",
             "link": "https://sites.google.com/umn.edu/minnesota-neuroimaging-postdoc/home"
           },
-        "year": "Jan, 2022 - Aug, 2022",
+          "duration":
+          [
+            { 
+              "start": {
+                "month": 1,
+                "year": 2022
+                },
+              "end": {
+                "month": 8,
+                "year": 2022
+                }
+            }
+          ],
         "link": "https://reporter.nih.gov/search/gRlflI2sLE2vaVb49MOOOA/project-details/10205698"
       },
       {
@@ -1153,7 +1459,19 @@
             "name": "University of Virginia Biocomplexity Institute",
             "link": "https://biocomplexity.virginia.edu/"
           },
-        "year": "Summer, 2020",
+          "duration":
+          [
+            { 
+              "start": {
+                "month": 6,
+                "year": 2020
+                },
+              "end": {
+                "month": 8,
+                "year": 2020
+                }
+            }
+          ],
         "link": "https://datascienceforthepublicgood.org/events/symposium2020"
       },
       {
@@ -1167,7 +1485,19 @@
             "name": "Indiana University Bloomington, Department of Psychological and Brain Sciences, Clinical Science Program",
             "link": "https://psych.indiana.edu/graduate/degree-programs/clinical-science/index.html"
           },
-        "year": "Fall, 2018 - Spring, 2020",
+          "duration": 
+          [
+            { 
+              "start": {
+                "month": 8,
+                "year": 2018
+                },
+              "end": {
+                "month": 5,
+                "year": 2020
+                }
+            }
+          ],
         "link": "https://reporter.nih.gov/search/1Q6o15EX2Uuh_-XqWv0XtA/project-details/9937020"
       },
       {
@@ -1181,7 +1511,19 @@
           "name": "University of Washington eScience Institute",
           "link": "https://escience.washington.edu/"
         },
-        "year": "Summer, 2019",
+        "duration": 
+        [
+          { 
+            "start": {
+              "month": 8,
+              "year": 2019
+              },
+            "end": {
+              "month": 9,
+              "year": 2019
+              }
+          }
+        ],
         "link": "https://neurohackademy.org/neurohack_year/2019/"
       },
       {
@@ -1195,7 +1537,19 @@
           "name": "Center for Information and Neural Networks (CiNet)",
           "link": "https://cinet.jp/english/"
         },
-        "year": "Dec, 2016 - Jan, 2017",
+        "duration": 
+        [
+          { 
+            "start": {
+              "month": 12,
+              "year": 2016
+              },
+            "end": {
+              "month": 1,
+              "year": 2017
+              }
+          }
+        ],
         "link": "https://www.nict.go.jp/en/global/internship.html"
       },
       {
@@ -1209,7 +1563,19 @@
           "name": "Indiana University Bloomington",
           "link": "https://www.iu.edu/index.html"
         },
-        "year": "Fall, 2015 - Spring, 2017",
+        "duration": 
+        [
+          { 
+            "start": {
+              "month": 8,
+              "year": 2015
+              },
+            "end": {
+              "month": 5,
+              "year": 2017
+              }
+          }
+        ],
         "link": "https://psych.indiana.edu/graduate/index.html"
       },
       {
@@ -1223,6 +1589,19 @@
           "name": "Wake Forest Institute for Regenerative Medicine",
           "link": "https://school.wakehealth.edu/research/institutes-and-centers/wake-forest-institute-for-regenerative-medicine"
         },
+        "duration": 
+        [
+          { 
+            "start": {
+              "month": 6,
+              "year": 2013
+              },
+            "end": {
+              "month": 8,
+              "year": 2013
+              }
+          }
+        ],
         "year": "Summer, 2013",
         "link": "https://www.sens.org/education-opportunities/summer-scholars/"
      },
@@ -1237,7 +1616,19 @@
           "name": "Wake Forest University School of Medicine",
           "link": "https://school.wakehealth.edu/"
         },
-        "year": "Summer, 2013",
+        "duration": 
+        [
+          { 
+            "start": {
+              "month": 6,
+              "year": 2013
+              },
+            "end": {
+              "month": 8,
+              "year": 2013
+              }
+          }
+        ],
         "link": "https://school.wakehealth.edu/research/institutes-and-centers/wake-forest-institute-for-regenerative-medicine/education-and-training/summer-scholars-program"
       },
       {
@@ -1251,7 +1642,29 @@
             "name": "North Carolina State University",
             "link": "https://www.ncsu.edu/"
           },
-          "year": "Spring - Summer, 2013 & 2014",
+          "duration": 
+          [
+            { 
+              "start": {
+                "month": 1,
+                "year": 2013
+                },
+              "end": {
+                "month": 6,
+                "year": 2013
+                }
+            },
+            { 
+              "start": {
+                "month": 1,
+                "year": 2014
+                },
+              "end": {
+                "month": 6,
+                "year": 2014
+                }
+            }
+          ],
           "link": "https://undergradresearch.dasa.ncsu.edu/projectfunding/"
       }
     ]
