@@ -685,7 +685,7 @@
         },
         "hours": "~ 15 - 20",
         "aesthetics" :{
-          "icon": "fa-solid fa-person-chalkboard",
+          "icon": "fa-solid fa-chalkboard",
           "sequence": 8
         }
       },
@@ -732,7 +732,7 @@
         },
         "hours": "~ 3 - 5",
         "aesthetics" :{
-          "icon": "fa-solid fa-person-chalkboard",
+          "icon": "fa-solid fa-chalkboard",
           "sequence": 14
         }
       },
@@ -779,7 +779,7 @@
         },
         "hours": "~ 10 - 20",
         "aesthetics" :{
-          "icon": "fa-solid fa-person-chalkboard",
+          "icon": "fa-solid fa-chalkboard",
           "sequence": 17
         }
       },  
@@ -836,7 +836,7 @@
         },
         "hours": "40+",
         "aesthetics" :{
-          "icon": "fa-solid fa-person-chalkboard",
+          "icon": "fa-solid fa-chalkboard",
           "sequence": 18
         }
       },
@@ -883,7 +883,7 @@
         },
         "hours": "40+",
         "aesthetics" :{
-          "icon": "fa-solid fa-person-chalkboard",
+          "icon": "fa-solid fa-chalkboard",
           "sequence": 20
         }
       },
@@ -930,7 +930,7 @@
         },
         "hours": "40+",
         "aesthetics" :{
-          "icon": "fa-solid fa-person-chalkboard",
+          "icon": "fa-solid fa-chalkboard",
           "sequence": 21
         }
       },
@@ -1271,7 +1271,7 @@
         "authors": ["Francois Rheault", "Valérie Hayot-Sassonb", "Robert E. Smith", "Christopher Rordend", "Jacques-Donald Tourniere", "Eleftherios Garyfallidis", "Fang-Cheng Yehh", "Christopher J. Markiewicz", "Matthew Brett", "Ben Jeurissenk", "Paul A. Taylor", "D. Baran Aydogan", "Derek A. Pisner", "Serge Koudorof","Soichi Hayashi", "Daniel Haehn", "Steve Pieper", "Daniel Bullock", "Emanuele Olivetti", "Jean-Christophe Houde", "Marc-Alexandre Côté", "Flavio Dell’Acqua", "Alexander Leemansy", "Maxime Descoteaux","Bennett Landman", "Franco Pestilli",  "Ariel Rokem"],
         "venue": ["Organization for Human Brain Mapping"],
         "keywords": "",
-        "year": "2022"
+        "year": 2022
       },
       {
         "title": "White Matter Mapping on brainlife.io: A Findable, Accessible, Interoperable, Reusable Implementation",
@@ -1279,7 +1279,7 @@
         "authors": ["Daniel Bullock", "Soichi Hayashi", "Lindsey Kitchell", "Brent McPherson", "Bradley Caron", "Franco Pestilli"],
         "venue": ["Organization for Human Brain Mapping"],
         "keywords": "",
-        "year": "2019"
+        "year": 2019
       },
       {
         "title": "Microstructural Differences in Both the White- and Gray-matter Tissue Distinguish Athletes Groups",
@@ -1287,7 +1287,7 @@
         "authors": ["Bradley Caron", "Lindsey Kitchell", "Brent McPherson", "Daniel Bullock", "Soichi Hayashi", "Derek Keller", "Hu Cheng", "Sharlene Newman", "Nicholas Port", "Franco Pestilli"],
         "venue": ["Organization for Human Brain Mapping"],
         "keywords": "",
-        "year": "2019"
+        "year": 2019
       },
       {
         "title": "Segmentation of White Matter Bundles as Anatomically-Informed Multiple Linear Assignment Problems",
@@ -1295,7 +1295,7 @@
         "authors": ["Giulia Bertó", "Paolo Avesani", "Franco Pestilli", "Daniel Bullock", "Bradley Caron", "Emanuele Olivetti"],
         "venue": ["Organization for Human Brain Mapping"],
         "keywords": "",
-        "year": "2019"
+        "year": 2019
       },
       {
         "title": "Orchestrating Cloud Networks for Discoverable, Accessible, Interoperable, and Reusable Neuroscience",
@@ -1303,7 +1303,7 @@
         "authors": ["Soichi Hayashi", "Lindsey Kitchell", "Brent McPherson", "Bradley Caron", "Daniel Bullock", "Paolo Avesani", "Robert Henschel", "Eleftherios Garyfallidis", "Lei Wang", "Ivo Dinov", "Franco Pestilli"],
         "venue": ["Organization for Human Brain Mapping"],
         "keywords": "",
-        "year": "2019"
+        "year": 2019
       },
       {
         "title": "Making network neuroscience more findable, accessible, interoperable, and reusable via brainlife.io",
@@ -1311,7 +1311,7 @@
         "authors": ["Brent McPherson", "Daniel Bullock", "Bradley Caron", "Lindsey Kitchell", "Soichi Hayashi", "Josh Faskowitz", "Olaf Sporns", "Richard Betzel", "Paolo Avesani", "Franco Pestilli"],
         "venue": ["Organization for Human Brain Mapping"],
         "keywords": "",
-        "year": "2019"
+        "year": 2019
       },
       {
         "title": "The relationship between the microstructure of vertical white matter pathways and behavior in early elementary school children",
@@ -1319,7 +1319,7 @@
         "authors": ["Sophia Vinci-Booher", "Daniel Bullock", "Bradley Caron", "Brent McPherson", "Karen H. James", "Franco Pestilli"],
         "venue": ["Cognitive Development Society Biennial Conference"],
         "keywords": "",
-        "year": "2019"
+        "year": 2019
       },
       {
         "title": "Shape Analysis of White Matter Tracts via the Laplace-Beltrami Spectrum",
@@ -1327,7 +1327,7 @@
         "authors": ["Lindsey Kitchell", "Daniel Bullock", "Soichi Hayashi", "Franco Pestilli"],
         "venue": ["Shape in Medical Imaging Workshop at MICCAI"],
         "keywords": "",
-        "year": "2018"
+        "year": 2018
       },
       {
         "title": "Clarifying the anatomical organization and cortical projections of multiple major white matter tracts associating the human temporal and parietal lobes",
@@ -1335,7 +1335,7 @@
         "authors": ["Daniel Bullock", "Hiromasa Takemura", "Cesar F. Caiafa", "Lindsey Kitchell", "Brent McPherson", "Bradley Caron", "Franco Pestilli"],
         "venue": ["Society for Neuroscience"],
         "keywords": "",
-        "year": "2018"
+        "year": 2018
       },
       {
         "title": "White Matter Tracts as Classification Features for Machine Learning",
@@ -1343,7 +1343,7 @@
         "authors": ["Lindsey Kitchell", "Daniel Bullock", "Soichi Hayashis", "Franco Pestilli"],
         "venue": ["Midwest Cognitive Science Conference"],
         "keywords": "",
-        "year": "2018"
+        "year": 2018
       },
       {
         "title": "Advanced White Matter Mapping in the Subconcussive Brain",
@@ -1351,7 +1351,7 @@
         "authors": ["Bradley Caron", "Derek Keller", "Lindsey Kitchell", "Brent McPherson", "Daniel Bullock", "Soichi Hayashi", "Hu Cheng", "Sharlene Newman", "Nicholas Port", "Franco Pestilli"],
         "venue": ["AAN Sports Concussion Conference","Big Ten-Ivy League TBI Research Consortium Summit"],
         "keywords": "",
-        "year": "2018"
+        "year": 2018
      },
      {
       "title": "Multidimensional Encoding of Structural Brain Connectomes: Building Quantitative Biological Networks with Preserved Edge Properties to Study the Visual White Matter and Brain Aging",
@@ -1359,7 +1359,7 @@
       "authors": ["Franco Pestilli", "Brent McPherson", "Daniel Bullock", "Andrea Avena-Koenigsberger", "Joey Contreras", "Cesar Caiafa", "Olaf Sporns", "Andrew Saykin"],
       "venue": ["Network Science", "Society for Neuroscience"],
       "keywords": "",
-      "year": "2017"
+      "year": 2017
      },
      {
       "title": "The Posterior Associative White Matter Network Connecting Temporal and Parietal Human Brain Lobes",
@@ -1367,7 +1367,7 @@
       "authors": ["Daniel Bullock", "Hiromasa Takemura", "Cesar F. Caiafa", "Franco Pestilli"],
       "venue": ["Society for Neuroscience"],
       "keywords": "",
-      "year": "2016"
+      "year": 2016
      },
      {
       "title": "Evidence for a Direct White Matter Tract Between Human Parietal and Inferotemporal Cortex",
@@ -1375,7 +1375,7 @@
       "authors": ["Daniel Bullock", "Julian Moehlen", "Brent McPherson", "Cesar Caiafa", "Hiromasa Takemura", "Franco Pestilli"],
       "venue": "Association for Psychological Science",
       "keywords": "",
-      "year": "2016"
+      "year": 2016
      },
      {
       "title": "Localization of Differential Neuron Activity in Zebrafish with Distinct Stress Dispositions using c-fos Activity",
@@ -1383,7 +1383,7 @@
       "authors": ["Daniel Bullock", "Ryan Wong", "John Godwin"],
       "venue": ["State of North Carolina Undergraduate Research & Creativity Symposium", "NC State Summer Undergraduate Research Symposium", "NCSU Spring Biology Capstone Symposium"],
       "keywords": "",
-      "year": "2014"
+      "year": 2014
     },
     {
       "title": "Towards Engineered Thymic Tissue",
@@ -1391,7 +1391,7 @@
       "authors": ["Daniel Bullock", "Sookwon Ryu", "Ashis Mondal", "James Yoo", "John Jackson"],
       "venue": "Wake Forest Institute for Regenerative Medicine Research Day",
       "keywords": "",
-      "year": "2013"
+      "year": 2013
     }
     ],
     "awards": 

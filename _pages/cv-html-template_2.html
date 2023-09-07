@@ -56,6 +56,9 @@ author_profile: false
     "required": ["person"]
   }
 -->
+<!-- Right at the outset, lets go ahead and create a list that mapps all of the month names-->
+{% assign monthNames = "January,February,March,April,May,June,July,August,September,October,November,December" | split: "," %}
+
 
 <!-- Should only be me in there-->
 
@@ -177,14 +180,23 @@ author_profile: false
           {% endif %}
         </div>
       </div>
-      <div class="experience-date-info" style="position: relative; float:right; width: 20%; height:100%; text-align: center; display: table-cell; vertical-align: middle;font-size: 0.8em; font-weight: 600">
-        {{ entry.duration.start | join: " / " }}
-        {% if entry.duration.end != null %}
+      <div class="experience-date-info" style="position: relative; float:right; width: 20%; height:100%; text-align: center; display: table-cell; vertical-align: middle;font-size: 0.8em; font-weight: 600; line-height:0.3m">
+        <!-- as a reminder, the content of the `duration` field now comes as a list of dictionaries.  Each dictionary has a `start` and `end` field, which are themselves dictionaries with `month` and `year` fields (which are numeric).
+        In the event that there are multiple duration entries, they should be seprated by an & character, which will be on it's own line between the duration content information components -->
+        {% for duration in entry.duration %}
+          {% if duration.start.month != null %}
+            {{duration.start.month}}  /  {{ duration.start.year }}
+          {% endif %}
+        {% if duration.end.month != null %}
           <br>
-            to
+          to
           <br>
-          {{ entry.duration.end | join: " / " }}
+          {{ duration.end.month }}  /  {{ duration.end.year }}
         {% endif %}
+        {% if forloop.last == false %}
+          , &<br>
+        {% endif %}
+      {% endfor %}
       </div>
     </div>
   {% endfor %}      
@@ -232,36 +244,41 @@ author_profile: false
                             -->
                             <!--We now have to accomidate the case that there are multiple supervisors.  They will come in as a list, so we'll have to iterate across them.-->
                             <!-- display the string "supervised by " followed by each supervisor, with their links in parentheses, with each supervisor separated by commas if there is more than one -->
-                            <i style="font-size: 0.7em; font-weight: 600; padding-top:-15px">supervised by
+                            <i style="font-size: .7em; font-weight: 600; padding-top:-15px">
                             {% for iSupervisor in entry.supervisor %}
                               {% if iSupervisor.links != null %}
-                                    <i style="font-size: 0.7em; font-weight: 600; padding-top:-15px"> {{ iSupervisor.name }}(
-                                    {% for link in entry.supervisor.links %}
-                                        <a href="{{ link }}"><i class="fas fa-globe"></i></a>
-                                    {% endfor %}
+                              <!-- if its the first in the loop display supervised by-->
+                                {% if forloop.first == true %}
+                                  Supervised by
+                                {% endif %}
+                                {{ iSupervisor.name }}(
+                                {% for link in iSupervisor.links %}
+                                    <a href="{{ link }}"><i class="fas fa-globe"></i></a>
+                                {% endfor %}
                                 
-                                {% if entry.supervisor.ORCID != null %}
-                                    <a href="{{ entry.supervisor.ORCID }}"><i class="fab fa-orcid"></i></a>
+                                {% if iSupervisor.ORCID != null and iSupervisor.ORCID != "" %}
+                                    <a href="{{ iSupervisor.ORCID }}"><i class="fab fa-orcid"></i></a>
                                 {% endif %}
-                                {% if entry.supervisor.google_scholar != null %}
-                                    <a href="{{ entry.supervisor.google_scholar }}"><i class="fas fa-graduation-cap"></i></a>
+                                {% if iSupervisor.google_scholar != null and iSupervisor.google_scholar != "" %}
+                                    <a href="{{ iSupervisor.google_scholar }}"><i class="fas fa-graduation-cap"></i></a>
                                 {% endif %}
-                                {% if entry.supervisor.email != null %}
-                                    <a href="mailto:{{ entry.supervisor.email }}"><i class="fas fa-envelope"></i></a>
+                                {% if iSupervisor.email != null and iSupervisor.email != "" %}
+                                    <a href="mailto:{{ iSupervisor.email }}"><i class="fas fa-envelope"></i></a>
+                                {% endif %}                             
+                                <!-- now we need to add a comma if there is another supervisor-->
+                                )
+                                {% if forloop.last == false %}
+                                  ,
                                 {% endif %}
-                                )</i>
-                              {% endif %}
-                              <!-- now we need to add a comma if there is another supervisor-->
-                              {% if forloop.last == false %}
-                                ,
                               {% endif %}
                             {% endfor %}
+                            </i>
                         </div>
                         <!-- while we're still in this sub-div, lets go ahead and take care of the domain and type in the upper right hand corner of this div-->
                         <div class="experience-domain-type" style="position:relative; width:30%; float:right; font-size: 0.8em; font-weight: 600; border-radius: 5px;border-left: 10px solid rgba(161, 161, 161, 0.856); padding-left: 5px">
                           <!--In the background of this div, we'll use the fontawesome icon, listed in entry.aesthics.icon, which will serve as a slightly darkened watermark background for the domain and type section here-->
                           <!--It should take up the maxium vertical space of this div, and be aligned to its right border.-->
-                          <i class="fas fa-{{ entry.aesthetics.icon }}" style="position:absolute; right:0; top:0; font-size: 10em; color:rgba(161, 161, 161, 0.856); z-index:-1"></i>
+                          <i class="fas fa-{{ entry.aesthetics.icon }}" style="position:absolute; right:0; top:0; font-size: 6em; color:rgba(114, 114, 114, 0.856); z-index:-1; max-height:100%;"></i>
                           Domain: {{ entry.domain  | join: ", " }}<br>Type: {{ entry.position.type  | join: ", "  }}
                         </div>
                     </div>
@@ -290,79 +307,37 @@ author_profile: false
                     
                     <!-- this is the end of the left 90% pane-->
                 <!-- now we move to the right 10% pane, which will contain the dates-->
-                <div class="experience-date-info" style="position: relative; float:right; width: 12.5%; height:100%; border-left: 1px dotted rgba(161, 161, 161, 0.856); text-align: center; display: table-cell; vertical-align: middle;font-size: 0.8em; font-weight: 600;">
-                    <p>{{ entry.year.start | join: " - " }}</p>
-                    {% if entry.year.end != null %}
-                        <p>to</p>
-                        <p>{{ entry.year.end | join: " - " }}</p>
+                <div class="experience-date-info" style="position: relative; float:right; width: 12.5%; height:100%; border-left: 1px dotted rgba(161, 161, 161, 0.856); text-align: center; display: table-cell; vertical-align: middle;font-size: 0.8em; font-weight: 600; line-height:0.3m; padding: 20px">
+                  <!-- as a reminder, the content of the `duration` field now comes as a list of dictionaries.  Each dictionary has a `start` and `end` field, which are themselves dictionaries with `month` and `year` fields (which are numeric).
+                  In the event that there are multiple duration entries, they should be seprated by an & character, which will be on it's own line between the duration content information components -->
+                  
+                  <!-- as a reminder this is what monthNames looks like
+                    {% assign monthNames = "January,February,March,April,May,June,July,August,September,October,November,December" | split: "," %}
+                  -->
+                  {% for duration in entry.duration %}
+                    {% if duration.start.month != null %}
+                      {{duration.start.month}}  /  {{ duration.start.year }}
                     {% endif %}
+                    {% if duration.end.month != null %}
+                      <br>
+                      to
+                      <br>
+                      {{ duration.end.month }}  /  {{ duration.end.year }}
+                    {% endif %}
+                    {% if forloop.last == false %}
+                      , &<br>
+                    {% endif %}
+                  {% endfor %}
+                  
+                  <!-- Now we also want to display the content of the 'hours field' as "[hours field content] hours per week" at the bottom of the experience-date-info" div-->
+                  {% if entry.hours != null %}
+                    <br><br>{{ entry.hours }} hours <br>  per week
+                  {% endif %}
+
                 </div>
             </div>
         {% endfor %}
 </div>
-
-<!-- Lets also code up a hover pop-over window that appears when users hover over the skills enumerated in the subsequent skills section.
-  The popout will feature a segmented bar, with n number of smaller rectangular sub-sections, corresponding to the number of months between the earliest date and the latest date noted in the database.
-  the months which do not have an experience that exhibited that skill will be colored gray, while the months which do will be colored blue.
-
-  We can partially do this by creating an intermediary array, which represents months along one dimension, and skills along the other, with binary values indicating whether or not that skill was exhibited in that month.
-  We can then use this array to create the segmented bar for the skill which is being hovered over -->
-<!-- We'll do this by creating a div which is hidden by default, but which is displayed when the user hovers over a skill in the skills section. -->
-<!-- We'll also need to create a div which contains the segmented bar, which will be displayed when the user hovers over a skill in the skills section. -->
-<!-- first we'll do the computation of the arrays: one for technical and one for non-technical-->
-<!--
-{% assign technical_skills = "" %}
-{% for entry in site.data.curriculumVitae.experience %}
-    {% if entry.tasks_skills.technical != null %}
-        {% for skill in entry.tasks_skills.technical %}
-            {% assign technical_skills = technical_skills | append: skill | append: "," %}
-        {% endfor %}
-    {% endif %}
-{% endfor %}
-
-{% assign technical_skills = technical_skills | split: "," | sort %}
--->
-<!-- now we'll count the number of instances of each unique entry-->
-<!--
-{% assign technical_skills_uniq = technical_skills | uniq %}
--->
-<!-- now we'll do the same for non-technical skills-->
-<!--
-{% assign non_technical_skills = "" %}
-{% for entry in site.data.curriculumVitae.experience %}
-    {% if entry.tasks_skills.non_technical != null %}
-        {% for skill in entry.tasks_skills.non_technical %}
-            {% assign non_technical_skills = non_technical_skills | append: skill | append: "," %}
-        {% endfor %}
-    {% endif %}
-{% endfor %}
-
-{% assign non_technical_skills = non_technical_skills | split: "," | sort %}
--->
-<!-- now we'll count the number of instances of each unique entry-->
-<!--not sure if this is couting or returning unique-->
-<!--
-{% assign non_technical_skills_uniq = non_technical_skills | uniq %}
--->
-<!-- Now let's iterate through the experiences in site.data.curriculumVitae.experience, and find the earliest date.  For the most recent date, we'll just default to using the current month.
-  this information is contained within the `duration` entry of an experience, and will have separate fields `start` and `end`, each of which will have a field for `month` and `year` -->
-<!-- we'll initialize the earliest date to the current date, and then iterate through the experiences, updating the earliest date if the experience's start date is earlier than the current earliest date. -->
-<!--
-{% assign earliest_date = new Date().getFullYear() * 12 + new Date().getMonth() %}
-{% for entry in site.data.curriculumVitae.experience %}
-  {% assign current_date = entry.duration.start.year * 12 + entry.duration.start.month %}
-  {% if current_date < earliest_date %}
-    {% assign earliest_date = current_date %}
-  {% endif %}
-{% endfor %}
--->
-<!-- Now we compute the span of months between that earliest date and the current month.  This will serve as the "width" of the boolean arrays we'll use to represent the skills. -->
-<!--
-{% assign month_span = (new Date().getFullYear() * 12 + new Date().getMonth()) - earliest_date %}
--->
-<!-- Now we'll create the boolean arrays, one for each skill, which will be of length month_span, and will have a value of 1 if the skill was exhibited in that month, and 0 otherwise. -->
-
-
 
 
 
@@ -444,6 +419,11 @@ venue: the venue of publication
 paperurl: a link to an openly accessible version of the paper (hopefully)
 citation: the appropriately formatted citation for the paper
 -->
+
+<!-- Before we display the publications, lets reverse sort by date, which will be in the paper.date field, and in the mm-dd-yyyy format as a string, so parse accordingly-->
+{% assign sortedPublications = site.publications | sort: "date" | reverse %}
+
+
 <div class="publications">
   <h2>Publications</h2>
   <table>
@@ -455,7 +435,7 @@ citation: the appropriately formatted citation for the paper
           <th style="width:2%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Link</u></th>
           <th style="width:46%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Citation</u></th>
       </tr>
-      {% for paper in site.publications %}
+      {% for paper in sortedPublications %}
           {% if paper.collection == "publications" %}
               <tr>
                   <td style="padding-top: 10px; padding-bottom: 10px; font-weight:bold; font-size:1.3em">
@@ -485,21 +465,21 @@ citation: the appropriately formatted citation for the paper
   <table>
     <tr>
       <th style="width:34%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Title</u></th>
-      <th style="width:8% ; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Year</u></th>
-      <th style="width:10%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Venue</u></th>
-      <th style="width:10%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Type</u></th>
+      <th style="width:2% ; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Year</u></th>
+      <th style="width:20%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Venue</u></th>
+      <th style="width:6%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Type</u></th>
       <th style="width:38%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Authors</u></th>
     </tr>
-    <!-- we'll sort the list by year, and then by venue.-->
-    {% assign sortedPresentations = site.data.curriculumVitae.presentations | sort: "year" | sort: "venue" %}
+    <!-- we'll reverse sort the list by year, and then by the FIRST ELEMENT of the list-form content of sortedPresentations.venue.-->
+    {% assign sortedPresentations = site.data.curriculumVitae.presentations | sort: "year" | sort: "venue[0]" | reverse %}
     {% for presentation in sortedPresentations %}
       <tr>
         <td style="padding-top: 10px; padding-bottom: 10px; font-weight:bold; font-size:1.3em">
           {{ presentation.title }}
         </td>
         <td style="text-align: center; padding-top: 0px; padding-bottom: 0px;">{{ presentation.year }}</td>
-        <td style="text-align: center; padding-top: 0px; padding-bottom: 1px;">{{ presentation.venue }}</td>
-        <td style="text-align: center; padding-top: 0px; padding-bottom: 1px;">{{ presentation.type }}</td>
+        <td style="text-align: center; padding-top: 0px; padding-bottom: 1px;">{{ presentation.venue | join: ", "  }}</td>
+        <td style="text-align: center; padding-top: 0px; padding-bottom: 1px; font-size:.8em">{{ presentation.type }}</td>
         <td style="padding-top: 0px; padding-bottom: 0px;">{{ presentation.authors | join: ", " }}</td>
       </tr>
     {% endfor %}
