@@ -301,6 +301,69 @@ author_profile: false
         {% endfor %}
 </div>
 
+<!-- Lets also code up a hover pop-over window that appears when users hover over the skills enumerated in the subsequent skills section.
+  The popout will feature a segmented bar, with n number of smaller rectangular sub-sections, corresponding to the number of months between the earliest date and the latest date noted in the database.
+  the months which do not have an experience that exhibited that skill will be colored gray, while the months which do will be colored blue.
+
+  We can partially do this by creating an intermediary array, which represents months along one dimension, and skills along the other, with binary values indicating whether or not that skill was exhibited in that month.
+  We can then use this array to create the segmented bar for the skill which is being hovered over -->
+<!-- We'll do this by creating a div which is hidden by default, but which is displayed when the user hovers over a skill in the skills section. -->
+<!-- We'll also need to create a div which contains the segmented bar, which will be displayed when the user hovers over a skill in the skills section. -->
+<!-- first we'll do the computation of the arrays: one for technical and one for non-technical-->
+<!--
+{% assign technical_skills = "" %}
+{% for entry in site.data.curriculumVitae.experience %}
+    {% if entry.tasks_skills.technical != null %}
+        {% for skill in entry.tasks_skills.technical %}
+            {% assign technical_skills = technical_skills | append: skill | append: "," %}
+        {% endfor %}
+    {% endif %}
+{% endfor %}
+
+{% assign technical_skills = technical_skills | split: "," | sort %}
+-->
+<!-- now we'll count the number of instances of each unique entry-->
+<!--
+{% assign technical_skills_uniq = technical_skills | uniq %}
+-->
+<!-- now we'll do the same for non-technical skills-->
+<!--
+{% assign non_technical_skills = "" %}
+{% for entry in site.data.curriculumVitae.experience %}
+    {% if entry.tasks_skills.non_technical != null %}
+        {% for skill in entry.tasks_skills.non_technical %}
+            {% assign non_technical_skills = non_technical_skills | append: skill | append: "," %}
+        {% endfor %}
+    {% endif %}
+{% endfor %}
+
+{% assign non_technical_skills = non_technical_skills | split: "," | sort %}
+-->
+<!-- now we'll count the number of instances of each unique entry-->
+<!--not sure if this is couting or returning unique-->
+<!--
+{% assign non_technical_skills_uniq = non_technical_skills | uniq %}
+-->
+<!-- Now let's iterate through the experiences in site.data.curriculumVitae.experience, and find the earliest date.  For the most recent date, we'll just default to using the current month.
+  this information is contained within the `duration` entry of an experience, and will have separate fields `start` and `end`, each of which will have a field for `month` and `year` -->
+<!-- we'll initialize the earliest date to the current date, and then iterate through the experiences, updating the earliest date if the experience's start date is earlier than the current earliest date. -->
+<!--
+{% assign earliest_date = new Date().getFullYear() * 12 + new Date().getMonth() %}
+{% for entry in site.data.curriculumVitae.experience %}
+  {% assign current_date = entry.duration.start.year * 12 + entry.duration.start.month %}
+  {% if current_date < earliest_date %}
+    {% assign earliest_date = current_date %}
+  {% endif %}
+{% endfor %}
+-->
+<!-- Now we compute the span of months between that earliest date and the current month.  This will serve as the "width" of the boolean arrays we'll use to represent the skills. -->
+<!--
+{% assign month_span = (new Date().getFullYear() * 12 + new Date().getMonth()) - earliest_date %}
+-->
+<!-- Now we'll create the boolean arrays, one for each skill, which will be of length month_span, and will have a value of 1 if the skill was exhibited in that month, and 0 otherwise. -->
+
+
+
 
 
 <!-- Not sure if this is going to work in html, but lets see what Copilot can do-->
@@ -440,8 +503,34 @@ citation: the appropriately formatted citation for the paper
         <td style="padding-top: 0px; padding-bottom: 0px;">{{ presentation.authors | join: ", " }}</td>
       </tr>
     {% endfor %}
-
-
-
-
   </table>
+  <!-- Now we do the same for awards, fellowships and grants, which will be under site.data.curriculumVitae.awards and contain the following fields:
+    {
+      "title": "title of award",
+      "type": "type of award",
+      "sourceOrg": {
+        "name": "Organization providing award",
+        "link": "link to organization providing award website"
+        },
+        "institution": {
+          "name": "Institution at which relevant work is done",
+          "link": "link to institution website"
+          },
+
+        "duration":
+        [
+          { 
+            "start": {
+              "month": start date numeric month (as integer)
+              "year": start date numeric year (as integer)
+              },
+              },
+            "end": {
+              "month": end date numeric month (as integer)
+              "year":  end date numeric year (as integer)
+              }
+          }
+        ],
+      "link": link to documentation of award or other relevant information
+    }
+-->
