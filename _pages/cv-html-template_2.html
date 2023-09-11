@@ -529,6 +529,41 @@ citation: the appropriately formatted citation for the paper
       <th style="width:5%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Link</u></th>
     </tr>
 
+    {% for award in site.data.curriculumVitae.awards %}
+      <tr>
+        <td style="padding-top: 10px; padding-bottom: 10px; font-weight:bold; font-size:1.3em">
+          {{ award.title }}<br>
+          at <a href="{{ award.institution.link }}">{{ award.institution.name }}</a> <i>via</i> <a href="{{ award.sourceOrg.link }}">{{ award.sourceOrg.name }}</a>
+        </td>
+        <td style="text-align: center; padding-top: 0px; padding-bottom: 0px;">{{ award.type }}</td>
+        <!-- If there are multiple durations listed, be sure to accomidate that by splicing the entries together, separtaed by a ' and ' and a line break-->
+        <td style="text-align: center; padding-top: 0px; padding-bottom: 1px;">
+          
+          
+          {% for duration in award.duration %}
+            {% if duration.start.month != null %}
+              {{duration.start.month}}  /  {{ duration.start.year }}
+            {% endif %}
+            {% if duration.end.month != null %}
+
+              to
+
+              {{ duration.end.month }}  /  {{ duration.end.year }}
+            {% endif %}
+            {% if forloop.last == false %}
+            , and<br>
+            {% endif %}
+          {% endfor %}
+        </td>
+          
+        <td style="text-align: center; padding-top: 0px; padding-bottom: 1px;">
+          {% if award.link != null %}
+            <a href="{{ award.link }}"><i class="fas fa-globe"></i></a>
+          {% endif %}
+        </td>
+        
+      </tr>
+    {% endfor %}
     
 
 
