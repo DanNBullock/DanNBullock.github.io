@@ -1387,7 +1387,7 @@
     },
     {
       "title": "Towards Engineered Thymic Tissue",
-      "type": "Poster",
+      "type": "Poster and Presentation",
       "authors": ["Daniel Bullock", "Sookwon Ryu", "Ashis Mondal", "James Yoo", "John Jackson"],
       "venue": "Wake Forest Institute for Regenerative Medicine Research Day",
       "keywords": "",
@@ -1433,19 +1433,19 @@
           "name": "University of Minnesota",
           "link": "https://sites.google.com/umn.edu/minnesota-neuroimaging-postdoc/home"
           },
-          "duration":
-          [
-            { 
-              "start": {
-                "month": 1,
-                "year": 2022
-                },
-              "end": {
-                "month": 8,
-                "year": 2022
-                }
-            }
-          ],
+        "duration":
+        [
+          { 
+            "start": {
+              "month": 1,
+              "year": 2022
+              },
+            "end": {
+              "month": 8,
+              "year": 2022
+              }
+          }
+        ],
         "link": "https://reporter.nih.gov/search/gRlflI2sLE2vaVb49MOOOA/project-details/10205698"
       },
       {
@@ -1459,19 +1459,19 @@
           "name": "University of Virginia Biocomplexity Institute",
           "link": "https://biocomplexity.virginia.edu/"
           },
-          "duration":
-          [
-            { 
-              "start": {
-                "month": 6,
-                "year": 2020
-                },
-              "end": {
-                "month": 8,
-                "year": 2020
-                }
-            }
-          ],
+        "duration":
+        [
+          { 
+            "start": {
+              "month": 6,
+              "year": 2020
+              },
+            "end": {
+              "month": 8,
+              "year": 2020
+              }
+          }
+        ],
         "link": "https://datascienceforthepublicgood.org/events/symposium2020"
       },
       {
