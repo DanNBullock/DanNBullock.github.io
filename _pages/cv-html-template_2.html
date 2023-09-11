@@ -167,7 +167,7 @@ author_profile: false
   {% for entry in site.data.curriculumVitae.education %}
     <div class="experience-entry" style="border:3px solid gray;border-style:double; height:auto; overflow: hidden;padding:5px">
       <!-- now we divide this parimary div into the left 90% portion and right 10% portions-->
-      <div class="experience-info-pane" style="position:relative; float:left; width:80%; padding: 5px; background-color: rgba(240, 255, 255, 0.733);line-height:1.1 ; border-right: 1px dotted rgba(161, 161, 161, 0.856);">
+      <div class="experience-info-pane" style="position:relative; float:left; width:70%; padding: 5px; background-color: rgba(240, 255, 255, 0.733);line-height:1.1 ; border-right: 1px dotted rgba(161, 161, 161, 0.856);">
         <!-- now we divide the left 90% portion into the two sub-divs-->
         <div class="experience-position-info" style="position:relative; width: 100%; padding-bottom:5px;  overflow: hidden;">
           <!-- start with the role title and institution name, bolded, followed by the city and state in parentheses.-->
@@ -188,9 +188,9 @@ author_profile: false
             {{duration.start.month}}  /  {{ duration.start.year }}
           {% endif %}
         {% if duration.end.month != null %}
-          
+          <br>
           to
-          
+          <br>
           {{ duration.end.month }}  /  {{ duration.end.year }}
         {% endif %}
         {% if forloop.last == false %}
@@ -524,16 +524,16 @@ citation: the appropriately formatted citation for the paper
   <table>
     <tr>
       <th style="width:75%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Title and Source</u></th>
-      <th style="width:10% ; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Type</u></th>
-      <th style="width:10%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Duration</u></th>
-      <th style="width:5%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Link</u></th>
+      <th style="width:7% ; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Type</u></th>
+      <th style="width:16%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Duration</u></th>
+      <th style="width:2%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Link</u></th>
     </tr>
 
     {% for award in site.data.curriculumVitae.awards %}
       <tr>
         <td style="padding-top: 10px; padding-bottom: 10px; font-weight:bold; font-size:1.3em">
-          {{ award.title }}<br>
-          at <a href="{{ award.institution.link }}">{{ award.institution.name }}</a> <i>via</i> <a href="{{ award.sourceOrg.link }}">{{ award.sourceOrg.name }}</a>
+         <strong style="font-size: 1.5em">{{ award.title }}</strong>
+         <small> at <a href="{{ award.institution.link }}">{{ award.institution.name }}</a> <i>via</i> <a href="{{ award.sourceOrg.link }}">{{ award.sourceOrg.name }}</a></small>
         </td>
         <td style="text-align: center; padding-top: 0px; padding-bottom: 0px;">{{ award.type }}</td>
         <!-- If there are multiple durations listed, be sure to accomidate that by splicing the entries together, separtaed by a ' and ' and a line break-->
