@@ -517,57 +517,6 @@ citation: the appropriately formatted citation for the paper
     We will present this as a table, as we have done for the publications and presentations, with the following columns:
     title and source, type, duration, link.
 -->
-<div class="awards">
-  <h2>Awards, Fellowships and Grants</h2>
-  <table>
-    <tr>
-      <th style="width:75%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Title and Source</u></th>
-      <th style="width:10% ; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Type</u></th>
-      <th style="width:10%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Duration</u></th>
-      <th style="width:5%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Link</u></th>
-    </tr>
-    <!-- we'll reverse sort the list by year, with the newest items at the top
-    {% assign sortedAwards = site.data.curriculumVitae.awards | sort: "duration[0].start.year" | reverse %}
-    maybe this isn't workging right now
-    -->
-    {% for award in sortedAwards %}
-      <tr>
-        <td style="padding-top: 10px; padding-bottom: 10px; font-weight:bold; font-size:1.3em">
-          {{ award.title }}<br>
-          at <a href="{{ award.institution.link }}">{{ award.institution.name }}</a> <i>via</i> <a href="{{ award.sourceOrg.link }}">{{ award.sourceOrg.name }}</a>
-        </td>
-        <td style="text-align: center; padding-top: 0px; padding-bottom: 0px;">{{ award.type }}</td>
-        <!-- If there are multiple durations listed, be sure to accomidate that by splicing the entries together, separtaed by a ' and ' and a line break-->
-        <td style="text-align: center; padding-top: 0px; padding-bottom: 1px;">
-          test
-          <!--
-          {% for duration in award.duration %}
-            {% if duration.start.month != null %}
-              {{duration.start.month}}  /  {{ duration.start.year }}
-            {% endif %}
-            {% if duration.end.month != null %}
-
-              to
-
-              {{ duration.end.month }}  /  {{ duration.end.year }}
-            {% endif %}
-            {% if forloop.last == false %}
-            , and<br>
-            {% endif %}
-          {% endfor %}
-          -->
-        <td style="text-align: center; padding-top: 0px; padding-bottom: 1px;">
-          {% if award.link != null %}
-            <a href="{{ award.link }}"><i class="fas fa-globe"></i></a>
-          {% endif %}
-        </td>
-      </tr>
-    {% endfor %}
-
-
-
-  </table>
-</div>
 
 
 
