@@ -188,9 +188,9 @@ author_profile: false
             {{duration.start.month}}  /  {{ duration.start.year }}
           {% endif %}
         {% if duration.end.month != null %}
-          <br>
+
           to
-          <br>
+
           {{ duration.end.month }}  /  {{ duration.end.year }}
         {% endif %}
         {% if forloop.last == false %}
@@ -532,7 +532,8 @@ citation: the appropriately formatted citation for the paper
     {% for award in site.data.curriculumVitae.awards %}
       <tr>
         <td style="padding-top: 10px; padding-bottom: 10px; font-weight:bold; font-size:1.3em">
-         <strong style="font-size: 1.5em">{{ award.title }}</strong>
+         <strong style="font-size: 1.25em">{{ award.title }}</strong>
+         <br>
          <small> at <a href="{{ award.institution.link }}">{{ award.institution.name }}</a> <i>via</i> <a href="{{ award.sourceOrg.link }}">{{ award.sourceOrg.name }}</a></small>
         </td>
         <td style="text-align: center; padding-top: 0px; padding-bottom: 0px;">{{ award.type }}</td>
@@ -545,13 +546,13 @@ citation: the appropriately formatted citation for the paper
               {{duration.start.month}}  /  {{ duration.start.year }}
             {% endif %}
             {% if duration.end.month != null %}
-
-              to
-
+                <br>
+                to
+                <br>
               {{ duration.end.month }}  /  {{ duration.end.year }}
             {% endif %}
             {% if forloop.last == false %}
-            , and<br>
+          , and<br>
             {% endif %}
           {% endfor %}
         </td>
