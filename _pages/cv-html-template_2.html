@@ -531,7 +531,7 @@ citation: the appropriately formatted citation for the paper
     {% assign sortedAwards = site.data.curriculumVitae.awards | sort: "duration[0].start.year" | reverse %}
     maybe this isn't workging right now
     -->
-    {% for award in sortedAwards %}
+    {% for award in site.data.curriculumVitae.awards %}
       <tr>
         <td style="padding-top: 10px; padding-bottom: 10px; font-weight:bold; font-size:1.3em">
           {{ award.title }}<br>
