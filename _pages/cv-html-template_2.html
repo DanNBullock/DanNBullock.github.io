@@ -526,8 +526,10 @@ citation: the appropriately formatted citation for the paper
       <th style="width:10%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Duration</u></th>
       <th style="width:5%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Link</u></th>
     </tr>
-    <!-- we'll reverse sort the list by year, with the newest items at the top-->
+    <!-- we'll reverse sort the list by year, with the newest items at the top
     {% assign sortedAwards = site.data.curriculumVitae.awards | sort: "duration[0].start.year" | reverse %}
+    maybe this isn't workging right now
+    -->
     {% for award in sortedAwards %}
       <tr>
         <td style="padding-top: 10px; padding-bottom: 10px; font-weight:bold; font-size:1.3em">
