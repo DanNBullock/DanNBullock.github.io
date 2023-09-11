@@ -484,6 +484,7 @@ citation: the appropriately formatted citation for the paper
       </tr>
     {% endfor %}
   </table>
+</div>
   <!-- Now we do the same for awards, fellowships and grants, which will be under site.data.curriculumVitae.awards and contain the following fields:
     {
       "title": "title of award",
@@ -520,22 +521,7 @@ citation: the appropriately formatted citation for the paper
 
 <div class="awards">
   <h2>Awards, Fellowships and Grants</h2>
-  <table>
-    <tr>
-      <th style="width:75%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Title and Source</u></th>
-      <th style="width:10% ; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Type</u></th>
-      <th style="width:10%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Duration</u></th>
-      <th style="width:5%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Link</u></th>
-    </tr>
-    <!-- we'll reverse sort the list by year, with the newest items at the top
-    {% assign sortedAwards = site.data.curriculumVitae.awards | sort: "duration[0].start.year" | reverse %}
-    maybe this isn't workging right now
-    -->
-    
 
-
-
-  </table>
 </div>
 
 
