@@ -15,6 +15,35 @@
     "education": [
       {
         "degree": {
+            "type": "Ph.D.",
+            "majors": ["Psychology","Neuroscience" ],
+            "minors": null
+        },
+        "institution": {
+          "name": "Indiana University Bloomington",
+          "location": {
+            "city": "Bloomington",
+            "state": "IN",
+            "country": "USA"
+          },
+          "department_program": ["Department of Psychological and Brain Sciences","Program in Neuroscience"]
+        },
+        "duration": 
+        [
+          { 
+            "start": {
+              "month": 6,
+              "year": 2015
+              },
+            "end": {
+              "month": 6,
+              "year": 2021
+              }
+          }
+        ]
+      },
+      {
+        "degree": {
             "type": "B.S.",
             "majors": ["Biology" ],
             "minors": ["Math", "Genetics" ]
@@ -54,35 +83,6 @@
       },
       {
         "degree": {
-            "type": "B.A.",
-            "majors": ["Psychology","Philosophy" ],
-            "minors": ["Cognitive Science" ]
-        },
-        "institution": {
-          "name": "University of North Carolina at Chapel Hill",
-          "location": {
-            "city": "Chapel Hill",
-            "state": "NC",
-            "country": "USA"
-          },
-          "department_program": ["Department of Psychology and Neuroscience"]
-        },
-        "duration": 
-        [
-          { 
-            "start": {
-              "month": 8,
-              "year": 2006
-              },
-            "end": {
-              "month": 5,
-              "year": 2009
-              }
-          }
-        ]
-      },
-      {
-        "degree": {
             "type": "Graduate Program",
             "majors": ["Philosophy" ],
             "minors": null
@@ -112,29 +112,29 @@
       },
       {
         "degree": {
-            "type": "Ph.D.",
-            "majors": ["Psychology","Neuroscience" ],
-            "minors": null
+            "type": "B.A.",
+            "majors": ["Psychology","Philosophy" ],
+            "minors": ["Cognitive Science" ]
         },
         "institution": {
-          "name": "Indiana University Bloomington",
+          "name": "University of North Carolina at Chapel Hill",
           "location": {
-            "city": "Bloomington",
-            "state": "IN",
+            "city": "Chapel Hill",
+            "state": "NC",
             "country": "USA"
           },
-          "department_program": ["Department of Psychological and Brain Sciences","Program in Neuroscience"]
+          "department_program": ["Department of Psychology and Neuroscience"]
         },
         "duration": 
         [
           { 
             "start": {
-              "month": 6,
-              "year": 2015
+              "month": 8,
+              "year": 2006
               },
             "end": {
-              "month": 6,
-              "year": 2021
+              "month": 5,
+              "year": 2009
               }
           }
         ]
