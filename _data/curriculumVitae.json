@@ -185,9 +185,9 @@
                 }
             }
           ],
-        "description": "As a AAAS STPF Fellow placed in the Office of Advanced Cyberinfrastructure (OAC) I have engaged in a wide range of endeavors supporting the mission of the OAC.  These include assisting with the Pathways to Open Source Ecosystem (POSE) (e.g., panels, revising program description, triage), several ongoing endeavors supporting NSF Public access efforts, and internal reviews.  One major long-term project has been assisting with the OSTP's Subcomittee on Open Science's Open Science Infrastructure Working Group, where I performed an analysis using openly accessible data from federal agencies and incorporated these results into a report on current agency investments in Open Science Infrastructure.",
+        "description": "As a AAAS STPF Fellow placed in the Office of Advanced Cyberinfrastructure (OAC) I have engaged in a wide range of endeavors supporting the mission of the OAC.  These include assisting with the Pathways to Open Source Ecosystem (POSE) (e.g., panels, revising program description, triage), several ongoing endeavors supporting NSF Public access efforts, and internal reviews.  One major long-term project has been assisting with the OSTP's Subcommittee on Open Science's Open Science Infrastructure Working Group, where I performed an analysis using openly accessible data from federal agencies and incorporated these results into a report on current agency investments in Open Science Infrastructure.",
         "tasks_skills": {
-          "technical": ["Python","Linux","Git","XML","JSON","Big Data","Data Scraping", "Dataset Quality Assesment", "Data Science", "Data Visualization", "Figure Generation", "Jupyter Notebooks", "Open-Source Development", "Open-Source Software"],
+          "technical": ["Python","Linux","Git","XML","JSON","Big Data","Data Scraping", "Dataset Quality Assessment", "Data Science", "Data Visualization", "Figure Generation", "Jupyter Notebooks", "Open-Source Development", "Open-Source Software"],
           "non_technical": ["Problem Solving", "Problem Scoping", "Project Management", "Documentation", "Science Communication", "Grant Management", "Program Management", "Grant Review", "Literature Review", "Policy", "Federal Science Policy","Open Science Policy","Public Access Policy","Policy Drafting","Policy Documentation Development","Report Development","Interagency Working Groups","Virtual Presentations"]
         },
         "hours": "40",
@@ -241,9 +241,9 @@
                 }
             }
           ],
-        "description": "As a postdoctoral researcher I produced automated segmentation methods for major white matter tracts in tractography using cross-species and literature-based information. This also entailed the visualization of tractography and segmentation results, as well as the quantification of tract properties. To ensure the repicability and stability of these products I developed, documented, and maintained several code repositories.",
+        "description": "As a postdoctoral researcher I produced automated segmentation methods for major white matter tracts in tractography using cross-species and literature-based information. This also entailed the visualization of tractography and segmentation results, as well as the quantification of tract properties. To ensure the replicability and stability of these products I developed, documented, and maintained several code repositories.",
         "tasks_skills": {
-          "technical": ["Python","Linux","Git","Docker","Neuroimaging Software Packages","Neuroimaging","Neuroanatomy","Neuroscience","Brain Imaging Data Structure (BIDS)","Neuroimaging Data Structures","Neuroimaging Data Processing","3-D Image Processing","Medical Image Processing","Bash and Shell Scripting", "Big Data" , "Dataset Quality Assesment", "Data Science", "Jupyter Notebooks", "Containerization", "Open-Source Development", "Open-Source Software", "High Performance Computing (HPC)","Data Visualization","Testing and Debugging", "Coordinated/Collaborative Testing and Debugging", "Statistical Analysis", "Advanced Statistical Analysis"],
+          "technical": ["Python","Linux","Git","Docker","Neuroimaging Software Packages","Neuroimaging","Neuroanatomy","Neuroscience","Brain Imaging Data Structure (BIDS)","Neuroimaging Data Structures","Neuroimaging Data Processing","3-D Image Processing","Medical Image Processing","Bash and Shell Scripting", "Big Data" , "Dataset Quality Assessment", "Data Science", "Jupyter Notebooks", "Containerization", "Open-Source Development", "Open-Source Software", "High Performance Computing (HPC)","Data Visualization","Testing and Debugging", "Coordinated/Collaborative Testing and Debugging", "Statistical Analysis", "Advanced Statistical Analysis"],
           "non_technical": ["Self-guided Problem Solving", "Problem Scoping", "Project Management", "Collaboration", "Documentation", "Science Communication", "Manuscript Production", "Manuscript Editing", "Mentorship", "Virtual Presentations"]
         },
         "hours": "40+",
@@ -290,7 +290,7 @@
         ],
         "description": "As a graduate student I developed and implemented automated segmentation methods for major white matter tracts in tractography. This also entailed the visualization of tractography and segmentation results, as well as the quantification of tract properties and development of tractography quality assurance methods. This work required a deep review of contemporary and historical neuroanatomy literature.",
         "tasks_skills": {
-          "technical": ["Python", "Matlab", "Linux", "Git", "Neuroimaging Software Packages","Neuroimaging","Neuroanatomy","Neuroscience","Brain Imaging Data Structure (BIDS)","Neuroimaging Data Structures","Neuroimaging Data Processing","3-D Image Processing","Medical Image Processing","Bash and Shell Scripting", "Big Data", "Dataset Quality Assesment", "Data Science", "Jupyter Notebooks", "High Performance Computing (HPC)","Data Visualization", "Statistical Analysis", "Advanced Statistical Analysis"],
+          "technical": ["Python", "Matlab", "Linux", "Git", "Neuroimaging Software Packages","Neuroimaging","Neuroanatomy","Neuroscience","Brain Imaging Data Structure (BIDS)","Neuroimaging Data Structures","Neuroimaging Data Processing","3-D Image Processing","Medical Image Processing","Bash and Shell Scripting", "Big Data", "Dataset Quality Assessment", "Data Science", "Jupyter Notebooks", "High Performance Computing (HPC)","Data Visualization", "Statistical Analysis", "Advanced Statistical Analysis"],
           "non_technical": ["Self-guided problem solving", "Problem Scoping", "Project Management", "Collaboration", "Multi-endeavor Balancing and Prioritization", "Project Schedule Development and Coordination", "Documentation", "Science Communication", "Manuscript Production", "Manuscript Editing", "Public Speaking", "Presentation Development and Delivery", "Research Methods", "Research Design", "Mentorship"]
         },
         "hours" : "40+",
@@ -344,10 +344,10 @@
               }
           }
         ],
-        "description": "In this role I was responsible for the production and maintanence of containerized data processing applications for the brainlife.io platform. This entailed the creation of novel data processing and visualization code, as well as adaptation of exisiting resources.  I also engaged in testing, monitoring, and feedback on service deployment and coordination.  I also led the scoping, creation, coordinaton, and maintanence of specific data formats/standards.",
+        "description": "In this role I was responsible for the production and maintenance of containerized data processing applications for the brainlife.io platform. This entailed the creation of novel data processing and visualization code, as well as adaptation of existing resources.  I also engaged in testing, monitoring, and feedback on service deployment and coordination.  I also led the scoping, creation, coordination, and maintenance of specific data formats/standards.",
         "tasks_skills": {
-          "technical": ["Python", "Matlab", "JSON", "Markdown", "Linux", "Git", "Neuroimaging Software Packages","Brain Imaging Data Structure (BIDS)","Neuroimaging","Neuroimaging Data Structures","Neuroimaging Data Processing","3-D Image Processing","Bash and Shell Scripting", "Big Data", "Dataset Quality Assesment", "Data Science", "Docker", "Containerization", "High Performance Computing (HPC)", "Continuous Integration and Continuous Delivery/Deployment (CI/CD)","Testing and Debugging", "Coordinated/Collaborative Testing and Debugging", "Data Visualization", "Statistical Analysis", "Advanced Statistical Analysis"],
-          "non_technical": ["Problem Scoping", "Project Management", "Collaboration", "Teamwork", "Task Specialization", "Multi-endeavor Balancing and Prioritization", "Documentation", "Client/Stakeholder Engagement","Rapid Iteration Production", "Rapid Adaptation", "Long-Term Product/Project Maintanence", "Documentation Life-cycle Management", "Soliciting and Incorporating Client Feedback", "Progress Reporting", "Continuous Integration and Continuous Delivery/Deployment (CI/CD) Methods"]
+          "technical": ["Python", "Matlab", "JSON", "Markdown", "Linux", "Git", "Neuroimaging Software Packages","Brain Imaging Data Structure (BIDS)","Neuroimaging","Neuroimaging Data Structures","Neuroimaging Data Processing","3-D Image Processing","Bash and Shell Scripting", "Big Data", "Dataset Quality Assessment", "Data Science", "Docker", "Containerization", "High Performance Computing (HPC)", "Continuous Integration and Continuous Delivery/Deployment (CI/CD)","Testing and Debugging", "Coordinated/Collaborative Testing and Debugging", "Data Visualization", "Statistical Analysis", "Advanced Statistical Analysis"],
+          "non_technical": ["Problem Scoping", "Project Management", "Collaboration", "Teamwork", "Task Specialization", "Multi-endeavor Balancing and Prioritization", "Documentation", "Client/Stakeholder Engagement","Rapid Iteration Production", "Rapid Adaptation", "Long-Term Product/Project Maintenance", "Documentation Life-cycle Management", "Soliciting and Incorporating Client Feedback", "Progress Reporting", "Continuous Integration and Continuous Delivery/Deployment (CI/CD) Methods"]
         },
         "hours": "~ 5 - 10",
         "aesthetics" :{
@@ -407,9 +407,9 @@
               }
           }
         ],
-        "description": "As a Research Fellow, I served as participant lead for two projects.  Also in this capacity, I developed/produced code, analyses (qualitative and quantitative), and web content. Additionally, I performed performed data curation/cleaning, linked datasets, created visualizations, presented insights, and managed interns.",
+        "description": "As a Research Fellow, I served as participant lead for two projects.  Also in this capacity, I developed/produced code, analyses (qualitative and quantitative), and web content. Additionally, I performed data curation/cleaning, linked datasets, created visualizations, presented insights, and managed interns.",
         "tasks_skills": {
-          "technical": ["Software Development", "Web Development", "Data Analysis", "Data Curation", "Data Cleaning", "Dataset Quality Assesment", "Data Visualization", "Python", "Git", "SQL"],
+          "technical": ["Software Development", "Web Development", "Data Analysis", "Data Curation", "Data Cleaning", "Dataset Quality Assessment", "Data Visualization", "Python", "Git", "SQL"],
           "non_technical": ["Presentation Development and Delivery", "Project Management", "Team Management", "Mentorship", "Report Production", "Stakeholder Engagement", "Problem Scoping", "Collaboration", "Rapid Production Frameworks", "Multi-audience Presentation Production and Delivery"]
         },
         "hours": "40",
@@ -465,7 +465,7 @@
         ],
         "description": "As an undergraduate research assistant I ran experiments, collected and analyzed data, prepared and processed biological samples, maintained subject stocks, developed grants, and presented research results.",
         "tasks_skills": {
-          "technical": ["Behavioral Testing", "Movement Tracking Analysis", "Cryosectioning", "Microscopy", "In-situ Hybridization (ISH)", "DNA/RNA Extraction", "Slide Preparation", "Protocol Optimization", "Movement Tracking Data Processing", "Subject Monitoring and Maintainence"],
+          "technical": ["Behavioral Testing", "Movement Tracking Analysis", "Cryosectioning", "Microscopy", "In-situ Hybridization (ISH)", "DNA/RNA Extraction", "Slide Preparation", "Protocol Optimization", "Movement Tracking Data Processing", "Subject Monitoring and Maintenance"],
           "non_technical": ["Grant Writing", "Science Communication", "Poster Presentation", "Research Review", "Article Summary and Discussion", "Resource Monitoring and Management"]
         },
         "hours": "10",
@@ -519,7 +519,7 @@
               }
           }
         ],
-        "description": "As a summer research scholar I engaged in a focused an intensive research project.  This project was centered arount characterizing and calibrating the process for producing functional thymic organoids.  I assisted with sample production, processing, and analysis, in addition to also presenting on project status and findings.  This work was supported by a SENS Research Foundation Summer research fellowship.",
+        "description": "As a summer research scholar I engaged in a focused an intensive research project.  This project was centered around characterizing and calibrating the process for producing functional thymic organoids.  I assisted with sample production, processing, and analysis, in addition to also presenting on project status and findings.  This work was supported by a SENS Research Foundation Summer research fellowship.",
         "tasks_skills": {
           "technical": ["Tissue Extraction", "Tissue Culture", "Cell Culturing", "Cryosectioning", "Advanced Microscopy", "Immunofluorescence", "PCR", "Gel Electrophoresis"],
           "non_technical": ["Multi-audience Presentation Production and Delivery", "Team Research", "Team Science", "Biomedical Industry Research and Development", "Rapid Production Frameworks", "Poster Presentation", "Research Review", "Report Production", "Multi-stakeholder Reporting and Communication", "Collaboration", "Resource Monitoring and Management"]
@@ -621,9 +621,9 @@
               }
           }
         ],
-        "description": "As pre-accalaureate research assistant, I was trained to assist with a number of research production processes, including both work in the field and at the lab-bench.",
+        "description": "As pre-baccalaureate research assistant, I was trained to assist with a number of research production processes, including both work in the field and at the lab-bench.",
         "tasks_skills": {
-            "technical": ["PCR", "Gel Electrophoresis", "Sample Preperation and Processing", "Sample Management"],
+            "technical": ["PCR", "Gel Electrophoresis", "Sample Preparation and Processing", "Sample Management"],
             "non_technical": ["Manuscript Development", "Research Article Review"]
         },
         "hours": "~ 5 - 10",
@@ -1017,7 +1017,7 @@
               }
           }
         ],
-        "description": "As a member of the technology poicy commitee, I represented Indiana University graduate student researchers on campus issues related to technology implementation. Regular meeting topics of this group included virtual conferencing (e.g. Zoom), email and data platforms, and research data storage and ownership.",
+        "description": "As a member of the technology policy committee, I represented Indiana University graduate student researchers on campus issues related to technology implementation. Regular meeting topics of this group included virtual conferencing (e.g. Zoom), email and data platforms, and research data storage and ownership.",
         "tasks_skills": {
           "technical": null,
           "non_technical": ["Committee Representation", "Advocacy", "Technology Policy Development", "Research Data Policy", "Institutional Engagement"]
@@ -1064,10 +1064,10 @@
               }
           }
         ],
-        "description": "As a member of the Research Affairs Commitee I represented graduate student researchers on campus issues related to research affairs. Regular meeting topics included COVID impacts, conflict of interest management, research disclosures, campus open access policies, NTT researchers, and other subjects. Worked with campus stakeholders and administrators from the Office of Research Administration, Office of the Vice Provost for Research, and others.",
+        "description": "As a member of the Research Affairs Committee I represented graduate student researchers on campus issues related to research affairs. Regular meeting topics included COVID impacts, conflict of interest management, research disclosures, campus open access policies, NTT researchers, and other subjects. Worked with campus stakeholders and administrators from the Office of Research Administration, Office of the Vice Provost for Research, and others.",
         "tasks_skills": {
           "technical": null,
-          "non_technical": ["Constituency Representation", "Rapport Building", "Institutional Advocacy", "Instutional Collaboration", "Instutional Engagement", "Research Policy", "Research Ethics", "Research Staffing", "Conflict of Interest Management", "Instutional Research Policy", "Open Access Policy"]
+          "non_technical": ["Constituency Representation", "Rapport Building", "Institutional Advocacy", "Institutional Collaboration", "Institutional Engagement", "Research Policy", "Research Ethics", "Research Staffing", "Conflict of Interest Management", "Institutional Research Policy", "Open Access Policy"]
           },
         "hours" :"~ 1",
         "aesthetics" :{
@@ -1114,7 +1114,7 @@
         "description": "As a voting member of the Bloomington Faculty Council (BFC), I represented graduate student researchers on all matters coming before the council, including campus-level policy, resolutions, and campus development planning.  I often met or interacted with campus/university administrators on specific issues and persistent ad hoc committees.",
         "tasks_skills": {
           "technical": null,
-          "non_technical": ["Advocacy", "Constituency Engagement", "Constituency Representation", "Rapport Building", "Institutional Advocacy", "Instutional Collaboration", "Instutional Engagement", "Policy Representation", "Collaboration", "Communication", "Public Speaking", "University Policy", "University Developement Strategy", "Public Speaking","Robert's Rules of Order"]
+          "non_technical": ["Advocacy", "Constituency Engagement", "Constituency Representation", "Rapport Building", "Institutional Advocacy", "Institutional Collaboration", "Institutional Engagement", "Policy Representation", "Collaboration", "Communication", "Public Speaking", "University Policy", "University Development Strategy", "Public Speaking","Robert's Rules of Order"]
           },
         "hours": "~ 1",
         "aesthetics" :{
