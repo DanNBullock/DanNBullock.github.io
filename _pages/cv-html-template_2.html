@@ -64,14 +64,15 @@ author_profile: false
 
     <div class="headmast" style="text-align: center; ">
     <h1 style="font-size:1.5em;margin:0;">{{ site.data.curriculumVitae.person.name }}</h1>
-        <h2 style="margin:0">{{ site.data.curriculumVitae.person.contact.email }};</h2>
+        <h2 style="margin:0">{{ site.data.curriculumVitae.person.contact.email }}; 
         <!-- next we try and add in the website link, if the link is already appended with https:// we remove it for display and use as is for the link, and vice-versa if there is no such stem-->
         <!-- in either case, we want this content displayed to the right of the email adress, such that it functions as a hyperlink without all of the https:// cruft-->
         {% if site.data.curriculumVitae.person.contact.website contains "https://" %}
-            <h2 style="margin:0"><a href='{{ site.data.curriculumVitae.person.contact.website | remove: "https://" }}'>{{ site.data.curriculumVitae.person.contact.website | remove: "https://" }}</a></h2>
+            <a href='{{ site.data.curriculumVitae.person.contact.website | remove: "https://" }}'>{{ site.data.curriculumVitae.person.contact.website | remove: "https://" }}</a>
         {% else %}
-            <h2 style="margin:0"><a href="https://{{ site.data.curriculumVitae.person.contact.website }}">{{ site.data.curriculumVitae.person.contact.website }}</a></h2>
+            <a href="https://{{ site.data.curriculumVitae.person.contact.website }}">{{ site.data.curriculumVitae.person.contact.website }}</a>
         {% endif %}
+        </h2>
         <p style="margin:0">{{ site.data.curriculumVitae.person.contact.address.city }}, {{ site.data.curriculumVitae.person.contact.address.state }}, {{ site.data.curriculumVitae.person.contact.address.country }}</p>
     </div>
 
