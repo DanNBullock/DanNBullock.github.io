@@ -68,8 +68,9 @@ author_profile: false
         <!-- next we try and add in the website link, if the link is already appended with https:// we remove it for display and use as is for the link, and vice-versa if there is no such stem-->
         <!-- in either case, we want this content displayed to the right of the email adress, such that it functions as a hyperlink without all of the https:// cruft-->
         {% if site.data.curriculumVitae.person.contact.website contains "https://" %}
-            <a href='{{ site.data.curriculumVitae.person.contact.website | remove: "https://" }}'>{{ site.data.curriculumVitae.person.contact.website | remove: "https://" }}</a>
+            <a href='{{ site.data.curriculumVitae.person.contact.website }}'>{{ site.data.curriculumVitae.person.contact.website | remove: "https://" }}</a>
         {% else %}
+        <!-- Fix this link -->
             <a href="https://{{ site.data.curriculumVitae.person.contact.website }}">{{ site.data.curriculumVitae.person.contact.website }}</a>
         {% endif %}
         </h3>
@@ -315,7 +316,7 @@ author_profile: false
                     
                     <!-- this is the end of the left 90% pane-->
                 <!-- now we move to the right 10% pane, which will contain the dates-->
-                <div class="experience-date-info" style="position: relative; float:right; min-width: 6em; ;width: 15%; height:100%; border-left: 1px dotted rgba(161, 161, 161, 0.856); text-align: center; display: table-cell; vertical-align: middle;font-size: 0.8em; font-weight: 600; line-height:0.3m; padding: 20px">
+                <div class="experience-date-info" style="position: relative; float:right; min-width: 6em; ;width: 15%; height:100%; border-left: 1px dotted rgba(161, 161, 161, 0.856); text-align: center; display: table-cell; vertical-align: middle;font-size: 0.8em; font-weight: 600; line-height:0.3m; padding: 10px">
                   <!-- as a reminder, the content of the `duration` field now comes as a list of dictionaries.  Each dictionary has a `start` and `end` field, which are themselves dictionaries with `month` and `year` fields (which are numeric).
                   In the event that there are multiple duration entries, they should be seprated by an & character, which will be on it's own line between the duration content information components -->
                   
