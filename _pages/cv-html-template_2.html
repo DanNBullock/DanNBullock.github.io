@@ -196,10 +196,9 @@ author_profile: false
           {% if duration.start.month != null %}
             {{duration.start.month}}  /  {{ duration.start.year }}
           {% endif %}
-        {% if duration.end.month != null %}
-
-          to
-
+        {% if duration.end.month != null %} 
+           to
+          <br>
           {{ duration.end.month }}  /  {{ duration.end.year }}
         {% endif %}
         {% if forloop.last == false %}
@@ -328,8 +327,7 @@ author_profile: false
                       {{duration.start.month}}  /  {{ duration.start.year }}
                     {% endif %}
                     {% if duration.end.month != null %}
-                      <br>
-                      to
+                       to
                       <br>
                       {{ duration.end.month }}  /  {{ duration.end.year }}
                     {% endif %}
@@ -383,14 +381,14 @@ citation: the appropriately formatted citation for the paper
 
                   </td>
                   <!-- for the date, we only want the date string, and not the timestring-->
-                  <td style="text-align: center; padding-top: 0px; padding-bottom: 0px;">{{ paper.date | date: "%m-%d<br>%Y" }}</td>
-                  <td style="text-align: center; padding-top: 0px; padding-bottom: 1px;">{{ paper.venue }}</td>
+                  <td style="text-align: center; padding-top: 0px; padding-bottom: 0px;  font-size: 0.8em">{{ paper.date | date: "%m-%d<br>%Y" }}</td>
+                  <td style="text-align: center; padding-top: 0px; padding-bottom: 1px;  font-size: 0.8em">{{ paper.venue }}</td>
                   <td style="text-align: center;padding:0">
                       {% if paper.paperurl != null %}
                           <a href="{{ paper.paperurl }}"><i class="fas fa-globe"></i></a>
                       {% endif %}
                   </td>
-                  <td style="padding-top: 0px; padding-bottom: 0px;">{{ paper.citation }}</td>
+                  <td style="padding-top: 0px; padding-bottom: 0px; font-size: 0.8em">{{ paper.citation }}</td>
               </tr>
           {% endif %}
       {% endfor %}
@@ -417,10 +415,10 @@ citation: the appropriately formatted citation for the paper
         <td style="padding-top: 5px; padding-bottom: 5px; font-weight:bold; font-size: 0.8em">
           {{ presentation.title }}
         </td>
-        <td style="text-align: center; padding-top: 0px; padding-bottom: 0px;">{{ presentation.year }}</td>
-        <td style="text-align: center; padding-top: 0px; padding-bottom: 1px;">{{ presentation.venue | join: ", "  }}</td>
-        <td style="text-align: center; padding-top: 0px; padding-bottom: 1px; font-size:.8em">{{ presentation.type }}</td>
-        <td style="padding-top: 0px; padding-bottom: 0px;">{{ presentation.authors | join: ", " }}</td>
+        <td style="text-align: center; padding-top: 0px; padding-bottom: 0px; font-size: 0.8em">{{ presentation.year }}</td>
+        <td style="text-align: center; padding-top: 0px; padding-bottom: 1px; font-size: 0.8em">{{ presentation.venue | join: ", "  }}</td>
+        <td style="text-align: center; padding-top: 0px; padding-bottom: 1px; font-size: 0.8em">{{ presentation.type }}</td>
+        <td style="padding-top: 0px; padding-bottom: 0px; font-size: 0.8em">{{ presentation.authors | join: ", " }}</td>
       </tr>
     {% endfor %}
   </table>
@@ -471,14 +469,14 @@ citation: the appropriately formatted citation for the paper
 
     {% for award in site.data.curriculumVitae.awards %}
       <tr>
-        <td style="padding-top: 10px; padding-bottom: 10px; font-weight:bold; font-size:1.3em">
+        <td style="padding-top: 10px; padding-bottom: 10px; font-weight:bold; font-size: 0.8em">
          <strong style="font-size: 1.25em">{{ award.title }}</strong>
          <br>
          <small> at <a href="{{ award.institution.link }}">{{ award.institution.name }}</a> <i>via</i> <a href="{{ award.sourceOrg.link }}">{{ award.sourceOrg.name }}</a></small>
         </td>
-        <td style="text-align: center; padding-top: 0px; padding-bottom: 0px;">{{ award.type }}</td>
+        <td style="text-align: center; padding-top: 0px; padding-bottom: 0px; font-size: 0.8em">{{ award.type }}</td>
         <!-- If there are multiple durations listed, be sure to accomidate that by splicing the entries together, separtaed by a ' and ' and a line break-->
-        <td style="text-align: center; padding-top: 0px; padding-bottom: 1px;">
+        <td style="text-align: center; padding-top: 0px; padding-bottom: 1px;  font-size: 0.8em">
           
           
           {% for duration in award.duration %}
@@ -486,7 +484,6 @@ citation: the appropriately formatted citation for the paper
               {{duration.start.month}}  /  {{ duration.start.year }}
             {% endif %}
             {% if duration.end.month != null %}
-                <br>
                 to
                 <br>
               {{ duration.end.month }}  /  {{ duration.end.year }}
