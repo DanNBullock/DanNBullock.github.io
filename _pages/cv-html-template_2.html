@@ -295,7 +295,7 @@ author_profile: false
                     <!-- now we move to the other sub-div, which will contain the description, followed by the technical and non-technical skills and tasks, separated by a quarter line break.-->
                     <div class="experience-info-skills-tasks" style="position:relative;">
                         <!-- start with the description-->
-                        <div class="experience-description" style="position:relative; padding-top:10px; line-height:1.2">
+                        <div class="experience-description" style="position:relative; padding-top:10px; line-height:1.2; font-size: .8em">
                             {{ entry.description }}
                         </div>
                         <!-- half line break-->
@@ -348,75 +348,6 @@ author_profile: false
         {% endfor %}
 </div>
 
-
-
-<!-- Not sure if this is going to work in html, but lets see what Copilot can do-->
-<!-- For a skills section, we'll iterate over the entries in site.data.curriculumVitae.experience, and count the unique instances of each skill listed under tasks_skills for both "technical" and "non_technical"-->
-<!-- We'll then display the unique entries, alongside the associated count, in descending order-->
-<!-- However, we'll do this not as a table, but in the following way:
-Skills: <skill1> (<count1>), <skill2> (<count2>), ... <skillN> (<countN>)
--->
-<div class="skills" style="font-size:0.8em">
-    <h2>Skills</h2>
-    <!-- lets be sure to break this process down into discrete steps so that we avoid 
-    getting the following error:
-    Expected end_of_string but found pipe in "skill in site.data.curriculumVitae.experience.tasks_skills.technical | uniq"  
-    -->
-    {% assign technical_skills = "" %}
-    {% for entry in site.data.curriculumVitae.experience %}
-        {% if entry.tasks_skills.technical != null %}
-            {% for skill in entry.tasks_skills.technical %}
-                {% assign technical_skills = technical_skills | append: skill | append: "," %}
-            {% endfor %}
-        {% endif %}
-    {% endfor %}
-    <!-- now we have a comma separated list of all the technical skills, however now we need to count the number of instances of each skill -->
-    <!-- we'll do this by splitting the string into an array, then counting the number of instances of each unique entry, then sorting the entries in descending order, then joining them back into a string -->
-    <!-- lets begin by sorting the array alphabetically-->
-    {% assign technical_skills = technical_skills | split: "," | sort %}
-    <!-- now we'll count the number of instances of each unique entry-->
-    {% assign technical_skills_uniq = technical_skills | uniq | join: ", "%}
-    <!-- now we'll sort the entries in descending order-->
-    {% assign technical_skills = technical_skills | sort | reverse %}
-    <!-- now we'll join the entries back into a string while also ensuring that each entry is abutted by its associated count-->
-    {% assign technical_skills = technical_skills | join: " ({{ technical_skills | size }}), " %}
-    <!-- now we'll add the final closing parenthesis-->
-    <!-- is this necessary?-->
-    <!-- {% assign technical_skills_print = technical_skills | append: " ({{ technical_skills | size }})" %}-->
-    <!-- now we'll display the string-->
-    <p>Technical skills: {{ technical_skills_uniq }}</p>
-    
-    <!-- now we'll do the same for non-technical skills-->
-    {% assign non_technical_skills = "" %}
-    {% for entry in site.data.curriculumVitae.experience %}
-        {% if entry.tasks_skills.non_technical != null %}
-            {% for skill in entry.tasks_skills.non_technical %}
-                {% assign non_technical_skills = non_technical_skills | append: skill | append: "," %}
-            {% endfor %}
-        {% endif %}
-    {% endfor %}
-    <!-- now we have a comma separated list of all the non-technical skills, however now we need to count the number of instances of each skill -->
-    <!-- we'll do this by splitting the string into an array, then counting the number of instances of each unique entry, then sorting the entries in descending order, then joining them back into a string -->
-    <!-- lets begin by sorting the array alphabetically-->
-    {% assign non_technical_skills = non_technical_skills | split: "," | sort %}
-    <!-- now we'll count the number of instances of each unique entry-->
-    <!--not sure if this is couting or returning unique-->
-    {% assign non_technical_skills_uniq = non_technical_skills | uniq | join: ", " %}
-    <!-- now we'll sort the entries in descending order-->
-    <!-- I suspect this will mess things up because it is sorting by alphabetical rather than count-->
-    <!--
-    {% assign non_technical_skills = non_technical_skills | sort | reverse %}
-    -->
-    <!-- now we'll join the entries back into a string while also ensuring that each entry is abutted by its associated count-->
-    {% assign non_technical_skills_print = non_technical_skills_uniq | join: " ({{ non_technical_skills | size }}), " %}
-    <!-- now we'll add the final closing parenthesis-->
-    <!-- is this necessary?-->
-    <!--{% assign non_technical_skills_print = non_technical_skills_print | append: " ({{ non_technical_skills | size }})" %}-->
-    <!-- now we'll display the string-->
-    <p>Non-technical skills: {{ non_technical_skills_uniq }}</p>
-    
-</div>
-
 <!-- Next we do publications, however we don't have a specific json format for these.
 Instead, we have a collection of markdown documents in the _publications folder.  At the top of each document is a yaml header with the following format:
 title: the paper's title
@@ -447,7 +378,7 @@ citation: the appropriately formatted citation for the paper
       {% for paper in sortedPublications %}
           {% if paper.collection == "publications" %}
               <tr>
-                  <td style="padding-top: 10px; padding-bottom: 10px; font-weight:bold; font-size:1.3em">
+                  <td style="padding-top: 5px; padding-bottom: 5px; font-weight:bold; font-size: 0.8em">
                       <a href="{{ paper.permalink }}">{{ paper.title }}</a>
 
                   </td>
@@ -483,7 +414,7 @@ citation: the appropriately formatted citation for the paper
     {% assign sortedPresentations = site.data.curriculumVitae.presentations | sort: "year" | sort: "venue[0]" | reverse %}
     {% for presentation in sortedPresentations %}
       <tr>
-        <td style="padding-top: 10px; padding-bottom: 10px; font-weight:bold; font-size:1.3em">
+        <td style="padding-top: 5px; padding-bottom: 5px; font-weight:bold; font-size: 0.8em">
           {{ presentation.title }}
         </td>
         <td style="text-align: center; padding-top: 0px; padding-bottom: 0px;">{{ presentation.year }}</td>
