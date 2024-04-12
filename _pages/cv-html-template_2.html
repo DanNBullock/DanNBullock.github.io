@@ -423,13 +423,16 @@ citation: the appropriately formatted citation for the paper
       {% for paper in sortedPublications %}
           {% if paper.collection == "publications" %}
               <tr>
-                  <td style="padding-top: 5px; padding-bottom: 5px; font-weight:bold; font-size: 0.8em">
+                <!-- in the section where we display the titles, lets avoid having the links show up as underlined, but remain bolded and blue-->
+
+                  <td style="padding-top: 5px; padding-bottom: 5px; text-decoration: none; color: blue; font-weight: bold; font-size: 0.7em">
+                    
                       <a href="{{ paper.permalink }}">{{ paper.title }}</a>
 
                   </td>
                   <!-- for the date, we only want the date string, and not the timestring-->
                   <td style="text-align: center; padding-top: 0px; padding-bottom: 0px;  font-size: 0.8em">{{ paper.date | date: "%m-%d<br>%Y" }}</td>
-                  <td style="text-align: center; padding-top: 0px; padding-bottom: 1px;  font-size: 0.8em">{{ paper.venue }}</td>
+                  <td style="text-align: center; padding-top: 0px; padding-bottom: 1px;  font-size: 0.7em">{{ paper.venue }}</td>
                   <td style="text-align: center;padding:0">
                       {% if paper.paperurl != null %}
                           <a href="{{ paper.paperurl }}"><i class="fas fa-globe"></i></a>
@@ -465,7 +468,7 @@ citation: the appropriately formatted citation for the paper
         <td style="text-align: center; padding-top: 0px; padding-bottom: 0px; font-size: 0.8em">{{ presentation.year }}</td>
         <td style="text-align: center; padding-top: 0px; padding-bottom: 1px; font-size: 0.8em">{{ presentation.venue | join: ", "  }}</td>
         <td style="text-align: center; padding-top: 0px; padding-bottom: 1px; font-size: 0.8em">{{ presentation.type }}</td>
-        <td style="padding-top: 0px; padding-bottom: 0px; font-size: 0.8em">{{ presentation.authors | join: ", " }}</td>
+        <td style="padding-top: 0px; padding-bottom: 0px; font-size: 0.6em">{{ presentation.authors | join: ", " }}</td>
       </tr>
     {% endfor %}
   </table>
