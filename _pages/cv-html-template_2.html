@@ -178,7 +178,7 @@ author_profile: false
       <!-- now we divide this parimary div into the left 90% portion and right 10% portions-->
       <div class="experience-info-pane" style="position:relative; float:left; width:100%; padding: 5px; background-color: rgba(240, 255, 255, 0.733);line-height:1.1 ;">
         <!-- now we divide the left 90% portion into the two sub-divs-->
-        <div class="experience-position-info" style="position:relative; width: 70%; padding-bottom:5px; float: left;  overflow: hidden;">
+        <div class="experience-position-info" style="position:relative; width: 80%; padding-bottom:5px; float: left;  overflow: hidden;">
           <!-- start with the role title and institution name, bolded, followed by the city and state in parentheses.-->
           <strong style="font-size: 1.5em">{{ entry.degree.type }}, {{ entry.degree.majors | join: ", " }}</strong>
           <hr style="border-top: 1px dotted rgba(161, 161, 161, 0.856);margin:0"> 
@@ -190,7 +190,7 @@ author_profile: false
         </div>
         <!-- Let's also create another div here which blends in with the adjacent (to the left) div and displays the date information
         in the bottom right hand corner of the div, trying to be efficient with space and lines.-->
-        <div class="experience-domain-type-date" style="position:absolute; width:30%; bottom:0; right:0; float:right; padding-bottom: 5px; font-size: 0.8em; font-weight: 600;">
+        <div class="experience-domain-type-date" style="position:absolute; width:20%; bottom:0; right:0; float:right; padding-bottom: 5px; font-size: 1em; font-weight: 600;">
           <!-- the text should be aligned to the bottom right corner of the div, and should be in a slightly smaller font, but bolded.  The text should be in the format "start - end"-->
           <!-- unlike other instances of the experience-domain-type sections, we don't have a domain or type to display here, just the relevant dates-->
           {% for duration in entry.duration %}
@@ -206,7 +206,7 @@ author_profile: false
             {% endif %}
           {% endfor %}
           <!-- Just to get it off the bottom-->
-          <br>
+          <br><br>
         </div>
       </div>
       <!-- commenting this section out
@@ -324,7 +324,9 @@ author_profile: false
                               {{ duration.end.month }}  /  {{ duration.end.year }}
                             {% endif %}
                             {% if forloop.last == false %}
-                              , &<br>\00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0
+                              , &<br>
+                              <!-- In order to ensure secondary lines have correct spacing, we'll use unicode character \00a0 to ensure that subsequent lines start offset from the left margin-->
+                              &#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0;
                             {% endif %}
                           {% endfor %}
                           <!-- Now we also want to display the content of the 'hours field' as "[hours field content] hours per week" at the bottom of the experience-date-info" div-->
@@ -513,7 +515,7 @@ citation: the appropriately formatted citation for the paper
 
     {% for award in site.data.curriculumVitae.awards %}
       <tr>
-        <td style="padding-top: 10px; padding-bottom: 10px; font-weight:bold; font-size: 0.8em">
+        <td style="padding-top: 5px; padding-bottom: 5px; font-weight:bold; font-size: 0.8em">
          <strong style="font-size: 1.25em">{{ award.title }}</strong>
          <br>
          <small> at <a href="{{ award.institution.link }}">{{ award.institution.name }}</a> <i>via</i> <a href="{{ award.sourceOrg.link }}">{{ award.sourceOrg.name }}</a></small>
