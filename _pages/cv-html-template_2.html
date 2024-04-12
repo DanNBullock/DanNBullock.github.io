@@ -61,11 +61,16 @@ author_profile: false
 
 
 <!-- let's change the default styling of the "main" section such that we dont have any excess padding-->
+<!-- Lets also reduce the amoun of top padding in all header elements-->
 <style>
-    .main {
-        padding: 0;
+    main {
+        padding-top: 0;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        padding-top: 5;
     }
 </style>
+
 <!-- Should only be me in there-->
 
     <div class="headmast" style="text-align: center; ">
@@ -345,11 +350,11 @@ author_profile: false
                     <!-- now we move to the other sub-div, which will contain the description, followed by the technical and non-technical skills and tasks, separated by a quarter line break.-->
                     <div class="experience-info-skills-tasks" style="position:relative;">
                         <!-- start with the description-->
-                        <div class="experience-description" style="position:relative; padding-top:10px; line-height:1.2; font-size: .8em">
+                        <div class="experience-description" style="position:relative; padding-top:10px; line-height:1.2; font-size: .7em">
                             {{ entry.description }}
                         </div>
                         <!-- half line break-->
-                        <div class="experience-skills-tasks" style="position:relative; font-size:0.7em; padding-top:10px;">
+                        <div class="experience-skills-tasks" style="position:relative; font-size:0.65em; padding-top:10px;">
                             {% if entry.tasks_skills.technical != null %}
                                 <u>Technical skills</u>:
                                 {{ entry.tasks_skills.technical | join: ", " }}
