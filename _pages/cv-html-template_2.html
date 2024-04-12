@@ -60,6 +60,31 @@ author_profile: false
 {% assign monthNames = "January,February,March,April,May,June,July,August,September,October,November,December" | split: "," %}
 
 
+<!-- Let's also include a save to pdf button, which saves the page as a pdf.  We are only printing the content in the archive class div,
+  and this content should run to the edge of the page, so we'll need to include a css file that sets the margins to 0 for the body and html tags.-->
+  <style>
+    @media print {
+      body, html {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  </style>
+  <!--make sure the print button only prints the content in the archive class div-->
+  <script>
+    function printContent() {
+      var content = document.getElementsByClassName("archive")[0];
+      var printWindow = window.open('', '', 'height=400,width=800');
+      printWindow.document.write('<html><head><title>Print</title>');
+      printWindow.document.write('</head><body >');
+      printWindow.document.write(content.innerHTML);
+      printWindow.document.write('</body></html>');
+      printWindow.document.close();
+      printWindow.print();
+    }
+  </script>
+  <button onclick="printContent()">Save to PDF</button>
+
 <!-- Should only be me in there-->
 
     <div class="headmast" style="text-align: center; ">
@@ -326,7 +351,7 @@ author_profile: false
                             {% if forloop.last == false %}
                               , &<br>
                               <!-- In order to ensure secondary lines have correct spacing, we'll use unicode character \00a0 to ensure that subsequent lines start offset from the left margin-->
-                              &#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0;
+                              &#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0;
                             {% endif %}
                           {% endfor %}
                           <!-- Now we also want to display the content of the 'hours field' as "[hours field content] hours per week" at the bottom of the experience-date-info" div-->
