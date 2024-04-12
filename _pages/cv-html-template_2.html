@@ -71,6 +71,15 @@ author_profile: false
     }
 </style>
 
+<!-- lets create a class that will be used for paper title links later on, which will be bolded and blue, but not underlined-->
+<style>
+    .paper-title-link {
+        text-decoration: none;
+        color: blue;
+        font-weight: bold;
+    }
+</style>
+
 <!-- Should only be me in there-->
 
     <div class="headmast" style="text-align: center; ">
@@ -437,7 +446,7 @@ citation: the appropriately formatted citation for the paper
 
                   <td style="padding-top: 5px; padding-bottom: 5px; text-decoration: none; color: blue; font-weight: bold; font-size: 0.7em">
                     
-                      <a href="{{ paper.permalink }}">{{ paper.title }}</a>
+                      <a href="{{ paper.permalink }}" class="paper-title-link">{{ paper.title }} </a>
 
                   </td>
                   <!-- for the date, we only want the date string, and not the timestring-->
