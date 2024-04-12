@@ -176,9 +176,9 @@ author_profile: false
   {% for entry in site.data.curriculumVitae.education %}
     <div class="experience-entry" style="border:3px solid gray;border-style:double; height:auto; overflow: hidden;padding:5px">
       <!-- now we divide this parimary div into the left 90% portion and right 10% portions-->
-      <div class="experience-info-pane" style="position:relative; float:left; width:100%; padding: 5px; background-color: rgba(240, 255, 255, 0.733);line-height:1.1 ; border-right: 1px dotted rgba(161, 161, 161, 0.856);">
+      <div class="experience-info-pane" style="position:relative; float:left; width:100%; padding: 5px; background-color: rgba(240, 255, 255, 0.733);line-height:1.1 ;">
         <!-- now we divide the left 90% portion into the two sub-divs-->
-        <div class="experience-position-info" style="position:relative; width: 70%; padding-bottom:5px;  overflow: hidden;">
+        <div class="experience-position-info" style="position:relative; width: 70%; padding-bottom:5px; float: left;  overflow: hidden;">
           <!-- start with the role title and institution name, bolded, followed by the city and state in parentheses.-->
           <strong style="font-size: 1.5em">{{ entry.degree.type }}, {{ entry.degree.majors | join: ", " }}</strong>
           <hr style="border-top: 1px dotted rgba(161, 161, 161, 0.856);margin:0"> 
@@ -190,7 +190,7 @@ author_profile: false
         </div>
         <!-- Let's also create another div here which blends in with the adjacent (to the left) div and displays the date information
         in the bottom right hand corner of the div, trying to be efficient with space and lines.-->
-        <div class="experience-domain-type-date" style="position:relative; width:30%; float:right; font-size: 0.8em; font-weight: 600; border-radius: 5px;border-left: 10px solid rgba(161, 161, 161, 0.856); padding-left: 5px">
+        <div class="experience-domain-type-date" style="position:relative; width:30%; bottom:0; right:0; float:right; padding-bottom: 5px; font-size: 0.8em; font-weight: 600;">
           <!-- the text should be aligned to the bottom right corner of the div, and should be in a slightly smaller font, but bolded.  The text should be in the format "start - end"-->
           <!-- unlike other instances of the experience-domain-type sections, we don't have a domain or type to display here, just the relevant dates-->
           {% for duration in entry.duration %}
@@ -205,6 +205,8 @@ author_profile: false
               , &<br>
             {% endif %}
           {% endfor %}
+          <!-- Just to get it off the bottom-->
+          <br>
         </div>
       </div>
       <!-- commenting this section out
@@ -253,7 +255,7 @@ author_profile: false
             
             -->
             <!-- in accordance with the above description, lets begin by creating the primary div unit-->
-            <div class="experience-entry" style="border:3px solid gray;border-style:double; height:auto; overflow: hidden">
+            <div class="experience-entry" style="border:3px solid gray;border-style:double; height:auto; overflow: hidden; min-width: 100%">
                 <!-- now we divide this parimary div into the left 90% portion and right 10% portions-->
                 <div class="experience-info-pane" style="position:relative; float:left; width:100%; padding: 5px;">
                     <!-- now we divide the left 90% portion into the two sub-divs-->
@@ -311,17 +313,18 @@ author_profile: false
                           <!-- Let's try rearranging things a bit and include two new sections in this div, one for the dates, and one for the workload.  If this works, we'll get rid of the
                           experience-date-info div, and just include the dates in this div.-->
                           <!-- First we'll take care of the dates, however many there turn out to be-->
+                          <br>
+                          <b>Dates:</b>
                           {% for duration in entry.duration %}
                             {% if duration.start.month != null %}
-                            <br>
-                             <b>Dates:</b> {{duration.start.month}}  /  {{ duration.start.year }}
+                             {{duration.start.month}}  /  {{ duration.start.year }}
                             {% endif %}
                             {% if duration.end.month != null %}
                                 to
                               {{ duration.end.month }}  /  {{ duration.end.year }}
                             {% endif %}
                             {% if forloop.last == false %}
-                              , &<br>
+                              , &<br>       
                             {% endif %}
                           {% endfor %}
                           <!-- Now we also want to display the content of the 'hours field' as "[hours field content] hours per week" at the bottom of the experience-date-info" div-->
