@@ -190,7 +190,7 @@ author_profile: false
         </div>
         <!-- Let's also create another div here which blends in with the adjacent (to the left) div and displays the date information
         in the bottom right hand corner of the div, trying to be efficient with space and lines.-->
-        <div class="experience-domain-type-date" style="position:relative; width:30%; bottom:0; right:0; float:right; padding-bottom: 5px; font-size: 0.8em; font-weight: 600;">
+        <div class="experience-domain-type-date" style="position:absolute; width:30%; bottom:0; right:0; float:right; padding-bottom: 5px; font-size: 0.8em; font-weight: 600;">
           <!-- the text should be aligned to the bottom right corner of the div, and should be in a slightly smaller font, but bolded.  The text should be in the format "start - end"-->
           <!-- unlike other instances of the experience-domain-type sections, we don't have a domain or type to display here, just the relevant dates-->
           {% for duration in entry.duration %}
@@ -324,7 +324,7 @@ author_profile: false
                               {{ duration.end.month }}  /  {{ duration.end.year }}
                             {% endif %}
                             {% if forloop.last == false %}
-                              , &<br>       
+                              , &<br>\00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0
                             {% endif %}
                           {% endfor %}
                           <!-- Now we also want to display the content of the 'hours field' as "[hours field content] hours per week" at the bottom of the experience-date-info" div-->
