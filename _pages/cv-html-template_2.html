@@ -198,7 +198,7 @@ author_profile: false
           {% endif %}
         {% if duration.end.month != null %} 
            to
-          <br>
+          <br> 
           {{ duration.end.month }}  /  {{ duration.end.year }}
         {% endif %}
         {% if forloop.last == false %}
@@ -283,11 +283,30 @@ author_profile: false
                             </i>
                         </div>
                         <!-- while we're still in this sub-div, lets go ahead and take care of the domain and type in the upper right hand corner of this div-->
-                        <div class="experience-domain-type" style="position:relative; width:30%; float:right; font-size: 0.8em; font-weight: 700; border-radius: 5px;border-left: 10px solid rgba(161, 161, 161, 0.856); padding-left: 5px">
+                        <div class="experience-domain-type" style="position:relative; width:40%; float:right; font-size: 0.8em; font-weight: 700; border-radius: 5px;border-left: 10px solid rgba(161, 161, 161, 0.856); padding-left: 5px">
                           <!--In the background of this div, we'll use the fontawesome icon, listed in entry.aesthics.icon, which will serve as a slightly darkened watermark background for the domain and type section here-->
                           <!--It should take up the maxium vertical space of this div, and be aligned to its right border.-->
                           <i class="fas fa-{{ entry.aesthetics.icon }}" style="position:absolute; right:0; top:0; font-size: 5em; color:rgba(114, 114, 114, 0.307); z-index:-1; max-height:100%;"></i>
                           Domain: {{ entry.domain  | join: ", " }}<br>Type: {{ entry.position.type  | join: ", "  }}
+                          <!-- Let's try rearranging things a bit and include two new sections in this div, one for the dates, and one for the workload.  If this works, we'll get rid of the
+                          experience-date-info div, and just include the dates in this div.-->
+                          <!-- First we'll take care of the dates, however many there turn out to be-->
+                          {% for duration in entry.duration %}
+                            {% if duration.start.month != null %}
+                             <b>Dates:</b> {{duration.start.month}}  /  {{ duration.start.year }}
+                            {% endif %}
+                            {% if duration.end.month != null %}
+                                to
+                              {{ duration.end.month }}  /  {{ duration.end.year }}
+                            {% endif %}
+                            {% if forloop.last == false %}
+                              , &<br>
+                            {% endif %}
+                          {% endfor %}
+                          <!-- Now we also want to display the content of the 'hours field' as "[hours field content] hours per week" at the bottom of the experience-date-info" div-->
+                          {% if entry.hours != null %}
+                            <br> <b>Workload:</b> {{ entry.hours }} hours <br>  per week
+                          {% endif %}
                         </div>
                     </div>
 
@@ -315,13 +334,13 @@ author_profile: false
                     
                     <!-- this is the end of the left 90% pane-->
                 <!-- now we move to the right 10% pane, which will contain the dates-->
-                <div class="experience-date-info" style="position: relative; float:right; min-width: 6em; ;width: 15%; height:100%; border-left: 1px dotted rgba(161, 161, 161, 0.856); text-align: center; display: table-cell; vertical-align: middle;font-size: 0.8em; font-weight: 600; line-height:0.3m; padding: 10px">
+                <!-- <div class="experience-date-info" style="position: relative; float:right; min-width: 6em; ;width: 0%; height:100%; border-left: 1px dotted rgba(161, 161, 161, 0.856); text-align: center; display: table-cell; vertical-align: middle;font-size: 0.8em; font-weight: 600; line-height:0.3m; padding: 10px"> -->
                   <!-- as a reminder, the content of the `duration` field now comes as a list of dictionaries.  Each dictionary has a `start` and `end` field, which are themselves dictionaries with `month` and `year` fields (which are numeric).
                   In the event that there are multiple duration entries, they should be seprated by an & character, which will be on it's own line between the duration content information components -->
                   
                   <!-- as a reminder this is what monthNames looks like
                     {% assign monthNames = "January,February,March,April,May,June,July,August,September,October,November,December" | split: "," %}
-                  -->
+                  
                   {% for duration in entry.duration %}
                     {% if duration.start.month != null %}
                       {{duration.start.month}}  /  {{ duration.start.year }}
@@ -336,11 +355,11 @@ author_profile: false
                     {% endif %}
                   {% endfor %}
                   
-                  <!-- Now we also want to display the content of the 'hours field' as "[hours field content] hours per week" at the bottom of the experience-date-info" div-->
+                  
                   {% if entry.hours != null %}
                     <br><br>{{ entry.hours }} hours <br>  per week
                   {% endif %}
-
+                  -->
                 </div>
             </div>
         {% endfor %}
