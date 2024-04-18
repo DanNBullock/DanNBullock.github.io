@@ -602,13 +602,14 @@
             },
             "department_program": ["Center for Integrated Fungal Research"]
         },
-        "supervisor": [{
+        "supervisor": [
+          {
             "name": "Tarek Joobeur",
             "links": ["https://www.linkedin.com/in/tarekjoobeur/","https://ci.lib.ncsu.edu/profiles/4404"],
             "ORCID": "",
             "google_scholar": "",
             "email": ""
-        }],
+          }],
         "duration": 
         [
           { 
@@ -706,13 +707,14 @@
           },
           "department_program": "Genetics Program"
         },
-        "supervisor": {
+        "supervisor": [
+          {
           "name": "Ted Emigh",
           "links": ["https://www.linkedin.com/in/ted-emigh-a6085311"],
           "ORCID": null,
           "google_scholar": null,
           "email": "emigh@ncsu.edu"
-        },
+          }],
         "duration": 
         [
           {
@@ -1233,13 +1235,14 @@
           },
           "department_program": "Office of Undergraduate Research"
         },
-        "supervisor": {
+        "supervisor": [
+          {
           "name": "Chris Ashwell",
           "links": ["https://gga.ncsu.edu/people/cmashwel/","https://www.davis.wvu.edu/faculty-staff/directory/ashwell-chris"],
           "ORCID": null,
           "google_scholar": null,
           "email": "christopher.ashwell@mail.wvu.edu"
-        },
+          }],
         "duration":
         [
           { 
