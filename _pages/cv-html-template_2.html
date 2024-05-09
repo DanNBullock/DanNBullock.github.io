@@ -496,6 +496,7 @@ dropping leading and trailing whitespace, and then taking the unique elements of
                   </div>
                   -->
               </div>
+            {% endif %}
         {% endfor %}
         <!-- check if any of the sortedExperience entries have displayStatus of 'abbreviate'-->
         {% assign abbreviateCount = 0 %}
@@ -540,7 +541,7 @@ dropping leading and trailing whitespace, and then taking the unique elements of
                     {% endif %}
                 {% endfor %}
             </table>
-        {% endif %}
+          {% endif %}
 
 
 
