@@ -56,9 +56,75 @@ author_profile: false
     "required": ["person"]
   }
 -->
+
+
+
+
+
+
 <!-- Right at the outset, lets go ahead and create a list that mapps all of the month names-->
 {% assign monthNames = "January,February,March,April,May,June,July,August,September,October,November,December" | split: "," %}
 
+<!--
+At the top of the cv page, include a tool-bar which dynamically reformats the content of the page, in accordance 
+with options toggled in this bar.  Specifically, our first tool-bar will be a pop out interface which allows the 
+user to select from amongst the site.data.curriculumVitae.experience entries in accordance with the 
+entry.position.type categorical designation.  Thus, upon interacting with the root 'include/exclude' toggle tool 
+in the tool bar, a pop-out-box interface will appear with a check-box-like interface for each unique option 
+found across all entires for entry.position.type.  It is important to keep in mind that these entires 
+(entry.position.type) can be instantiated as a comma separated list of several categories, such that a given 
+entry might be assigned to more than a single categorical designation.  As such, the content of this popout box 
+should reflect the unique elements derived from the result of concatenating the entry.position.type field 
+contents and subsequently separating the content at commas.  To continue, with respect to the toggle-box 
+interface itself, rather than simply being a binary, include/exclude toggle, there will be a check-box like 
+interface, except that the options available (demarcated by a red X, a green check,  a blue circle, an orange 
+dash, and a default status indicator of a  blank box) will be iteratively rotated through upon user click 
+(starting with a default status of blank, proceeding through the x, to the check, to the circle, to the dash, 
+and finally returning to the initial blank box status).  Each of these symbolic toggles are associated with one 
+of the entry.position.type categories and correspond to a desired display preference for all entries with the 
+associated entry.position.type category.   Specifically, the red x results in all entires of the associated 
+category being removed from the displayed 'Experience' content entires.  The green check permits the display of 
+entires with the associated category.  The blue ciricle requires the display of the associated category of 
+entries.  The yellow dash denotes the removal of the associated category of entries from the main 'Experience' 
+content element, and the move of this content to a more condensed and abbreviated subjection just below the main 
+'experience' element, which will be described in a moment.  Finally, the default blank box imposes no specific 
+inclusion or exclusion status for the associated category.  The priority of these is as follows in sequence: 
+blue circle (requirement), red x (exclusion), yellow dash (abbreviation), green check (permitted), and blank 
+(no specificiaton), such that a status found earlier in this list over-rides a status found later in the list.
+
+Insofar as the abbreviated section is concerned, it is denoted by a subsection header one level lower than the 
+one used by 'Experience' and is entitled 'Other experience'.  The content in this section is displayed in a 
+table with three columns, the first of which occupies 50% of the container width, while the remaining two each 
+occupy equal portions of the remaining half.  The content in these columns correspond to the following 
+information from each experience entry:  the role title (entry.position.title), the associated institution 
+(entry.institution.name), and the spans of time reflected in entry.duration.
+-->
+
+
+<!--Lets begin by initializing the toolbar element as described above-->
+
+<!-- in addition to initializing the month sequence structure, let's ingest, sort, and augment our experience data structure from the source cv json-->
+<!--We'll iterate across the experience array and create a separate stacked div for each entry.-->
+<!-- However, we want to do them in a specific order, as specified by the integer in the entry.aesthetics.sequence field.  So we'll create a new array, and then sort the entries by this field.-->
+{% assign sortedExperience = site.data.curriculumVitae.experience | sort: "aesthetics.sequence" %}
+
+<!--To make interfacing with our category tool-box a bit more streamlined, let's go ahead and append a field to each item in 'sortedExperience' entitled 'displayStatus',
+which can adopt one of the following values: "include", "exclude", "require", "abbreviate", or "permit".  We'll initialize this field to "permit" for all entries, and then
+modify them with the input from a javascript-based tool-bar interface.-->
+{% for entry in sortedExperience %}
+  {% assign entry.displayStatus = "permit" %}
+{% endfor %}
+
+<!-- we also need to determine the complete list of unique categories ascribed to our experiences
+Let's obtain this by joining the content of the entry.position.type field with a comma separator, and then splitting this content at the commas, 
+dropping leading and trailing whitespace, and then taking the unique elements of this list.-->
+
+{% assign allCategories = "" %}
+{% for entry in sortedExperience %}
+  {% assign allCategories = allCategories | append: entry.position.type | append: "," %}
+{% endfor %}
+<!-- be sure to drop the leading and trailing whitespace-->
+{% assign allCategories = allCategories | split: "," | uniq %}
 
 <!-- let's change the default styling of the "main" section such that we dont have any excess padding-->
 <!-- Lets also reduce the amoun of top padding in all header elements-->
@@ -80,6 +146,14 @@ author_profile: false
         font-weight: bold;
     }
 </style>
+
+<!--
+  right here at the start, implement the javascript-based toolbar interface, contained within a div element with the id "toolbar".
+  the javascript file can be found in the _includes folder, and is called "CV_toolbar.js".
+-->
+<div id="toolbar" style="position: fixed; top: 0; right: 0; width: 100%; height: 50px; background-color: rgba(240, 255, 255, 0.733); z-index: 1000;">
+  <script src="{{ site.baseurl }}/assets/js/CV_toolbar.js"></script>
+
 
 <!-- Should only be me in there-->
 
@@ -195,7 +269,7 @@ author_profile: false
     
     <!-- Now we'll try it with divs instead of a table-->
   {% for entry in site.data.curriculumVitae.education %}
-    <div class="experience-entry" style="border:3px solid gray;border-style:double; height:auto; overflow: hidden;padding:5px">
+    <div class="experience-entry-edu" style="border:3px solid gray;border-style:double; height:auto; overflow: hidden;padding:5px">
       <!-- now we divide this parimary div into the left 90% portion and right 10% portions-->
       <div class="experience-info-pane" style="position:relative; float:left; width:100%; padding: 5px; background-color: rgba(240, 255, 255, 0.733);line-height:1.1 ;">
         <!-- now we divide the left 90% portion into the two sub-divs-->
@@ -260,6 +334,12 @@ author_profile: false
          <!-- However, we want to do them in a specific order, as specified by the integer in the entry.aesthetics.sequence field.  So we'll create a new array, and then sort the entries by this field.-->
          {% assign sortedExperience = site.data.curriculumVitae.experience | sort: "aesthetics.sequence" %}
 
+         <!--To make interfacing with our category tool-box a bit more streamlined, let's go ahead and append a field to each item in 'sortedExperience' entitled 'displayStatus',
+          which can adopt one of the following values: "include", "exclude", "require", "abbreviate", or "permit".  We'll initialize this field to "permit" for all entries, and then
+          modify them with the input from a javascript-based tool-bar interface.-->
+
+          <!-- now we will querry the javascript tool-bar interface for the status of each category, and modify the 'displayStatus' field accordingly.  We'll then use this field to determine whether or not to display or whether to abbreviate the content of each entry.-->
+
         {% for entry in sortedExperience %}
 
             <!-- instead of using a table, let's create a card-like div that nicely lays out the relevant information:
@@ -275,142 +355,196 @@ author_profile: false
             in the other sub div, below the affiliation information, we'll have the description, followed by the technical and non-technical skills and tasks, separated by a quarter line break.
             
             -->
+
+            <!-- check if the entry.displayStatus is 'permit', 'require', or 'include'-->
+            {% if entry.displayStatus == "permit" or entry.displayStatus == "require" or entry.displayStatus == "include" %}
+     
+
+            
             <!-- in accordance with the above description, lets begin by creating the primary div unit-->
-            <div class="experience-entry" style="border:3px solid gray;border-style:double; height:auto; overflow: hidden; min-width: 100%">
-                <!-- now we divide this parimary div into the left 90% portion and right 10% portions-->
-                <div class="experience-info-pane" style="position:relative; float:left; width:100%; padding: 5px;">
-                    <!-- now we divide the left 90% portion into the two sub-divs-->
-                    <div class="experience-position-info" style="position:relative; width: 100%; padding-bottom:5px; background-color: rgba(240, 255, 255, 0.733); overflow: hidden; border-bottom:1px dotted rgb(150, 150, 150)">
-                        <div class="experience-info-affiliations" style="position:relative;  width:65%; float:left; line-height:1.1">
-                            <!-- start with the role title and institution name, bolded, followed by the city and state in parentheses.-->
-                            <strong style="font-size: 1.2em">{{ entry.position.title }}</strong>
-                            <br style="line-height:0.1em; font-size: 0.1em;">
-                            <small style="font-size:.8em;padding-top:-15px">at <i>{{ entry.institution.name }}</i> ({{ entry.institution.location.city }}, {{ entry.institution.location.state }}), <br> {{ entry.institution.department_program | join: ", "  }}</small>
-                            <br style="line-height:0.1em; font-size: 0.1em;">
-                            <!-- next, the department/program name, italicized, in slightly smaller but thicker font followed by the supervisor name, with fontawesome icons for the following:
-                                    "links" : browser icon for each link
-                                    "ORCID" : ORCID icon
-                                    "google_scholar" : google scholar icon
-                                    "email" : email icon
-                            -->
-                            <!--We now have to accomidate the case that there are multiple supervisors.  They will come in as a list, so we'll have to iterate across them.-->
-                            <!-- display the string "supervised by " followed by each supervisor, with their links in parentheses, with each supervisor separated by commas if there is more than one -->
-                            <i style="font-size: .7em; font-weight: 600; padding-top:-15px">
-                            {% for iSupervisor in entry.supervisor %}
-                              {% if iSupervisor.links != null %}
-                              <!-- if its the first in the loop display supervised by-->
-                                {% if forloop.first == true %}
-                                  Supervised by
+              <div class="experience-entry" style="border:3px solid gray;border-style:double; height:auto; overflow: hidden; min-width: 100%">
+                  <!-- now we divide this parimary div into the left 90% portion and right 10% portions-->
+                  <div class="experience-info-pane" style="position:relative; float:left; width:100%; padding: 5px;">
+                      <!-- now we divide the left 90% portion into the two sub-divs-->
+                      <div class="experience-position-info" style="position:relative; width: 100%; padding-bottom:5px; background-color: rgba(240, 255, 255, 0.733); overflow: hidden; border-bottom:1px dotted rgb(150, 150, 150)">
+                          <div class="experience-info-affiliations" style="position:relative;  width:65%; float:left; line-height:1.1">
+                              <!-- start with the role title and institution name, bolded, followed by the city and state in parentheses.-->
+                              <strong style="font-size: 1.2em">{{ entry.position.title }}</strong>
+                              <br style="line-height:0.1em; font-size: 0.1em;">
+                              <small style="font-size:.8em;padding-top:-15px">at <i>{{ entry.institution.name }}</i> ({{ entry.institution.location.city }}, {{ entry.institution.location.state }}), <br> {{ entry.institution.department_program | join: ", "  }}</small>
+                              <br style="line-height:0.1em; font-size: 0.1em;">
+                              <!-- next, the department/program name, italicized, in slightly smaller but thicker font followed by the supervisor name, with fontawesome icons for the following:
+                                      "links" : browser icon for each link
+                                      "ORCID" : ORCID icon
+                                      "google_scholar" : google scholar icon
+                                      "email" : email icon
+                              -->
+                              <!--We now have to accomidate the case that there are multiple supervisors.  They will come in as a list, so we'll have to iterate across them.-->
+                              <!-- display the string "supervised by " followed by each supervisor, with their links in parentheses, with each supervisor separated by commas if there is more than one -->
+                              <i style="font-size: .7em; font-weight: 600; padding-top:-15px">
+                              {% for iSupervisor in entry.supervisor %}
+                                {% if iSupervisor.links != null %}
+                                <!-- if its the first in the loop display supervised by-->
+                                  {% if forloop.first == true %}
+                                    Supervised by
+                                  {% endif %}
+                                  {{ iSupervisor.name }}(
+                                  {% for link in iSupervisor.links %}
+                                      <a href="{{ link }}"><i class="fas fa-globe"></i></a>
+                                  {% endfor %}
+                                  
+                                  {% if iSupervisor.ORCID != null and iSupervisor.ORCID != "" %}
+                                      <a href="{{ iSupervisor.ORCID }}"><i class="fab fa-orcid"></i></a>
+                                  {% endif %}
+                                  {% if iSupervisor.google_scholar != null and iSupervisor.google_scholar != "" %}
+                                      <a href="{{ iSupervisor.google_scholar }}"><i class="fas fa-graduation-cap"></i></a>
+                                  {% endif %}
+                                  {% if iSupervisor.email != null and iSupervisor.email != "" %}
+                                      <a href="mailto:{{ iSupervisor.email }}"><i class="fas fa-envelope"></i></a>
+                                  {% endif %}                             
+                                  <!-- now we need to add a comma if there is another supervisor-->
+                                  )
+                                  {% if forloop.last == false %}
+                                    ,
+                                  {% endif %}
                                 {% endif %}
-                                {{ iSupervisor.name }}(
-                                {% for link in iSupervisor.links %}
-                                    <a href="{{ link }}"><i class="fas fa-globe"></i></a>
-                                {% endfor %}
-                                
-                                {% if iSupervisor.ORCID != null and iSupervisor.ORCID != "" %}
-                                    <a href="{{ iSupervisor.ORCID }}"><i class="fab fa-orcid"></i></a>
-                                {% endif %}
-                                {% if iSupervisor.google_scholar != null and iSupervisor.google_scholar != "" %}
-                                    <a href="{{ iSupervisor.google_scholar }}"><i class="fas fa-graduation-cap"></i></a>
-                                {% endif %}
-                                {% if iSupervisor.email != null and iSupervisor.email != "" %}
-                                    <a href="mailto:{{ iSupervisor.email }}"><i class="fas fa-envelope"></i></a>
-                                {% endif %}                             
-                                <!-- now we need to add a comma if there is another supervisor-->
-                                )
-                                {% if forloop.last == false %}
-                                  ,
-                                {% endif %}
+                              {% endfor %}
+                              </i>
+                          </div>
+                          <!-- while we're still in this sub-div, lets go ahead and take care of the domain and type in the upper right hand corner of this div-->
+                          <div class="experience-domain-type" style="position:relative; width:35%; float:right; font-size: 0.7em; font-weight: 700; border-radius: 5px;border-left: 10px solid rgba(161, 161, 161, 0.856); padding-left: 5px">
+                            <!--In the background of this div, we'll use the fontawesome icon, listed in entry.aesthics.icon, which will serve as a slightly darkened watermark background for the domain and type section here-->
+                            <!--It should take up the maxium vertical space of this div, and be aligned to its right border.-->
+                            <i class="fas fa-{{ entry.aesthetics.icon }}" style="position:absolute; right:0; top:0; font-size: 5em; color:rgba(114, 114, 114, 0.307); z-index:-1; max-height:100%;"></i>
+                            Domain: {{ entry.domain  | join: ", " }}<br>Type: {{ entry.position.type  | join: ", "  }}
+                            <!-- Let's try rearranging things a bit and include two new sections in this div, one for the dates, and one for the workload.  If this works, we'll get rid of the
+                            experience-date-info div, and just include the dates in this div.-->
+                            <!-- First we'll take care of the dates, however many there turn out to be-->
+                            <br>
+                            <b>Dates:</b>
+                            {% for duration in entry.duration %}
+                              {% if duration.start.month != null %}
+                              {{duration.start.month}}  /  {{ duration.start.year }}
+                              {% endif %}
+                              {% if duration.end.month != null %}
+                                  to
+                                {{ duration.end.month }}  /  {{ duration.end.year }}
+                              {% endif %}
+                              {% if forloop.last == false %}
+                                , &<br>
+                                <!-- In order to ensure secondary lines have correct spacing, we'll use unicode character \00a0 to ensure that subsequent lines start offset from the left margin-->
+                                &#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0;
                               {% endif %}
                             {% endfor %}
-                            </i>
-                        </div>
-                        <!-- while we're still in this sub-div, lets go ahead and take care of the domain and type in the upper right hand corner of this div-->
-                        <div class="experience-domain-type" style="position:relative; width:35%; float:right; font-size: 0.7em; font-weight: 700; border-radius: 5px;border-left: 10px solid rgba(161, 161, 161, 0.856); padding-left: 5px">
-                          <!--In the background of this div, we'll use the fontawesome icon, listed in entry.aesthics.icon, which will serve as a slightly darkened watermark background for the domain and type section here-->
-                          <!--It should take up the maxium vertical space of this div, and be aligned to its right border.-->
-                          <i class="fas fa-{{ entry.aesthetics.icon }}" style="position:absolute; right:0; top:0; font-size: 5em; color:rgba(114, 114, 114, 0.307); z-index:-1; max-height:100%;"></i>
-                          Domain: {{ entry.domain  | join: ", " }}<br>Type: {{ entry.position.type  | join: ", "  }}
-                          <!-- Let's try rearranging things a bit and include two new sections in this div, one for the dates, and one for the workload.  If this works, we'll get rid of the
-                          experience-date-info div, and just include the dates in this div.-->
-                          <!-- First we'll take care of the dates, however many there turn out to be-->
-                          <br>
-                          <b>Dates:</b>
-                          {% for duration in entry.duration %}
-                            {% if duration.start.month != null %}
-                             {{duration.start.month}}  /  {{ duration.start.year }}
+                            <!-- Now we also want to display the content of the 'hours field' as "[hours field content] hours per week" at the bottom of the experience-date-info" div-->
+                            {% if entry.hours != null %}
+                              <br> <b>Workload:</b> {{ entry.hours }} hrs per week
                             {% endif %}
-                            {% if duration.end.month != null %}
-                                to
-                              {{ duration.end.month }}  /  {{ duration.end.year }}
-                            {% endif %}
-                            {% if forloop.last == false %}
-                              , &<br>
-                              <!-- In order to ensure secondary lines have correct spacing, we'll use unicode character \00a0 to ensure that subsequent lines start offset from the left margin-->
-                              &#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0;&#x00a0;
-                            {% endif %}
-                          {% endfor %}
-                          <!-- Now we also want to display the content of the 'hours field' as "[hours field content] hours per week" at the bottom of the experience-date-info" div-->
-                          {% if entry.hours != null %}
-                            <br> <b>Workload:</b> {{ entry.hours }} hrs per week
-                          {% endif %}
-                        </div>
-                    </div>
+                          </div>
+                      </div>
 
-                    <!-- now we move to the other sub-div, which will contain the description, followed by the technical and non-technical skills and tasks, separated by a quarter line break.-->
-                    <div class="experience-info-skills-tasks" style="position:relative;">
-                        <!-- start with the description-->
-                        <div class="experience-description" style="position:relative; padding-top:10px; line-height:1.2; font-size: .7em">
-                            {{ entry.description }}
-                        </div>
-                        <!-- half line break-->
-                        <div class="experience-skills-tasks" style="position:relative; font-size:0.65em; padding-top:10px;">
-                            {% if entry.tasks_skills.technical != null %}
-                                <u>Technical skills</u>:
-                                {{ entry.tasks_skills.technical | join: ", " }}
-                                <br style="line-height:0.3em">
-                            {% endif %}
-                            {% if entry.tasks_skills.non_technical != null %}
-                                <u>Non-technical skills</u>:
-                                {{ entry.tasks_skills.non_technical | join: ", " }}
-                                <br style="line-height:0.3m">
-                            {% endif %}
-                        </div>
-                    </div>
-                </div>
+                      <!-- now we move to the other sub-div, which will contain the description, followed by the technical and non-technical skills and tasks, separated by a quarter line break.-->
+                      <div class="experience-info-skills-tasks" style="position:relative;">
+                          <!-- start with the description-->
+                          <div class="experience-description" style="position:relative; padding-top:10px; line-height:1.2; font-size: .7em">
+                              {{ entry.description }}
+                          </div>
+                          <!-- half line break-->
+                          <div class="experience-skills-tasks" style="position:relative; font-size:0.65em; padding-top:10px;">
+                              {% if entry.tasks_skills.technical != null %}
+                                  <u>Technical skills</u>:
+                                  {{ entry.tasks_skills.technical | join: ", " }}
+                                  <br style="line-height:0.3em">
+                              {% endif %}
+                              {% if entry.tasks_skills.non_technical != null %}
+                                  <u>Non-technical skills</u>:
+                                  {{ entry.tasks_skills.non_technical | join: ", " }}
+                                  <br style="line-height:0.3m">
+                              {% endif %}
+                          </div>
+                      </div>
+                  </div>
+                      
+                      <!-- this is the end of the left 90% pane-->
+                  <!-- now we move to the right 10% pane, which will contain the dates-->
+                  <!-- <div class="experience-date-info" style="position: relative; float:right; min-width: 6em; ;width: 0%; height:100%; border-left: 1px dotted rgba(161, 161, 161, 0.856); text-align: center; display: table-cell; vertical-align: middle;font-size: 0.8em; font-weight: 600; line-height:0.3m; padding: 10px"> -->
+                    <!-- as a reminder, the content of the `duration` field now comes as a list of dictionaries.  Each dictionary has a `start` and `end` field, which are themselves dictionaries with `month` and `year` fields (which are numeric).
+                    In the event that there are multiple duration entries, they should be seprated by an & character, which will be on it's own line between the duration content information components -->
                     
-                    <!-- this is the end of the left 90% pane-->
-                <!-- now we move to the right 10% pane, which will contain the dates-->
-                <!-- <div class="experience-date-info" style="position: relative; float:right; min-width: 6em; ;width: 0%; height:100%; border-left: 1px dotted rgba(161, 161, 161, 0.856); text-align: center; display: table-cell; vertical-align: middle;font-size: 0.8em; font-weight: 600; line-height:0.3m; padding: 10px"> -->
-                  <!-- as a reminder, the content of the `duration` field now comes as a list of dictionaries.  Each dictionary has a `start` and `end` field, which are themselves dictionaries with `month` and `year` fields (which are numeric).
-                  In the event that there are multiple duration entries, they should be seprated by an & character, which will be on it's own line between the duration content information components -->
-                  
-                  <!-- as a reminder this is what monthNames looks like
-                    {% assign monthNames = "January,February,March,April,May,June,July,August,September,October,November,December" | split: "," %}
-                  
-                  {% for duration in entry.duration %}
-                    {% if duration.start.month != null %}
-                      {{duration.start.month}}  /  {{ duration.start.year }}
+                    <!-- as a reminder this is what monthNames looks like
+                      {% assign monthNames = "January,February,March,April,May,June,July,August,September,October,November,December" | split: "," %}
+                    
+                    {% for duration in entry.duration %}
+                      {% if duration.start.month != null %}
+                        {{duration.start.month}}  /  {{ duration.start.year }}
+                      {% endif %}
+                      {% if duration.end.month != null %}
+                        to
+                        <br>
+                        {{ duration.end.month }}  /  {{ duration.end.year }}
+                      {% endif %}
+                      {% if forloop.last == false %}
+                        , &<br>
+                      {% endif %}
+                    {% endfor %}
+                    
+                    
+                    {% if entry.hours != null %}
+                      <br><br>{{ entry.hours }} hours <br>  per week
                     {% endif %}
-                    {% if duration.end.month != null %}
-                       to
-                      <br>
-                      {{ duration.end.month }}  /  {{ duration.end.year }}
-                    {% endif %}
-                    {% if forloop.last == false %}
-                      , &<br>
-                    {% endif %}
-                  {% endfor %}
-                  
-                  
-                  {% if entry.hours != null %}
-                    <br><br>{{ entry.hours }} hours <br>  per week
-                  {% endif %}
-                  
-                </div>
-                -->
-            </div>
+                    
+                  </div>
+                  -->
+              </div>
         {% endfor %}
+        <!-- check if any of the sortedExperience entries have displayStatus of 'abbreviate'-->
+        {% assign abbreviateCount = 0 %}
+        {% for entry in sortedExperience %}
+            {% if entry.displayStatus == "abbreviate" %}
+                {% assign abbreviateCount = abbreviateCount | plus: 1 %}
+            {% endif %}
+        {% endfor %}
+        <!-- if this is greater than 0, create a section header for 'Other experiences' and create a table to contain all of the entries
+        marked as 'abbreviate'-->
+        {% if abbreviateCount > 0 %}
+            <h3>Other experience</h3>
+            <table>
+                <tr>
+                    <th style="width:50%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Role</u></th>
+                    <th style="width:25%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Institution</u></th>
+                    <th style="width:25%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Duration</u></th>
+                </tr>
+                {% for entry in sortedExperience %}
+                    {% if entry.displayStatus == "abbreviate" %}
+                        <tr>
+                            <td style="padding-top: 5px; padding-bottom: 5px; text-decoration: none; color: blue; font-weight: bold; font-size: 0.7em">
+                                {{ entry.position.title }}
+                            </td>
+                            <td style="text-align: center; padding-top: 0px; padding-bottom: 1px;  font-size: 0.7em">{{ entry.institution.name }}</td>
+                            <td style="text-align: center; padding-top: 0px; padding-bottom: 1px;  font-size: 0.7em">
+                                {% for duration in entry.duration %}
+                                    {% if duration.start.month != null %}
+                                        {{monthNames[duration.start.month | minus: 1]}} {{ duration.start.year }}
+                                    {% endif %}
+                                    {% if duration.end.month != null %}
+                                        to
+                                        <br>
+                                        {{monthNames[duration.end.month | minus: 1]}} {{ duration.end.year }}
+                                    {% endif %}
+                                    {% if forloop.last == false %}
+                                        , &<br>
+                                    {% endif %}
+                                {% endfor %}
+                            </td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </table>
+        {% endif %}
+
+
+
+
 </div>
 
 <!-- Next we do publications, however we don't have a specific json format for these.
