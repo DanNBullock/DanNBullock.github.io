@@ -153,7 +153,7 @@ dropping leading and trailing whitespace, and then taking the unique elements of
   The toolbar should be contained within a div that is below the masthead, main content div
 -->
 
-<script src="site/_includes/CV_toolbar.js"></script>
+<script src="{{ base_path }}/_includes/CV_toolbar.js"></script>
 
 
 
@@ -360,6 +360,8 @@ dropping leading and trailing whitespace, and then taking the unique elements of
 
             <!-- check if the entry.displayStatus is 'permit', 'require', or 'include'-->
             {% if entry.displayStatus == "permit" or entry.displayStatus == "require" or entry.displayStatus == "include" %}
+
+            
      
 
             
@@ -498,7 +500,10 @@ dropping leading and trailing whitespace, and then taking the unique elements of
                   </div>
                   -->
               </div>
+              <!-- for now, as a debug test, write a line withe current entry.displayStatus.  Mmake sure it does it irrespective of the if conditional-->
+
             {% endif %}
+          <p>{{ entry.displayStatus }}</p>
         {% endfor %}
         <!-- check if any of the sortedExperience entries have displayStatus of 'abbreviate'-->
         {% assign abbreviateCount = 0 %}
