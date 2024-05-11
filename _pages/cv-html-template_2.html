@@ -106,12 +106,12 @@ information from each experience entry:  the role title (entry.position.title), 
 <!-- in addition to initializing the month sequence structure, let's ingest, sort, and augment our experience data structure from the source cv json-->
 <!--We'll iterate across the experience array and create a separate stacked div for each entry.-->
 <!-- However, we want to do them in a specific order, as specified by the integer in the entry.aesthetics.sequence field.  So we'll create a new array, and then sort the entries by this field.-->
-{% assign sortedExperience = site.data.curriculumVitae.experience | sort: "aesthetics.sequence" %}
+
 
 <!--To make interfacing with our category tool-box a bit more streamlined, let's go ahead and append a field to each item in 'sortedExperience' entitled 'displayStatus',
 which can adopt one of the following values: "include", "exclude", "require", "abbreviate", or "permit".  We'll initialize this field to "permit" for all entries, and then
 modify them with the input from a javascript-based tool-bar interface.-->
-{% for entry in sortedExperience %}
+{% for entry in site.data.curriculumVitae.experience %}
   {% assign entry.displayStatus = "permit" %}
 {% endfor %}
 
@@ -153,13 +153,14 @@ dropping leading and trailing whitespace, and then taking the unique elements of
   The toolbar should be contained within a div that is below the masthead, main content div
 -->
 
-<script src="{{ base_path }}/_includes/CV_toolbar.js"></script>
+
 
 
 
 <!-- Should only be me in there-->
 
     <div class="headmast" style="text-align: center; ">
+    <script src="{{ base_path }}/_includes/CV_toolbar.js"></script>
     <h1 style="font-size:1.5em;margin:0;">{{ site.data.curriculumVitae.person.name }}</h1>
         <h3 style="margin:0">{{ site.data.curriculumVitae.person.contact.email }}; 
         <!-- next we try and add in the website link, if the link is already appended with https:// we remove it for display and use as is for the link, and vice-versa if there is no such stem-->
