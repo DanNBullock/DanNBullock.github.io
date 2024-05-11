@@ -194,7 +194,8 @@
         "hours": "40",
         "aesthetics" :{
           "icon": "fa-solid fa-handshake",
-          "sequence": 1
+          "sequence": 1,
+          "displayStatus": "permit"
         }
         
       },
@@ -250,7 +251,8 @@
         "hours": "40+",
         "aesthetics" :{
           "icon": "fa-solid fa-brain",
-          "sequence": 2
+          "sequence": 2,
+          "displayStatus": "permit"
         }
       },
       {
@@ -297,7 +299,8 @@
         "hours" : "40+",
         "aesthetics" :{
           "icon": "fa-solid fa-brain",
-          "sequence": 4
+          "sequence": 4,
+          "displayStatus": "permit"
         }
       },
       {
@@ -353,7 +356,8 @@
         "hours": "~ 5 - 10",
         "aesthetics" :{
           "icon": "fa-solid fa-code",
-          "sequence": 3
+          "sequence": 3,
+          "displayStatus": "permit"
         }
       },
       {
@@ -416,7 +420,8 @@
         "hours": "40",
         "aesthetics" :{
           "icon": "fa-solid fa-code",
-          "sequence": 11
+          "sequence": 11,
+          "displayStatus": "permit"
         }
       },
       {
@@ -472,7 +477,8 @@
         "hours": "10",
         "aesthetics" :{
           "icon": "fa-solid fa-microscope",
-          "sequence": 12
+          "sequence": 12,
+          "displayStatus": "permit"
         }
       },
       {
@@ -528,7 +534,8 @@
         "hours": "40",
         "aesthetics" :{
           "icon": "fa-solid fa-microscope",
-          "sequence": 16
+          "sequence": 16,
+          "displayStatus": "permit"
         }
       },
       {
@@ -583,7 +590,8 @@
         "hours": "~ 3 - 5",
         "aesthetics" :{
           "icon": "fa-solid fa-brain",
-          "sequence": 19
+          "sequence": 19,
+          "displayStatus": "permit"
         }
       },
       {
@@ -631,7 +639,8 @@
         "hours": "~ 5 - 10",
         "aesthetics" :{
           "icon": "fa-solid fa-dna",
-          "sequence": 22
+          "sequence": 22,
+          "displayStatus": "permit"
         }
       },
       {
@@ -688,7 +697,8 @@
         "hours": "~ 15 - 20",
         "aesthetics" :{
           "icon": "fa-solid fa-chalkboard",
-          "sequence": 8
+          "sequence": 8,
+          "displayStatus": "permit"
         }
       },
       {
@@ -736,7 +746,8 @@
         "hours": "~ 3 - 5",
         "aesthetics" :{
           "icon": "fa-solid fa-chalkboard",
-          "sequence": 14
+          "sequence": 14,
+          "displayStatus": "permit"
         }
       },
       {
@@ -783,7 +794,8 @@
         "hours": "~ 10 - 20",
         "aesthetics" :{
           "icon": "fa-solid fa-chalkboard",
-          "sequence": 17
+          "sequence": 17,
+          "displayStatus": "permit"
         }
       },  
       {
@@ -840,7 +852,8 @@
         "hours": "40+",
         "aesthetics" :{
           "icon": "fa-solid fa-chalkboard",
-          "sequence": 18
+          "sequence": 18,
+          "displayStatus": "permit"
         }
       },
       {
@@ -887,7 +900,8 @@
         "hours": "40+",
         "aesthetics" :{
           "icon": "fa-solid fa-chalkboard",
-          "sequence": 20
+          "sequence": 20,
+          "displayStatus": "permit"
         }
       },
       {
@@ -934,7 +948,8 @@
         "hours": "40+",
         "aesthetics" :{
           "icon": "fa-solid fa-chalkboard",
-          "sequence": 21
+          "sequence": 21,
+          "displayStatus": "permit"
         }
       },
       {
@@ -981,7 +996,8 @@
         "hours": "~ 1 - 2",
         "aesthetics" :{
           "icon": "fa-solid fa-handshake",
-          "sequence": 9
+          "sequence": 9,
+          "displayStatus": "permit"
         }
       },
       {
@@ -1028,7 +1044,8 @@
         "hours":"~ 1",
         "aesthetics" :{
           "icon": "fa-solid fa-handshake",
-          "sequence": 7
+          "sequence": 7,
+          "displayStatus": "permit"
         }
       },
       {
@@ -1075,7 +1092,8 @@
         "hours" :"~ 1",
         "aesthetics" :{
           "icon": "fa-solid fa-handshake",
-          "sequence": 6
+          "sequence": 6,
+          "displayStatus": "permit"
         }
       },
       {
@@ -1122,7 +1140,8 @@
         "hours": "~ 1",
         "aesthetics" :{
           "icon": "fa-solid fa-handshake",
-          "sequence": 5
+          "sequence": 5,
+          "displayStatus": "permit"
         }
       },
       {
@@ -1169,7 +1188,8 @@
         "hours": "~ 2 - 3",
         "aesthetics" :{
           "icon": "fa-solid fa-handshake",
-          "sequence": 11
+          "sequence": 11,
+          "displayStatus": "permit"
         }
       },
       {
@@ -1216,7 +1236,8 @@
         "hours": "~ 1",
         "aesthetics" :{
           "icon": "fa-solid fa-microchip",
-          "sequence": 15
+          "sequence": 15,
+          "displayStatus": "permit"
         }
       },
       {
@@ -1264,7 +1285,8 @@
         "hours": "~ 1 - 2",
         "aesthetics" :{
           "icon": "fa-solid fa-book",
-          "sequence": 13
+          "sequence": 13,
+          "displayStatus": "permit"
         }
       }
     ],
