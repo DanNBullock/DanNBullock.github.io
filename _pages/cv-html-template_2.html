@@ -101,26 +101,13 @@ information from each experience entry:  the role title (entry.position.title), 
 -->
 
 
-<!--Lets begin by initializing the toolbar element as described above-->
-
-<!-- in addition to initializing the month sequence structure, let's ingest, sort, and augment our experience data structure from the source cv json-->
-<!--We'll iterate across the experience array and create a separate stacked div for each entry.-->
-<!-- However, we want to do them in a specific order, as specified by the integer in the entry.aesthetics.sequence field.  So we'll create a new array, and then sort the entries by this field.-->
-
-
-<!--To make interfacing with our category tool-box a bit more streamlined, let's go ahead and append a field to each item in 'sortedExperience' entitled 'displayStatus',
-which can adopt one of the following values: "include", "exclude", "require", "abbreviate", or "permit".  We'll initialize this field to "permit" for all entries, and then
-modify them with the input from a javascript-based tool-bar interface.-->
-{% for entry in site.data.curriculumVitae.experience %}
-  {% assign entry.displayStatus = "permit" %}
-{% endfor %}
 
 <!-- we also need to determine the complete list of unique categories ascribed to our experiences
 Let's obtain this by joining the content of the entry.position.type field with a comma separator, and then splitting this content at the commas, 
 dropping leading and trailing whitespace, and then taking the unique elements of this list.-->
 
 {% assign allCategories = "" %}
-{% for entry in sortedExperience %}
+{% for entry in site.data.curriculumVitae.experience %}
   {% assign allCategories = allCategories | append: entry.position.type | append: "," %}
 {% endfor %}
 <!-- be sure to drop the leading and trailing whitespace-->
@@ -360,7 +347,7 @@ dropping leading and trailing whitespace, and then taking the unique elements of
             -->
 
             <!-- check if the entry.displayStatus is 'permit', 'require', or 'include'-->
-            {% if entry.displayStatus == "permit" or entry.displayStatus == "require" or entry.displayStatus == "include" %}
+            {% if entry.aesthetics.displayStatus == "permit" or entry.aesthetics.displayStatus == "require" or entry.aesthetics.displayStatus == "include" %}
 
             
      
