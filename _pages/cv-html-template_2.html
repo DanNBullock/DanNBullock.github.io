@@ -150,9 +150,11 @@ dropping leading and trailing whitespace, and then taking the unique elements of
 <!--
   right here at the start, implement the javascript-based toolbar interface, contained within a div element with the id "toolbar".
   the javascript file can be found in the _includes folder, and is called "CV_toolbar.js".
+  The toolbar should be contained within a div that is below the masthead, main content div
 -->
-<div id="toolbar" style="position: fixed; top: 0; right: 0; width: 100%; height: 50px; background-color: rgba(240, 255, 255, 0.733); z-index: 1000;">
-  <script src="{{ site.baseurl }}/assets/js/CV_toolbar.js"></script>
+
+<script src="site/_includes/CV_toolbar.js"></script>
+
 
 
 <!-- Should only be me in there-->
