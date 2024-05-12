@@ -85,8 +85,7 @@ and is set to float right.  Lets change this float behavior to inherit -->
         padding-top: 5;
     }
     .archive {
-        margin: auto;
-        float: inherit;
+        float: none;
     }
 </style>
 
@@ -511,7 +510,7 @@ and is set to float right.  Lets change this float behavior to inherit -->
                     </tr>
                     <!-- now we loop through the sortedExperience entries, and only include those that have the current type in the position.type field-->
                     {% for entry in sortedExperience %}
-                        {% if entry.aesthetics.displayStatus == "abbreviate" and entry.position.type == type %}
+                        {% if entry.aesthetics.displayStatus == "abbreviate" and entry.position.type[0] == type %}
                             <tr>
                                 <td style="width: 50%; text-align: center;">{{ entry.position.title }}</td>
                                 <td style="width: 30%; text-align: center;">{{ entry.institution.name }}</td>
