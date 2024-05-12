@@ -2,6 +2,7 @@
     "person": 
       {
       "name": "Daniel N. Bullock",
+      "description" : "Whether conducting research, developing software, working with data, or advancing policy, my work aims to improve the efficiency and impact of the collective activities of the broader scientific community.  Across the entire spectrum of scientific endeavors--all the way from bench work to policy and even philosophical conceptualization--I strive to foster the virtuous cycle of insight formation, validation, and extension. In our modern era of research, these priorities demand a critical focus on all levels of the socio-technical processes associated with how we produce, interact, store, share, and use data.  My work is dedicated to the advancement of these processes, and the development of tools and practices that support the scientific community in these endeavors.",
       "contact": {
         "email": "iisdanbul@gmail.com",
         "website": "https://DanNBullock.github.io",
@@ -186,7 +187,7 @@
                 }
             }
           ],
-        "description": "As an AAAS STPF Fellow placed in the Office of Advanced Cyberinfrastructure (OAC) I have engaged in a wide range of endeavors supporting the mission of the OAC.  These include assisting with the Pathways to Open Source Ecosystem (POSE) (e.g., panels, revising program description, triage), several ongoing endeavors supporting NSF Public access efforts, and internal reviews.  My interagency work includes assisting with the OSTP's Subcommittee on Open Science's (SOS) Open Science Infrastructure (OSI) Working Group, where I performed an analysis using openly accessible data from federal agencies and incorporated these results into a report on current agency investments in Open Science Infrastructure. I also serve as a member of the NSF team coordinating and organizing the multi-agency National AI Research Resource (NAIRR) Pilot program.",
+        "description": "As an AAAS STPF Fellow placed in the Office of Advanced Cyberinfrastructure (OAC) I have engaged in a wide range of endeavors supporting the mission of the OAC.  These include assisting with the Pathways to Open Source Ecosystem (POSE) (e.g., panels, revising program description, triage), several ongoing endeavors supporting NSF Public access efforts, and internal reviews.  My interagency work includes assisting with the OSTP's Subcommittee on Open Science's (SOS) Open Science Infrastructure (OSI) Working Group, where I performed an analysis using openly accessible data from federal agencies and incorporated these results into a report on current agency investments in Open Science Infrastructure. I also serve as a member of the NSF team coordinating and organizing the multi-agency National AI Research Resource (NAIRR) Pilot program, in particular assisting with the development of practices and polices related to data.",
         "tasks_skills": {
           "technical": ["Python","Linux","Git","XML","JSON","Big Data","Data Scraping", "Dataset Quality Assessment", "Data Science", "Data Visualization", "Figure Generation", "Jupyter Notebooks", "Open-Source Development", "Open-Source Software"],
           "non_technical": ["Problem Solving", "Problem Scoping", "Project Management", "Documentation", "Science Communication", "Grant Management", "Program Management", "Grant Review", "Literature Review", "Policy", "Federal Science Policy","Open Science Policy","Public Access Policy","Policy Drafting","Policy Documentation Development","Report Development","Interagency Working Groups","Virtual Presentations"]
@@ -291,7 +292,7 @@
               }
           }
         ],
-        "description": "As a graduate student I developed and implemented automated segmentation methods for major white matter tracts in tractography. This also entailed the visualization of tractography and segmentation results, as well as the quantification of tract properties and development of tractography quality assurance methods. This work required a deep review of contemporary and historical neuroanatomy literature.",
+        "description": "As a graduate student researcher I developed and implemented automated segmentation methods for major white matter tracts in tractography, enabling personalized models of brain anatomy and connectivity. This also entailed the visualization of tractography and segmentation results, as well as the quantification of tract properties and development of tractography quality assurance methods. This work required a deep review of contemporary and historical neuroanatomy literature.",
         "tasks_skills": {
           "technical": ["Python", "Matlab", "Linux", "Git", "Neuroimaging Software Packages","Neuroimaging","Neuroanatomy","Neuroscience","Brain Imaging Data Structure (BIDS)","Neuroimaging Data Structures","Neuroimaging Data Processing","3-D Image Processing","Medical Image Processing","Bash and Shell Scripting", "Big Data", "Dataset Quality Assessment", "Data Science", "Jupyter Notebooks", "High Performance Computing (HPC)","Data Visualization", "Statistical Analysis", "Advanced Statistical Analysis"],
           "non_technical": ["Self-guided problem solving", "Problem Scoping", "Project Management", "Collaboration", "Multi-endeavor Balancing and Prioritization", "Project Schedule Development and Coordination", "Documentation", "Science Communication", "Manuscript Production", "Manuscript Editing", "Public Speaking", "Presentation Development and Delivery", "Research Methods", "Research Design", "Mentorship"]
@@ -348,7 +349,7 @@
               }
           }
         ],
-        "description": "In this role I was responsible for the production and maintenance of containerized data processing applications for the brainlife.io platform. This entailed the creation of novel data processing and visualization code, as well as adaptation of existing resources.  I also engaged in testing, monitoring, and feedback on service deployment and coordination.  I also led the scoping, creation, coordination, and maintenance of specific data formats/standards.",
+        "description": "As an application developer for the brainlife platform, I was responsible for the production and maintenance of containerized brain-data processing applications, enabling drastically simplified use of advanced processing and analysis techniques. This entailed the creation of novel data processing and visualization code, as well as adaptation of existing resources.  I also engaged in testing, monitoring, and feedback on service deployment and coordination.  I also led the scoping, creation, coordination, and maintenance of specific data formats/standards.",
         "tasks_skills": {
           "technical": ["Python", "Matlab", "JSON", "Markdown", "Linux", "Git", "Neuroimaging Software Packages","Brain Imaging Data Structure (BIDS)","Neuroimaging","Neuroimaging Data Structures","Neuroimaging Data Processing","3-D Image Processing","Bash and Shell Scripting", "Big Data", "Dataset Quality Assessment", "Data Science", "Docker", "Containerization", "High Performance Computing (HPC)", "Continuous Integration and Continuous Delivery/Deployment (CI/CD)","Testing and Debugging", "Coordinated/Collaborative Testing and Debugging", "Data Visualization", "Statistical Analysis", "Advanced Statistical Analysis"],
           "non_technical": ["Problem Scoping", "Project Management", "Collaboration", "Teamwork", "Task Specialization", "Multi-endeavor Balancing and Prioritization", "Documentation", "Client/Stakeholder Engagement","Rapid Iteration Production", "Rapid Adaptation", "Long-Term Product/Project Maintenance", "Documentation Life-cycle Management", "Soliciting and Incorporating Client Feedback", "Progress Reporting", "Continuous Integration and Continuous Delivery/Deployment (CI/CD) Methods"]
@@ -396,6 +397,7 @@
           "links": ["https://www.linkedin.com/in/joel-thurston-8659211","https://biocomplexity.virginia.edu/person/joel-thurston"],
           "ORCID": "",
           "google_scholar": "https://scholar.google.com/citations?user=aSYsQkUAAAAJ&hl=en",
+
           "email": "jt9sz@virginia.edu"
         }
       ],
@@ -412,7 +414,7 @@
               }
           }
         ],
-        "description": "As a Research Fellow, I served as participant lead for two projects.  Also in this capacity, I developed/produced code, analyses (qualitative and quantitative), and web content. Additionally, I performed data curation/cleaning, linked datasets, created visualizations, presented insights, and managed interns.",
+        "description": "As a summer Research Fellow, I served as participant lead for two projects, one focused on ontology & taxonomy development for army personnel performance assesments, the other on systematic valuation of open source developement processes. Also in this capacity, I developed/produced code, analyses (qualitative and quantitative), and web content. Additionally, I performed data curation/cleaning, linked datasets, created visualizations, presented insights, and managed interns.",
         "tasks_skills": {
           "technical": ["Software Development", "Web Development", "Data Analysis", "Data Curation", "Data Cleaning", "Dataset Quality Assessment", "Data Visualization", "Python", "Git", "SQL"],
           "non_technical": ["Presentation Development and Delivery", "Project Management", "Team Management", "Mentorship", "Report Production", "Stakeholder Engagement", "Problem Scoping", "Collaboration", "Rapid Production Frameworks", "Multi-audience Presentation Production and Delivery"]
@@ -469,7 +471,7 @@
               }
           }
         ],
-        "description": "As an undergraduate research assistant I ran experiments, collected and analyzed data, prepared and processed biological samples, maintained subject stocks, developed grants, and presented research results.",
+        "description": "As an undergraduate researcher I assisted the Godwin lab's exploration of stress and anxiety markers in the brain of a model species (zebra fish).  I ran experiments, collected and analyzed data, prepared and processed biological samples, maintained subject stocks, developed grants, and presented research results.",
         "tasks_skills": {
           "technical": ["Behavioral Testing", "Movement Tracking Analysis", "Cryosectioning", "Microscopy", "In-situ Hybridization (ISH)", "DNA/RNA Extraction", "Slide Preparation", "Protocol Optimization", "Movement Tracking Data Processing", "Subject Monitoring and Maintenance"],
           "non_technical": ["Grant Writing", "Science Communication", "Poster Presentation", "Research Review", "Article Summary and Discussion", "Resource Monitoring and Management"]
@@ -526,7 +528,7 @@
               }
           }
         ],
-        "description": "As a summer research scholar I engaged in a focused an intensive research project.  This project was centered around characterizing and calibrating the process for producing functional thymic organoids.  I assisted with sample production, processing, and analysis, in addition to also presenting on project status and findings.  This work was supported by a SENS Research Foundation Summer research fellowship.",
+        "description": "As a summer research scholar I engaged in a focused and intensive research project centered around characterizing and calibrating the process for producing functional thymic organoids for immune system function revitalization.  I assisted with sample production, processing, and analysis, in addition to also presenting on project status and findings.  This work was supported by a SENS Research Foundation Summer research fellowship.",
         "tasks_skills": {
           "technical": ["Tissue Extraction", "Tissue Culture", "Cell Culturing", "Cryosectioning", "Advanced Microscopy", "Immunofluorescence", "PCR", "Gel Electrophoresis"],
           "non_technical": ["Multi-audience Presentation Production and Delivery", "Team Research", "Team Science", "Biomedical Industry Research and Development", "Rapid Production Frameworks", "Poster Presentation", "Research Review", "Report Production", "Multi-stakeholder Reporting and Communication", "Collaboration", "Resource Monitoring and Management"]
@@ -582,9 +584,9 @@
               }
           }
         ],
-        "description": "As an undergraduate research assistant I aided with research and data collection for projects involving EEG and tracking using the attentional blink paradigm.",
+        "description": "As an undergraduate research assistant I aided with research and data collection for projects involving EEG and eye tracking using the attentional blink paradigm.  In the Hopfinger Lab we studied memory and emotion's effects on attentional control.",
         "tasks_skills": {
-          "technical": ["Experimental Design", "Subject Recruitment", "Behavioral Testing", "EEG", "Eye-tracking", "Data Management", "Data Analysis", "Data Curation"],
+          "technical": ["Experimental Design", "Subject Recruitment", "Behavioral Testing", "EEG", "Eye Tracking", "Data Management", "Data Analysis", "Data Curation"],
           "non_technical": ["Research Ethics", "Project Management", "Collaboration", "Science Communication", "IRB Protocols"]
         },
         "hours": "~ 3 - 5",
@@ -631,7 +633,7 @@
               }
           }
         ],
-        "description": "As pre-baccalaureate research assistant, I was trained to assist with a number of research production processes, including both work in the field and at the lab-bench.",
+        "description": "As pre-baccalaureate research assistant researching Fusarium wilt (a plant disease) in melons, I explored genetic hallmarks of susceptibility and resilience.  I was trained to assist with a number of research production processes, including both work in the field and at the lab-bench.",
         "tasks_skills": {
             "technical": ["PCR", "Gel Electrophoresis", "Sample Preparation and Processing", "Sample Management"],
             "non_technical": ["Manuscript Development", "Research Article Review"]
@@ -698,7 +700,7 @@
         "aesthetics" :{
           "icon": "fa-solid fa-chalkboard",
           "sequence": 8,
-          "displayStatus": "permit"
+          "displayStatus": "abbreviate"
         }
       },
       {
@@ -747,7 +749,7 @@
         "aesthetics" :{
           "icon": "fa-solid fa-chalkboard",
           "sequence": 14,
-          "displayStatus": "permit"
+          "displayStatus": "abbreviate"
         }
       },
       {
@@ -795,7 +797,7 @@
         "aesthetics" :{
           "icon": "fa-solid fa-chalkboard",
           "sequence": 17,
-          "displayStatus": "permit"
+          "displayStatus": "abbreviate"
         }
       },  
       {
@@ -853,7 +855,7 @@
         "aesthetics" :{
           "icon": "fa-solid fa-chalkboard",
           "sequence": 18,
-          "displayStatus": "permit"
+          "displayStatus": "abbreviate"
         }
       },
       {
@@ -901,7 +903,7 @@
         "aesthetics" :{
           "icon": "fa-solid fa-chalkboard",
           "sequence": 20,
-          "displayStatus": "permit"
+          "displayStatus": "abbreviate"
         }
       },
       {
@@ -949,7 +951,7 @@
         "aesthetics" :{
           "icon": "fa-solid fa-chalkboard",
           "sequence": 21,
-          "displayStatus": "permit"
+          "displayStatus": "abbreviate"
         }
       },
       {
@@ -997,7 +999,7 @@
         "aesthetics" :{
           "icon": "fa-solid fa-handshake",
           "sequence": 9,
-          "displayStatus": "permit"
+          "displayStatus": "abbreviate"
         }
       },
       {
@@ -1045,7 +1047,7 @@
         "aesthetics" :{
           "icon": "fa-solid fa-handshake",
           "sequence": 7,
-          "displayStatus": "permit"
+          "displayStatus": "abbreviate"
         }
       },
       {
@@ -1093,7 +1095,7 @@
         "aesthetics" :{
           "icon": "fa-solid fa-handshake",
           "sequence": 6,
-          "displayStatus": "permit"
+          "displayStatus": "abbreviate"
         }
       },
       {
@@ -1141,7 +1143,7 @@
         "aesthetics" :{
           "icon": "fa-solid fa-handshake",
           "sequence": 5,
-          "displayStatus": "permit"
+          "displayStatus": "abbreviate"
         }
       },
       {
@@ -1180,7 +1182,7 @@
               }
           }
         ],
-        "description": "In this role I represented graduate students from the Program in Neuroscience to the Graduate and Professional Student Government. As a representative I helped to shape and develop resolutions, and was overall an active member.",
+        "description": "As the elected representative for graduate students from the Program in Neuroscience to the Graduate and Professional Student Government, I helped to shape and develop resolutions, and was overall an active member of the organization.",
         "tasks_skills": {
         "technical": null,
         "non_technical": ["Representation", "Resolution Development", "Constituent Advocacy", "Public Speaking", "Robert's Rules of Order"]
@@ -1189,7 +1191,7 @@
         "aesthetics" :{
           "icon": "fa-solid fa-handshake",
           "sequence": 11,
-          "displayStatus": "permit"
+          "displayStatus": "abbreviate"
         }
       },
       {
@@ -1237,7 +1239,7 @@
         "aesthetics" :{
           "icon": "fa-solid fa-microchip",
           "sequence": 15,
-          "displayStatus": "permit"
+          "displayStatus": "abbreviate"
         }
       },
       {
@@ -1286,7 +1288,7 @@
         "aesthetics" :{
           "icon": "fa-solid fa-book",
           "sequence": 13,
-          "displayStatus": "permit"
+          "displayStatus": "abbreviate"
         }
       }
     ],

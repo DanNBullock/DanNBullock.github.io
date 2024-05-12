@@ -65,47 +65,6 @@ author_profile: false
 <!-- Right at the outset, lets go ahead and create a list that mapps all of the month names-->
 {% assign monthNames = "January,February,March,April,May,June,July,August,September,October,November,December" | split: "," %}
 
-<!--
-At the top of the cv page, include a tool-bar which dynamically reformats the content of the page, in accordance 
-with options toggled in this bar.  Specifically, our first tool-bar will be a pop out interface which allows the 
-user to select from amongst the site.data.curriculumVitae.experience entries in accordance with the 
-entry.position.type categorical designation.  Thus, upon interacting with the root 'include/exclude' toggle tool 
-in the tool bar, a pop-out-box interface will appear with a check-box-like interface for each unique option 
-found across all entires for entry.position.type.  It is important to keep in mind that these entires 
-(entry.position.type) can be instantiated as a comma separated list of several categories, such that a given 
-entry might be assigned to more than a single categorical designation.  As such, the content of this popout box 
-should reflect the unique elements derived from the result of concatenating the entry.position.type field 
-contents and subsequently separating the content at commas.  To continue, with respect to the toggle-box 
-interface itself, rather than simply being a binary, include/exclude toggle, there will be a check-box like 
-interface, except that the options available (demarcated by a red X, a green check,  a blue circle, an orange 
-dash, and a default status indicator of a  blank box) will be iteratively rotated through upon user click 
-(starting with a default status of blank, proceeding through the x, to the check, to the circle, to the dash, 
-and finally returning to the initial blank box status).  Each of these symbolic toggles are associated with one 
-of the entry.position.type categories and correspond to a desired display preference for all entries with the 
-associated entry.position.type category.   Specifically, the red x results in all entires of the associated 
-category being removed from the displayed 'Experience' content entires.  The green check permits the display of 
-entires with the associated category.  The blue ciricle requires the display of the associated category of 
-entries.  The yellow dash denotes the removal of the associated category of entries from the main 'Experience' 
-content element, and the move of this content to a more condensed and abbreviated subjection just below the main 
-'experience' element, which will be described in a moment.  Finally, the default blank box imposes no specific 
-inclusion or exclusion status for the associated category.  The priority of these is as follows in sequence: 
-blue circle (requirement), red x (exclusion), yellow dash (abbreviation), green check (permitted), and blank 
-(no specificiaton), such that a status found earlier in this list over-rides a status found later in the list.
-
-Insofar as the abbreviated section is concerned, it is denoted by a subsection header one level lower than the 
-one used by 'Experience' and is entitled 'Other experience'.  The content in this section is displayed in a 
-table with three columns, the first of which occupies 50% of the container width, while the remaining two each 
-occupy equal portions of the remaining half.  The content in these columns correspond to the following 
-information from each experience entry:  the role title (entry.position.title), the associated institution 
-(entry.institution.name), and the spans of time reflected in entry.duration.
--->
-
-
-
-<!-- we also need to determine the complete list of unique categories ascribed to our experiences
-Let's obtain this by joining the content of the entry.position.type field with a comma separator, and then splitting this content at the commas, 
-dropping leading and trailing whitespace, and then taking the unique elements of this list.-->
-
 {% assign allCategories = "" %}
 {% for entry in site.data.curriculumVitae.experience %}
   {% assign allCategories = allCategories | append: entry.position.type | append: "," %}
@@ -134,11 +93,6 @@ dropping leading and trailing whitespace, and then taking the unique elements of
     }
 </style>
 
-<!--
-  right here at the start, implement the javascript-based toolbar interface, contained within a div element with the id "toolbar".
-  the javascript file can be found in the _includes folder, and is called "CV_toolbar.js".
-  The toolbar should be contained within a div that is below the masthead, main content div
--->
 
 
 
@@ -147,7 +101,10 @@ dropping leading and trailing whitespace, and then taking the unique elements of
 <!-- Should only be me in there-->
 
     <div class="headmast" style="text-align: center; ">
-    <script src="{{ base_path }}/_includes/CV_toolbar.js"></script>
+    
+    <!-- use the 'createToolbar' function, which is defined in the {{ base_path }}/assets/js/main.min.js script, to create a toolbar right here above the CV-->
+    <!-- or try this later?-->
+
     <h1 style="font-size:1.5em;margin:0;">{{ site.data.curriculumVitae.person.name }}</h1>
         <h3 style="margin:0">{{ site.data.curriculumVitae.person.contact.email }}; 
         <!-- next we try and add in the website link, if the link is already appended with https:// we remove it for display and use as is for the link, and vice-versa if there is no such stem-->
@@ -161,6 +118,15 @@ dropping leading and trailing whitespace, and then taking the unique elements of
         </h3>
         <p style="margin:0">{{ site.data.curriculumVitae.person.contact.address.city }}, {{ site.data.curriculumVitae.person.contact.address.state }}, {{ site.data.curriculumVitae.person.contact.address.country }}</p>
     </div>
+    <!-- now, if the site.data.curriculumVitae.person.description is not empty, assume that this is a personal statement/abstract, and create a
+    div to contain this information.  The font should be slightly smaller than the standard text, but it should also be slightly bolder (font-weight: 600),
+    italicized, dark gray, and occupy the middle 80% of the page width.
+    -->
+    {% if site.data.curriculumVitae.person.description != null %}
+        <div class="personal-statement" style="width: 80%; margin: auto; padding: 10px; font-size: 0.8em; font-weight: 600; color: rgb(50, 50, 50); font-style: italic;">
+            {{ site.data.curriculumVitae.person.description }}
+        </div>
+    {% endif %}
 
 <!-- Now let's move on to the education section.  This will be a bit more complicated, as it will need to accomidate multiple entries. -->
 <!-- The following is the json schema for the education section information: -->
@@ -320,6 +286,8 @@ dropping leading and trailing whitespace, and then taking the unique elements of
 <!-- We'll again use a table in a similar fashion as the education section-->
 <div class="experience" style="display:flex; flex-wrap:wrap; flex-basis: 100%">
     <h2>Experience</h2>
+    <!-- create a div here to contain the non-abbreviated experiences-->
+    <div class="experience-full" style="width:100%; padding: 0px;">
         <!--We'll iterate across the experience array and create a separate stacked div for each entry.-->
          <!-- However, we want to do them in a specific order, as specified by the integer in the entry.aesthetics.sequence field.  So we'll create a new array, and then sort the entries by this field.-->
          {% assign sortedExperience = site.data.curriculumVitae.experience | sort: "aesthetics.sequence" %}
@@ -353,7 +321,7 @@ dropping leading and trailing whitespace, and then taking the unique elements of
      
 
             
-            <!-- in accordance with the above description, lets begin by creating the primary div unit-->
+              <!-- in accordance with the above description, lets begin by creating the primary div unit-->
               <div class="experience-entry" style="border:3px solid gray;border-style:double; height:auto; overflow: hidden; min-width: 100%">
                   <!-- now we divide this parimary div into the left 90% portion and right 10% portions-->
                   <div class="experience-info-pane" style="position:relative; float:left; width:100%; padding: 5px;">
@@ -488,60 +456,80 @@ dropping leading and trailing whitespace, and then taking the unique elements of
                   </div>
                   -->
               </div>
-              <!-- for now, as a debug test, write a line withe current entry.displayStatus.  Mmake sure it does it irrespective of the if conditional-->
-
+          
             {% endif %}
-          <p>{{ entry.displayStatus }}</p>
+          
         {% endfor %}
+        <!-- close out the div for full experience entries-->
+    </div>
+
         <!-- check if any of the sortedExperience entries have displayStatus of 'abbreviate'-->
         {% assign abbreviateCount = 0 %}
         {% for entry in sortedExperience %}
-            {% if entry.displayStatus == "abbreviate" %}
+            {% if entry.aesthetics.displayStatus == "abbreviate" %}
                 {% assign abbreviateCount = abbreviateCount | plus: 1 %}
             {% endif %}
         {% endfor %}
         <!-- if this is greater than 0, create a section header for 'Other experiences' and create a table to contain all of the entries
-        marked as 'abbreviate'-->
+        marked as 'abbreviate'.  It should only include the role title, the institution, and the duration.  The entries should be sub-organized
+        by the first item in the position.type field, and then by aesthetics.sequence, which should already be the sequence of the content of 
+        sortedExperience.  Each of these subsections should be preceeded by a row that is 50% taller than other rows, has a background that
+        is the same color as is being used for the 'experience-entry-info' div backgrounds, and contains the bolded text of the position.type.
+        -->
         {% if abbreviateCount > 0 %}
-            <h3>Other experience</h3>
+        <!--create a div for the abbreviated experience entries, and the associated header entry-->
+        <div class="experience-abbreviated" style="width:100%; padding: 0px;">
+            <h3>Other experiences</h3>
+            <!-- do a preliminary loop to get the unique types of experience entries that have been set to 'abbreviate', and the counts foreach of these-->
+            {% assign abbreviateTypes = "" %}
+            {% for entry in sortedExperience %}
+                {% if entry.aesthetics.displayStatus == "abbreviate" %}
+                    {% assign abbreviateTypes = abbreviateTypes | append: entry.position.type | append: "," %}
+                {% endif %}
+            {% endfor %}
+            {% assign abbreviateTypes = abbreviateTypes | split: "," | uniq %}
+            
+            <!-- now we create the appropriately shaped and sized table and fill it out in accordance with the sub-section and sequencing directives-->
             <table>
-                <tr>
-                    <th style="width:50%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Role</u></th>
-                    <th style="width:25%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Institution</u></th>
-                    <th style="width:25%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Duration</u></th>
-                </tr>
-                {% for entry in sortedExperience %}
-                    {% if entry.displayStatus == "abbreviate" %}
-                        <tr>
-                            <td style="padding-top: 5px; padding-bottom: 5px; text-decoration: none; color: blue; font-weight: bold; font-size: 0.7em">
-                                {{ entry.position.title }}
-                            </td>
-                            <td style="text-align: center; padding-top: 0px; padding-bottom: 1px;  font-size: 0.7em">{{ entry.institution.name }}</td>
-                            <td style="text-align: center; padding-top: 0px; padding-bottom: 1px;  font-size: 0.7em">
-                                {% for duration in entry.duration %}
-                                    {% if duration.start.month != null %}
-                                        {{monthNames[duration.start.month | minus: 1]}} {{ duration.start.year }}
-                                    {% endif %}
-                                    {% if duration.end.month != null %}
-                                        to
-                                        <br>
-                                        {{monthNames[duration.end.month | minus: 1]}} {{ duration.end.year }}
-                                    {% endif %}
-                                    {% if forloop.last == false %}
-                                        , &<br>
-                                    {% endif %}
-                                {% endfor %}
-                            </td>
-                        </tr>
-                    {% endif %}
+                {% for type in abbreviateTypes %}
+                    <!-- create a row that is 50% taller than other rows, has a background that is the same color as is being used for the 'experience-entry-info' div backgrounds, and contains the bolded text of the position.type-->
+                    <tr style="height: 150%; background-color: rgba(240, 255, 255, 0.733); text-align: center;">
+                        <td colspan="3" style="font-weight: bold; font-size: 1.2em">{{ type }}</td>
+                    </tr>
+                    <!-- now we loop through the sortedExperience entries, and only include those that have the current type in the position.type field-->
+                    {% for entry in sortedExperience %}
+                        {% if entry.aesthetics.displayStatus == "abbreviate" and entry.position.type == type %}
+                            <tr>
+                                <td style="width: 50%; text-align: center;">{{ entry.position.title }}</td>
+                                <td style="width: 30%; text-align: center;">{{ entry.institution.name }}</td>
+                                <td style="width: 20%; text-align: center;">
+                                    {% for duration in entry.duration %}
+                                        {% if duration.start.month != null %}
+                                            {{duration.start.month}}  /  {{ duration.start.year }}
+                                        {% endif %}
+                                        {% if duration.end.month != null %}
+                                            to
+                                            <br>
+                                            {{ duration.end.month }}  /  {{ duration.end.year }}
+                                        {% endif %}
+                                        {% if forloop.last == false %}
+                                            , &<br>
+                                        {% endif %}
+                                    {% endfor %}
+                                </td>
+                            </tr>
+                        {% endif %}
+                    {% endfor %}
                 {% endfor %}
             </table>
-          {% endif %}
-
-
-
-
+          <!-- close out the div for abbreviated experience entries-->
+        </div>
+        <!--close out the if statement for abbreviateCount-->  
+        {% endif %}
+        <!-- close out the div for all experience entries-->
 </div>
+
+
 
 <!-- Next we do publications, however we don't have a specific json format for these.
 Instead, we have a collection of markdown documents in the _publications folder.  At the top of each document is a yaml header with the following format:
