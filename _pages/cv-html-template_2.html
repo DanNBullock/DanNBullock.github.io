@@ -512,9 +512,9 @@ and is set to float right.  Lets change this float behavior to inherit -->
                     {% for entry in sortedExperience %}
                         {% if entry.aesthetics.displayStatus == "abbreviate" and entry.position.type[0] == type %}
                             <tr>
-                                <td style="width: 50%; text-align: center;">{{ entry.position.title }}</td>
-                                <td style="width: 30%; text-align: center;">{{ entry.institution.name }}</td>
-                                <td style="width: 20%; text-align: center;">
+                                <td style="width: 40%; text-align: center; padding: 0px">{{ entry.position.title }}</td>
+                                <td style="width: 30%; text-align: center; padding: 0px">{{ entry.institution.name }}</td>
+                                <td style="width: 30%; text-align: center; padding: 0px">
                                     {% for duration in entry.duration %}
                                         {% if duration.start.month != null %}
                                             {{duration.start.month}}  /  {{ duration.start.year }}
