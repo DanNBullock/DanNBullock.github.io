@@ -484,7 +484,7 @@ and is set to float right.  Lets change this float behavior to inherit -->
         {% if abbreviateCount > 0 %}
         <!--create a div for the abbreviated experience entries, and the associated header entry-->
         <div class="experience-abbreviated" style="width:100%; padding: 0px;">
-            <h3>Other experiences</h3>
+            <h3>Other experience</h3>
             <!-- do a preliminary loop to get the unique types of experience entries that have been set to 'abbreviate', and the counts foreach of these-->
             {% assign abbreviateTypes = "" %}
             {% for entry in sortedExperience %}
@@ -660,9 +660,9 @@ citation: the appropriately formatted citation for the paper
   <h2>Awards, Fellowships and Grants</h2>
   <table>
     <tr>
-      <th style="width:75%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Title and Source</u></th>
+      <th style="width:70%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Title and Source</u></th>
       <th style="width:7% ; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Type</u></th>
-      <th style="width:16%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Duration</u></th>
+      <th style="width:21%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Duration</u></th>
       <th style="width:2%; background-color: rgba(240, 255, 255, 0.733); text-align: center;"><u>Link</u></th>
     </tr>
 
@@ -684,7 +684,6 @@ citation: the appropriately formatted citation for the paper
             {% endif %}
             {% if duration.end.month != null %}
                 to
-                <br>
               {{ duration.end.month }}  /  {{ duration.end.year }}
             {% endif %}
             {% if forloop.last == false %}
