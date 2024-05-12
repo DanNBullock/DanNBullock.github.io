@@ -513,8 +513,8 @@ and is set to float right.  Lets change this float behavior to inherit -->
                         {% if entry.aesthetics.displayStatus == "abbreviate" and entry.position.type[0] == type %}
                             <tr>
                                 <td style="width: 40%; text-align: center; padding: 0px">{{ entry.position.title }}</td>
-                                <td style="width: 30%; text-align: center; padding: 0px">{{ entry.institution.name }}</td>
-                                <td style="width: 30%; text-align: center; padding: 0px">
+                                <td style="width: 33%; text-align: center; padding: 0px">{{ entry.institution.name }}</td>
+                                <td style="width: 27%; text-align: center; padding: 0px">
                                     {% for duration in entry.duration %}
                                         {% if duration.start.month != null %}
                                             {{duration.start.month}}  /  {{ duration.start.year }}
