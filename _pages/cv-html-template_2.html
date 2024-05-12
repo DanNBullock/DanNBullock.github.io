@@ -72,8 +72,10 @@ author_profile: false
 <!-- be sure to drop the leading and trailing whitespace-->
 {% assign allCategories = allCategories | split: "," | uniq %}
 
-<!-- let's change the default styling of the "main" section such that we dont have any excess padding-->
-<!-- Lets also reduce the amoun of top padding in all header elements-->
+<!-- Let's change the default styling of the "main" section such that we dont have any excess padding-->
+<!-- Let's also reduce the amoun of top padding in all header elements-->
+<!-- Let's also change how the content of the 'archive' div is centered in the page.  Right now it is contained within the 'main' div, 
+and is set to float right.  Lets change this float behavior to inherit -->
 <style>
     main {
         padding-top: 0;
@@ -81,6 +83,10 @@ author_profile: false
     h1, h2, h3, h4, h5, h6 {
         margin: 0;
         padding-top: 5;
+    }
+    .archive {
+        margin: auto;
+        float: inherit;
     }
 </style>
 
@@ -123,7 +129,7 @@ author_profile: false
     italicized, dark gray, and occupy the middle 80% of the page width.
     -->
     {% if site.data.curriculumVitae.person.description != null %}
-        <div class="personal-statement" style="width: 80%; margin: auto; padding: 10px; font-size: 0.8em; font-weight: 600; color: rgb(50, 50, 50); font-style: italic;">
+        <div class="personal-statement" style="width: 90%; margin: auto; padding: 10px; font-size: 0.8em; font-weight: 600; color: rgb(50, 50, 50, 0.60); font-style: italic; text-align: justify; text-justify: inter-word;">
             {{ site.data.curriculumVitae.person.description }}
         </div>
     {% endif %}
@@ -375,7 +381,7 @@ author_profile: false
                           <div class="experience-domain-type" style="position:relative; width:35%; float:right; font-size: 0.7em; font-weight: 700; border-radius: 5px;border-left: 10px solid rgba(161, 161, 161, 0.856); padding-left: 5px">
                             <!--In the background of this div, we'll use the fontawesome icon, listed in entry.aesthics.icon, which will serve as a slightly darkened watermark background for the domain and type section here-->
                             <!--It should take up the maxium vertical space of this div, and be aligned to its right border.-->
-                            <i class="fas fa-{{ entry.aesthetics.icon }}" style="position:absolute; right:0; top:0; font-size: 5em; color:rgba(114, 114, 114, 0.307); z-index:-1; max-height:100%;"></i>
+                            <i class="fas fa-{{ entry.aesthetics.icon }}" style="position:absolute; right:0; top:0; font-size: 6em; color:rgba(114, 114, 114, 0.307); z-index:-1; max-height:100%;"></i>
                             Domain: {{ entry.domain  | join: ", " }}<br>Type: {{ entry.position.type  | join: ", "  }}
                             <!-- Let's try rearranging things a bit and include two new sections in this div, one for the dates, and one for the workload.  If this works, we'll get rid of the
                             experience-date-info div, and just include the dates in this div.-->
@@ -484,7 +490,14 @@ author_profile: false
             {% assign abbreviateTypes = "" %}
             {% for entry in sortedExperience %}
                 {% if entry.aesthetics.displayStatus == "abbreviate" %}
-                    {% assign abbreviateTypes = abbreviateTypes | append: entry.position.type | append: "," %}
+                <!-- select the first type designated in the array associated with the type field-->
+                  {% assign currentType = entry.position.type[0] %}
+                  <!-- add this type to the list of types, and then add a comma to the end of the list if it is not the last entry in the list-->
+                  {% assign abbreviateTypes = abbreviateTypes | append: currentType %}
+                  {% if forloop.last == false %}
+                      {% assign abbreviateTypes = abbreviateTypes | append: "," %}
+                  {% endif %}
+                    
                 {% endif %}
             {% endfor %}
             {% assign abbreviateTypes = abbreviateTypes | split: "," | uniq %}
