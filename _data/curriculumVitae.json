@@ -145,6 +145,56 @@
     "experience": [
       {
         "position": {
+          "type": ["Project Management","Research"],
+          "title": "Science and Engineering Technical Advisor (SETA) [Contractor]"
+        },
+        "project_name": "Lifesciences and Cyberinfrastructure Expert for Health Science Futures Projects",
+        "domain": "Technology Development, Translation, and Transfer",
+        "institution": {
+          "name": "The Advanced Research Projects Agency for Health (ARPA-H)",
+          "location": {
+            "city": "Washington",
+            "state": "D.C.",
+            "country": "USA"
+          },
+          "department_program": ["Health Science Futures (HSF)"]
+        },
+        "supervisor": [
+        {
+          "name": "Ileana Hancu",
+          "links": ["https://arpa-h.gov/about/people/ileana-hancu","https://www.linkedin.com/in/ileana-hancu-0229397/"],
+          "ORCID": "https://orcid.org/0000-0002-3329-6595",
+          "google_scholar": "",
+          "email": "ileana.hancu@arpa-h.gov"
+        }],
+        "duration": 
+          [
+            { 
+              "start": {
+                "month": 7,
+                "year": 2024
+                },
+              "end": {
+                "month": null,
+                "year": null
+                }
+            }
+          ],
+        "description": "As a Science and Engineering Technical Advisor (SETA) I served as the primary expert overseeing a collection ARPA-H projects with a total annual budget of more than $18 million and total project-lifetime budget of more than $80 million, as well as serving as secondary SETA on projects with a total annual budget of more than $23 million and total project-lifetime budget of more than $125 million.  I provided technical guidance and oversight to project teams and ARPA-H personnel, regularly interfaced with stakeholders, and tracked project milestone progress. I also helped scope and design new projects, and served as the primary architect of the Imaging Data Exchange (INDEX) program's major technical reqiuirements (TA 2).",
+        "tasks_skills": {
+          "technical": ["Dataset Quality Assessment", "Data Science", "Data Visualization", "Figure Generation", "Platform Design"],
+          "non_technical": ["Problem Scoping", "Project Management", "Documentation", "Literature Review", "Budget Oversight", "Program Management", "Proposal Review", "Report Development","Virtual Presentations"]
+        },
+        "hours": "40",
+        "aesthetics" :{
+          "icon": "fa-solid fa-handshake",
+          "sequence": 1,
+          "displayStatus": "permit"
+        }
+        
+      },
+      {
+        "position": {
           "type": ["Research","Policy"],
           "title": "Science and Technology Policy Fellow"
         },
@@ -182,8 +232,8 @@
                 "year": 2022
                 },
               "end": {
-                "month": null,
-                "year": null
+                "month": 7,
+                "year": 2024
                 }
             }
           ],
@@ -195,7 +245,7 @@
         "hours": "40",
         "aesthetics" :{
           "icon": "fa-solid fa-handshake",
-          "sequence": 1,
+          "sequence": 2,
           "displayStatus": "permit"
         }
         
@@ -252,7 +302,7 @@
         "hours": "40+",
         "aesthetics" :{
           "icon": "fa-solid fa-brain",
-          "sequence": 2,
+          "sequence": 3,
           "displayStatus": "permit"
         }
       },
@@ -300,7 +350,7 @@
         "hours" : "40+",
         "aesthetics" :{
           "icon": "fa-solid fa-brain",
-          "sequence": 4,
+          "sequence": 5,
           "displayStatus": "permit"
         }
       },
@@ -357,7 +407,7 @@
         "hours": "~ 5 - 10",
         "aesthetics" :{
           "icon": "fa-solid fa-code",
-          "sequence": 3,
+          "sequence": 4,
           "displayStatus": "permit"
         }
       },
@@ -422,7 +472,7 @@
         "hours": "40",
         "aesthetics" :{
           "icon": "fa-solid fa-code",
-          "sequence": 11,
+          "sequence": 12,
           "displayStatus": "permit"
         }
       },
@@ -479,7 +529,7 @@
         "hours": "10",
         "aesthetics" :{
           "icon": "fa-solid fa-microscope",
-          "sequence": 12,
+          "sequence": 13,
           "displayStatus": "permit"
         }
       },
@@ -536,7 +586,7 @@
         "hours": "40",
         "aesthetics" :{
           "icon": "fa-solid fa-microscope",
-          "sequence": 16,
+          "sequence": 17,
           "displayStatus": "permit"
         }
       },
@@ -592,7 +642,7 @@
         "hours": "~ 3 - 5",
         "aesthetics" :{
           "icon": "fa-solid fa-brain",
-          "sequence": 19,
+          "sequence": 20,
           "displayStatus": "permit"
         }
       },
@@ -641,7 +691,7 @@
         "hours": "~ 5 - 10",
         "aesthetics" :{
           "icon": "fa-solid fa-dna",
-          "sequence": 22,
+          "sequence": 23,
           "displayStatus": "permit"
         }
       },
@@ -699,7 +749,7 @@
         "hours": "~ 15 - 20",
         "aesthetics" :{
           "icon": "fa-solid fa-chalkboard",
-          "sequence": 8,
+          "sequence": 9,
           "displayStatus": "permit"
         }
       },
@@ -748,7 +798,7 @@
         "hours": "~ 3 - 5",
         "aesthetics" :{
           "icon": "fa-solid fa-chalkboard",
-          "sequence": 14,
+          "sequence": 15,
           "displayStatus": "permit"
         }
       },
@@ -796,7 +846,7 @@
         "hours": "~ 10 - 20",
         "aesthetics" :{
           "icon": "fa-solid fa-chalkboard",
-          "sequence": 17,
+          "sequence": 18,
           "displayStatus": "permit"
         }
       },  
@@ -854,7 +904,7 @@
         "hours": "40+",
         "aesthetics" :{
           "icon": "fa-solid fa-chalkboard",
-          "sequence": 18,
+          "sequence": 19,
           "displayStatus": "permit"
         }
       },
@@ -902,7 +952,7 @@
         "hours": "40+",
         "aesthetics" :{
           "icon": "fa-solid fa-chalkboard",
-          "sequence": 20,
+          "sequence": 21,
           "displayStatus": "permit"
         }
       },
@@ -950,7 +1000,7 @@
         "hours": "40+",
         "aesthetics" :{
           "icon": "fa-solid fa-chalkboard",
-          "sequence": 21,
+          "sequence": 22,
           "displayStatus": "permit"
         }
       },
@@ -998,7 +1048,7 @@
         "hours": "~ 1 - 2",
         "aesthetics" :{
           "icon": "fa-solid fa-handshake",
-          "sequence": 9,
+          "sequence": 10,
           "displayStatus": "permit"
         }
       },
@@ -1046,7 +1096,7 @@
         "hours":"~ 1",
         "aesthetics" :{
           "icon": "fa-solid fa-handshake",
-          "sequence": 7,
+          "sequence": 8,
           "displayStatus": "permit"
         }
       },
@@ -1094,7 +1144,7 @@
         "hours" :"~ 1",
         "aesthetics" :{
           "icon": "fa-solid fa-handshake",
-          "sequence": 6,
+          "sequence": 7,
           "displayStatus": "permit"
         }
       },
@@ -1142,7 +1192,7 @@
         "hours": "~ 1",
         "aesthetics" :{
           "icon": "fa-solid fa-handshake",
-          "sequence": 5,
+          "sequence": 6,
           "displayStatus": "permit"
         }
       },
@@ -1190,7 +1240,7 @@
         "hours": "~ 2 - 3",
         "aesthetics" :{
           "icon": "fa-solid fa-handshake",
-          "sequence": 11,
+          "sequence": 12,
           "displayStatus": "permit"
         }
       },
@@ -1238,7 +1288,7 @@
         "hours": "~ 1",
         "aesthetics" :{
           "icon": "fa-solid fa-microchip",
-          "sequence": 15,
+          "sequence": 16,
           "displayStatus": "permit"
         }
       },
@@ -1287,7 +1337,7 @@
         "hours": "~ 1 - 2",
         "aesthetics" :{
           "icon": "fa-solid fa-book",
-          "sequence": 13,
+          "sequence": 14,
           "displayStatus": "permit"
         }
       }
