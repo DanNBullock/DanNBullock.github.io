@@ -412,7 +412,7 @@ and is set to float right.  Lets change this float behavior to inherit -->
                       <div class="experience-info-skills-tasks" style="position:relative;">
                           <!-- start with the description-->
                           <div class="experience-description" style="position:relative; padding-top:10px; line-height:1.2; font-size: .7em">
-                              {{ entry.description }}
+                              {{ entry.description | markdownify}}
                           </div>
                           <!-- half line break-->
                           <div class="experience-skills-tasks" style="position:relative; font-size:0.65em; padding-top:10px;">
