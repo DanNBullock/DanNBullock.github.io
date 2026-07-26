@@ -1,0 +1,208 @@
+{% comment %} =====================================================================
+_includes/cv-body.html — CV rendering engine (portfolio idiom: an include
+called from a page/collection body, like archive-single.html).
+Params:
+include.mode -> which presentation mode
+Reads:
+site.data.cvModes.modes[include.mode] -> behavior (filters, section/skill/desc gating)
+site.data.curriculumVitae -> content
+site.publications -> publications collection
+All filtering/computation at BUILD time. Styling in _sass/_cv.scss.
+Metric-compute block is inline by necessity (Liquid includes emit text, not
+return values, so per-entry metrics cannot be idiomatically externalized).
+===================================================================== {% endcomment %}
+{% assign m = site.data.cvModes.modes[include.mode] %}
+{% assign buildYear = 'now' | date: "%Y" | plus: 0 %}
+{% assign buildMonth = 'now' | date: "%m" | plus: 0 %}
+<div class="cv">
+    {% comment %} ---------- HEADMAST (author; always shown) ---------- {% endcomment %}
+    <div class="cv-headmast">
+        {% include cv-person.html person=site.data.curriculumVitae.person variant="headmast" %}
+        <p class="cv-address">{{ site.data.curriculumVitae.person.contact.address.city }}, {{
+            site.data.curriculumVitae.person.contact.address.state }}, {{
+            site.data.curriculumVitae.person.contact.address.country }}</p>
+    </div>
+    {% comment %} ---------- SUMMARY ---------- {% endcomment %}
+    {% if m.sections.summary and site.data.curriculumVitae.person.description != null %}
+        <div class="cv-summary">{{ site.data.curriculumVitae.person.description }}</div>
+    {% endif %}
+    {% comment %} ---------- EDUCATION ---------- {% endcomment %}
+    {% if m.sections.education %}
+    <div class="education">
+        <h2>Education</h2>
+        {% for entry in site.data.curriculumVitae.education %}
+            <div class="cv-edu-card">
+                <div class="cv-edu-info">
+                    <div class="cv-edu-degree">
+                        <strong>{{ entry.degree.type }}, {{ entry.degree.majors | join: ", " }}</strong>
+                        <hr class="cv-divider">
+                        <small>at <i>{{ entry.institution.name }}</i> ({{ entry.institution.location.city }}, {{
+                            entry.institution.location.state }}), <br>{{ entry.institution.department_program | join: ", "
+                            }}</small>
+                        {% if entry.degree.minors != null %}<br>Minor(s): {{ entry.degree.minors | join: ", " }}{% endif %}
+                    </div>
+                    <div class="cv-edu-dates">
+                        {% include cv-duration.html duration=entry.duration %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+    {% comment %} ---------- EXPERIENCE (build-time metric filtering) ---------- {% endcomment %}
+    {% if m.sections.experience %}
+    <div class="experience">
+        <h2>Experience</h2>
+        {% assign sortedExperience = site.data.curriculumVitae.experience | sort: "aesthetics.sequence" %}
+        {% for entry in sortedExperience %}
+            {% comment %} --- weekly hours (strip ~ and +; range -> higher) --- {% endcomment %}
+            {% assign hoursClean = entry.hours | replace: "~","" | replace: "+","" | strip %}
+            {% if hoursClean contains "-" %}
+                {% assign weeklyHours = hoursClean | split: "-" | last | strip | plus: 0 %}
+            {% else %}
+                {% assign weeklyHours = hoursClean | plus: 0 %}
+            {% endif %}
+            {% comment %} --- inclusive months (multi-segment; open end -> build date) + recency --- {% endcomment %}
+            {% assign totalMonths = 0 %}
+            {% assign latestEndYear = 0 %}
+            {% assign ongoing = false %}
+            {% for dur in entry.duration %}
+                {% if dur.end.year == nil %}
+                    {% assign ongoing = true %}
+                    {% assign endY = buildYear %}
+                    {% assign endM = buildMonth %}
+                {% else %}
+                    {% assign endY = dur.end.year %}
+                    {% assign endM = dur.end.month %}
+                    {% if endY > latestEndYear %}{% assign latestEndYear = endY %}{% endif %}
+                {% endif %}
+                {% assign segMonths = endY | minus: dur.start.year | times: 12 | plus: endM | minus: dur.start.month | plus: 1 %}
+                {% assign totalMonths = totalMonths | plus: segMonths %}
+            {% endfor %}
+            {% assign totalHours = totalMonths | times: 4.345 | times: weeklyHours %}
+            {% if ongoing %}{% assign yearsSinceEnd = 0 %}{% else %}{% assign yearsSinceEnd = buildYear | minus: latestEndYear %}{% endif %}
+            {% comment %} --- build-time inclusion test --- {% endcomment %}
+            {% if totalHours >= m.experienceFilter.minTotalHours and yearsSinceEnd <= m.experienceFilter.maxYearsSinceEnd %}
+                <div class="cv-exp-card">
+                    <div class="cv-exp-header">
+                        <div class="cv-exp-affiliations">
+                            <strong class="cv-exp-title">{{ entry.position.title }}</strong>
+                            <br>
+                            <small>at <i>{{ entry.institution.name }}</i> ({{ entry.institution.location.city }}, {{
+                                entry.institution.location.state }}), <br>{{ entry.institution.department_program | join: ", "
+                                }}</small>
+                            <br>
+                            <i class="cv-supervisors">
+                            {% for iSupervisor in entry.supervisor %}
+                                {% if iSupervisor.links != null %}
+                                    {% if forloop.first %}Supervised by {% endif %}
+                                    {% include cv-person.html person=iSupervisor variant="supervisor" %}
+                                    {% unless forloop.last %}, {% endunless %}
+                                {% endif %}
+                            {% endfor %}
+                            </i>
+                        </div>
+                        <div class="cv-exp-meta">
+                            <i class="fas fa-{{ entry.aesthetics.icon }} cv-exp-watermark"></i>
+                            Domain: {{ entry.domain | join: ", " }}<br>Type: {{ entry.position.type | join: ", " }}
+                            <br><b>Dates:</b> {% include cv-duration.html duration=entry.duration %}
+                            {% if entry.hours != null %}<br><b>Workload:</b> {{ entry.hours }} hrs per week{% endif %}
+                        </div>
+                    </div>
+                    {% if m.description.show %}
+                        <div class="cv-exp-description">{{ entry.description | markdownify }}</div>
+                    {% endif %}
+                    {% if m.skills.show %}
+                        <div class="cv-exp-skills">
+                            {% if m.skills.layers contains "technical" and entry.tasks_skills.technical != null %}
+                                <span class="skills-technical"><u>Technical skills</u>: {{ entry.tasks_skills.technical | join: ", "}}</span><br>
+                            {% endif %}
+                            {% if m.skills.layers contains "non_technical" and entry.tasks_skills.non_technical != null %}
+                                <span class="skills-nontechnical"><u>Non-technical skills</u>: {{ entry.tasks_skills.non_technical | join:  ", " }}</span>
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    {% endif %}
+    {% comment %} ---------- PUBLICATIONS ---------- {% endcomment %}
+    {% if m.sections.publications %}
+    <div class="publications">
+        <h2>Publications</h2>
+        <table class="cv-table cv-table-pubs">
+            <tr>
+                <th>Title</th>
+                <th>Date</th>
+                <th>Venue</th>
+                <th>Link</th>
+                <th>Citation</th>
+            </tr>
+            {% assign sortedPublications = site.publications | sort: "date" | reverse %}
+            {% for paper in sortedPublications %}
+                {% if paper.collection == "publications" %}
+                    <tr>
+                        <td class="cv-pub-title"><a href="{{ paper.permalink }}" class="paper-title-link">{{ paper.title }}</a></td>
+                        <td>{{ paper.date | date: "%m-%d<br>%Y" }}</td>
+                        <td>{{ paper.venue }}</td>
+                        <td>{% if paper.paperurl != null %}<a href="{{ paper.paperurl }}"><i class="fas fa-globe"></i></a>{% endif
+                            %}</td>
+                        <td class="cv-pub-citation">{{ paper.citation }}</td>
+                    </tr>
+                {% endif %}
+            {% endfor %}
+        </table>
+    </div>
+    {% endif %}
+    {% comment %} ---------- PRESENTATIONS ---------- {% endcomment %}
+    {% if m.sections.presentations %}
+    <div class="presentations">
+        <h2>Presentations and Posters</h2>
+        <table class="cv-table cv-table-pres">
+            <tr>
+                <th>Title</th>
+                <th>Year</th>
+                <th>Venue</th>
+                <th>Type</th>
+                <th>Authors</th>
+            </tr>
+            {% assign sortedPresentations = site.data.curriculumVitae.presentations | sort: "year" | sort: "venue[0]" | reverse %}
+            {% for presentation in sortedPresentations %}
+                <tr>
+                    <td class="cv-pres-title">{{ presentation.title }}</td>
+                    <td>{{ presentation.year }}</td>
+                    <td>{{ presentation.venue | join: ", " }}</td>
+                    <td>{{ presentation.type }}</td>
+                    <td class="cv-pres-authors">{{ presentation.authors | join: ", " }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+    {% endif %}
+    {% comment %} ---------- AWARDS ---------- {% endcomment %}
+    {% if m.sections.awards %}
+    <div class="awards">
+        <h2>Awards, Fellowships and Grants</h2>
+        <table class="cv-table cv-table-awards">
+            <tr>
+                <th>Title and Source</th>
+                <th>Type</th>
+                <th>Duration</th>
+                <th>Link</th>
+            </tr>
+            {% for award in site.data.curriculumVitae.awards %}
+            <tr>
+                <td class="cv-award-title">
+                    <strong>{{ award.title }}</strong><br>
+                    <small>at <a href="{{ award.institution.link }}">{{ award.institution.name }}</a> <i>via</i> <a href="{{ award.sourceOrg.link }}">{{ award.sourceOrg.name }}</a></small>
+                </td>
+                <td>{{ award.type }}</td>
+                <td>{% include cv-duration.html duration=award.duration %}</td>
+                <td>{% if award.link != null %}<a href="{{ award.link }}"><i class="fas fa-globe"></i></a>{% endif %}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    {% endif %}
+</div>

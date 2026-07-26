@@ -1,0 +1,30 @@
+{% comment %}
+    Renders a person consistently across contexts. Emits inline text.
+    Params:
+    person : a person object {name, contact:{website,email}, links[], ORCID, google_scholar, email}
+    variant : "headmast" | "supervisor" | "coauthor"
+    Email is shown only where meaningfully populated; non-primary persons carry
+    masked emails in the data, so their mailto renders but is inert.
+    Usage: {% include cv-person.html person=X variant="supervisor" %}
+{% endcomment %}
+{% assign p = include.person %}
+{% case include.variant %}
+{% when "headmast" %}
+    <h1 class="cv-author-name">{{ p.name }}</h1>
+    <h3 class="cv-author-contact">
+        {% if p.contact.email %}{{ p.contact.email }}; {% endif %}
+        {% if p.contact.website %}
+            {% assign site_disp = p.contact.website | remove: "https://" %}
+            <a href="{% unless p.contact.website contains 'https://' %}https://{% endunless %}{{ p.contact.website | remove: 'https://' }}">{{ site_disp }}</a>
+        {% endif %}
+    </h3>
+{% when "supervisor" %}
+    {{ p.name }}(
+    {%- for link in p.links %}<a href="{{ link }}"><i class="fas fa-globe"></i></a>{% endfor -%}
+    {%- if p.ORCID and p.ORCID != "" %}<a href="{{ p.ORCID }}"><i class="fab fa-orcid"></i></a>{% endif -%}
+    {%- if p.google_scholar and p.google_scholar != "" %}<a href="{{ p.google_scholar }}"><i class="fas fa-graduation-cap"></i></a>{% endif -%}
+    {%- if p.email and p.email != "" %}<a href="mailto:{{ p.email }}"><i class="fas fa-envelope"></i></a>{% endif -%}
+    )
+{% when "coauthor" %}
+    {{ p.name }}
+{% endcase %}

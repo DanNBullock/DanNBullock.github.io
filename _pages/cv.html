@@ -1,0 +1,13 @@
+---
+layout: archive
+title: "Curriculum Vitae"
+permalink: /cv/
+author_profile: false
+---
+{% include base_path %}
+<nav class="cv-menu">
+    {% for doc in site.cvmodes %}
+    <a href="{{ doc.url }}">{{ site.data.cvModes.modes[doc.mode].label }}</a>
+    {% endfor %}
+</nav>
+{% include cv-body.html mode="full" %}

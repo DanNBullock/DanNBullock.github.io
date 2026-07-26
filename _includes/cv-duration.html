@@ -1,0 +1,11 @@
+{% comment %}
+    Renders a duration array (list of {start:{month,year}, end:{month,year}}) as
+    "M / YYYY to M / YYYY", with multiple segments joined by ", &".
+    Emits inline text; styling comes from the calling container.
+    Usage: {% include cv-duration.html duration=entry.duration %}
+{% endcomment %}
+{% for d in include.duration -%}
+    {%- if d.start.month %}{{ d.start.month }} / {{ d.start.year }}{% endif -%}
+    {%- if d.end.month %} to {{ d.end.month }} / {{ d.end.year }}{% endif -%}
+    {%- unless forloop.last %}, &<br>{% endunless -%}
+{%- endfor %}

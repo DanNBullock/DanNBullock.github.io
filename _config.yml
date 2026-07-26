@@ -84,11 +84,10 @@ author:
   avatar           : "profile.jpg"
   bio              : "Open science, data, A.I., and associated infrastructure policy, off-hours neuroinformatics researcher"
   location         : "Alexandria, VA"
-  employer         : "AAAS STPF, NSF OAC"
+  employer         : "ARPA-H [CTR]"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=c4X84_gAAAAJ"
   email            : "iisdanbul@gmail.com"
-  email            : "dbullock@nsf.gov"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -191,6 +190,9 @@ collections:
   apps:
     output: true
     permalink: /:collection/:path/
+  cvmodes:
+    output: true
+    permalink: /cv/:path/
 
 
 # Defaults
@@ -257,6 +259,13 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  # _cvmodes 
+  - scope:
+      path: ""
+      type: cvmodes
+    values:
+      layout: archive 
+      author_profile: false
 
 # Sass/SCSS
 sass:

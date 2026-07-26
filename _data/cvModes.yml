@@ -1,0 +1,145 @@
+# _data/cvModes.yml
+# Each mode fully specifies all fields (no inherited defaults).
+modes:
+
+    full:
+        label: "Full CV"
+        sections:
+            summary: true
+            education: true
+            experience: true
+            publications: true
+            presentations: true
+            awards: true
+        experienceFilter:
+            minTotalHours: 0
+            maxYearsSinceEnd: 999
+        skills:
+            show: true
+            layers: [technical, non_technical]
+        description:
+            show: true
+
+    academic:
+        label: "Academic"
+        sections:
+            summary: false
+            education: true
+            experience: true
+            publications: true
+            presentations: true
+            awards: true
+        experienceFilter:
+            minTotalHours: 0
+            maxYearsSinceEnd: 999
+        skills:
+            show: false
+            layers: []
+        description:
+            show: true
+
+    industry_research:
+        label: "Industry (Research)"
+        sections:
+            summary: false
+            education: true
+            experience: true
+            publications: false
+            presentations: false
+            awards: true
+        experienceFilter:
+            minTotalHours: 2000
+            maxYearsSinceEnd: 8
+        skills:
+            show: true
+            layers: [technical]
+        description:
+            show: true
+    federal:
+        label: "Federal / USAJOBS"
+        sections:
+            summary: false
+            education: true
+            experience: true
+            publications: false
+            presentations: false
+            awards: true
+        experienceFilter:
+            minTotalHours: 2000
+            maxYearsSinceEnd: 8
+        skills:
+            show: true
+            layers: [technical, non_technical]
+        description:
+            show: true
+    onepager:
+        label: "1-Pager"
+        sections:
+            summary: false
+            education: true
+            experience: true
+            publications: false
+            presentations: false
+            awards: false
+        experienceFilter:
+            minTotalHours: 2000
+            maxYearsSinceEnd: 8
+        skills:
+            show: false
+            layers: []
+        description:
+            show: true
+
+    arpah:
+        label: "ARPA-H"
+        sections:
+            summary: false
+            education: true
+            experience: true
+            publications: false
+            presentations: false
+            awards: true
+        experienceFilter:
+            minTotalHours: 0
+            maxYearsSinceEnd: 999
+        skills:
+            show: false
+            layers: []
+        description:
+            show: true
+
+    policy:
+        label: "Science Policy"
+        sections:
+            summary: false
+            education: true
+            experience: true
+            publications: false
+            presentations: false
+            awards: true
+        experienceFilter:
+            minTotalHours: 2000
+            maxYearsSinceEnd: 8
+        skills:
+            show: true
+            layers: [technical, non_technical]
+        description:
+            show: true
+        
+    industry_general:
+        label: "Industry (General)"
+        sections:
+            summary: false
+            education: true
+            experience: true
+            publications: false
+            presentations: false
+            awards: false
+        experienceFilter:
+            minTotalHours: 2000
+            maxYearsSinceEnd: 8
+        skills:
+            show: true
+            layers: [technical]
+        description:
+            show: true

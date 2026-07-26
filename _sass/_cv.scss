@@ -1,0 +1,344 @@
+/* ==========================================================================
+ CV (_sass/_cv.scss)
+ Styling for the JSON-driven CV rendered by _layouts/cv.html.
+ All rules scoped under .cv to avoid leaking site-wide.
+ Imported via main.scss: @import "cv";
+ ========================================================================== */
+/* ------------------------------------------------------------------
+ TWEAK KNOBS (frequently-adjusted, atomic values — edit these)
+ ------------------------------------------------------------------ */
+$cv-panel-bg : rgba(240, 255, 255, 0.733); // pane / table-header tint
+$cv-border-color : rgba(161, 161, 161, 0.856); // dividers, accent bar
+$cv-card-border : 3px double gray; // card frame
+$cv-accent-bar : 10px; // exp-meta left accent width
+$cv-watermark : rgba(114, 114, 114, 0.307); // domain icon watermark
+$cv-space-sm : 5px;
+$cv-space-md : 10px;
+
+/* ------------------------------------------------------------------
+ STRUCTURAL / RELATIONAL (rarely adjusted — coupled values below)
+ ------------------------------------------------------------------ */
+.cv {
+
+    /* --- headings (scoped; replaces the old global h1-6 override) --- */
+    h2 {
+        margin: 0;
+        padding-top: $cv-space-sm;
+    }
+
+    /* ---------------- Headmast ---------------- */
+    .cv-headmast {
+        text-align: center;
+    }
+
+    .cv-author-name {
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    .cv-author-contact {
+        margin: 0;
+    }
+
+    .cv-address {
+        margin: 0;
+    }
+
+    /* ---------------- Summary ---------------- */
+    .cv-summary {
+        width: 90%;
+        margin: auto;
+        padding: $cv-space-md;
+        font-size: 0.8em;
+        font-weight: 600;
+        color: rgba(50, 50, 50, 0.60);
+        font-style: italic;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+        /* ---------------- Education card ---------------- */
+        .cv-edu-card {
+            border: $cv-card-border;
+            height: auto;
+            overflow: hidden;
+            padding: $cv-space-sm;
+        }
+
+        .cv-edu-info {
+            position: relative;
+            float: left;
+            width: 100%;
+            padding: $cv-space-sm;
+            background-color: $cv-panel-bg;
+            line-height: 1.1;
+        }
+
+        .cv-edu-degree {
+            position: relative;
+            width: 80%;
+            /* COUPLED with .cv-edu-dates 20% */
+            padding-bottom: $cv-space-sm;
+            float: left;
+            overflow: hidden;
+
+            strong {
+                font-size: 1.2em;
+            }
+
+            small {
+                font-size: 1em;
+            }
+        }
+
+        .cv-divider {
+            border-top: 1px dotted $cv-border-color;
+            margin: 0;
+        }
+
+        .cv-edu-dates {
+            position: absolute;
+            /* COUPLED: absolute-positioned to card corner */
+            width: 20%;
+            /* COUPLED with .cv-edu-degree 80% */
+            bottom: 0;
+            right: 0;
+            padding-bottom: $cv-space-sm;
+            font-size: 1em;
+            text-align: right;
+        }
+
+        /* ---------------- Experience card ---------------- */
+        .cv-exp-card {
+            border: $cv-card-border;
+            height: auto;
+            overflow: hidden;
+            min-width: 100%;
+        }
+
+        .cv-exp-header {
+            position: relative;
+            width: 100%;
+            padding: $cv-space-sm;
+            background-color: $cv-panel-bg;
+            overflow: hidden;
+            border-bottom: 1px dotted rgb(150, 150, 150);
+        }
+
+        .cv-exp-affiliations {
+            position: relative;
+            width: 65%;
+            /* COUPLED with .cv-exp-meta 35% */
+            float: left;
+            line-height: 1.1;
+
+            small {
+                font-size: 0.8em;
+            }
+        }
+
+        .cv-exp-title {
+            font-size: 1.2em;
+        }
+
+        .cv-supervisors {
+            font-size: 0.7em;
+            font-weight: 600;
+        }
+
+        .cv-exp-meta {
+            position: relative;
+            width: 35%;
+            /* COUPLED with .cv-exp-affiliations 65% */
+            float: right;
+            font-size: 0.7em;
+            font-weight: 700;
+            border-radius: $cv-space-sm;
+            border-left: $cv-accent-bar solid $cv-border-color;
+            padding-left: $cv-space-sm;
+        }
+
+        .cv-exp-watermark {
+            position: absolute;
+            /* COUPLED: watermark pinned behind meta text */
+            right: 0;
+            top: 0;
+            font-size: 6em;
+            color: $cv-watermark;
+            z-index: -1;
+            max-height: 100%;
+        }
+
+        .cv-exp-description {
+            position: relative;
+            padding-top: $cv-space-md;
+            line-height: 1.2;
+            font-size: 0.7em;
+        }
+
+        .cv-exp-skills {
+            position: relative;
+            padding-top: $cv-space-md;
+            font-size: 0.65em;
+        }
+
+        /* ---------------- Shared tables (Smell C consolidation) ---------------- */
+        .cv-table {
+            th {
+                background-color: $cv-panel-bg;
+                text-align: center;
+                text-decoration: underline;
+            }
+
+            td {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+        }
+
+        /* Publications columns + cell sizing */
+        .cv-table-pubs {
+
+            th:nth-child(1),
+            td:nth-child(1) {
+                width: 34%;
+            }
+
+            th:nth-child(2),
+            td:nth-child(2) {
+                width: 8%;
+                text-align: center;
+                font-size: 0.8em;
+            }
+            th:nth-child(3),
+            td:nth-child(3) {
+                width: 10%;
+                text-align: center;
+                font-size: 0.7em;
+            }
+            th:nth-child(4),
+            td:nth-child(4) {
+                width: 2%;
+                text-align: center;
+            }
+
+            th:nth-child(5),
+            td:nth-child(5) {
+                width: 46%;
+            }
+
+            .cv-pub-title {
+                font-size: 0.7em;
+                padding: $cv-space-sm 0;
+            }
+
+            .cv-pub-citation {
+                font-size: 0.6em;
+            }
+            }
+
+        /* Presentations columns */
+        .cv-table-pres {
+
+            th:nth-child(1),
+            td:nth-child(1) {
+                width: 34%;
+            }
+
+            th:nth-child(2),
+            td:nth-child(2) {
+                width: 2%;
+                text-align: center;
+                font-size: 0.8em;
+            }
+            th:nth-child(3),
+            td:nth-child(3) {
+                width: 20%;
+                text-align: center;
+                font-size: 0.8em;
+            }
+            th:nth-child(4),
+            td:nth-child(4) {
+                width: 6%;
+                text-align: center;
+                font-size: 0.8em; 
+            }
+            th:nth-child(5),
+            td:nth-child(5) {
+                width: 38%;
+            }
+
+            .cv-pres-title {
+                font-weight: bold;
+                font-size: 0.8em;
+                padding: $cv-space-sm 0;
+            }
+
+            .cv-pres-authors {
+                font-size: 0.6em;
+            }
+            }
+
+        /* Awards columns */
+        .cv-table-awards {
+
+            th:nth-child(1),
+            td:nth-child(1) {
+                width: 70%;
+            }
+
+            th:nth-child(2),
+            td:nth-child(2) {
+                width: 7%;
+                text-align: center;
+                font-size: 0.8em;
+            }
+            th:nth-child(3),
+            td:nth-child(3) {
+                width: 21%;
+                text-align: center;
+                font-size: 0.8em;
+            }
+            th:nth-child(4),
+            td:nth-child(4) {
+                width: 2%;
+                text-align: center;
+            }
+
+            .cv-award-title {
+                font-size: 0.8em;
+                padding: $cv-space-sm 0;
+
+                strong {
+                    font-size: 1.25em;
+                }
+            }
+        }
+
+        /* Paper-title links: bold blue, not underlined */
+        .paper-title-link {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+        /* ---------------- Hub navigation menu ---------------- */
+        .cv-menu {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            justify-content: center;
+            margin: 0 auto 16px;
+            padding: 8px;
+            border-bottom: 1px dotted $cv-border-color;
+            a {
+                padding: 5px 12px;
+                font-size: 0.8em;
+                font-weight: 600;
+                background: $cv-panel-bg;
+                border: 1px solid $cv-border-color;
+                border-radius: $cv-space-sm;
+                text-decoration: none;
+            }
+        }
+    }
+
+ 
