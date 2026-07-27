@@ -7,7 +7,7 @@
         "email": "iisdanbul@gmail.com",
         "website": "https://DanNBullock.github.io",
         "address": {
-          "city": "Alexandria",
+          "city": "ManassasB",
           "state": "VA",
           "country": "USA"
         }
@@ -149,7 +149,7 @@
           "title": "Science and Engineering Technical Advisor (SETA) [Contractor]"
         },
         "project_name": "Lifesciences and Cyberinfrastructure Expert for Health Science Futures Projects",
-        "domain": "Technology Development, Translation, and Transfer",
+        "domain": "Technology Development and Transfer",
         "institution": {
           "name": "The Advanced Research Projects Agency for Health (ARPA-H)",
           "location": {
@@ -180,10 +180,10 @@
                 }
             }
           ],
-        "description": "As a Science and Engineering Technical Advisor (SETA) I serve as the primary expert overseeing a collection of ARPA-H projects with a total annual budget of more than \\$18 million and a total project-lifetime budget of more than \\$80 million.  In addition to this, I serve as secondary SETA on projects with a total annual budget of more than \\$23 million and a total project-lifetime budget of more than \\$125 million.  I provide technical guidance and oversight to project teams and ARPA-H personnel, regularly interface with internal and external stakeholders, track project milestone progress, and review incoming proposals. I also help scope and design new projects. I developed the initial structure and vision for the ARPA-H [Systematic Targeting Of MicroPlastics (STOMP)](https://arpa-h.gov/explore-funding/programs/stomp) program. I served as the primary architect of the former [Imaging Data Exchange (INDEX)](https://sam.gov/opp/796378d7f55848cdbea2b4d57bcf8bc2/view) program's major technical requirements (TA 2).",
+        "description": "Primary Science & Engineering Technical Advisor (SETA) overseeing a portfolio of ARPA-H (80M lifetime budget). Provide technical guidance to performer teams and ARPA-H staff, engage internal and external stakeholders, review incoming proposals, and track milestone progress. Scope and design new ARPA-H programs — developed the initial structure and vision for the Systematic Targeting Of MicroPlastics (STOMP) program and served as primary architect of the major technical requirements (TA-2) for the Imaging Data Exchange (INDEX) program.",
         "tasks_skills": {
           "technical": ["Dataset Quality Assessment", "Data Science", "Data Visualization", "Figure Generation", "Platform Design"],
-          "non_technical": ["Problem Scoping", "Project Management", "Documentation", "Literature Review", "Budget Oversight", "Program Management", "Proposal Review", "Report Development","Virtual Presentations"]
+          "non_technical": ["Problem Scoping", "Project Management", "Documentation", "Literature Review", "Budget Oversight", "Program Management", "Proposal Review", "Report Development"]
         },
         "hours": "40",
         "aesthetics" :{
@@ -199,7 +199,7 @@
           "title": "Science and Technology Policy Fellow"
         },
         "project_name": "Science and Technology Policy Fellow in the Office of Advanced Cyberinfrastructure",
-        "domain": "Open Science and Cyberinfrastructure policy",
+        "domain": "Science and Cyberinfrastructure",
         "institution": {
           "name": "National Science Foundation",
           "location": {
@@ -215,14 +215,14 @@
           "links": ["https://www.nsf.gov/staff/staff_bio.jsp?lan=alsuarez&org=OAC&from_org=OAC","https://www.linkedin.com/in/almsuarez"],
           "ORCID": "",
           "google_scholar": "https://scholar.google.com/citations?user=-RfQDDMAAAAJ&hl=en",
-          "email": "alsuarez@nsf.gov "
+          "email": "********@nsf.gov "
         },
         {
           "name": " Robert Beverly",
           "links": ["https://rbeverly.net/research/","https://www.nsf.gov/staff/staff_bio.jsp?lan=rbeverly&org=OAC&from_org=OAC"],
           "ORCID": "",
           "google_scholar": "https://scholar.google.com/citations?user=zQ5H1aYAAAAJ&hl=en",
-          "email": "rbeverly@nsf.gov"
+          "email": "********@nsf.gov"
         }],
         "duration": 
           [
@@ -237,10 +237,10 @@
                 }
             }
           ],
-        "description": "As an AAAS STPF Fellow placed in the Office of Advanced Cyberinfrastructure (OAC) I have engaged in a wide range of endeavors supporting the mission of the OAC.  These include assisting with the Pathways to Open Source Ecosystem (POSE) (e.g., panels, revising program description, triage), several ongoing endeavors supporting NSF Public access efforts, and internal reviews.  My interagency work includes assisting with the OSTP's Subcommittee on Open Science's (SOS) Open Science Infrastructure (OSI) Working Group, where I performed an analysis using openly accessible data from federal agencies and incorporated these results into a report on current agency investments in Open Science Infrastructure. I also serve as a member of the NSF team coordinating and organizing the multi-agency National AI Research Resource (NAIRR) Pilot program, in particular assisting with the development of practices and policies related to data.",
+        "description": "AAAS Science & Technology Policy Fellow in NSF's Office of Advanced Cyberinfrastructure (OAC), supporting open-science and cyberinfrastructure policy. Contributed to the Pathways to Open Source Ecosystems (POSE) program (panels, program-description revision, triage) and to NSF Public Access efforts; member of the NSF team coordinating the multi-agency National AI Research Resource (NAIRR) Pilot, developing data-related practices and policies. For the OSTP Subcommittee on Open Science's Open Science Infrastructure (OSI) Working Group, analyzed openly available federal-agency data and authored the findings in a report on agency investments in open-science infrastructure.",
         "tasks_skills": {
-          "technical": ["Python","Linux","Git","XML","JSON","Big Data","Data Scraping", "Dataset Quality Assessment", "Data Science", "Data Visualization", "Figure Generation", "Jupyter Notebooks", "Open-Source Development", "Open-Source Software"],
-          "non_technical": ["Problem Solving", "Problem Scoping", "Project Management", "Documentation", "Science Communication", "Grant Management", "Program Management", "Grant Review", "Literature Review", "Policy", "Federal Science Policy","Open Science Policy","Public Access Policy","Policy Drafting","Policy Documentation Development","Report Development","Interagency Working Groups","Virtual Presentations"]
+          "technical": ["Python","Linux","Git","XML","JSON","Big Data","Data Scraping", "Dataset Quality Assessment", "Data Science", "Data Visualization", "Figure Generation", "Jupyter Notebooks", "Open-Source Software"],
+          "non_technical": ["Problem Scoping", "Project Management", "Documentation", "Science Communication", "Grant Management", "Program Management", "Grant Review", "Literature Review", "Science Policy", "Data Policy","Policy Drafting", "Report Development","Interagency Working Groups"]
         },
         "hours": "40",
         "aesthetics" :{
@@ -272,14 +272,14 @@
           "links": ["https://med.umn.edu/bio/sarah-heilbronner"],
           "ORCID": "",
           "google_scholar": "https://scholar.google.com/citations?user=xNLcH5MAAAAJ&hl=en",
-          "email": "heilb028@umn.edu"
+          "email": "********@umn.edu"
         },
         {
           "name": "Jan Zimmermann",
           "links": ["https://med.umn.edu/bio/jan-zimmermann","https://www.zimmermannlab.com/","https://www.linkedin.com/in/jan-zimmermann-936a2a6a"],
           "ORCID": "",
           "google_scholar": "https://scholar.google.co.uk/citations?user=hxLc4YAAAAAJ&hl=en",
-          "email": "janz@umn.edu"
+          "email": "****@umn.edu"
         }],
         "duration": 
           [
@@ -294,10 +294,10 @@
                 }
             }
           ],
-        "description": "As a postdoctoral researcher I produced automated segmentation methods for the brain's major white matter tracts in tractography using cross-species and literature-based information. These tools allowed for the cross-referencing of 'ground truth' studies of non-human primate brain connectivity anatomy with imaging based studies of human brain connectivity anatomy, and have also served as anatomy models used in the development of deep brain stimulation (DBS) techniques and technologies. This also entailed the visualization of tractography and segmentation results, as well as the quantification of tract properties. To ensure the replicability and stability of these products I developed, documented, and maintained several code repositories.",
+        "description": "Postdoctoral researcher in computational neuroanatomy developing automated segmentation methods for the brain's major white-matter tracts from tractography, using cross-species and literature-based anatomy. Visualized tractography and segmentation results, quantified tract properties, and developed, documented, and maintained code repositories for replicability. Resulting tools enabled cross-referencing of non-humanprimate 'ground-truth' connectivity against imaging-based human connectivity, and served as anatomy models supporting development of deep brain stimulation (DBS) techniques and technologies.",
         "tasks_skills": {
-          "technical": ["Python","Linux","Git","Docker","Neuroimaging Software Packages","Neuroimaging","Neuroanatomy","Neuroscience","Brain Imaging Data Structure (BIDS)","Neuroimaging Data Structures","Neuroimaging Data Processing","3-D Image Processing","Medical Image Processing","Bash and Shell Scripting", "Big Data" , "Dataset Quality Assessment", "Data Science", "Jupyter Notebooks", "Containerization", "Open-Source Development", "Open-Source Software", "High Performance Computing (HPC)","Data Visualization","Testing and Debugging", "Coordinated/Collaborative Testing and Debugging", "Statistical Analysis", "Advanced Statistical Analysis"],
-          "non_technical": ["Self-guided Problem Solving", "Problem Scoping", "Project Management", "Collaboration", "Documentation", "Science Communication", "Manuscript Production", "Manuscript Editing", "Mentorship", "Virtual Presentations"]
+          "technical": ["Python","Linux","Git","Docker","Neuroimaging","Neuroanatomy","Neuroscience","Brain Imaging Data Structure (BIDS)","Neuroimaging Data Processing", "Medical Image Processing","Bash and Shell Scripting", "Big Data" , "Dataset Quality Assessment", "Data Science", "Jupyter Notebooks", "Containerization", "Open-Source Development", "Open-Source Software", "High Performance Computing (HPC)","Data Visualization","Testing and Debugging", "Coordinated/Collaborative Testing and Debugging", "Statistical Analysis", "Advanced Statistical Analysis"],
+          "non_technical": ["Problem Scoping", "Project Management", "Documentation", "Science Communication", "Manuscript Production", "Manuscript Editing", "Mentorship"]
         },
         "hours": "40+",
         "aesthetics" :{
@@ -327,7 +327,7 @@
           "links": ["https://liberalarts.utexas.edu/psychology/faculty/fp4834","https://psych.indiana.edu/directory/faculty/pestilli-franco.html"],
           "ORCID": "https://orcid.org/0000-0002-2469-0494",
           "google_scholar": "https://scholar.google.com/citations?user=gh_KorwAAAAJ&hl=en",
-          "email": "pestilli@utexas.edu"
+          "email": "********@utexas.edu"
         }],
         "duration": 
         [
@@ -342,10 +342,10 @@
               }
           }
         ],
-        "description": "As a graduate student researcher I developed and implemented automated segmentation methods for major white matter tracts in tractography, enabling personalized models of brain anatomy and connectivity. This also entailed the visualization of tractography and segmentation results, as well as the quantification of tract properties and development of tractography quality assurance methods. This work required a deep review of contemporary and historical neuroanatomy literature.",
+        "description": "Graduate researcher in computational neuroanatomy developing and implementing automated segmentation methods for major white-matter tracts from tractography, enabling personalized models of brain anatomy and connectivity. Visualized segmentation results and quantified tract properties. Developed tractography quality-assurance methods.",
         "tasks_skills": {
-          "technical": ["Python", "Matlab", "Linux", "Git", "Neuroimaging Software Packages","Neuroimaging","Neuroanatomy","Neuroscience","Brain Imaging Data Structure (BIDS)","Neuroimaging Data Structures","Neuroimaging Data Processing","3-D Image Processing","Medical Image Processing","Bash and Shell Scripting", "Big Data", "Dataset Quality Assessment", "Data Science", "Jupyter Notebooks", "High Performance Computing (HPC)","Data Visualization", "Statistical Analysis", "Advanced Statistical Analysis"],
-          "non_technical": ["Self-guided problem solving", "Problem Scoping", "Project Management", "Collaboration", "Multi-endeavor Balancing and Prioritization", "Project Schedule Development and Coordination", "Documentation", "Science Communication", "Manuscript Production", "Manuscript Editing", "Public Speaking", "Presentation Development and Delivery", "Research Methods", "Research Design", "Mentorship"]
+          "technical": ["Python", "Matlab", "Linux", "Git", "Neuroimaging","Neuroanatomy","Neuroscience","Brain Imaging Data Structure (BIDS)","Neuroimaging Data Structures","Neuroimaging Data Processing","Medical Image Processing","Bash and Shell Scripting", "Big Data", "Dataset Quality Assessment", "Data Science", "Jupyter Notebooks", "High Performance Computing (HPC)","Data Visualization", "Statistical Analysis", "Advanced Statistical Analysis"],
+          "non_technical": ["Problem Scoping", "Project Management", "Multi-endeavor Balancing and Prioritization", "Project Schedule Development and Coordination", "Documentation", "Science Communication", "Manuscript Production", "Manuscript Editing", "Public Speaking", "Presentation Development and Delivery", "Research Methods", "Research Design", "Mentorship"]
         },
         "hours" : "40+",
         "aesthetics" :{
@@ -376,7 +376,7 @@
           "links": ["https://liberalarts.utexas.edu/psychology/faculty/fp4834","https://psych.indiana.edu/directory/faculty/pestilli-franco.html"],
           "ORCID": "https://orcid.org/0000-0002-2469-0494",
           "google_scholar": "https://scholar.google.com/citations?user=gh_KorwAAAAJ&hl=en",
-          "email": "pestilli@utexas.edu"
+          "email": "********@utexas.edu"
         },
         {
           "name": "Soichi Hayashi",
@@ -399,10 +399,10 @@
               }
           }
         ],
-        "description": "As an application developer for the brainlife platform, I was responsible for the production and maintenance of containerized brain-data processing applications, enabling drastically simplified use of advanced processing and analysis techniques. This entailed the creation of novel data processing and visualization code, as well as adaptation of existing resources.  I also engaged in testing, monitoring, and feedback on service deployment and coordination.  I also led the scoping, creation, coordination, and maintenance of specific data formats/standards.",
+        "description": "Application developer for the brainlife.io platform, producing and maintaining containerized brain-data processing applications that drastically simplified use of advanced processing and analysis techniques. Contributed testing, monitoring, and feedback on service deployment and coordination; created novel data-processing and visualization code and adapted existing resources. Led scoping, creation, and maintenance of specific data formats/standards.",
         "tasks_skills": {
-          "technical": ["Python", "Matlab", "JSON", "Markdown", "Linux", "Git", "Neuroimaging Software Packages","Brain Imaging Data Structure (BIDS)","Neuroimaging","Neuroimaging Data Structures","Neuroimaging Data Processing","3-D Image Processing","Bash and Shell Scripting", "Big Data", "Dataset Quality Assessment", "Data Science", "Docker", "Containerization", "High Performance Computing (HPC)", "Continuous Integration and Continuous Delivery/Deployment (CI/CD)","Testing and Debugging", "Coordinated/Collaborative Testing and Debugging", "Data Visualization", "Statistical Analysis", "Advanced Statistical Analysis"],
-          "non_technical": ["Problem Scoping", "Project Management", "Collaboration", "Teamwork", "Task Specialization", "Multi-endeavor Balancing and Prioritization", "Documentation", "Client/Stakeholder Engagement","Rapid Iteration Production", "Rapid Adaptation", "Long-Term Product/Project Maintenance", "Documentation Life-cycle Management", "Soliciting and Incorporating Client Feedback", "Progress Reporting", "Continuous Integration and Continuous Delivery/Deployment (CI/CD) Methods"]
+          "technical": ["Python", "Matlab", "JSON", "Markdown", "Linux", "Git", "Neuroimaging Software Packages","Brain Imaging Data Structure (BIDS)","Neuroimaging","Neuroimaging Data Structures","Neuroimaging Data Processing","3-D Image Processing","Bash and Shell Scripting", "Big Data", "Dataset Quality Assessment", "Data Science", "Docker", "Containerization", "High Performance Computing (HPC)", "Continuous Integration and Continuous Delivery/Deployment (CI/CD)","Testing and Debugging", "Collaborative Development", "Data Visualization", "Advanced Statistical Analysis"],
+          "non_technical": ["Problem Scoping", "Project Management", "Task Specialization", "Multi-endeavor Balancing and Prioritization", "Documentation", "Stakeholder Engagement","Rapid Iteration Production", "Long-Term Product/Project Maintenance", "Soliciting and Incorporating Client Feedback", "Progress Reporting"]
         },
         "hours": "~ 5 - 10",
         "aesthetics" :{
@@ -440,7 +440,7 @@
           "links": ["https://www.linkedin.com/in/brandonlkramer/","https://www.brandonleekramer.com/"],
           "ORCID": "",
           "google_scholar": "https://scholar.google.com/citations?user=vHsczhMAAAAJ&hl=en",
-          "email": "brandonleekramer@gmail.com"
+          "email": "********@gmail.com"
         },
         {
           "name": "Joel Thurston",
@@ -448,7 +448,7 @@
           "ORCID": "",
           "google_scholar": "https://scholar.google.com/citations?user=aSYsQkUAAAAJ&hl=en",
 
-          "email": "jt9sz@virginia.edu"
+          "email": "********@virginia.edu"
         }
       ],
         "duration": 
@@ -464,10 +464,10 @@
               }
           }
         ],
-        "description": "As a summer Research Fellow, I served as participant lead for two projects, one focused on ontology & taxonomy development for army personnel performance assessments, the other on systematic valuation of open source development processes. Also in this capacity, I developed/produced code, analyses (qualitative and quantitative), and web content. Additionally, I performed data curation/cleaning, linked datasets, created visualizations, presented insights, and managed interns.",
+        "description": "Summer Research Fellow in the Data Science for the Public Good (DSPG) program, serving as participant lead on two projects: ontology/taxonomy development for Army personnel performance assessments, and systematic valuation of open-source development processes. Produced code and qualitative/quantitative analyses, performed data curation and dataset linking, built visualizations, and managed interns. Presented insights to multiple audiences and led delivery under rapid-production timelines.",
         "tasks_skills": {
-          "technical": ["Software Development", "Web Development", "Data Analysis", "Data Curation", "Data Cleaning", "Dataset Quality Assessment", "Data Visualization", "Python", "Git", "SQL"],
-          "non_technical": ["Presentation Development and Delivery", "Project Management", "Team Management", "Mentorship", "Report Production", "Stakeholder Engagement", "Problem Scoping", "Collaboration", "Rapid Production Frameworks", "Multi-audience Presentation Production and Delivery"]
+          "technical": ["Software Development", "Web Development", "Data Science", "Data Curation", "Dataset Quality Assessment", "Data Visualization", "Python", "Git", "SQL"],
+          "non_technical": ["Presentation Development and Delivery", "Project Management", "Team Management", "Mentorship", "Report Development", "Stakeholder Engagement", "Problem Scoping"]
         },
         "hours": "40",
         "aesthetics" :{
@@ -498,14 +498,14 @@
           "links": ["https://bio.sciences.ncsu.edu/people/godwin/","http://godwin.wordpress.ncsu.edu/"],
           "ORCID": "https://orcid.org/0000-0002-0928-501X ",
           "google_scholar": "https://scholar.google.com/citations?user=hZ446JMAAAAJ&hl=en",
-          "email": "john_godwin@ncsu.edu"
+          "email": "********@ncsu.edu"
         },
         {
           "name": "Ryan Wong",
           "links": ["https://sites.google.com/a/unomaha.edu/wonglab/"],
           "ORCID": "",
           "google_scholar": "https://scholar.google.com/citations?user=EVs0_O0AAAAJ&hl=en",
-          "email": "john_godwin@ncsu.edu"
+          "email": "********@ncsu.edu"
         }
       ],
         "duration":
@@ -521,10 +521,10 @@
               }
           }
         ],
-        "description": "As an undergraduate researcher I assisted the Godwin lab's exploration of stress and anxiety markers in the brain of a model species (zebra fish).  I ran experiments, collected and analyzed data, prepared and processed biological samples, maintained subject stocks, developed grants, and presented research results.",
+        "description": "Undergraduate researcher in the Godwin Lab studying stress and anxiety markers in the brain of a model species (zebrafish). Ran experiments, collected and analyzed data, prepared and processed biological samples, maintained subject stocks, and presented results. Contributed to grant development.",
         "tasks_skills": {
-          "technical": ["Behavioral Testing", "Movement Tracking Analysis", "Cryosectioning", "Microscopy", "In-situ Hybridization (ISH)", "DNA/RNA Extraction", "Slide Preparation", "Protocol Optimization", "Movement Tracking Data Processing", "Subject Monitoring and Maintenance"],
-          "non_technical": ["Grant Writing", "Science Communication", "Poster Presentation", "Research Review", "Article Summary and Discussion", "Resource Monitoring and Management"]
+          "technical": ["Behavioral Testing", "Movement Tracking Analysis", "Cryosectioning", "Microscopy", "In-situ Hybridization (ISH)", "DNA/RNA Extraction", "Protocol Optimization", "Movement Tracking Data Processing", "Subject Monitoring and Maintenance"],
+          "non_technical": ["Grant Writing", "Science Communication", "Research Review", "Article Summary and Discussion", "Resource Monitoring and Management"]
         },
         "hours": "10",
         "aesthetics" :{
@@ -555,7 +555,7 @@
           "links": ["https://school.wakehealth.edu/faculty/j/john-d-jackson"],
           "ORCID": "",
           "google_scholar": "",
-          "email": "jojackso@wakehealth.edu"
+          "email": "********@wakehealth.edu"
         },
         {
           "name": "Sookwon Ryu",
@@ -578,10 +578,10 @@
               }
           }
         ],
-        "description": "As a summer research scholar I engaged in a focused and intensive research project centered around characterizing and calibrating the process for producing functional thymic organoids for immune system function revitalization.  I assisted with sample production, processing, and analysis, in addition to also presenting on project status and findings.  This work was supported by a SENS Research Foundation Summer research fellowship.",
+        "description": "SENS Research Foundation Summer Scholar at the Wake Forest Institute for Regenerative Medicine, characterizing and calibrating the process for producing functional thymic organoids for immune-system revitalization. Assisted with sample production, processing, and analysis, and presented project status and findings.",
         "tasks_skills": {
           "technical": ["Tissue Extraction", "Tissue Culture", "Cell Culturing", "Cryosectioning", "Advanced Microscopy", "Immunofluorescence", "PCR", "Gel Electrophoresis"],
-          "non_technical": ["Multi-audience Presentation Production and Delivery", "Team Research", "Team Science", "Biomedical Industry Research and Development", "Rapid Production Frameworks", "Poster Presentation", "Research Review", "Report Production", "Multi-stakeholder Reporting and Communication", "Collaboration", "Resource Monitoring and Management"]
+          "non_technical": ["Team Research", "Team Science", "Biomedical Industry Research and Development", "Research Review", "Report Development", "Multi-stakeholder Reporting and Communication", "Resource Monitoring and Management"]
         },
         "hours": "40",
         "aesthetics" :{
@@ -612,7 +612,7 @@
           "links": ["https://hopfingerlab.web.unc.edu/"],
           "ORCID": "",
           "google_scholar": "",
-          "email": "hopfinger@unc.edu"
+          "email": "********@unc.edu"
         },
         {
           "name": "Emily Parks",
@@ -634,10 +634,10 @@
               }
           }
         ],
-        "description": "As an undergraduate research assistant I aided with research and data collection for projects involving EEG and eye tracking (using the attentional blink paradigm) as we studied memory and emotion's effects on attentional control.",
+        "description": "Undergraduate research assistant in the Hopfinger Lab studying memory and emotion effects on attentional control, using EEG and eye-tracking with the attentional-blink paradigm. Supported experimental design, subject recruitment, data collection, and data management under IRB protocols.",
         "tasks_skills": {
-          "technical": ["Experimental Design", "Subject Recruitment", "Behavioral Testing", "EEG", "Eye Tracking", "Data Management", "Data Analysis", "Data Curation"],
-          "non_technical": ["Research Ethics", "Project Management", "Collaboration", "Science Communication", "IRB Protocols"]
+          "technical": ["Experimental Design", "Subject Recruitment", "Behavioral Testing", "EEG", "Eye Tracking", "Data Management", "Data Science", "Data Curation"],
+          "non_technical": ["Research Ethics", "Science Communication", "IRB Protocols"]
         },
         "hours": "~ 3 - 5",
         "aesthetics" :{
@@ -683,9 +683,9 @@
               }
           }
         ],
-        "description": "As a pre-baccalaureate research assistant researching Fusarium wilt (a plant disease) in melons I explored genetic hallmarks of susceptibility and resilience.  I was trained to assist with a number of research production processes, including both work in the field and at the lab-bench.",
+        "description": "Pre-baccalaureate research assistant studying Fusarium wilt in melons, exploring genetic hallmarks of susceptibility and resilience. Trained in fieldand bench-based research processes; assisted with sample preparation and PCR/gel-electrophoresis workflows.",
         "tasks_skills": {
-            "technical": ["PCR", "Gel Electrophoresis", "Sample Preparation and Processing", "Sample Management"],
+            "technical": ["PCR", "Gel Electrophoresis", "Sample Preparation"],
             "non_technical": ["Manuscript Development", "Research Article Review"]
         },
         "hours": "~ 5 - 10",
@@ -741,7 +741,7 @@
               }
           }
         ],
-        "description": "Across four semesters as a graduate teaching assistant, I provided assistance with grading and classroom management, led discussion sections, and held office hours for various courses in research methods and statistics, cognitive neuroscience, and social neuroscience.",
+        "description": "Graduate teaching assistant across four semesters for courses in research methods and statistics, cognitive neuroscience, and social neuroscience. Led discussion sections, held office hours, and supported grading and classroom management.",
         "tasks_skills": {
             "technical": null,
             "non_technical": ["Performance Assessment", "Classroom Management", "Discussion Section Coordination", "Individualized Instruction", "Feedback Provision"]
@@ -775,7 +775,7 @@
           "links": ["https://www.linkedin.com/in/ted-emigh-a6085311"],
           "ORCID": null,
           "google_scholar": null,
-          "email": "emigh@ncsu.edu"
+          "email": "********@ncsu.edu"
           }],
         "duration": 
         [
@@ -790,7 +790,7 @@
               }
           }
         ],
-        "description": "As a graduate teaching assistant for GN 311 - Principles of Genetics, I led discussion sections, lectured and reviewed, held office hours, and graded course assignments and tests.",
+        "description": "Undergraduate teaching assistant for GN 311 (Principles of Genetics): led discussion sections, lectured and reviewed, held office hours, and graded assignments and tests.",
         "tasks_skills": {
           "technical": null,
           "non_technical": ["Grading", "Classroom Management", "Discussion Section Coordination", "Individualized Instruction"]
@@ -838,7 +838,7 @@
               }
           }
         ],
-        "description": "As a graduate teaching assistant, I provided assistance for a number of philosophy courses with grading and classroom management, led discussion sections, and held office hours for various courses in ethics, introduction to philosophy, political philosophy, and classical philosophy.",
+        "description": "Graduate teaching assistant for philosophy courses in ethics, introduction to philosophy, political philosophy, and classical philosophy. Led discussion sections, held office hours, and supported grading and classroom management.",
         "tasks_skills":{
         "technical":null,
         "non_technical":["Performance Assessment","Classroom Management", "Discussion Section Coordination", "Individualized Instruction", "Feedback Provision"]
@@ -896,7 +896,7 @@
               }
           }
         ],
-        "description": "As a psychology instructor at Duke TIP, I led an intensive and comprehensive introduction to psychology for academically gifted high school students.  This course was taught at a 101 level and covered the standard range of topics that would be expected in a first-year college course.",
+        "description": "Instructor for an intensive introduction to psychology for academically gifted high-school students (Duke TIP), taught at a college-101 level across the standard first-year topic range. Designed the course and syllabus, delivered instruction, assessed performance, and reported progress.",
         "tasks_skills": {
           "technical": null,
           "non_technical": ["Course Design", "Syllabus Formation", "Instruction", "Performance Assessment", "Progress Reporting", "Classroom Management"]
@@ -944,7 +944,7 @@
               }
           }
         ],
-        "description": "As a psychology teaching assistant at Duke TIP, I provided assistance with grading and classroom management, and led daily review sessions.",
+        "description": "Teaching assistant for an intensive introductory psychology course for gifted high-school students (Duke TIP); led daily review sessions and supported grading and classroom management.",
         "tasks_skills": {
           "technical": null,
           "non_technical": ["Grading", "Classroom Management", "Review session Leadership"]
@@ -992,7 +992,7 @@
               }
           }
         ],
-        "description": "As a nanotechnology teaching assistant at Duke TIP, I provided assistance with grading and classroom management, and led daily review sessions.",
+        "description": "Teaching assistant for an intensive nanotechnology course for gifted highschool students (Duke TIP); led daily review sessions and supported grading and classroom management.",
         "tasks_skills": {
           "technical": null,
           "non_technical": ["Grading", "Classroom Management", "Review session Leadership"]
@@ -1040,10 +1040,10 @@
               }
           }
         ],
-        "description": "As chair of the Benefits committee in the Indiana University Graduate and Professional Student Government (GPSG), I represented and advocated on behalf of graduate and professional students on issues related to compensation, benefits, and professional issues. I regularly met and communicated with university administrators, including the Dean of University Graduate School, about policy development, mutual endeavors, and specific concerns. I was also a member of the GPSG executive committee and managed a team of graduate student representatives.",
+        "description": "Chair of the Benefits Committee in the IU Graduate & Professional Student Government (GPSG) and member of the GPSG executive committee, advocating for graduate and professional students on compensation, benefits, and professional issues. Managed a team of graduate student representatives and engaged university administrators — including the Dean of the University Graduate School — on policy development and specific concerns.",
         "tasks_skills": {
         "technical": null,
-        "non_technical": ["Leadership", "Committee Management", "Advocacy", "Communication", "Team Management", "Constituency Engagement", "Human Resources and Benefits Policy", "Stakeholder Engagement", "Institutional Engagement"]
+        "non_technical": ["Leadership", "Committee Management", "Advocacy", "Team Management", "Human Resources and Benefits Policy", "Stakeholder Engagement", "Institutional Engagement"]
         },
         "hours": "~ 1 - 2",
         "aesthetics" :{
@@ -1088,10 +1088,10 @@
               }
           }
         ],
-        "description": "As a member of the technology policy committee, I represented Indiana University graduate student researchers on campus issues related to technology implementation. Regular meeting topics of this group included virtual conferencing (e.g. Zoom), email and data platforms, and research data storage and ownership.",
+        "description": "Member of the BFC Technology Policy Committee, representing graduate student researchers on technology-implementation issues — including virtual conferencing, email and data platforms, and research-data storage and ownership.",
         "tasks_skills": {
           "technical": null,
-          "non_technical": ["Committee Representation", "Advocacy", "Technology Policy Development", "Research Data Policy", "Institutional Engagement"]
+          "non_technical": ["Advocacy", "Technology Policy Development", "Research Data Policy", "Institutional Engagement"]
         },
         "hours":"~ 1",
         "aesthetics" :{
@@ -1136,10 +1136,10 @@
               }
           }
         ],
-        "description": "As a member of the Research Affairs Committee I represented graduate student researchers on campus issues related to research affairs. Regular meeting topics included COVID impacts, conflict of interest management, research disclosures, campus open access policies, NTT researchers, and other subjects. Worked with campus stakeholders and administrators from the Office of Research Administration, Office of the Vice Provost for Research, and others.",
+        "description": "Member of the BFC Research Affairs Committee, representing graduate student researchers on campus research-affairs issues — including COVID impacts, conflict-of-interest management, research disclosures, openaccess policy, and non-tenure-track researchers. Worked with the Office of Research Administration, the Office of the Vice Provost for Research, and other campus stakeholders.",
         "tasks_skills": {
           "technical": null,
-          "non_technical": ["Constituency Representation", "Rapport Building", "Institutional Advocacy", "Institutional Collaboration", "Institutional Engagement", "Research Policy", "Research Ethics", "Research Staffing", "Conflict of Interest Management", "Institutional Research Policy", "Open Access Policy"]
+          "non_technical": ["Constituency Representation", "Rapport Building", "Institutional Advocacy", "Institutional Engagement", "Research Policy", "Research Ethics", "Research Staffing", "Conflict of Interest Management", "Institutional Research Policy", "Open Access Policy"]
           },
         "hours" :"~ 1",
         "aesthetics" :{
@@ -1184,10 +1184,10 @@
               }
           }
         ],
-        "description": "As a voting member of the Bloomington Faculty Council (BFC), I represented graduate student researchers on all matters coming before the council, including campus-level policy, resolutions, and campus development planning.  I often met or interacted with campus/university administrators on specific issues and persistent ad hoc committees.",
+        "description": "Voting member of the Bloomington Faculty Council (BFC), representing graduate student researchers on all matters before the council, including campus-level policy, resolutions, and development planning. Engaged campus and university administrators on specific issues and standing ad hoc committees.",
         "tasks_skills": {
           "technical": null,
-          "non_technical": ["Advocacy", "Constituency Engagement", "Constituency Representation", "Rapport Building", "Institutional Advocacy", "Institutional Collaboration", "Institutional Engagement", "Policy Representation", "Collaboration", "Communication", "Public Speaking", "University Policy", "University Development Strategy", "Public Speaking","Robert's Rules of Order"]
+          "non_technical": ["Advocacy", "Constituency Engagement", "Constituency Representation", "Rapport Building", "Institutional Advocacy", "Institutional Engagement", "University Policy", "University Development Strategy", "Public Speaking"]
           },
         "hours": "~ 1",
         "aesthetics" :{
@@ -1232,10 +1232,10 @@
               }
           }
         ],
-        "description": "As the elected representative for graduate students from the Program in Neuroscience to the Graduate and Professional Student Government, I helped to shape and develop resolutions, and was overall an active member of the organization.",
+        "description": "Elected representative for the Program in Neuroscience to the IU Graduate & Professional Student Government, helping shape and develop resolutions as an active member of the organization.",
         "tasks_skills": {
         "technical": null,
-        "non_technical": ["Representation", "Resolution Development", "Constituent Advocacy", "Public Speaking", "Robert's Rules of Order"]
+        "non_technical": ["Representation", "Resolution Development", "Public Speaking", "Robert's Rules of Order"]
         },
         "hours": "~ 2 - 3",
         "aesthetics" :{
@@ -1314,7 +1314,7 @@
           "links": ["https://gga.ncsu.edu/people/cmashwel/","https://www.davis.wvu.edu/faculty-staff/directory/ashwell-chris"],
           "ORCID": null,
           "google_scholar": null,
-          "email": "christopher.ashwell@mail.wvu.edu"
+          "email": "********@mail.wvu.edu"
           }],
         "duration":
         [
@@ -1329,10 +1329,10 @@
               }
           }
         ],
-        "description": "As the chief editor of the undergraduate research journal I evaluated submissions and provided feedback to authors. I also collaborated with faculty in support of organization.",
+        "description": "Chief Editor of the NCSU undergraduate research journal, evaluating submissions and providing author feedback, and collaborating with faculty in support of the organization.",
         "tasks_skills": {
           "technical": null,
-          "non_technical": ["Research Article Review", "Feedback Provision", "Manuscript Revision", "Collaboration"]
+          "non_technical": ["Research Article Review", "Feedback Provision", "Manuscript Revision"]
         }, 
         "hours": "~ 1 - 2",
         "aesthetics" :{

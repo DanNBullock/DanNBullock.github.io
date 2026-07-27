@@ -71,6 +71,7 @@ $cv-space-md : 10px;
             padding: $cv-space-sm;
             background-color: $cv-panel-bg;
             line-height: 1.1;
+            padding: 0px;
         }
 
         .cv-edu-degree {
@@ -173,6 +174,8 @@ $cv-space-md : 10px;
             padding-top: $cv-space-md;
             line-height: 1.2;
             font-size: 0.7em;
+            padding-top: 0;
+            margin-bottom: 0.1em;
         }
 
         .cv-exp-skills {
