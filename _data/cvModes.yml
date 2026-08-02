@@ -44,9 +44,9 @@ modes:
             summary: false
             education: true
             experience: true
-            publications: false
+            publications: true
             presentations: false
-            awards: true
+            awards: false
         experienceFilter:
             minTotalHours: 2000
             maxYearsSinceEnd: 8
