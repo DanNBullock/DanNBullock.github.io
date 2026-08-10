@@ -48,11 +48,11 @@ modes:
             presentations: false
             awards: false
         experienceFilter:
-            minTotalHours: 2000
-            maxYearsSinceEnd: 8
+            minTotalHours: 0
+            maxYearsSinceEnd: 10
         skills:
             show: true
-            layers: [technical]
+            layers: [technical, non_technical]
         description:
             show: true
     federal:
