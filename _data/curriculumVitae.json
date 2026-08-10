@@ -182,7 +182,7 @@
           ],
         "description": "Primary Science & Engineering Technical Advisor (SETA) overseeing a portfolio of ARPA-H (80M lifetime budget). Provide technical guidance to performer teams and ARPA-H staff, engage internal and external stakeholders, review incoming proposals, and track milestone progress. Scope and design new ARPA-H programs — developed the initial structure and vision for the Systematic Targeting Of MicroPlastics (STOMP) program and served as primary architect of the major technical requirements (TA-2) for the Imaging Data Exchange (INDEX) program.",
         "tasks_skills": {
-          "technical": ["Dataset Quality Assessment", "Data Science", "Data Visualization", "Figure Generation", "Platform Design"],
+          "technical": ["Advanced LLM Workflows", "Ontology Formation", "LLM Operating Frameworks", "Dataset Quality Assessment", "Data Science", "Data Visualization", "Figure Generation", "Platform Design"],
           "non_technical": ["Problem Scoping", "Project Management", "Documentation", "Literature Review", "Budget Oversight", "Program Management", "Proposal Review", "Report Development"]
         },
         "hours": "40",
@@ -239,7 +239,7 @@
           ],
         "description": "AAAS Science & Technology Policy Fellow in NSF's Office of Advanced Cyberinfrastructure (OAC), supporting open-science and cyberinfrastructure policy. Contributed to the Pathways to Open Source Ecosystems (POSE) program (panels, program-description revision, triage) and to NSF Public Access efforts; member of the NSF team coordinating the multi-agency National AI Research Resource (NAIRR) Pilot, developing data-related practices and policies. For the OSTP Subcommittee on Open Science's Open Science Infrastructure (OSI) Working Group, analyzed openly available federal-agency data and authored the findings in a report on agency investments in open-science infrastructure.",
         "tasks_skills": {
-          "technical": ["Python","Linux","Git","XML","JSON","Big Data","Data Scraping", "Dataset Quality Assessment", "Data Science", "Data Visualization", "Figure Generation", "Jupyter Notebooks", "Open-Source Software"],
+          "technical": ["Advanced LLM Workflows", "Ontology Formation", "Python","Linux","Git","XML","JSON","Big Data","Data Scraping", "Dataset Quality Assessment", "Data Science", "Data Visualization", "Figure Generation", "Jupyter Notebooks", "Open-Source Software"],
           "non_technical": ["Problem Scoping", "Project Management", "Documentation", "Science Communication", "Grant Management", "Program Management", "Grant Review", "Literature Review", "Science Policy", "Data Policy","Policy Drafting", "Report Development","Interagency Working Groups"]
         },
         "hours": "40",

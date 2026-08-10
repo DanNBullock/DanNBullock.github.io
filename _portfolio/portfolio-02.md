@@ -1,24 +1,22 @@
 ---
-title: "White Matter Anatomy Database (WMAD)"
-excerpt: "An interactive database and framework for cataloging accounts of white matter tracts and their anatomy throughout the literature."
-image: '/images/WMADgif2.gif'
+title: "Qualifying Exams Paper Compilation"
+excerpt: "A collection of three papers that I wrote in the summer of 2018 for my PhD program's qualifying examinations"
+image: '/images/qualsPapersTopMerge.png'
 collection: portfolio
 ---
 
-Cataloging accounts of white matter tracts and their anatomy throughout the literature.
+An attempt to develop and apply a white matter categorization schema to the tracts of the brain and then leverage that conceptual framework to propose a hypothetical etiology for schizophrenia.
 
 <p style="text-align:center">
 
-<a href='https://www.youtube.com/watch?v=FAV5HdVQ91c'><img src='https://img.youtube.com/vi/FAV5HdVQ91c/0.jpg' alt='Neruomatch 4.0 WMAD + Interactive Segmentation presentation'></a>
-<br/>
-<a href='https://github.com/DanNBullock/WMAD'><img src='https://gh-card.dev/repos/DanNBullock/WMAD.svg' alt='DanNBullock/WMAD - GitHub'></a>
-<br/>
-<a href='https://mybinder.org/v2/gh/DanNBullock/WMAD/main?filepath=Notebooks%2FInteract_With_WMAD.ipynb'><img src='https://mybinder.org/badge_logo.svg' alt='Binder link for WiMSE'></a>
+<a href="/files/mergedQuals.pdf" target="_blank">
+    <img src='/images/qualsPapersTopMerge.png' style="display: block; margin-left: auto; margin-right: auto;">
+</a>
 
 </p>
 
-### The target problem
-In the field of white matter anatomy there are a range of conflicting accounts of anatomical characteristics and associated terminology for white matter tracts (bundles of axons that connect parts of the brain).  This problem has been highlighted in several recent publications including [Bullock et al. 2021](https://psyarxiv.com/fvk5r/) and [Schilling et al 2021](https://doi.org/10.1016/j.neuroimage.2021.118502).  Currently, individual researchers must expend great effort to locate and examine even a fraction of the accounts which are pertinent to their structure(s) of interest.  Furthermore, due to the aforementioned terminological and descriptive challenges even the most dedicated investigators will only encounter a portion of the work that could speak to their research.
+### The motivation for these papers
+This paper represents an attempt to impose a rigorous categorical framework to the somewhat unstructured landscape of white matter anatomy.  This work would later be reflected in subsequent publications (e.g., Bullock et al. 2022), but the majority of it never made its way into a publication.  Part of the underlying motivation for this endeavor was to demonstrate that there was substantial value in rigorously and critically approaching the task of taxonomy and categorical schema formation.  It was my contention that the right approach to this task—one which “carved nature at its joints”—would naturally have consequences for our understanding of other natural processes.  Chief among these could have been diseases and disorders which might be differentially impacting the subsets of white matter in virtue of the properties that we have chosen to categorize and delineate them. Empirical work may be suggested by various of the hypotheses contained within these papers, however such work was not undertaken as part of the qualifying examination process. 
 
-### The proposed solution
-In order to provide researchers with the ability to explore and consider pertinent accounts of specific white matter structures of interest we present the White Matter Anatomy Database (WMAD) resource.  Instead of having to manually search each candidate research article that may be relevant to a researchers interest, here we have curated a database which localizes the _precise_ text sections (via [regex](https://en.wikipedia.org/wiki/Regular_expression) bounds) describing any given white matter structure, along with links to images depicting those white matter structures.  Using our [jupyter notebook interface](https://github.com/DanNBullock/WMAD/blob/main/Notebooks/Interact_With_WMAD.ipynb) on [platform] users can view the text excerpts and images associated with structures specified by the user from multiple publications all alongside one another in order to facilitate efficient comparison and consideration.
+### A cautionary note
+Readers should be mindful that this collection of papers has not been peer reviewed or subjected to substantial revision.  As such there may be both factual and grammatical errors--to say nothing of how scientific understanding of this topic may have changed since 2018. This collection of papers is provided as an example of my writing, an example of how I approach a problem, and as a potentially interesting discussion to consider in and of itself. 
