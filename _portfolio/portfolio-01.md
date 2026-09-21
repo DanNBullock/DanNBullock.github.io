@@ -1,16 +1,16 @@
 ---
-title: "General Response framework for technical analysis work with LLMs"
-excerpt: "A general response framework designed to elicit appropriate behaviors from LLMs in technical analysis contexts"
-image: '/images/ResponseFramework.png'
+title: "2022 AAAS STPF mock policy memo"
+excerpt: "A mock memo detailing the AI landscape in 2022 along with recomended management strategies"
+image: '/images/mockMemo.png'
 collection: portfolio
 ---
 
-This framework was iteratively developed across multiple model releases and is designed to diminish undesired behaviors while preferentially reinforcing desired behaviors.
+As part of the AAAS STPF application process candidates are tasked with writing a one page memo targeting an agency official of their choice, discussing one of several topics.  During the 2022 application season, one of the many options was to write about AI.  The attached is my memo, pitched at an audience that is relatively unfamiliar with the contemporary state of AI.
 
 <p style="text-align:center">
 
-<a href="/files/standardPrompt_v5-Claude.pdf" target="_blank">
-    <img src='/images/ResponseFramework.png' style="display: block; margin-left: auto; margin-right: auto;">
+<a href="/files/AAAS_2022_mockMemo.pdf" target="_blank">
+    <img src='/images/mockMemo.png' style="display: block; margin-left: auto; margin-right: auto;">
 </a>
 
 </p>
