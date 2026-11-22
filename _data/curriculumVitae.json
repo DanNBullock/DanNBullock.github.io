@@ -237,7 +237,7 @@
                 }
             }
           ],
-        "description": "AAAS Fellow, NSF Office of Advanced Cyberinfrastructure (open-science and cyberinfrastructure policy). Executive secretary, multi-agency NAIRR Pilot Data Subcommitteeiteria. Conceived and initiated POSE-funded workshop on open-source data/metadata standards (2024; report in Patterns, 2025). With POSE, managed review panels, revised program description, analyzed and reported on CSSI–POSE overlap. Supported development of Public Access Plan 2.0 with analysis, landscaping, and drafting. Served as judge for the OSTP Year of Open Science. NSTC/OSTP Subcommittee on Open Science: grant-data analysis, agency interviews; co-drafted findings.",
+        "description": "AAAS Fellow, NSF Office of Advanced Cyberinfrastructure (open-science and cyberinfrastructure policy). Executive secretary, multi-agency NAIRR Pilot Data Subcommittee. Conceived and initiated POSE-funded workshop on open-source data/metadata standards (2024; report in Patterns, 2025). With POSE, managed review panels, revised program description, analyzed and reported on CSSI–POSE overlap. Supported development of Public Access Plan 2.0 with analysis, landscaping, and drafting. Served as judge for the OSTP Year of Open Science. NSTC/OSTP Subcommittee on Open Science: grant-data analysis, agency interviews; co-drafted findings.",
         "tasks_skills": {
           "technical": ["Advanced LLM Workflows", "Ontology Formation", "Python","Linux","Git","XML","JSON","Big Data","Data Scraping", "Dataset Quality Assessment", "Data Science", "Data Visualization", "Figure Generation", "Jupyter Notebooks", "Open-Source Software"],
           "non_technical": ["Problem Scoping", "Project Management", "Documentation", "Science Communication", "Grant Management", "Program Management", "Grant Review", "Literature Review", "Science Policy", "Data Policy","Policy Drafting", "Report Development","Interagency Working Groups"]
@@ -683,7 +683,7 @@
               }
           }
         ],
-        "description": "Pre-baccalaureate research assistant studying Fusarium wilt in melons, exploring genetic hallmarks of susceptibility and resilience. Trained in fieldand bench-based research processes; assisted with sample preparation and PCR/gel-electrophoresis workflows.",
+        "description": "Pre-baccalaureate research assistant studying Fusarium wilt in melons, exploring genetic hallmarks of susceptibility and resilience. Trained in field and bench-based research processes; assisted with sample preparation and PCR/gel-electrophoresis workflows.",
         "tasks_skills": {
             "technical": ["PCR", "Gel Electrophoresis", "Sample Preparation"],
             "non_technical": ["Manuscript Development", "Research Article Review"]
@@ -992,7 +992,7 @@
               }
           }
         ],
-        "description": "Teaching assistant for an intensive nanotechnology course for gifted highschool students (Duke TIP); led daily review sessions and supported grading and classroom management.",
+        "description": "Teaching assistant for an intensive nanotechnology course for gifted high school students (Duke TIP); led daily review sessions and supported grading and classroom management.",
         "tasks_skills": {
           "technical": null,
           "non_technical": ["Grading", "Classroom Management", "Review session Leadership"]
@@ -1136,7 +1136,7 @@
               }
           }
         ],
-        "description": "Member of the BFC Research Affairs Committee, representing graduate student researchers on campus research-affairs issues — including COVID impacts, conflict-of-interest management, research disclosures, openaccess policy, and non-tenure-track researchers. Worked with the Office of Research Administration, the Office of the Vice Provost for Research, and other campus stakeholders.",
+        "description": "Member of the BFC Research Affairs Committee, representing graduate student researchers on campus research-affairs issues — including COVID impacts, conflict-of-interest management, research disclosures, open access policy, and non-tenure-track researchers. Worked with the Office of Research Administration, the Office of the Vice Provost for Research, and other campus stakeholders.",
         "tasks_skills": {
           "technical": null,
           "non_technical": ["Constituency Representation", "Rapport Building", "Institutional Advocacy", "Institutional Engagement", "Research Policy", "Research Ethics", "Research Staffing", "Conflict of Interest Management", "Institutional Research Policy", "Open Access Policy"]
